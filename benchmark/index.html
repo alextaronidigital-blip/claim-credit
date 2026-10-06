@@ -75,6 +75,7 @@ textarea{resize:vertical;min-height:62px;line-height:1.5}
 .stat:last-child{border-right:0}
 .stat .k{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-faint)}
 .stat .v{font-family:var(--font-mono);font-size:19px;font-variant-numeric:tabular-nums;line-height:1.2}
+.stat .g{font-size:10.5px;color:var(--fg-faint)}
 
 /* ---------- toolbar ---------- */
 .bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:12px 20px;background:var(--bg);position:sticky;top:calc(env(safe-area-inset-top,0px) + 0px);z-index:10}
@@ -86,7 +87,7 @@ textarea{resize:vertical;min-height:62px;line-height:1.5}
 /* ---------- table ---------- */
 .wrap{padding:0 20px 56px}
 .tablebox{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow)}
-table{border-collapse:collapse;width:100%;min-width:1040px}
+table{border-collapse:collapse;width:100%;min-width:1240px}
 th{position:sticky;top:0;z-index:5;background:var(--surface-2);text-align:left;font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--fg-muted);font-weight:600;padding:9px 10px;border-bottom:1px solid var(--line-strong);white-space:nowrap}
 th.sortable{cursor:pointer;user-select:none}
 th.sortable:hover{color:var(--fg)}
@@ -203,6 +204,7 @@ legend{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(
   <select id="fStato"><option value="">Tutti gli stati</option></select>
   <select id="fLoc"><option value="">Ogni località</option></select>
   <select id="fVert"><option value="">Ogni verticale</option></select>
+  <select id="fCan"><option value="">Ogni canale</option></select>
   <div class="chipset">
     <button class="chip" id="cPref" aria-pressed="false">Solo mie preferenze</button>
     <button class="chip" id="cFlag" aria-pressed="false">Solo segnalate</button>
@@ -233,11 +235,11 @@ legend{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(
 
 /* ===== Configurazione: cambia qui le etichette, non nel resto del codice ===== */
 const STATI = [
-  "Da valutare","Da contattare","Contattato","In conversazione",
+  "Da valutare","Da contattare","Contattato","Appuntamento fissato",
   "Proposta inviata","Chiuso vinto","Chiuso perso","Non in target"
 ];
 const STATO_COLORE = {
-  "Da valutare":"info","Da contattare":"info","Contattato":"warn","In conversazione":"warn",
+  "Da valutare":"info","Da contattare":"info","Contattato":"warn","Appuntamento fissato":"warn",
   "Proposta inviata":"accent","Chiuso vinto":"ok","Chiuso perso":"crit","Non in target":"muted"
 };
 const TEAM = [
@@ -261,9 +263,22 @@ const APERTURA = ["Tutto l'anno","Stagionale","Chiuso","Da verificare"];
 const SERVIZI = [
   {key:"social",label:"Social organico"},
   {key:"ads",label:"Advertising"},
-  {key:"sito",label:"Sito / Landing"}
+  {key:"sito",label:"Sito / Landing"},
+  {key:"fotovideo",label:"Foto / Video"}
 ];
 const TIPI_CONTATTO = ["Chiamata","Email","DM","Incontro","Altro"];
+const CANALI = ["Da definire","Referral","Warm contact","Visita di persona","Chiamata a freddo"];
+const LINGUE = ["Italiano","Tedesco","Italiano + Tedesco"];
+// Obiettivi dichiarati nel briefing: 10k/mese entro fine anno, funnel 50 -> 20 -> 6
+const OBIETTIVI = { mrr:10000, lista:150, contattate:50, appuntamenti:20, proposte:6, visitaMinuti:40 };
+const GRUPPI = {
+  contattate:["Contattato","Appuntamento fissato","Proposta inviata","Chiuso vinto"],
+  appuntamenti:["Appuntamento fissato","Proposta inviata","Chiuso vinto"],
+  proposte:["Proposta inviata","Chiuso vinto"],
+  vinti:["Chiuso vinto"],
+  chiusi:["Chiuso vinto","Chiuso perso","Non in target"]
+};
+const eur = n => Number(n) ? new Intl.NumberFormat("it-IT",{style:"currency",currency:"EUR",maximumFractionDigits:0}).format(Number(n)) : "–";
 
 /* ===== Punteggio di priorità =====
    Opportunità = quanto è debole il digitale × quanto la struttura può spendere.
@@ -276,6 +291,11 @@ function punteggio(a){
   if (vs > 0){ const p = (5 - vs) * 6; t += p; if (p) parti.push([p, "Social deboli (voto " + vs + "/5)"]); }
   const mancanti = SOCIAL_CHIAVE.filter(k => !(a.social && a.social[k] && a.social[k].presente));
   if (mancanti.length){ const p = mancanti.length * 5; t += p; parti.push([p, "Assenti su " + mancanti.length + " social chiave"]); }
+  const vseo = Number(a.seo && a.seo.voto) || 0;
+  if (vseo > 0){ const p = (5 - vseo) * 3; t += p; if (p) parti.push([p, "SEO debole (voto " + vseo + "/5)"]); }
+  if (a.canale === "Referral" || a.canale === "Warm contact"){ t += 12; parti.push([12, "Arriva da " + a.canale.toLowerCase()]); }
+  const min = Number(a.minuti) || 0;
+  if (min > 0 && min <= OBIETTIVI.visitaMinuti){ t += 5; parti.push([5, "Visitabile in giornata (" + min + " min)"]); }
   if (a.sito && a.sito.assente){ t += 20; parti.push([20, "Nessun sito web"]); }
   else { const v = Number(a.sito && a.sito.voto) || 0; if (v > 0){ const p = (5 - v) * 4; t += p; if (p) parti.push([p, "Sito migliorabile (voto " + v + "/5)"]); } }
   const rat = Number(a.google && a.google.rating) || 0;
@@ -300,7 +320,7 @@ function banda(n){ return n >= 65 ? "caldo" : n >= 38 ? "tiepido" : "freddo"; }
 /* ===== Stato ===== */
 let righe = [];
 let db = null, user = null, scrivibile = true, io = TEAM[0].key;
-let sel = null, bozza = null, filtri = {q:"",stato:"",loc:"",vert:"",pref:false,flag:false};
+let sel = null, bozza = null, filtri = {q:"",stato:"",loc:"",vert:"",can:"",pref:false,flag:false};
 let ordine = {campo:"punteggio", dir:"desc"};
 const coda = new Map();
 
@@ -314,8 +334,11 @@ function nuovaAttivita(){
     nome:"", verticale:VERTICALI[0], categoria:CATEGORIE[0], tipoLocalita:LOCALITA[0],
     comune:"", provincia:"", regione:"", apertura:APERTURA[0],
     stato:STATI[0], flag:false, note:"",
+    canale:CANALI[0], referralDa:"", minuti:null, lingua:LINGUE[0], inseritaDa:"",
     sito:{url:"", assente:false, voto:0, nota:""},
+    seo:{voto:0, nota:""},
     google:{rating:null, recensioni:null, nota:""},
+    economia:{setup:null, fee:null},
     social, preferenze:pref,
     servizi:{social:true, ads:true, sito:false},
     referenti:[], touchpoint:[],
@@ -326,7 +349,9 @@ function normalizza(d){
   const base = nuovaAttivita();
   const a = Object.assign(base, d || {});
   a.sito = Object.assign(base.sito, d && d.sito);
+  a.seo = Object.assign(base.seo, d && d.seo);
   a.google = Object.assign(base.google, d && d.google);
+  a.economia = Object.assign(base.economia, d && d.economia);
   a.servizi = Object.assign(base.servizi, d && d.servizi);
   a.preferenze = Object.assign({}, base.preferenze, d && d.preferenze);
   a.social = {}; SOCIAL.forEach(s => a.social[s.key] = Object.assign({presente:false,daProporre:false,handle:"",follower:null}, d && d.social && d.social[s.key]));
@@ -359,10 +384,11 @@ function visibili(){
     if (filtri.stato && a.stato !== filtri.stato) return false;
     if (filtri.loc && a.tipoLocalita !== filtri.loc) return false;
     if (filtri.vert && a.verticale !== filtri.vert) return false;
+    if (filtri.can && a.canale !== filtri.can) return false;
     if (filtri.pref && !a.preferenze[io]) return false;
     if (filtri.flag && !a.flag) return false;
     if (q){
-      const hay = [a.nome, a.comune, a.provincia, a.regione, a.note,
+      const hay = [a.nome, a.comune, a.provincia, a.regione, a.note, a.referralDa,
         (a.referenti||[]).map(x => x.nome + " " + x.ruolo).join(" ")].join(" ").toLowerCase();
       if (!hay.includes(q)) return false;
     }
@@ -373,20 +399,27 @@ function visibili(){
     if (c === "punteggio"){ a = x.punti.totale; b = y.punti.totale; }
     else if (c === "votoSocial"){ a = Number(x.dati.votoSocial)||0; b = Number(y.dati.votoSocial)||0; }
     else if (c === "stato"){ a = STATI.indexOf(x.dati.stato); b = STATI.indexOf(y.dati.stato); }
+    else if (c === "fee"){ a = Number(x.dati.economia.fee)||0; b = Number(y.dati.economia.fee)||0; }
     else { a = (x.dati.nome||"").toLowerCase(); b = (y.dati.nome||"").toLowerCase(); }
     return a < b ? -s : a > b ? s : 0;
   });
 }
 
 function renderStats(){
-  const tot = righe.length;
-  const attivi = righe.filter(r => !["Chiuso vinto","Chiuso perso","Non in target"].includes(r.dati.stato)).length;
-  const vinti = righe.filter(r => r.dati.stato === "Chiuso vinto").length;
-  const caldi = righe.filter(r => r.punti.totale >= 65).length;
-  const miei = righe.filter(r => r.dati.preferenze[io]).length;
-  const dati = [["Attività", tot], ["In pipeline", attivi], ["Lead caldi", caldi], ["Chiusi vinti", vinti], ["Mie preferenze", miei]];
-  $("#stats").innerHTML = dati.map(([k,v]) =>
-    '<div class="stat"><div class="k">'+esc(k)+'</div><div class="v">'+v+"</div></div>").join("");
+  const n = g => righe.filter(r => GRUPPI[g].includes(r.dati.stato)).length;
+  const somma = g => righe.filter(r => GRUPPI[g].includes(r.dati.stato))
+    .reduce((t,r) => t + (Number(r.dati.economia && r.dati.economia.fee) || 0), 0);
+  const mrrVinto = somma("vinti");
+  const dati = [
+    ["In lista", righe.length, "obiettivo " + OBIETTIVI.lista],
+    ["Contattate", n("contattate"), "obiettivo " + OBIETTIVI.contattate],
+    ["Appuntamenti", n("appuntamenti"), "obiettivo " + OBIETTIVI.appuntamenti],
+    ["Proposte", n("proposte"), "obiettivo " + OBIETTIVI.proposte],
+    ["Clienti chiusi", n("vinti"), "fee in proposta " + eur(somma("proposte") - mrrVinto)],
+    ["MRR acquisito", eur(mrrVinto), "su " + eur(OBIETTIVI.mrr) + " al mese"]
+  ];
+  $("#stats").innerHTML = dati.map(([k,v,g]) =>
+    '<div class="stat"><div class="k">'+esc(k)+'</div><div class="v">'+esc(v)+'</div><div class="g">'+esc(g)+"</div></div>").join("");
 }
 
 function statoPill(a){
@@ -405,16 +438,18 @@ function renderTabella(){
   let h = '<div class="tablebox"><table><thead><tr>' +
     th("punteggio","Priorità") + th("nome","Attività") +
     "<th>Categoria</th><th>Presenza social</th>" + th("votoSocial","Voto") +
-    "<th>Sito</th><th>Google</th>" + th("stato","Stato") + "<th>Preferenze</th></tr></thead><tbody>";
+    "<th>Sito</th><th>SEO</th><th>Google</th>" + th("stato","Stato") +
+    "<th>Canale</th>" + th("fee","Fee/mese") + "<th>Preferenze</th></tr></thead><tbody>";
   if (!vis.length){
-    h += '<tr><td colspan="9" style="text-align:center;padding:30px;color:var(--fg-muted)">Nessuna attività con questi filtri.</td></tr>';
+    h += '<tr><td colspan="12" style="text-align:center;padding:30px;color:var(--fg-muted)">Nessuna attività con questi filtri.</td></tr>';
   }
   vis.forEach(r => {
     const a = r.dati, p = r.punti;
     h += '<tr data-id="' + esc(r.id) + '"' + (a.flag ? ' class="flagged"' : "") + ">";
     h += '<td><span class="score"><b>' + p.totale + '</b><span class="band band-' + banda(p.totale) + '">' + banda(p.totale) + "</span></span></td>";
     h += "<td><span class=\"name\">" + (esc(a.nome) || '<span style="color:var(--fg-faint)">Senza nome</span>') + "</span>" +
-         '<span class="sub">' + esc([a.comune, a.provincia && "(" + a.provincia + ")", a.tipoLocalita].filter(Boolean).join(" ")) + "</span></td>";
+         '<span class="sub">' + esc([a.comune, a.provincia && "(" + a.provincia + ")", a.tipoLocalita,
+           Number(a.minuti) ? a.minuti + " min" : "", a.lingua === "Italiano" ? "" : a.lingua].filter(Boolean).join(" · ")) + "</span></td>";
     h += '<td><span class="sub">' + esc(a.categoria) + "</span></td>";
     h += '<td><span class="soc">' + SOCIAL.map(s => {
           const v = a.social[s.key] || {};
@@ -426,10 +461,15 @@ function renderTabella(){
     h += '<td><span class="voto v' + vs + '">' + (vs || "–") + "</span></td>";
     h += '<td><span class="sub">' + (a.sito.assente ? '<span style="color:var(--crit)">assente</span>'
         : (a.sito.voto ? '<span class="voto v' + a.sito.voto + '">' + a.sito.voto + "</span>" : "–")) + "</span></td>";
+    h += '<td>' + (a.seo.voto ? '<span class="voto v' + a.seo.voto + '">' + a.seo.voto + "</span>" : '<span class="sub">–</span>') + "</td>";
     h += '<td><span class="sub num">' + (a.google.rating ? esc(a.google.rating) + " ★" : "–") +
          (a.google.recensioni ? ' <span style="color:var(--fg-faint)">(' + esc(a.google.recensioni) + ")</span>" : "") + "</span></td>";
     h += '<td><select class="pill-select" data-stato="' + esc(r.id) + '" ' + statoPill(a) + ">" +
           STATI.map(s => '<option' + (s === a.stato ? " selected" : "") + ">" + esc(s) + "</option>").join("") + "</select></td>";
+    const cal = a.canale && a.canale !== "Da definire";
+    h += '<td><span class="sub"' + (cal && (a.canale === "Referral" || a.canale === "Warm contact") ? ' style="color:var(--ok);font-weight:600"' : "") + ">" +
+         (cal ? esc(a.canale) : "–") + (a.referralDa ? '<br><span style="color:var(--fg-faint)">via ' + esc(a.referralDa) + "</span>" : "") + "</span></td>";
+    h += '<td><span class="sub num">' + esc(eur(a.economia.fee)) + "</span></td>";
     h += '<td><span class="prefs">' + TEAM.map(m =>
           '<button data-pref="' + esc(r.id) + '" data-chi="' + m.key + '" aria-pressed="' + !!a.preferenze[m.key] +
           '" title="' + m.nome + '">' + m.ini + "</button>").join("") + "</span></td>";
@@ -451,7 +491,8 @@ function vuoto(){
     '<div class="cols">' +
     '<div><div class="k">Priorità</div><div class="d">Debolezza digitale × capacità di spesa, da 0 a 100</div></div>' +
     '<div><div class="k">Presenza social</div><div class="d">Dove sono, dove li porteremmo, voto da 1 a 5</div></div>' +
-    '<div><div class="k">Pipeline</div><div class="d">Dallo stato "da valutare" fino a chiuso, con referenti e chiamate</div></div>' +
+    '<div><div class="k">Pipeline</div><div class="d">Da "da valutare" ad appuntamento, proposta e chiusura</div></div>' +
+    '<div><div class="k">Canale</div><div class="d">Referral, warm contact, visita o chiamata — e i minuti di distanza</div></div>' +
     '<div><div class="k">Preferenze</div><div class="d">Alex, Riccardo, Nadir e Alessandro segnalano le loro</div></div>' +
     "</div></div>";
 }
@@ -499,6 +540,17 @@ function disegnaScheda(){
     '<div class="row3">' + campo("Comune","f-com","text",a.comune) + campo("Prov.","f-prov","text",a.provincia,'maxlength="4"') + campo("Regione","f-reg","text",a.regione) + "</div>" +
     "</fieldset>";
 
+  h += "<fieldset><legend>Come ci arriviamo</legend>" +
+    '<div class="row2">' + tendina("Canale","f-canale",CANALI,a.canale) +
+      campo("Referral / contatto tramite","f-refda","text",a.referralDa,'placeholder="Es. zio di Ale, Eva Hotel Mayr…"') + "</div>" +
+    '<div class="row3">' + campo("Minuti di distanza","f-min","number",a.minuti,'min="0" placeholder="35"') +
+      tendina("Lingua","f-lingua",LINGUE,a.lingua) +
+      '<label class="f"><span>In lista grazie a</span><select id="f-ins"><option value="">—</option>' +
+        TEAM.map(m => '<option value="' + m.key + '"' + (m.key === a.inseritaDa ? " selected" : "") + ">" + esc(m.nome) + "</option>").join("") +
+      "</select></label></div>" +
+    '<p class="hint">Sotto i ' + OBIETTIVI.visitaMinuti + " minuti si va di persona, oltre si chiama: la distanza entra nel punteggio.</p>" +
+    "</fieldset>";
+
   h += "<fieldset><legend>Presenza social</legend>" +
     '<div class="sgrid">' + SOCIAL.map(s => {
       const v = a.social[s.key];
@@ -512,11 +564,13 @@ function disegnaScheda(){
     '<label class="f" style="margin-top:4px"><span>Voto complessivo del posizionamento social (1 = assente o pessimo, 5 = già ottimo)</span>' + voti("f-vs", a.votoSocial) + "</label>" +
     "</fieldset>";
 
-  h += "<fieldset><legend>Sito e Google</legend>" +
+  h += "<fieldset><legend>Sito, SEO e Google</legend>" +
     campo("URL del sito","f-sito","url",a.sito.url,'placeholder="https://"') +
     '<label class="f" style="flex-direction:row;align-items:center;gap:7px"><input type="checkbox" id="f-sito-no" ' + (a.sito.assente ? "checked" : "") + ' style="width:auto"><span style="font-size:13px;color:var(--fg)">Non ha un sito</span></label>' +
     '<label class="f"><span>Voto del sito</span>' + voti("f-sv", a.sito.voto) + "</label>" +
     '<label class="f"><span>Nota sul sito</span><textarea id="f-sito-nota" placeholder="Com\'è messo, cosa manca, prenotazione diretta…">' + esc(a.sito.nota) + "</textarea></label>" +
+    '<label class="f"><span>Voto SEO / visibilità su Google</span>' + voti("f-seov", a.seo.voto) + "</label>" +
+    '<label class="f"><span>Nota SEO</span><textarea id="f-seonota" placeholder="Si trova cercando la zona? Compare sui portali e basta?">' + esc(a.seo.nota) + "</textarea></label>" +
     '<div class="row2">' + campo("Rating Google","f-gr","number",a.google.rating,'step="0.1" min="0" max="5"') + campo("N. recensioni","f-gn","number",a.google.recensioni,'min="0"') + "</div>" +
     '<label class="f"><span>Nota su Google / recensioni</span><textarea id="f-gnota">' + esc(a.google.nota) + "</textarea></label>" +
     "</fieldset>";
@@ -529,6 +583,8 @@ function disegnaScheda(){
     '<label class="f" style="flex-direction:row;align-items:center;gap:7px"><input type="checkbox" id="f-flag" ' + (a.flag ? "checked" : "") + ' style="width:auto"><span style="font-size:13px;color:var(--fg)">Segnala la riga (barra dorata in tabella)</span></label>' +
     '<div class="f"><span>Preferenze del team</span><span class="prefs" id="f-prefs">' +
       TEAM.map(m => '<button type="button" data-chi="' + m.key + '" aria-pressed="' + !!a.preferenze[m.key] + '" title="' + m.nome + '">' + m.ini + "</button>").join("") + "</span></div>" +
+    '<div class="row2">' + campo("Setup una tantum (€)","f-setup","number",a.economia.setup,'min="0" placeholder="5000"') +
+      campo("Fee mensile (€)","f-fee","number",a.economia.fee,'min="0" placeholder="1500"') + "</div>" +
     '<label class="f"><span>Note sulla situazione attuale</span><textarea id="f-note" style="min-height:84px">' + esc(a.note) + "</textarea></label>" +
     "</fieldset>";
 
@@ -562,7 +618,12 @@ function leggiScheda(){
   a.nome = g("f-nome").trim(); a.verticale = g("f-vert"); a.categoria = g("f-cat");
   a.tipoLocalita = g("f-loc"); a.apertura = g("f-ap");
   a.comune = g("f-com").trim(); a.provincia = g("f-prov").trim().toUpperCase(); a.regione = g("f-reg").trim();
+  a.canale = g("f-canale"); a.referralDa = g("f-refda").trim(); a.lingua = g("f-lingua"); a.inseritaDa = g("f-ins");
+  a.minuti = g("f-min") === "" ? null : Number(g("f-min"));
   a.sito.url = g("f-sito").trim(); a.sito.assente = ck("f-sito-no"); a.sito.nota = g("f-sito-nota");
+  a.seo.nota = g("f-seonota");
+  a.economia.setup = g("f-setup") === "" ? null : Number(g("f-setup"));
+  a.economia.fee = g("f-fee") === "" ? null : Number(g("f-fee"));
   a.google.rating = g("f-gr") === "" ? null : Number(g("f-gr"));
   a.google.recensioni = g("f-gn") === "" ? null : Number(g("f-gn"));
   a.google.nota = g("f-gnota");
@@ -611,7 +672,9 @@ function collegaVuoto(){
 function collegaScheda(){
   $("#dbody").querySelectorAll(".rate").forEach(r => r.querySelectorAll("button").forEach(b => b.onclick = () => {
     const v = Number(b.dataset.v);
-    if (r.id === "f-vs") bozza.votoSocial = v; else bozza.sito.voto = v;
+    if (r.id === "f-vs") bozza.votoSocial = v;
+    else if (r.id === "f-seov") bozza.seo.voto = v;
+    else bozza.sito.voto = v;
     leggiScheda(); disegnaScheda();
   }));
   $("#dbody").querySelectorAll("[data-soc]").forEach(seg => seg.querySelectorAll("button").forEach(b => b.onclick = () => {
@@ -628,7 +691,7 @@ function collegaScheda(){
     disegnaScheda();
   });
   const sn = $("#f-sito-no"); if (sn) sn.onchange = () => { leggiScheda(); disegnaScheda(); };
-  ["f-gr","f-gn","f-cat"].forEach(id => { const e = document.getElementById(id); if (e) e.onchange = () => { leggiScheda(); disegnaScheda(); }; });
+  ["f-gr","f-gn","f-cat","f-canale","f-min"].forEach(id => { const e = document.getElementById(id); if (e) e.onchange = () => { leggiScheda(); disegnaScheda(); }; });
   const nm = $("#f-nome"); if (nm) nm.oninput = () => { $("#dtitle").textContent = nm.value || "Nuova attività"; };
   $("#addref").onclick = () => { leggiScheda(); bozza.referenti.push({nome:"",ruolo:"",email:"",telefono:""}); disegnaScheda(); };
   $("#addtp").onclick = () => { leggiScheda(); bozza.touchpoint.unshift({data:new Date().toISOString().slice(0,10),tipo:TIPI_CONTATTO[0],esito:"",prossima:""}); disegnaScheda(); };
@@ -650,13 +713,18 @@ function esempi(){
     {nome:"Esempio · Relais sulle colline", verticale:"Resort / Relais", categoria:"5★", tipoLocalita:"Collina / Tenuta",
      comune:"Montalcino", provincia:"SI", regione:"Toscana", votoSocial:2,
      google:{rating:4.7, recensioni:410, nota:"Reputazione ottima, nessun presidio social serio"},
+     seo:{voto:2, nota:"Non si trova cercando la zona"}, canale:"Referral", referralDa:"zio di Ale", minuti:25,
+     economia:{setup:5000, fee:1500},
      sito:{url:"", assente:true, voto:0, nota:"Solo pagina su portale di prenotazione"}},
     {nome:"Esempio · Hotel fronte mare", verticale:"Hotel di lusso", categoria:"4★ Sup", tipoLocalita:"Mare",
      comune:"Numana", provincia:"AN", regione:"Marche", votoSocial:3, apertura:"Stagionale",
-     google:{rating:4.3, recensioni:120, nota:""}, sito:{url:"https://esempio.it", assente:false, voto:3, nota:"Sito recente, manca prenotazione diretta"}},
+     google:{rating:4.3, recensioni:120, nota:""}, seo:{voto:3, nota:""}, canale:"Chiamata a freddo", minuti:90,
+     sito:{url:"https://esempio.it", assente:false, voto:3, nota:"Sito recente, manca prenotazione diretta"}},
     {nome:"Esempio · Chalet di montagna", verticale:"Hotel di lusso", categoria:"5★ Lusso", tipoLocalita:"Montagna",
      comune:"Cortina d'Ampezzo", provincia:"BL", regione:"Veneto", votoSocial:4,
-     google:{rating:4.8, recensioni:260, nota:""}, sito:{url:"https://esempio.it", assente:false, voto:4, nota:""}, stato:"Contattato"}
+     google:{rating:4.8, recensioni:260, nota:""}, seo:{voto:4, nota:""}, canale:"Warm contact", referralDa:"Eva, Hotel Mayr",
+     minuti:35, lingua:"Italiano + Tedesco", economia:{setup:6000, fee:2000},
+     sito:{url:"https://esempio.it", assente:false, voto:4, nota:""}, stato:"Appuntamento fissato"}
   ];
   base.forEach((b,i) => {
     const d = normalizza(b);
@@ -697,12 +765,14 @@ $("#q").oninput = e => { filtri.q = e.target.value; renderTabella(); };
 $("#fStato").onchange = e => { filtri.stato = e.target.value; renderTabella(); };
 $("#fLoc").onchange = e => { filtri.loc = e.target.value; renderTabella(); };
 $("#fVert").onchange = e => { filtri.vert = e.target.value; renderTabella(); };
+$("#fCan").onchange = e => { filtri.can = e.target.value; renderTabella(); };
 $("#cPref").onclick = e => { filtri.pref = !filtri.pref; e.currentTarget.setAttribute("aria-pressed", String(filtri.pref)); renderTabella(); };
 $("#cFlag").onclick = e => { filtri.flag = !filtri.flag; e.currentTarget.setAttribute("aria-pressed", String(filtri.flag)); renderTabella(); };
 
 STATI.forEach(s => $("#fStato").insertAdjacentHTML("beforeend", "<option>" + esc(s) + "</option>"));
 LOCALITA.forEach(s => $("#fLoc").insertAdjacentHTML("beforeend", "<option>" + esc(s) + "</option>"));
 VERTICALI.forEach(s => $("#fVert").insertAdjacentHTML("beforeend", "<option>" + esc(s) + "</option>"));
+CANALI.forEach(s => $("#fCan").insertAdjacentHTML("beforeend", "<option>" + esc(s) + "</option>"));
 $("#me").innerHTML = TEAM.map(m => '<option value="' + m.key + '">' + esc(m.nome) + "</option>").join("");
 try { const v = localStorage.getItem("ydg-io"); if (v && TEAM.some(m => m.key === v)) io = v; } catch(_){}
 $("#me").value = io;
