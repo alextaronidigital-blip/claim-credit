@@ -46,8 +46,12 @@ h1{font-size:20px;font-weight:800;letter-spacing:-.035em}
 .obox{flex:1 1 240px;min-width:0}
 .meter.big{height:10px;margin-top:0}
 .olab{font-size:12.5px;color:var(--fg-muted);margin-top:8px;text-wrap:pretty}
-.fasi{display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:12px;margin-bottom:12px;align-items:start}
-.fase{background:var(--surface-2);border-radius:var(--r);padding:13px 14px;display:flex;flex-direction:column;gap:8px}
+.fasi{display:flex;flex-direction:column;gap:10px;margin-bottom:12px}
+.fase{background:var(--surface-2);border-radius:var(--r);padding:14px 16px;
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,340px);gap:18px;align-items:start}
+.fcol{display:flex;flex-direction:column;gap:9px;min-width:0}
+.fmat{grid-column:1 / -1;border-top:1px solid var(--line);padding-top:11px;margin-top:2px;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+@media (max-width:780px){.fase{grid-template-columns:1fr;gap:12px}}
 .fase.piena{box-shadow:inset 3px 0 0 var(--accent)}
 .fh{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
 .fn{font-size:14px;font-weight:700;letter-spacing:-.01em}
@@ -55,9 +59,9 @@ h1{font-size:20px;font-weight:800;letter-spacing:-.035em}
 .fp{font-size:12.5px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;white-space:nowrap}
 .fd{margin:0;font-size:12.5px;line-height:1.45;color:var(--fg-faint);text-wrap:pretty}
 .fase .meter{margin-top:0}
-.fase textarea{min-height:54px;font-size:12.5px;background:var(--surface-3);border-color:transparent}
+.fase textarea{min-height:82px;font-size:12.5px;background:var(--surface-3);border-color:transparent}
 .fase textarea:focus{border-color:var(--line-strong)}
-.mat{display:flex;flex-direction:column;gap:5px}
+.mat{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:4px 18px;width:100%}
 .mat .riga{display:flex;align-items:center;gap:8px}
 .mat .riga input[type=text]{flex:1 1 auto;background:transparent;border-color:transparent;padding:4px 6px;font-size:13px}
 .mat .riga input[type=text]:hover{border-color:var(--line-strong)}
@@ -763,11 +767,15 @@ function renderFasi(){
 
   $("#fasi").innerHTML = dati.map((d,i) =>
     '<div class="fase' + (d.q >= 100 ? " piena" : "") + '">' +
-      '<div class="fh"><span class="fn"><em>' + (i+1) + '</em>' + esc(d.f.nome) + '</span><span class="fp">' + d.q + "%</span></div>" +
-      '<div class="meter' + (d.q >= 100 ? " full" : "") + '"><span style="width:' + d.q + '%"></span></div>' +
-      '<p class="fd"><b style="color:var(--fg-muted)">' + esc(d.x.testo) + '</b><br>' + esc(d.f.desc) + "</p>" +
-      (d.f.auto === null ? '<div class="mat" id="mat"></div><button type="button" class="btn" id="addlav" style="align-self:flex-start">+ Materiale</button>' : "") +
+      '<div class="fcol">' +
+        '<div class="fh"><span class="fn"><em>' + (i+1) + '</em>' + esc(d.f.nome) + '</span><span class="fp">' + d.q + "%</span></div>" +
+        '<div class="meter' + (d.q >= 100 ? " full" : "") + '"><span style="width:' + d.q + '%"></span></div>' +
+        '<p class="fd"><b style="color:var(--fg-muted)">' + esc(d.x.testo) + "</b> · " + esc(d.f.desc) + "</p>" +
+      "</div>" +
       '<textarea data-nota="' + d.f.key + '" placeholder="Annotazioni su questa fase…">' + esc(noteFasi[d.f.key] || "") + "</textarea>" +
+      (d.f.auto === null
+        ? '<div class="fmat"><div class="mat" id="mat"></div><button type="button" class="btn" id="addlav">+ Materiale</button></div>'
+        : "") +
     "</div>").join("");
 
   renderMateriali();
