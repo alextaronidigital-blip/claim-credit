@@ -33,6 +33,17 @@ td.r,th.r{text-align:right}
 .lockup b{font-size:17px;font-weight:800;letter-spacing:-.04em}
 .lockup span{font-size:12px;font-weight:400;letter-spacing:.1em;color:var(--fg-muted)}
 h1{font-size:20px;font-weight:800;letter-spacing:-.035em}
+.claim{font-size:11.5px;color:var(--fg-muted);margin-top:1px}
+.claim b{color:var(--accent);font-weight:700}
+.tab-lav table{min-width:760px}
+.tab-lav td{padding:8px 9px}
+.tab-lav input[type=text],.tab-lav input[type=date],.tab-lav select{background:transparent;border-color:transparent;padding:4px 6px;width:100%}
+.tab-lav input[type=text]:hover,.tab-lav input[type=date]:hover,.tab-lav select:hover{border-color:var(--line-strong)}
+.tab-lav input[type=text]:focus,.tab-lav input[type=date]:focus,.tab-lav select:focus{background:var(--surface-2)}
+.lav-tit input{font-weight:700;font-size:13px}
+.avanz{display:flex;align-items:center;gap:10px;margin-top:8px}
+.avanz .meter{flex:1 1 auto;margin-top:0;max-width:260px}
+.avanz span{font-size:11px;color:var(--fg-muted);font-variant-numeric:tabular-nums}
 .who{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .who label{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-faint);font-weight:600}
 select,input[type=text],input[type=number],input[type=url],input[type=email],input[type=tel],input[type=date],textarea{
@@ -187,6 +198,7 @@ legend{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--
     <div class="brand">
       <span class="lockup"><svg class="ast" width="17" height="17" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><rect x="10" y="1" width="4" height="22" rx="1.4"/><rect x="10" y="1" width="4" height="22" rx="1.4" transform="rotate(60 12 12)"/><rect x="10" y="1" width="4" height="22" rx="1.4" transform="rotate(120 12 12)"/></svg><b>YDG</b><span>STUDIO</span></span>
       <h1>Benchmark Hotel</h1>
+      <span class="claim" id="claim"></span>
     </div>
     <div class="who">
       <label for="me">Stai lavorando come</label>
@@ -200,6 +212,22 @@ legend{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--
 
 <main class="wrap">
   <div class="stats" id="stats"></div>
+
+  <section class="block">
+    <div class="blockbar">
+      <span style="display:flex;align-items:center;gap:8px"><svg class="ast" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><rect x="10" y="1" width="4" height="22" rx="1.4"/><rect x="10" y="1" width="4" height="22" rx="1.4" transform="rotate(60 12 12)"/><rect x="10" y="1" width="4" height="22" rx="1.4" transform="rotate(120 12 12)"/></svg><b>YDG STUDIO</b></span>
+      <span>Cantiere</span>
+    </div>
+    <div class="blockhead">
+      <h2>Materiali e preparazione</h2>
+      <p class="blocksub">Quello che deve essere pronto prima di salire in montagna: i casi studio da raccogliere, la lista strutture, i materiali da lasciare agli incontri.</p>
+      <div class="avanz"><div class="meter" id="lavMeter"><span style="width:0%"></span></div><span id="lavConta"></span></div>
+    </div>
+    <div class="blockbody">
+      <div id="lavori"></div>
+      <button class="btn" id="addlav">+ Voce di cantiere</button>
+    </div>
+  </section>
 
   <section class="block">
     <div class="blockbar">
@@ -287,8 +315,11 @@ const SERVIZI = [
 const TIPI_CONTATTO = ["Chiamata","Email","DM","Incontro","Altro"];
 const CANALI = ["Da definire","Referral","Warm contact","Visita di persona","Chiamata a freddo"];
 const LINGUE = ["Italiano","Tedesco","Italiano + Tedesco"];
-// Obiettivi dichiarati nel briefing: 10k/mese entro fine anno, funnel 50 -> 20 -> 6
-const OBIETTIVI = { mrr:10000, lista:150, contattate:50, appuntamenti:20, proposte:6, visitaMinuti:40 };
+// Zona di attacco e obiettivi: 50 strutture nel raggio di Siusi, funnel 50 -> 20 -> 6, 10k/mese
+const ZONA = { centro:"Siusi (BZ)", raggioKm:50 };
+const CLAIM = "Porta la tua struttura alla visibilità online che merita";
+const OBIETTIVI = { mrr:10000, lista:50, contattate:50, appuntamenti:20, proposte:6 };
+const STATI_LAVORO = ["Da fare","In corso","Fatto"];
 const GRUPPI = {
   contattate:["Contattato","Appuntamento fissato","Proposta inviata","Chiuso vinto"],
   appuntamenti:["Appuntamento fissato","Proposta inviata","Chiuso vinto"],
@@ -312,8 +343,9 @@ function punteggio(a){
   const vseo = Number(a.seo && a.seo.voto) || 0;
   if (vseo > 0){ const p = (5 - vseo) * 3; t += p; if (p) parti.push([p, "SEO debole (voto " + vseo + "/5)"]); }
   if (a.canale === "Referral" || a.canale === "Warm contact"){ t += 12; parti.push([12, "Arriva da " + a.canale.toLowerCase()]); }
-  const min = Number(a.minuti) || 0;
-  if (min > 0 && min <= OBIETTIVI.visitaMinuti){ t += 5; parti.push([5, "Visitabile in giornata (" + min + " min)"]); }
+  const km = Number(a.km) || 0;
+  if (km > 0 && km <= ZONA.raggioKm){ t += 5; parti.push([5, "Dentro il raggio di " + ZONA.centro + " (" + km + " km)"]); }
+  if (a.adv && (a.adv.meta || a.adv.google)){ t += 8; parti.push([8, "Già investe in advertising"]); }
   if (a.sito && a.sito.assente){ t += 20; parti.push([20, "Nessun sito web"]); }
   else { const v = Number(a.sito && a.sito.voto) || 0; if (v > 0){ const p = (5 - v) * 4; t += p; if (p) parti.push([p, "Sito migliorabile (voto " + v + "/5)"]); } }
   const rat = Number(a.google && a.google.rating) || 0;
@@ -336,7 +368,7 @@ function punteggio(a){
 function banda(n){ return n >= 65 ? "caldo" : n >= 38 ? "tiepido" : "freddo"; }
 
 /* ===== Stato ===== */
-let righe = [];
+let righe = [], lavori = [];
 let db = null, user = null, scrivibile = true, io = TEAM[0].key;
 let sel = null, bozza = null, filtri = {q:"",stato:"",loc:"",vert:"",can:"",pref:false,flag:false};
 let ordine = {campo:"punteggio", dir:"desc"};
@@ -352,9 +384,10 @@ function nuovaAttivita(){
     nome:"", verticale:VERTICALI[0], categoria:CATEGORIE[0], tipoLocalita:LOCALITA[0],
     comune:"", provincia:"", regione:"", apertura:APERTURA[0],
     stato:STATI[0], flag:false, note:"",
-    canale:CANALI[0], referralDa:"", minuti:null, lingua:LINGUE[0], inseritaDa:"",
+    canale:CANALI[0], referralDa:"", km:null, lingua:LINGUE[0], inseritaDa:"",
     sito:{url:"", assente:false, voto:0, nota:""},
     seo:{voto:0, nota:""},
+    adv:{meta:false, google:false, nota:""},
     google:{rating:null, recensioni:null, nota:""},
     economia:{setup:null, fee:null},
     social, preferenze:pref,
@@ -368,6 +401,7 @@ function normalizza(d){
   const a = Object.assign(base, d || {});
   a.sito = Object.assign(base.sito, d && d.sito);
   a.seo = Object.assign(base.seo, d && d.seo);
+  a.adv = Object.assign(base.adv, d && d.adv);
   a.google = Object.assign(base.google, d && d.google);
   a.economia = Object.assign(base.economia, d && d.economia);
   a.servizi = Object.assign(base.servizi, d && d.servizi);
@@ -379,10 +413,10 @@ function normalizza(d){
 }
 
 /* ===== Scritture (una per documento alla volta) ===== */
-function salva(id, dati){
+function salva(id, dati, coll){
   if (!db) return Promise.resolve(false);
   const prec = coda.get(id) || Promise.resolve();
-  const p = prec.catch(() => {}).then(() => db.collection("attivita").doc(id).set(dati))
+  const p = prec.catch(() => {}).then(() => db.collection(coll || "attivita").doc(id).set(dati))
     .then(() => true)
     .catch(e => { avvisa(e && e.code === "invalid_argument"
       ? "Non hai i permessi per scrivere: chiedi ad Alex di alzarti a Contributor nel menu di condivisione."
@@ -468,7 +502,7 @@ function renderTabella(){
     h += '<td class="r"><span class="score"><b>' + p.totale + '</b><span class="band band-' + banda(p.totale) + '">' + banda(p.totale) + "</span></span></td>";
     h += "<td><span class=\"name\">" + (esc(a.nome) || '<span style="color:var(--fg-faint)">Senza nome</span>') + "</span>" +
          '<span class="sub">' + esc([a.comune, a.provincia && "(" + a.provincia + ")", a.tipoLocalita,
-           Number(a.minuti) ? a.minuti + " min" : "", a.lingua === "Italiano" ? "" : a.lingua].filter(Boolean).join(" · ")) + "</span></td>";
+           Number(a.km) ? a.km + " km" : "", a.lingua === "Italiano" ? "" : a.lingua].filter(Boolean).join(" · ")) + "</span></td>";
     h += '<td><span class="sub">' + esc(a.categoria) + "</span></td>";
     h += '<td><span class="soc">' + SOCIAL.map(s => {
           const v = a.social[s.key] || {};
@@ -566,12 +600,12 @@ function disegnaScheda(){
   h += "<fieldset><legend>Come ci arriviamo</legend>" +
     '<div class="row2">' + tendina("Canale","f-canale",CANALI,a.canale) +
       campo("Referral / contatto tramite","f-refda","text",a.referralDa,'placeholder="Es. zio di Ale, Eva Hotel Mayr…"') + "</div>" +
-    '<div class="row3">' + campo("Minuti di distanza","f-min","number",a.minuti,'min="0" placeholder="35"') +
+    '<div class="row3">' + campo("km da " + ZONA.centro,"f-km","number",a.km,'min="0" placeholder="18"') +
       tendina("Lingua","f-lingua",LINGUE,a.lingua) +
       '<label class="f"><span>In lista grazie a</span><select id="f-ins"><option value="">—</option>' +
         TEAM.map(m => '<option value="' + m.key + '"' + (m.key === a.inseritaDa ? " selected" : "") + ">" + esc(m.nome) + "</option>").join("") +
       "</select></label></div>" +
-    '<p class="hint">Sotto i ' + OBIETTIVI.visitaMinuti + " minuti si va di persona, oltre si chiama: la distanza entra nel punteggio.</p>" +
+    '<p class="hint">Il raggio di lavoro è ' + ZONA.raggioKm + " km da " + ZONA.centro + ": dentro ci si va di persona, fuori si chiama. La distanza entra nel punteggio.</p>" +
     "</fieldset>";
 
   h += "<fieldset><legend>Presenza social</legend>" +
@@ -596,6 +630,11 @@ function disegnaScheda(){
     '<label class="f"><span>Nota SEO</span><textarea id="f-seonota" placeholder="Si trova cercando la zona? Compare sui portali e basta?">' + esc(a.seo.nota) + "</textarea></label>" +
     '<div class="row2">' + campo("Rating Google","f-gr","number",a.google.rating,'step="0.1" min="0" max="5"') + campo("N. recensioni","f-gn","number",a.google.recensioni,'min="0"') + "</div>" +
     '<label class="f"><span>Nota su Google / recensioni</span><textarea id="f-gnota">' + esc(a.google.nota) + "</textarea></label>" +
+    '<div class="f"><span>Sta già investendo in advertising?</span><span style="display:flex;gap:14px;flex-wrap:wrap;padding-top:4px">' +
+      '<label style="display:flex;gap:6px;align-items:center;font-size:12.5px"><input type="checkbox" id="adv-meta" ' + (a.adv.meta ? "checked" : "") + "> Meta Ads</label>" +
+      '<label style="display:flex;gap:6px;align-items:center;font-size:12.5px"><input type="checkbox" id="adv-google" ' + (a.adv.google ? "checked" : "") + "> Google Ads</label>" +
+    "</span></div>" +
+    '<label class="f"><span>Nota su advertising</span><textarea id="f-advnota" placeholder="Cosa gira, su che obiettivo, quanto sembra investito">' + esc(a.adv.nota) + "</textarea></label>" +
     "</fieldset>";
 
   h += "<fieldset><legend>Pipeline</legend>" +
@@ -642,7 +681,8 @@ function leggiScheda(){
   a.tipoLocalita = g("f-loc"); a.apertura = g("f-ap");
   a.comune = g("f-com").trim(); a.provincia = g("f-prov").trim().toUpperCase(); a.regione = g("f-reg").trim();
   a.canale = g("f-canale"); a.referralDa = g("f-refda").trim(); a.lingua = g("f-lingua"); a.inseritaDa = g("f-ins");
-  a.minuti = g("f-min") === "" ? null : Number(g("f-min"));
+  a.km = g("f-km") === "" ? null : Number(g("f-km"));
+  a.adv.meta = ck("adv-meta"); a.adv.google = ck("adv-google"); a.adv.nota = g("f-advnota");
   a.sito.url = g("f-sito").trim(); a.sito.assente = ck("f-sito-no"); a.sito.nota = g("f-sito-nota");
   a.seo.nota = g("f-seonota");
   a.economia.setup = g("f-setup") === "" ? null : Number(g("f-setup"));
@@ -660,6 +700,48 @@ function leggiScheda(){
   document.querySelectorAll("[data-ref]").forEach(e => { a.referenti[+e.dataset.ref][e.dataset.k] = e.value; });
   document.querySelectorAll("[data-tp]").forEach(e => { a.touchpoint[+e.dataset.tp][e.dataset.k] = e.value; });
   return a;
+}
+
+/* ===== Cantiere ===== */
+function renderLavori(){
+  const box = $("#lavori");
+  const fatte = lavori.filter(l => l.dati.stato === "Fatto").length;
+  const q = lavori.length ? Math.round(fatte / lavori.length * 100) : 0;
+  const m = $("#lavMeter");
+  if (m){ m.className = "meter" + (q >= 100 && lavori.length ? " full" : ""); m.firstElementChild.style.width = q + "%"; }
+  $("#lavConta").textContent = lavori.length ? fatte + " di " + lavori.length + " completate" : "Nessuna voce";
+  if (!lavori.length){ box.innerHTML = '<p class="hint">Nessuna voce ancora. Aggiungi quello che deve essere pronto.</p>'; return; }
+  const stile = st => st === "Fatto" ? 'style="color:var(--accent-ink);background:var(--accent)"'
+    : st === "In corso" ? 'style="color:var(--accent);background:var(--accent-mid)"'
+    : 'style="color:var(--fg-muted);background:var(--surface-3)"';
+  let h = '<div class="tablebox tab-lav"><table><thead><tr><th>Voce</th><th>Chi se ne occupa</th><th>Stato</th><th>Entro il</th><th>Nota</th><th></th></tr></thead><tbody>';
+  lavori.forEach(l => {
+    const d = l.dati;
+    h += "<tr>";
+    h += '<td class="lav-tit"><input type="text" data-lav="' + esc(l.id) + '" data-k="titolo" value="' + esc(d.titolo) + '" placeholder="Che cosa"></td>';
+    h += '<td><select data-lav="' + esc(l.id) + '" data-k="chi"><option value="">—</option>' +
+      TEAM.map(m2 => '<option value="' + m2.key + '"' + (m2.key === d.chi ? " selected" : "") + ">" + esc(m2.nome) + "</option>").join("") + "</select></td>";
+    h += '<td><select class="pill-select" data-lav="' + esc(l.id) + '" data-k="stato" ' + stile(d.stato) + ">" +
+      STATI_LAVORO.map(x => "<option" + (x === d.stato ? " selected" : "") + ">" + esc(x) + "</option>").join("") + "</select></td>";
+    h += '<td><input type="date" data-lav="' + esc(l.id) + '" data-k="scadenza" value="' + esc(d.scadenza) + '"></td>';
+    h += '<td><input type="text" data-lav="' + esc(l.id) + '" data-k="nota" value="' + esc(d.nota) + '" placeholder="—"></td>';
+    h += '<td><button class="btn-ghost" data-dellav="' + esc(l.id) + '" aria-label="Elimina voce">✕</button></td>';
+    h += "</tr>";
+  });
+  h += "</tbody></table></div>";
+  box.innerHTML = h;
+  box.querySelectorAll("[data-lav]").forEach(e => e.onchange = () => {
+    const l = lavori.find(x => x.id === e.dataset.lav); if (!l) return;
+    const d = Object.assign({}, l.dati); d[e.dataset.k] = e.value;
+    salva(l.id, d, "lavori");
+  });
+  box.querySelectorAll("[data-dellav]").forEach(b => b.onclick = () => {
+    if (!db) return;
+    const id = b.dataset.dellav;
+    db.collection("lavori").doc(id).delete().catch(() => avvisa("Eliminazione non riuscita."));
+    lavori = lavori.filter(x => x.id !== id);
+    renderLavori();
+  });
 }
 
 /* ===== Eventi ===== */
@@ -714,7 +796,7 @@ function collegaScheda(){
     disegnaScheda();
   });
   const sn = $("#f-sito-no"); if (sn) sn.onchange = () => { leggiScheda(); disegnaScheda(); };
-  ["f-gr","f-gn","f-cat","f-canale","f-min"].forEach(id => { const e = document.getElementById(id); if (e) e.onchange = () => { leggiScheda(); disegnaScheda(); }; });
+  ["f-gr","f-gn","f-cat","f-canale","f-km","adv-meta","adv-google"].forEach(id => { const e = document.getElementById(id); if (e) e.onchange = () => { leggiScheda(); disegnaScheda(); }; });
   const nm = $("#f-nome"); if (nm) nm.oninput = () => { $("#dtitle").textContent = nm.value || "Nuova attività"; };
   $("#addref").onclick = () => { leggiScheda(); bozza.referenti.push({nome:"",ruolo:"",email:"",telefono:""}); disegnaScheda(); };
   $("#addtp").onclick = () => { leggiScheda(); bozza.touchpoint.unshift({data:new Date().toISOString().slice(0,10),tipo:TIPI_CONTATTO[0],esito:"",prossima:""}); disegnaScheda(); };
@@ -736,17 +818,17 @@ function esempi(){
     {nome:"Esempio · Relais sulle colline", verticale:"Resort / Relais", categoria:"5★", tipoLocalita:"Collina / Tenuta",
      comune:"Montalcino", provincia:"SI", regione:"Toscana", votoSocial:2,
      google:{rating:4.7, recensioni:410, nota:"Reputazione ottima, nessun presidio social serio"},
-     seo:{voto:2, nota:"Non si trova cercando la zona"}, canale:"Referral", referralDa:"zio di Ale", minuti:25,
+     seo:{voto:2, nota:"Non si trova cercando la zona"}, canale:"Referral", referralDa:"zio di Ale", km:12,
      economia:{setup:5000, fee:1500},
      sito:{url:"", assente:true, voto:0, nota:"Solo pagina su portale di prenotazione"}},
     {nome:"Esempio · Hotel fronte mare", verticale:"Hotel di lusso", categoria:"4★ Sup", tipoLocalita:"Mare",
      comune:"Numana", provincia:"AN", regione:"Marche", votoSocial:3, apertura:"Stagionale",
-     google:{rating:4.3, recensioni:120, nota:""}, seo:{voto:3, nota:""}, canale:"Chiamata a freddo", minuti:90,
+     google:{rating:4.3, recensioni:120, nota:""}, seo:{voto:3, nota:""}, canale:"Chiamata a freddo", km:74,
      sito:{url:"https://esempio.it", assente:false, voto:3, nota:"Sito recente, manca prenotazione diretta"}},
     {nome:"Esempio · Chalet di montagna", verticale:"Hotel di lusso", categoria:"5★ Lusso", tipoLocalita:"Montagna",
      comune:"Cortina d'Ampezzo", provincia:"BL", regione:"Veneto", votoSocial:4,
      google:{rating:4.8, recensioni:260, nota:""}, seo:{voto:4, nota:""}, canale:"Warm contact", referralDa:"Eva, Hotel Mayr",
-     minuti:35, lingua:"Italiano + Tedesco", economia:{setup:6000, fee:2000},
+     km:28, lingua:"Italiano + Tedesco", economia:{setup:6000, fee:2000},
      sito:{url:"https://esempio.it", assente:false, voto:4, nota:""}, stato:"Appuntamento fissato"}
   ];
   base.forEach((b,i) => {
@@ -761,6 +843,15 @@ function esempi(){
 }
 
 $("#add").onclick = creaNuova;
+$("#addlav").onclick = () => {
+  if (!db){ avvisa("Il database non è raggiungibile da questa vista, non posso creare voci."); return; }
+  const id = "l" + Date.now().toString(36) + Math.random().toString(36).slice(2,5);
+  const d = {titolo:"", chi:"", stato:STATI_LAVORO[0], scadenza:"", nota:"", ordine:lavori.length + 1};
+  lavori.push({id, dati:d});
+  salva(id, d, "lavori");
+  renderLavori();
+  setTimeout(() => { const e = $('#lavori [data-lav="' + id + '"]'); if (e) e.focus(); }, 60);
+};
 $("#dclose").onclick = chiudi;
 $("#scrim").onclick = chiudi;
 document.addEventListener("keydown", e => { if (e.key === "Escape" && sel) chiudi(); });
@@ -802,7 +893,9 @@ $("#me").value = io;
 $("#me").onchange = e => { io = e.target.value; try { localStorage.setItem("ydg-io", io); } catch(_){} renderStats(); renderTabella(); };
 
 /* primo frame senza db */
+$("#claim").innerHTML = esc(ZONA.centro) + " + " + ZONA.raggioKm + ' km · <b>' + esc(CLAIM) + "</b>";
 renderStats();
+renderLavori();
 $("#view").innerHTML = vuoto();
 collegaVuoto();
 
@@ -828,6 +921,16 @@ collegaVuoto();
     avvisa("Database non raggiungibile da questa vista: accedi con il tuo account per vedere e modificare i dati.");
     return;
   }
+  db.collection("lavori").onSnapshot(
+    snap => {
+      lavori = snap.docs.map(d => {
+        const x = d.data() || {};
+        return {id:d.id, dati:{titolo:x.titolo||"", chi:x.chi||"", stato:x.stato||STATI_LAVORO[0], scadenza:x.scadenza||"", nota:x.nota||"", ordine:Number(x.ordine)||0}};
+      }).sort((a,b) => (a.dati.ordine - b.dati.ordine) || a.id.localeCompare(b.id));
+      renderLavori();
+    },
+    () => {}
+  );
   db.collection("attivita").onSnapshot(
     snap => {
       righe = snap.docs.map(d => { const dati = normalizza(d.data()); return {id:d.id, dati, punti:punteggio(dati)}; });
