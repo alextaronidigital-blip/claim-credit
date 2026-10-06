@@ -49,17 +49,27 @@ h1{font-size:20px;font-weight:800;letter-spacing:-.035em}
 .fasi{display:flex;flex-direction:column;gap:10px;margin-bottom:12px}
 .fase{background:var(--surface-2);border-radius:var(--r);overflow:hidden}
 .fase.piena{box-shadow:inset 3px 0 0 var(--accent)}
-.fhead{display:flex;align-items:center;gap:10px;padding:11px 13px}
+.fhead{display:flex;align-items:center;gap:10px;padding:11px 13px;cursor:pointer}
+.fhead:hover{background:var(--surface-3)}
+@keyframes tremolio{0%{transform:rotate(-.45deg)}50%{transform:rotate(.55deg)}100%{transform:rotate(-.45deg)}}
+.fasi.scuoti .fase{animation:tremolio .23s ease-in-out infinite;touch-action:none}
+.fasi.scuoti .fase:nth-child(even){animation-delay:-.115s}
+.fasi.scuoti .fhead{cursor:grab}
+.fasi.scuoti.trascinando .fase{animation:none}
+.fase.slitta{transition:transform .17s ease}
+.fase.preso{z-index:5;position:relative;box-shadow:0 20px 44px -14px rgba(0,0,0,.65);outline:1px solid var(--accent);cursor:grabbing}
+.fasi.scuoti .fnome,.fasi.scuoti .fdesc{pointer-events:none}
+@media (prefers-reduced-motion:reduce){.fasi.scuoti .fase{animation:none}.fase.slitta{transition:none}}
+.riordino{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--accent);padding:2px 2px 0}
 .fnum{font-size:12px;font-weight:800;color:var(--fg-faint);font-variant-numeric:tabular-nums;flex:none;min-width:14px}
-.fhead .fnome{flex:1 1 auto;min-width:0;background:transparent;border:1px solid transparent;padding:4px 7px;font-size:14px;font-weight:700;letter-spacing:-.01em}
-.fhead .fnome:hover{border-color:var(--line-strong)}
-.fhead .fnome:focus{background:var(--surface-3);border-color:var(--line-strong)}
+.fhead .fnome{flex:1 1 auto;min-width:0;padding:4px 2px;font-size:14px;font-weight:700;letter-spacing:-.01em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fhead input.fnome{background:var(--surface-3);border:1px solid var(--line-strong);border-radius:7px;padding:4px 7px;white-space:normal}
+.fhead .fnome:empty::before{content:"Senza nome";color:var(--fg-faint)}
 .fcount{font-size:12px;color:var(--fg-muted);font-variant-numeric:tabular-nums;white-space:nowrap}
 .fp{font-size:12.5px;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums;white-space:nowrap;min-width:38px;text-align:right}
 .fmove{display:flex;gap:2px;flex:none}
-.fmove button{width:22px;height:22px;border-radius:5px;border:1px solid transparent;background:none;color:var(--fg-faint);display:grid;place-items:center;font-size:11px;padding:0}
-.fmove button:hover:not(:disabled){background:var(--surface-4);color:var(--fg)}
-.fmove button:disabled{opacity:.25;cursor:default}
+.fmove button{width:24px;height:24px;border-radius:6px;border:1px solid transparent;background:none;color:var(--fg-faint);display:grid;place-items:center;font-size:11px;padding:0}
+.fmove button:hover{background:var(--surface-4);color:var(--fg)}
 .fbar{padding:0 13px 11px}
 .fbody{border-top:1px solid var(--line);padding:12px 13px;display:flex;flex-direction:column;gap:11px}
 .fbody .fdesc{background:transparent;border:1px solid transparent;padding:3px 7px;font-size:12.5px;color:var(--fg-faint);width:100%}
@@ -847,16 +857,18 @@ function renderFasi(){
 
   $("#fasi").innerHTML = calc.map((d,i) => {
     const ap = aperti.has(d.f.id), base = FASI_BASE[d.f.id];
-    return '<div class="fase' + (d.q >= 100 ? " piena" : "") + '">' +
-      '<div class="fhead">' +
-        '<button type="button" class="apri" data-aprif="' + esc(d.f.id) + '" aria-expanded="' + ap + '" aria-label="Apri o chiudi la fase">▾</button>' +
+    return '<div class="fase' + (d.q >= 100 ? " piena" : "") + '" data-f="' + esc(d.f.id) + '">' +
+      '<div class="fhead" data-aprif="' + esc(d.f.id) + '">' +
+        '<button type="button" class="apri" aria-expanded="' + ap + '" tabindex="-1" aria-hidden="true">▾</button>' +
         '<span class="fnum">' + (i+1) + "</span>" +
-        '<input type="text" class="fnome" data-fnome="' + esc(d.f.id) + '" value="' + esc(d.f.dati.nome) + '" placeholder="Nome della fase">' +
+        (rinomina === d.f.id
+          ? '<input type="text" class="fnome" data-fnome="' + esc(d.f.id) + '" value="' + esc(d.f.dati.nome) + '" placeholder="Nome della fase">'
+          : '<span class="fnome">' + esc(d.f.dati.nome) + "</span>") +
         '<span class="fcount">' + esc(d.x.testo) + "</span>" +
         '<span class="fp">' + d.q + "%</span>" +
         '<span class="fmove">' +
-          '<button type="button" data-su="' + esc(d.f.id) + '"' + (i === 0 ? " disabled" : "") + ' aria-label="Sposta su">▲</button>' +
-          '<button type="button" data-giu="' + esc(d.f.id) + '"' + (i === calc.length-1 ? " disabled" : "") + ' aria-label="Sposta giù">▼</button>' +
+          '<button type="button" data-rin="' + esc(d.f.id) + '" aria-label="Rinomina la fase">✎</button>' +
+          '<button type="button" data-aprif2="' + esc(d.f.id) + '" aria-label="' + (ap ? "Chiudi" : "Apri") + ' la fase">' + (ap ? "▲" : "▼") + "</button>" +
           (base ? "" : '<button type="button" data-delf="' + esc(d.f.id) + '" aria-label="Elimina fase">✕</button>') +
         "</span>" +
       "</div>" +
@@ -868,7 +880,11 @@ function renderFasi(){
         '<textarea data-nota="' + esc(d.f.id) + '" placeholder="Annotazioni su questa fase…">' + esc(d.f.dati.nota || "") + "</textarea>" +
       "</div>" : "") +
     "</div>";
-  }).join("") + '<div class="azioni" style="margin-top:4px"><button type="button" class="btn" id="addfase">+ Fase</button></div>';
+  }).join("") + '<div class="azioni" style="margin-top:4px"><button type="button" class="btn" id="addfase">+ Fase</button>' +
+    (scuoti ? '<button type="button" class="btn btn-primary" id="finericordino">Fine riordino</button>' : "") + "</div>" +
+    (scuoti ? '<p class="riordino">Trascina le fasi per rimetterle in ordine.</p>'
+            : '<p class="hint" style="padding-top:2px">Tieni premuto su una fase per riordinarle.</p>');
+  $("#fasi").classList.toggle("scuoti", scuoti);
 
   $("#fasi").querySelectorAll("[data-voci]").forEach(box => renderVoci(box, box.dataset.voci));
   collegaFasi(lista);
@@ -876,12 +892,27 @@ function renderFasi(){
 
 function collegaFasi(lista){
   const box = $("#fasi");
-  box.querySelectorAll("[data-aprif]").forEach(b => b.onclick = () => apriChiudi(b.dataset.aprif));
-  box.querySelectorAll("[data-fnome]").forEach(e => e.onchange = () => scriviFase(e.dataset.fnome, "nome", e.value));
+  box.querySelectorAll("[data-aprif]").forEach(h => h.onclick = e => {
+    if (scuoti) return;
+    if (e.target.closest("input, textarea, .fmove, button[data-delf]")) return;
+    apriChiudi(h.dataset.aprif);
+  });
+  box.querySelectorAll("[data-aprif2]").forEach(b => b.onclick = e => { e.stopPropagation(); if (!scuoti) apriChiudi(b.dataset.aprif2); });
+  const fine = $("#finericordino");
+  if (fine) fine.onclick = () => { scuoti = false; renderFasi(); };
+  collegaTrascinamento(box, lista);
+  box.querySelectorAll("[data-rin]").forEach(b => b.onclick = e => {
+    e.stopPropagation();
+    rinomina = b.dataset.rin; renderFasi();
+    setTimeout(() => { const i = $("[data-fnome]"); if (i){ i.focus(); i.select(); } }, 30);
+  });
+  box.querySelectorAll("[data-fnome]").forEach(e => {
+    e.onclick = ev => ev.stopPropagation();
+    e.onkeydown = ev => { if (ev.key === "Enter") e.blur(); if (ev.key === "Escape"){ rinomina = null; renderFasi(); } };
+    e.onblur = () => { scriviFase(e.dataset.fnome, "nome", e.value); rinomina = null; renderFasi(); };
+  });
   box.querySelectorAll("[data-fdesc]").forEach(e => e.onchange = () => scriviFase(e.dataset.fdesc, "desc", e.value));
   box.querySelectorAll("[data-nota]").forEach(e => e.onchange = () => scriviFase(e.dataset.nota, "nota", e.value));
-  box.querySelectorAll("[data-su]").forEach(b => b.onclick = () => sposta(lista, b.dataset.su, -1));
-  box.querySelectorAll("[data-giu]").forEach(b => b.onclick = () => sposta(lista, b.dataset.giu, +1));
   box.querySelectorAll("[data-delf]").forEach(b => b.onclick = () => {
     if (!db) return;
     const id = b.dataset.delf;
@@ -922,14 +953,97 @@ function scriviFase(id, campo, val){
   if (i >= 0) fasi[i] = {id, dati}; else fasi = fasiOrdinate().map(x => x.id === id ? {id, dati} : x);
   salva(id, dati, "fasi");
 }
-function sposta(lista, id, d){
-  const i = lista.findIndex(x => x.id === id);
-  const j = i + d;
-  if (i < 0 || j < 0 || j >= lista.length) return;
-  const ord = lista.slice();
-  const [x] = ord.splice(i,1); ord.splice(j,0,x);
-  fasi = ord.map((f,k) => ({id:f.id, dati:Object.assign({}, f.dati, {ordine:k+1})}));
-  salvaTutteLeFasi();
+/* Trascinamento in stile iOS: tieni premuto, le fasi tremano, le trascini e
+   le altre slittano per farti posto. */
+let scuoti = false, presa = null, rinomina = null;
+const GAP = 10;
+
+function collegaTrascinamento(box, lista){
+  box.querySelectorAll(".fase").forEach(card => {
+    card.onpointerdown = e => {
+      if (e.button != null && e.button !== 0) return;
+      if (e.target.closest("input, textarea, select, button:not([data-aprif2])")) return;
+      if (!e.target.closest(".fhead")) return;
+      const parti = () => iniziaPresa(e, card, box, lista);
+      if (scuoti){ parti(); return; }
+      const y0 = e.clientY, x0 = e.clientX;
+      let t = setTimeout(() => { t = null; scuoti = true; box.classList.add("scuoti"); parti(); }, 420);
+      const annulla = ev => {
+        if (ev && ev.type === "pointermove" && Math.abs(ev.clientY-y0) < 9 && Math.abs(ev.clientX-x0) < 9) return;
+        if (t) clearTimeout(t);
+        card.removeEventListener("pointermove", annulla);
+        card.removeEventListener("pointerup", annulla);
+        card.removeEventListener("pointercancel", annulla);
+      };
+      card.addEventListener("pointermove", annulla);
+      card.addEventListener("pointerup", annulla);
+      card.addEventListener("pointercancel", annulla);
+    };
+  });
+}
+
+function iniziaPresa(e, card, box, lista){
+  const cards = [...box.querySelectorAll(".fase")];
+  const i = cards.indexOf(card);
+  if (i < 0) return;
+  presa = {i, j:i, cards, h:cards.map(c => c.getBoundingClientRect().height), y0:e.clientY, lista};
+  box.classList.add("trascinando");
+  card.classList.add("preso");
+  cards.forEach(c => { if (c !== card) c.classList.add("slitta"); });
+  try { card.setPointerCapture(e.pointerId); } catch(_){}
+  card.onpointermove = ev => muoviPresa(ev, card);
+  card.onpointerup = ev => chiudiPresa(ev, card, box);
+  card.onpointercancel = ev => chiudiPresa(ev, card, box);
+  ev_blocca = e2 => e2.preventDefault();
+  document.addEventListener("selectstart", ev_blocca);
+}
+let ev_blocca = null;
+
+function bersaglio(dy){
+  let j = presa.i, acc = 0;
+  if (dy > 0){
+    for (let k = presa.i+1; k < presa.cards.length; k++){
+      const passo = presa.h[k] + GAP;
+      if (dy > acc + passo/2){ j = k; acc += passo; } else break;
+    }
+  } else if (dy < 0){
+    for (let k = presa.i-1; k >= 0; k--){
+      const passo = presa.h[k] + GAP;
+      if (-dy > acc + passo/2){ j = k; acc += passo; } else break;
+    }
+  }
+  return j;
+}
+
+function muoviPresa(e, card){
+  if (!presa) return;
+  const dy = e.clientY - presa.y0;
+  card.style.transform = "translateY(" + dy + "px) scale(1.012)";
+  const j = bersaglio(dy);
+  presa.j = j;
+  const salto = presa.h[presa.i] + GAP;
+  presa.cards.forEach((c,k) => {
+    if (c === card) return;
+    let off = 0;
+    if (j > presa.i && k > presa.i && k <= j) off = -salto;
+    if (j < presa.i && k >= j && k < presa.i) off = salto;
+    c.style.transform = off ? "translateY(" + off + "px)" : "";
+  });
+}
+
+function chiudiPresa(e, card, box){
+  if (!presa) return;
+  const {i, j, cards, lista} = presa;
+  cards.forEach(c => { c.style.transform = ""; c.classList.remove("slitta","preso"); c.onpointermove = c.onpointerup = c.onpointercancel = null; });
+  box.classList.remove("trascinando");
+  if (ev_blocca){ document.removeEventListener("selectstart", ev_blocca); ev_blocca = null; }
+  presa = null;
+  if (j !== i){
+    const ord = lista.slice();
+    const [x] = ord.splice(i,1); ord.splice(j,0,x);
+    fasi = ord.map((f,k) => ({id:f.id, dati:Object.assign({}, f.dati, {ordine:k+1})}));
+    salvaTutteLeFasi();
+  }
   renderFasi();
 }
 function salvaTutteLeFasi(){ fasi.forEach(f => salva(f.id, f.dati, "fasi")); }
@@ -1109,7 +1223,14 @@ function esempi(){
 $("#add").onclick = creaNuova;
 $("#dclose").onclick = chiudi;
 $("#scrim").onclick = chiudi;
-document.addEventListener("keydown", e => { if (e.key === "Escape" && sel) chiudi(); });
+document.addEventListener("keydown", e => {
+  if (e.key !== "Escape") return;
+  if (sel) chiudi();
+  else if (scuoti){ scuoti = false; renderFasi(); }
+});
+document.addEventListener("pointerdown", e => {
+  if (scuoti && !presa && !e.target.closest("#fasi")){ scuoti = false; renderFasi(); }
+});
 $("#dsave").onclick = () => {
   if (!sel) return;
   const d = leggiScheda();
