@@ -61,7 +61,28 @@ h1{font-size:20px;font-weight:800;letter-spacing:-.035em}
 .fase .meter{margin-top:0}
 .fase textarea{min-height:82px;font-size:12.5px;background:var(--surface-3);border-color:transparent}
 .fase textarea:focus{border-color:var(--line-strong)}
-.mat{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:4px 18px;width:100%}
+.mat{display:flex;flex-direction:column;gap:8px;width:100%}
+.mcard{background:var(--surface-3);border-radius:10px;overflow:hidden}
+.mhead{display:flex;align-items:center;gap:9px;padding:9px 11px}
+.mhead input[type=text]{flex:1 1 auto;min-width:0;background:transparent;border-color:transparent;padding:4px 6px;font-size:13.5px;font-weight:700}
+.mhead input[type=text]:hover{border-color:var(--line-strong)}
+.mhead input[type=text]:focus{background:var(--surface-2)}
+.mcard.ok .mhead input[type=text]{color:var(--fg-faint);text-decoration:line-through}
+.mpct{font-size:11.5px;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums;white-space:nowrap}
+.mconta{font-size:11.5px;color:var(--fg-faint);font-variant-numeric:tabular-nums;white-space:nowrap}
+.apri{width:24px;height:24px;flex:none;border-radius:6px;border:1px solid var(--line-strong);background:none;color:var(--fg-muted);display:grid;place-items:center;font-size:10px;padding:0;transition:transform .15s}
+.apri[aria-expanded=true]{transform:rotate(180deg);background:var(--surface-4)}
+.mbody{border-top:1px solid var(--line);padding:11px;display:flex;flex-direction:column;gap:9px}
+.tasks{display:flex;flex-direction:column;gap:3px}
+.trow{display:flex;align-items:center;gap:8px}
+.trow input[type=text]{flex:1 1 auto;min-width:0;background:transparent;border-color:transparent;padding:3px 6px;font-size:12.5px}
+.trow input[type=text]:hover{border-color:var(--line-strong)}
+.trow input[type=text]:focus{background:var(--surface-2)}
+.trow.ok input[type=text]{color:var(--fg-faint);text-decoration:line-through}
+.spunta.sm{width:17px;height:17px;border-radius:4px;font-size:10px}
+.mbody textarea{min-height:54px;font-size:12.5px;background:var(--surface-2);border-color:transparent}
+.mbody textarea:focus{border-color:var(--line-strong)}
+.vuoto-task{font-size:11.5px;color:var(--fg-faint)}
 .mat .riga{display:flex;align-items:center;gap:8px}
 .mat .riga input[type=text]{flex:1 1 auto;background:transparent;border-color:transparent;padding:4px 6px;font-size:13px}
 .mat .riga input[type=text]:hover{border-color:var(--line-strong)}
@@ -405,7 +426,15 @@ function punteggio(a){
 function banda(n){ return n >= 65 ? "caldo" : n >= 38 ? "tiepido" : "freddo"; }
 
 /* ===== Stato ===== */
-let righe = [], lavori = [], noteFasi = {};
+let righe = [], lavori = [], task = [], noteFasi = {}, aperti = new Set();
+try { const v = localStorage.getItem("ydg-aperti"); if (v) aperti = new Set(JSON.parse(v)); } catch(_){}
+const ricordaAperti = () => { try { localStorage.setItem("ydg-aperti", JSON.stringify([...aperti])); } catch(_){} };
+const taskDi = id => task.filter(t => t.dati.lav === id).sort((a,b) => (a.dati.ordine - b.dati.ordine) || a.id.localeCompare(b.id));
+function quotaMateriale(l){
+  const t = taskDi(l.id);
+  if (!t.length) return l.dati.fatto ? 100 : 0;
+  return Math.round(t.filter(x => x.dati.fatto).length / t.length * 100);
+}
 let db = null, user = null, scrivibile = true, io = TEAM[0].key;
 let sel = null, bozza = null, filtri = {q:"",stato:"",loc:"",vert:"",can:"",pref:false,flag:false};
 let ordine = {campo:"punteggio", dir:"desc"};
@@ -751,8 +780,10 @@ function avanzamento(f){
       .reduce((t,r) => t + (Number(r.dati.economia && r.dati.economia.fee) || 0), 0);
     return {val:m, tot:OBIETTIVI.mrr, testo:eur(m) + " di " + eur(OBIETTIVI.mrr)};
   }
-  const fatti = lavori.filter(l => l.dati.fatto).length;
-  return {val:fatti, tot:lavori.length, testo:lavori.length ? fatti + " di " + lavori.length : "nessuna voce"};
+  if (!lavori.length) return {val:0, tot:0, testo:"nessun materiale"};
+  const quote = lavori.map(quotaMateriale);
+  const media = Math.round(quote.reduce((a,b) => a+b, 0) / quote.length);
+  return {val:media, tot:100, testo:quote.filter(q => q === 100).length + " di " + lavori.length + " completi"};
 }
 const quotaDi = x => x.tot > 0 ? Math.max(0, Math.min(100, Math.round(x.val / x.tot * 100))) : 0;
 
@@ -788,11 +819,12 @@ function renderFasi(){
   if (ad) ad.onclick = () => {
     if (!db){ avvisa("Il database non è raggiungibile da questa vista, non posso creare voci."); return; }
     const id = "l" + Date.now().toString(36) + Math.random().toString(36).slice(2,5);
-    const d = {titolo:"", fatto:false, ordine:lavori.length + 1};
+    const d = {titolo:"", fatto:false, nota:"", ordine:lavori.length + 1};
     lavori.push({id, dati:d});
     salva(id, d, "lavori");
+    aperti.add(id); ricordaAperti();
     renderFasi();
-    setTimeout(() => { const e = $('#mat [data-lav="' + id + '"]'); if (e) e.focus(); }, 60);
+    setTimeout(() => { const e = $('[data-lav="' + id + '"]'); if (e) e.focus(); }, 60);
   };
 }
 
@@ -800,29 +832,84 @@ function renderMateriali(){
   const box = $("#mat");
   if (!box) return;
   if (!lavori.length){ box.innerHTML = '<p class="hint">Nessun materiale in elenco.</p>'; return; }
-  box.innerHTML = lavori.map(l =>
-    '<div class="riga' + (l.dati.fatto ? " ok" : "") + '">' +
-      '<button type="button" class="spunta" data-fatto="' + esc(l.id) + '" aria-pressed="' + !!l.dati.fatto + '" aria-label="Segna come fatto">✓</button>' +
-      '<input type="text" data-lav="' + esc(l.id) + '" value="' + esc(l.dati.titolo) + '" placeholder="Che materiale">' +
-      '<button type="button" class="btn-ghost" data-dellav="' + esc(l.id) + '" aria-label="Elimina">✕</button>' +
-    "</div>").join("");
+  box.innerHTML = lavori.map(l => {
+    const t = taskDi(l.id), q = quotaMateriale(l), ap = aperti.has(l.id);
+    return '<div class="mcard' + (q === 100 ? " ok" : "") + '">' +
+      '<div class="mhead">' +
+        (t.length
+          ? '<span class="mpct">' + q + "%</span>"
+          : '<button type="button" class="spunta" data-fatto="' + esc(l.id) + '" aria-pressed="' + !!l.dati.fatto + '" aria-label="Segna come fatto">✓</button>') +
+        '<input type="text" data-lav="' + esc(l.id) + '" value="' + esc(l.dati.titolo) + '" placeholder="Che materiale">' +
+        (t.length ? '<span class="mconta">' + t.filter(x => x.dati.fatto).length + " / " + t.length + " task</span>" : "") +
+        '<button type="button" class="apri" data-apri="' + esc(l.id) + '" aria-expanded="' + ap + '" aria-label="Apri o chiudi">▾</button>' +
+        '<button type="button" class="btn-ghost" data-dellav="' + esc(l.id) + '" aria-label="Elimina materiale">✕</button>' +
+      "</div>" +
+      (ap ? '<div class="mbody">' +
+        '<div class="tasks">' + (t.length ? t.map(x =>
+          '<div class="trow' + (x.dati.fatto ? " ok" : "") + '">' +
+            '<button type="button" class="spunta sm" data-tfatto="' + esc(x.id) + '" aria-pressed="' + !!x.dati.fatto + '" aria-label="Segna il task">✓</button>' +
+            '<input type="text" data-task="' + esc(x.id) + '" value="' + esc(x.dati.titolo) + '" placeholder="Che cosa va fatto">' +
+            '<button type="button" class="btn-ghost" data-deltask="' + esc(x.id) + '" aria-label="Elimina task">✕</button>' +
+          "</div>").join("") : '<p class="vuoto-task">Nessun task. Aggiungine uno per spezzare il lavoro.</p>') + "</div>" +
+        '<button type="button" class="btn" data-addtask="' + esc(l.id) + '" style="align-self:flex-start">+ Task</button>' +
+        '<textarea data-mnota="' + esc(l.id) + '" placeholder="Appunti, riferimenti, misure, preventivi…">' + esc(l.dati.nota || "") + "</textarea>" +
+      "</div>" : "") +
+    "</div>";
+  }).join("");
+
+  const scriviLav = (id, campo, val) => {
+    const l = lavori.find(x => x.id === id); if (!l) return;
+    l.dati = Object.assign({}, l.dati, {[campo]: val});
+    salva(id, l.dati, "lavori");
+  };
+  const scriviTask = (id, campo, val) => {
+    const x = task.find(y => y.id === id); if (!x) return;
+    x.dati = Object.assign({}, x.dati, {[campo]: val});
+    salva(id, x.dati, "task");
+  };
+
+  box.querySelectorAll("[data-apri]").forEach(b2 => b2.onclick = () => {
+    const id = b2.dataset.apri;
+    if (aperti.has(id)) aperti.delete(id); else aperti.add(id);
+    ricordaAperti(); renderFasi();
+  });
   box.querySelectorAll("[data-fatto]").forEach(b2 => b2.onclick = () => {
     const l = lavori.find(x => x.id === b2.dataset.fatto); if (!l) return;
-    l.dati = Object.assign({}, l.dati, {fatto: !l.dati.fatto});
-    salva(l.id, l.dati, "lavori");
-    renderFasi();
+    scriviLav(l.id, "fatto", !l.dati.fatto); renderFasi();
   });
-  box.querySelectorAll("[data-lav]").forEach(e => e.onchange = () => {
-    const l = lavori.find(x => x.id === e.dataset.lav); if (!l) return;
-    l.dati = Object.assign({}, l.dati, {titolo: e.value});
-    salva(l.id, l.dati, "lavori");
-  });
+  box.querySelectorAll("[data-lav]").forEach(e => e.onchange = () => scriviLav(e.dataset.lav, "titolo", e.value));
+  box.querySelectorAll("[data-mnota]").forEach(e => e.onchange = () => scriviLav(e.dataset.mnota, "nota", e.value));
   box.querySelectorAll("[data-dellav]").forEach(b2 => b2.onclick = () => {
     if (!db) return;
     const id = b2.dataset.dellav;
     db.collection("lavori").doc(id).delete().catch(() => avvisa("Eliminazione non riuscita."));
+    taskDi(id).forEach(x => db.collection("task").doc(x.id).delete().catch(() => {}));
     lavori = lavori.filter(x => x.id !== id);
+    task = task.filter(x => x.dati.lav !== id);
     renderFasi();
+  });
+  box.querySelectorAll("[data-tfatto]").forEach(b2 => b2.onclick = () => {
+    const x = task.find(y => y.id === b2.dataset.tfatto); if (!x) return;
+    scriviTask(x.id, "fatto", !x.dati.fatto); renderFasi();
+  });
+  box.querySelectorAll("[data-task]").forEach(e => e.onchange = () => scriviTask(e.dataset.task, "titolo", e.value));
+  box.querySelectorAll("[data-deltask]").forEach(b2 => b2.onclick = () => {
+    if (!db) return;
+    const id = b2.dataset.deltask;
+    db.collection("task").doc(id).delete().catch(() => avvisa("Eliminazione non riuscita."));
+    task = task.filter(x => x.id !== id);
+    renderFasi();
+  });
+  box.querySelectorAll("[data-addtask]").forEach(b2 => b2.onclick = () => {
+    if (!db){ avvisa("Il database non è raggiungibile da questa vista, non posso creare task."); return; }
+    const lav = b2.dataset.addtask;
+    const id = "t" + Date.now().toString(36) + Math.random().toString(36).slice(2,5);
+    const d = {lav, titolo:"", fatto:false, ordine:taskDi(lav).length + 1};
+    task.push({id, dati:d});
+    salva(id, d, "task");
+    aperti.add(lav); ricordaAperti();
+    renderFasi();
+    setTimeout(() => { const e = $('[data-task="' + id + '"]'); if (e) e.focus(); }, 60);
   });
 }
 
@@ -998,9 +1085,19 @@ collegaVuoto();
     snap => {
       lavori = snap.docs.map(d => {
         const x = d.data() || {};
-        return {id:d.id, dati:{titolo:x.titolo||"", fatto:!!x.fatto, ordine:Number(x.ordine)||0}};
+        return {id:d.id, dati:{titolo:x.titolo||"", fatto:!!x.fatto, nota:x.nota||"", ordine:Number(x.ordine)||0}};
       }).sort((a,b) => (a.dati.ordine - b.dati.ordine) || a.id.localeCompare(b.id));
       renderFasi();
+    },
+    () => {}
+  );
+  db.collection("task").onSnapshot(
+    snap => {
+      task = snap.docs.map(d => {
+        const x = d.data() || {};
+        return {id:d.id, dati:{lav:x.lav||"", titolo:x.titolo||"", fatto:!!x.fatto, ordine:Number(x.ordine)||0}};
+      });
+      if (!document.activeElement || !document.activeElement.hasAttribute("data-task")) renderFasi();
     },
     () => {}
   );
