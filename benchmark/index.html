@@ -1,0 +1,747 @@
+<title>Benchmark Hotel YDG</title>
+<style>
+/* Layout: barra di stato fissa in alto, toolbar filtri, griglia-tabella densa, drawer scheda a destra */
+:root{
+  --bg:#F4F5F3; --surface:#FFFFFF; --surface-2:#EAECE7; --surface-3:#DFE2DC;
+  --fg:#1B2220; --fg-muted:#5C655F; --fg-faint:#868E88;
+  --line:#D6DAD3; --line-strong:#B9BFB7;
+  --accent:#8A6A33; --accent-soft:#F1E8D7; --accent-line:#C8AE7C;
+  --ok:#2E7A4E; --ok-soft:#E0EFE4;
+  --warn:#9E6D11; --warn-soft:#F6EBD3;
+  --crit:#A33A2C; --crit-soft:#F6E2DD;
+  --info:#2C5F80; --info-soft:#DEE9F0;
+  --shadow:0 1px 2px rgba(27,34,32,.06), 0 8px 24px -12px rgba(27,34,32,.18);
+  --font-display:"Spectral",Georgia,"Times New Roman",serif;
+  --font-ui:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#14171A; --surface:#1C2023; --surface-2:#24292C; --surface-3:#2E3437;
+  --fg:#E7EAE6; --fg-muted:#9BA39E; --fg-faint:#79817C;
+  --line:#313739; --line-strong:#434A4C;
+  --accent:#CBA76B; --accent-soft:#2C2721; --accent-line:#6B5A38;
+  --ok:#62B183; --ok-soft:#1D2A22;
+  --warn:#D6A54A; --warn-soft:#2A2419;
+  --crit:#DB7F70; --crit-soft:#2C1E1B;
+  --info:#82AACB; --info-soft:#1B242B;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#14171A; --surface:#1C2023; --surface-2:#24292C; --surface-3:#2E3437;
+  --fg:#E7EAE6; --fg-muted:#9BA39E; --fg-faint:#79817C;
+  --line:#313739; --line-strong:#434A4C;
+  --accent:#CBA76B; --accent-soft:#2C2721; --accent-line:#6B5A38;
+  --ok:#62B183; --ok-soft:#1D2A22;
+  --warn:#D6A54A; --warn-soft:#2A2419;
+  --crit:#DB7F70; --crit-soft:#2C1E1B;
+  --info:#82AACB; --info-soft:#1B242B;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font-ui);font-size:14px;line-height:1.45;-webkit-font-smoothing:antialiased}
+h1,h2,h3{margin:0;font-family:var(--font-display);font-weight:600;text-wrap:balance}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+.num{font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+
+/* ---------- header ---------- */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--surface);border-bottom:1px solid var(--line)}
+.top-in{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between;padding:14px 20px}
+.brand{display:flex;flex-direction:column;gap:2px;min-width:0}
+.eyebrow{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600}
+h1{font-size:23px;letter-spacing:-.01em}
+.who{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.who label{font-size:11.5px;color:var(--fg-muted)}
+select,input[type=text],input[type=number],input[type=url],input[type=email],input[type=tel],input[type=date],textarea{
+  background:var(--surface);border:1px solid var(--line-strong);border-radius:6px;padding:6px 8px;font-size:13px;max-width:100%}
+textarea{resize:vertical;min-height:62px;line-height:1.5}
+.btn{background:var(--surface-2);border:1px solid var(--line-strong);border-radius:6px;padding:6px 11px;font-size:13px;font-weight:500}
+.btn:hover{background:var(--surface-3)}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:#fff}
+:root[data-theme="dark"] .btn-primary,
+.btn-primary{color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn-primary{color:#17130A}}
+:root[data-theme="dark"] .btn-primary{color:#17130A}
+.btn-primary:hover{filter:brightness(1.07)}
+.btn-ghost{background:none;border:1px solid transparent;color:var(--fg-muted);padding:4px 7px}
+.btn-ghost:hover{background:var(--surface-2);color:var(--fg)}
+
+/* ---------- stats ---------- */
+.stats{display:flex;gap:0;flex-wrap:wrap;border-top:1px solid var(--line);background:var(--surface)}
+.stat{flex:1 1 120px;min-width:0;padding:9px 20px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat .k{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-faint)}
+.stat .v{font-family:var(--font-mono);font-size:19px;font-variant-numeric:tabular-nums;line-height:1.2}
+
+/* ---------- toolbar ---------- */
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:12px 20px;background:var(--bg);position:sticky;top:calc(env(safe-area-inset-top,0px) + 0px);z-index:10}
+.bar .grow{flex:1 1 180px;min-width:150px}
+.chipset{display:flex;gap:4px;flex-wrap:wrap}
+.chip{background:none;border:1px solid var(--line-strong);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--fg-muted)}
+.chip[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);font-weight:600}
+
+/* ---------- table ---------- */
+.wrap{padding:0 20px 56px}
+.tablebox{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;min-width:1040px}
+th{position:sticky;top:0;z-index:5;background:var(--surface-2);text-align:left;font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--fg-muted);font-weight:600;padding:9px 10px;border-bottom:1px solid var(--line-strong);white-space:nowrap}
+th.sortable{cursor:pointer;user-select:none}
+th.sortable:hover{color:var(--fg)}
+th .dir{color:var(--accent)}
+td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
+tbody tr:last-child td{border-bottom:0}
+tbody tr{cursor:pointer}
+tbody tr:hover td{background:var(--surface-2)}
+tr.flagged td:first-child{box-shadow:inset 3px 0 0 var(--accent)}
+.name{font-weight:600;display:block;line-height:1.3}
+.sub{font-size:11.5px;color:var(--fg-muted)}
+.score{display:inline-flex;align-items:center;gap:6px}
+.score b{font-family:var(--font-mono);font-size:15px;font-variant-numeric:tabular-nums;min-width:26px;text-align:right}
+.band{font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;border-radius:4px;font-weight:600}
+.band-caldo{background:var(--crit-soft);color:var(--crit)}
+.band-tiepido{background:var(--warn-soft);color:var(--warn)}
+.band-freddo{background:var(--info-soft);color:var(--info)}
+.voto{display:inline-block;min-width:22px;text-align:center;font-family:var(--font-mono);font-size:12px;font-weight:600;padding:2px 5px;border-radius:4px}
+.v1{background:var(--crit-soft);color:var(--crit)}
+.v2{background:var(--crit-soft);color:var(--crit);opacity:.85}
+.v3{background:var(--warn-soft);color:var(--warn)}
+.v4{background:var(--ok-soft);color:var(--ok);opacity:.9}
+.v5{background:var(--ok-soft);color:var(--ok)}
+.v0{background:var(--surface-3);color:var(--fg-faint)}
+.pill{display:inline-block;font-size:11.5px;padding:3px 8px;border-radius:999px;border:1px solid var(--line-strong);white-space:nowrap}
+.pill-select{appearance:none;-webkit-appearance:none;background:var(--surface-2);border:1px solid var(--line-strong);border-radius:999px;padding:3px 8px;font-size:11.5px;cursor:pointer;max-width:148px}
+.soc{display:flex;gap:3px}
+.soc i{width:20px;height:20px;border-radius:4px;display:grid;place-items:center;font-size:9.5px;font-weight:700;font-style:normal;letter-spacing:0;border:1px solid var(--line)}
+.soc i.on{background:var(--ok-soft);color:var(--ok);border-color:transparent}
+.soc i.want{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);border-style:dashed}
+.soc i.off{background:none;color:var(--fg-faint)}
+.prefs{display:flex;gap:3px}
+.prefs button{width:22px;height:22px;border-radius:50%;border:1px solid var(--line-strong);background:none;font-size:10px;font-weight:700;color:var(--fg-faint);display:grid;place-items:center;padding:0}
+.prefs button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .prefs button[aria-pressed=true]{color:#17130A}}
+:root[data-theme="dark"] .prefs button[aria-pressed=true]{color:#17130A}
+
+/* ---------- empty ---------- */
+.empty{background:var(--surface);border:1px dashed var(--line-strong);border-radius:10px;padding:34px 24px;text-align:center}
+.empty h2{font-size:19px;margin-bottom:6px}
+.empty p{color:var(--fg-muted);max-width:52ch;margin:0 auto 16px}
+.empty .acts{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;max-width:760px;margin:22px auto 0;text-align:left}
+.cols div{background:var(--surface-2);border-radius:8px;padding:10px 12px}
+.cols .k{font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.cols .d{font-size:12px;color:var(--fg-muted)}
+
+/* ---------- drawer ---------- */
+.scrim{position:fixed;inset:0;background:rgba(14,18,17,.45);z-index:40;opacity:0;transition:opacity .18s}
+.scrim.open{opacity:1}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(560px,100%);background:var(--surface);z-index:41;border-left:1px solid var(--line);display:flex;flex-direction:column;transform:translateX(100%);transition:transform .22s ease;box-shadow:-12px 0 40px -20px rgba(0,0,0,.5)}
+.drawer.open{transform:none}
+.dhead{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:16px 18px calc(14px);border-bottom:1px solid var(--line);padding-top:calc(16px + env(safe-area-inset-top,0px))}
+.dhead h2{font-size:19px}
+.dbody{overflow-y:auto;padding:16px 18px calc(24px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:18px}
+.dfoot{border-top:1px solid var(--line);padding:12px 18px calc(12px + env(safe-area-inset-bottom,0px));display:flex;gap:8px;align-items:center;background:var(--surface)}
+fieldset{border:0;padding:0;margin:0;display:flex;flex-direction:column;gap:9px}
+legend{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);font-weight:600;padding:0 0 6px;border-bottom:1px solid var(--line);width:100%;margin-bottom:3px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px}
+@media (max-width:440px){.row2,.row3{grid-template-columns:1fr}}
+.f{display:flex;flex-direction:column;gap:3px;min-width:0}
+.f>span{font-size:11px;color:var(--fg-muted)}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+.scard{border:1px solid var(--line);border-radius:7px;padding:8px}
+.scard .top2{display:flex;align-items:center;justify-content:space-between;gap:6px;margin-bottom:6px}
+.scard strong{font-size:12px}
+.seg{display:inline-flex;border:1px solid var(--line-strong);border-radius:5px;overflow:hidden}
+.seg button{background:none;border:0;padding:2px 6px;font-size:10.5px;color:var(--fg-muted)}
+.seg button[aria-pressed=true]{background:var(--accent);color:#fff;font-weight:600}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .seg button[aria-pressed=true]{color:#17130A}}
+:root[data-theme="dark"] .seg button[aria-pressed=true]{color:#17130A}
+.rate{display:flex;gap:4px}
+.rate button{width:30px;height:28px;border:1px solid var(--line-strong);background:var(--surface);border-radius:5px;font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--fg-muted)}
+.rate button[aria-pressed=true]{border-color:transparent;font-weight:700}
+.rate button[aria-pressed=true][data-v="1"]{background:var(--crit-soft);color:var(--crit)}
+.rate button[aria-pressed=true][data-v="2"]{background:var(--crit-soft);color:var(--crit)}
+.rate button[aria-pressed=true][data-v="3"]{background:var(--warn-soft);color:var(--warn)}
+.rate button[aria-pressed=true][data-v="4"]{background:var(--ok-soft);color:var(--ok)}
+.rate button[aria-pressed=true][data-v="5"]{background:var(--ok-soft);color:var(--ok)}
+.rep{display:flex;flex-direction:column;gap:8px}
+.repitem{border:1px solid var(--line);border-radius:7px;padding:9px;position:relative;display:flex;flex-direction:column;gap:7px}
+.repitem .del{position:absolute;top:5px;right:5px}
+.scorebox{background:var(--surface-2);border-radius:8px;padding:11px 12px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.scorebox .big{font-family:var(--font-mono);font-size:30px;font-variant-numeric:tabular-nums;line-height:1}
+.scorebox ul{margin:0;padding-left:16px;font-size:11.5px;color:var(--fg-muted);flex:1 1 180px;min-width:0}
+.hint{font-size:11.5px;color:var(--fg-muted)}
+.note{font-size:12px;color:var(--fg-muted);padding:14px 20px 0;max-width:80ch}
+.banner{background:var(--warn-soft);color:var(--warn);border:1px solid var(--warn);border-radius:8px;padding:9px 12px;font-size:12.5px;margin:0 20px 12px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.saving{font-size:11.5px;color:var(--fg-faint)}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@500;600&display=swap">
+
+<header class="top">
+  <div class="top-in">
+    <div class="brand">
+      <span class="eyebrow">Your Digital Growth · Verticale ospitalità</span>
+      <h1>Benchmark Hotel</h1>
+    </div>
+    <div class="who">
+      <label for="me">Stai lavorando come</label>
+      <select id="me"></select>
+      <button class="btn btn-primary" id="add">+ Nuova attività</button>
+    </div>
+  </div>
+  <div class="stats" id="stats"></div>
+</header>
+
+<div id="banner"></div>
+
+<div class="bar">
+  <input type="text" id="q" class="grow" placeholder="Cerca nome, località, referente…" autocomplete="off">
+  <select id="fStato"><option value="">Tutti gli stati</option></select>
+  <select id="fLoc"><option value="">Ogni località</option></select>
+  <select id="fVert"><option value="">Ogni verticale</option></select>
+  <div class="chipset">
+    <button class="chip" id="cPref" aria-pressed="false">Solo mie preferenze</button>
+    <button class="chip" id="cFlag" aria-pressed="false">Solo segnalate</button>
+  </div>
+</div>
+
+<main class="wrap">
+  <div id="view"></div>
+  <p class="note" id="note"></p>
+</main>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" hidden aria-label="Scheda attività">
+  <div class="dhead">
+    <h2 id="dtitle">Scheda</h2>
+    <button class="btn-ghost" id="dclose" aria-label="Chiudi scheda">✕</button>
+  </div>
+  <div class="dbody" id="dbody"></div>
+  <div class="dfoot">
+    <button class="btn btn-primary" id="dsave">Salva</button>
+    <button class="btn" id="ddel">Elimina</button>
+    <span class="saving" id="dstate"></span>
+  </div>
+</aside>
+
+<script>
+"use strict";
+
+/* ===== Configurazione: cambia qui le etichette, non nel resto del codice ===== */
+const STATI = [
+  "Da valutare","Da contattare","Contattato","In conversazione",
+  "Proposta inviata","Chiuso vinto","Chiuso perso","Non in target"
+];
+const STATO_COLORE = {
+  "Da valutare":"info","Da contattare":"info","Contattato":"warn","In conversazione":"warn",
+  "Proposta inviata":"accent","Chiuso vinto":"ok","Chiuso perso":"crit","Non in target":"muted"
+};
+const TEAM = [
+  {key:"alex",nome:"Alex",ini:"A"},
+  {key:"riccardo",nome:"Riccardo",ini:"R"},
+  {key:"nadir",nome:"Nadir",ini:"N"},
+  {key:"alessandro",nome:"Alessandro",ini:"Al"}
+];
+const SOCIAL = [
+  {key:"instagram",label:"Instagram",ini:"IG"},
+  {key:"facebook",label:"Facebook",ini:"FB"},
+  {key:"tiktok",label:"TikTok",ini:"TT"},
+  {key:"youtube",label:"YouTube",ini:"YT"},
+  {key:"linkedin",label:"LinkedIn",ini:"LI"}
+];
+const SOCIAL_CHIAVE = ["instagram","facebook","tiktok"];
+const LOCALITA = ["Mare","Montagna","Collina / Tenuta","Lago","Città d'arte","Terme"];
+const VERTICALI = ["Hotel di lusso","Resort / Relais","Agriturismo di charme","Ristorazione","Wellness / SPA","Altro"];
+const CATEGORIE = ["5★ Lusso","5★","4★ Sup","4★","Boutique","Non classificato"];
+const APERTURA = ["Tutto l'anno","Stagionale","Chiuso","Da verificare"];
+const SERVIZI = [
+  {key:"social",label:"Social organico"},
+  {key:"ads",label:"Advertising"},
+  {key:"sito",label:"Sito / Landing"}
+];
+const TIPI_CONTATTO = ["Chiamata","Email","DM","Incontro","Altro"];
+
+/* ===== Punteggio di priorità =====
+   Opportunità = quanto è debole il digitale × quanto la struttura può spendere.
+   Una struttura che lavora bene (Google alto, molte recensioni) ma comunica male
+   è il lead migliore: ha i soldi e ha il problema. */
+function punteggio(a){
+  const parti = [];
+  let t = 0;
+  const vs = Number(a.votoSocial) || 0;
+  if (vs > 0){ const p = (5 - vs) * 6; t += p; if (p) parti.push([p, "Social deboli (voto " + vs + "/5)"]); }
+  const mancanti = SOCIAL_CHIAVE.filter(k => !(a.social && a.social[k] && a.social[k].presente));
+  if (mancanti.length){ const p = mancanti.length * 5; t += p; parti.push([p, "Assenti su " + mancanti.length + " social chiave"]); }
+  if (a.sito && a.sito.assente){ t += 20; parti.push([20, "Nessun sito web"]); }
+  else { const v = Number(a.sito && a.sito.voto) || 0; if (v > 0){ const p = (5 - v) * 4; t += p; if (p) parti.push([p, "Sito migliorabile (voto " + v + "/5)"]); } }
+  const rat = Number(a.google && a.google.rating) || 0;
+  const rec = Number(a.google && a.google.recensioni) || 0;
+  // La reputazione alta vale come opportunita solo se il digitale e debole:
+  // struttura che lavora bene ma comunica male = ha i soldi e ha il problema.
+  const debole = (vs > 0 && vs <= 3) || (a.sito && (a.sito.assente || ((Number(a.sito.voto)||0) > 0 && Number(a.sito.voto) <= 3))) || mancanti.length >= 2;
+  if (debole && rat >= 4.5 && rec >= 100){ t += 20; parti.push([20, "Struttura forte su Google, mal comunicata"]); }
+  else if (debole && rat >= 4.2 && rec >= 40){ t += 10; parti.push([10, "Buona reputazione Google"]); }
+  else if (rat >= 4.5 && rec >= 100){ t += 5; parti.push([5, "Reputazione Google solida"]); }
+  const cat = a.categoria || "";
+  if (cat === "5★ Lusso"){ t += 15; parti.push([15, "Fascia lusso"]); }
+  else if (cat === "5★"){ t += 12; parti.push([12, "Cinque stelle"]); }
+  else if (cat === "4★ Sup" || cat === "Boutique"){ t += 8; parti.push([8, "Fascia alta"]); }
+  else if (cat === "4★"){ t += 5; parti.push([5, "Quattro stelle"]); }
+  const np = TEAM.filter(m => a.preferenze && a.preferenze[m.key]).length;
+  if (np){ const p = Math.min(np * 5, 20); t += p; parti.push([p, "Segnalata da " + np + (np === 1 ? " persona" : " persone")]); }
+  return { totale: Math.max(0, Math.min(100, Math.round(t))), parti: parti.sort((x,y) => y[0]-x[0]) };
+}
+function banda(n){ return n >= 65 ? "caldo" : n >= 38 ? "tiepido" : "freddo"; }
+
+/* ===== Stato ===== */
+let righe = [];
+let db = null, user = null, scrivibile = true, io = TEAM[0].key;
+let sel = null, bozza = null, filtri = {q:"",stato:"",loc:"",vert:"",pref:false,flag:false};
+let ordine = {campo:"punteggio", dir:"desc"};
+const coda = new Map();
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+function nuovaAttivita(){
+  const social = {}; SOCIAL.forEach(s => social[s.key] = {presente:false, daProporre:false, handle:"", follower:null});
+  const pref = {}; TEAM.forEach(m => pref[m.key] = false);
+  return {
+    nome:"", verticale:VERTICALI[0], categoria:CATEGORIE[0], tipoLocalita:LOCALITA[0],
+    comune:"", provincia:"", regione:"", apertura:APERTURA[0],
+    stato:STATI[0], flag:false, note:"",
+    sito:{url:"", assente:false, voto:0, nota:""},
+    google:{rating:null, recensioni:null, nota:""},
+    social, preferenze:pref,
+    servizi:{social:true, ads:true, sito:false},
+    referenti:[], touchpoint:[],
+    creataIl:new Date().toISOString().slice(0,10)
+  };
+}
+function normalizza(d){
+  const base = nuovaAttivita();
+  const a = Object.assign(base, d || {});
+  a.sito = Object.assign(base.sito, d && d.sito);
+  a.google = Object.assign(base.google, d && d.google);
+  a.servizi = Object.assign(base.servizi, d && d.servizi);
+  a.preferenze = Object.assign({}, base.preferenze, d && d.preferenze);
+  a.social = {}; SOCIAL.forEach(s => a.social[s.key] = Object.assign({presente:false,daProporre:false,handle:"",follower:null}, d && d.social && d.social[s.key]));
+  a.referenti = Array.isArray(d && d.referenti) ? d.referenti : [];
+  a.touchpoint = Array.isArray(d && d.touchpoint) ? d.touchpoint : [];
+  return a;
+}
+
+/* ===== Scritture (una per documento alla volta) ===== */
+function salva(id, dati){
+  if (!db) return Promise.resolve(false);
+  const prec = coda.get(id) || Promise.resolve();
+  const p = prec.catch(() => {}).then(() => db.collection("attivita").doc(id).set(dati))
+    .then(() => true)
+    .catch(e => { avvisa(e && e.code === "invalid_argument"
+      ? "Non hai i permessi per scrivere: chiedi ad Alex di alzarti a Contributor nel menu di condivisione."
+      : "Salvataggio non riuscito. Riprova tra un momento."); return false; });
+  coda.set(id, p);
+  return p;
+}
+function avvisa(t){
+  $("#banner").innerHTML = t ? '<div class="banner">' + esc(t) + "</div>" : "";
+}
+
+/* ===== Render ===== */
+function visibili(){
+  const q = filtri.q.trim().toLowerCase();
+  return righe.filter(r => {
+    const a = r.dati;
+    if (filtri.stato && a.stato !== filtri.stato) return false;
+    if (filtri.loc && a.tipoLocalita !== filtri.loc) return false;
+    if (filtri.vert && a.verticale !== filtri.vert) return false;
+    if (filtri.pref && !a.preferenze[io]) return false;
+    if (filtri.flag && !a.flag) return false;
+    if (q){
+      const hay = [a.nome, a.comune, a.provincia, a.regione, a.note,
+        (a.referenti||[]).map(x => x.nome + " " + x.ruolo).join(" ")].join(" ").toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  }).sort((x,y) => {
+    const c = ordine.campo, s = ordine.dir === "asc" ? 1 : -1;
+    let a, b;
+    if (c === "punteggio"){ a = x.punti.totale; b = y.punti.totale; }
+    else if (c === "votoSocial"){ a = Number(x.dati.votoSocial)||0; b = Number(y.dati.votoSocial)||0; }
+    else if (c === "stato"){ a = STATI.indexOf(x.dati.stato); b = STATI.indexOf(y.dati.stato); }
+    else { a = (x.dati.nome||"").toLowerCase(); b = (y.dati.nome||"").toLowerCase(); }
+    return a < b ? -s : a > b ? s : 0;
+  });
+}
+
+function renderStats(){
+  const tot = righe.length;
+  const attivi = righe.filter(r => !["Chiuso vinto","Chiuso perso","Non in target"].includes(r.dati.stato)).length;
+  const vinti = righe.filter(r => r.dati.stato === "Chiuso vinto").length;
+  const caldi = righe.filter(r => r.punti.totale >= 65).length;
+  const miei = righe.filter(r => r.dati.preferenze[io]).length;
+  const dati = [["Attività", tot], ["In pipeline", attivi], ["Lead caldi", caldi], ["Chiusi vinti", vinti], ["Mie preferenze", miei]];
+  $("#stats").innerHTML = dati.map(([k,v]) =>
+    '<div class="stat"><div class="k">'+esc(k)+'</div><div class="v">'+v+"</div></div>").join("");
+}
+
+function statoPill(a){
+  const c = STATO_COLORE[a.stato] || "muted";
+  const col = c === "muted" ? "var(--fg-faint)" : "var(--" + c + ")";
+  const bg = c === "muted" ? "var(--surface-2)" : (c === "accent" ? "var(--accent-soft)" : "var(--" + c + "-soft)");
+  return 'style="color:' + col + ";background:" + bg + ';border-color:transparent"';
+}
+
+function renderTabella(){
+  const vis = visibili();
+  if (!righe.length){ $("#view").innerHTML = vuoto(); collegaVuoto(); return; }
+  const th = (campo, label, extra) =>
+    '<th class="sortable" data-sort="' + campo + '"' + (extra||"") + ">" + label +
+    (ordine.campo === campo ? ' <span class="dir">' + (ordine.dir === "asc" ? "↑" : "↓") + "</span>" : "") + "</th>";
+  let h = '<div class="tablebox"><table><thead><tr>' +
+    th("punteggio","Priorità") + th("nome","Attività") +
+    "<th>Categoria</th><th>Presenza social</th>" + th("votoSocial","Voto") +
+    "<th>Sito</th><th>Google</th>" + th("stato","Stato") + "<th>Preferenze</th></tr></thead><tbody>";
+  if (!vis.length){
+    h += '<tr><td colspan="9" style="text-align:center;padding:30px;color:var(--fg-muted)">Nessuna attività con questi filtri.</td></tr>';
+  }
+  vis.forEach(r => {
+    const a = r.dati, p = r.punti;
+    h += '<tr data-id="' + esc(r.id) + '"' + (a.flag ? ' class="flagged"' : "") + ">";
+    h += '<td><span class="score"><b>' + p.totale + '</b><span class="band band-' + banda(p.totale) + '">' + banda(p.totale) + "</span></span></td>";
+    h += "<td><span class=\"name\">" + (esc(a.nome) || '<span style="color:var(--fg-faint)">Senza nome</span>') + "</span>" +
+         '<span class="sub">' + esc([a.comune, a.provincia && "(" + a.provincia + ")", a.tipoLocalita].filter(Boolean).join(" ")) + "</span></td>";
+    h += '<td><span class="sub">' + esc(a.categoria) + "</span></td>";
+    h += '<td><span class="soc">' + SOCIAL.map(s => {
+          const v = a.social[s.key] || {};
+          const cl = v.presente ? "on" : (v.daProporre ? "want" : "off");
+          const t = v.presente ? "presente" : (v.daProporre ? "da proporre" : "assente");
+          return '<i class="' + cl + '" title="' + s.label + ": " + t + '">' + s.ini + "</i>";
+        }).join("") + "</span></td>";
+    const vs = Number(a.votoSocial) || 0;
+    h += '<td><span class="voto v' + vs + '">' + (vs || "–") + "</span></td>";
+    h += '<td><span class="sub">' + (a.sito.assente ? '<span style="color:var(--crit)">assente</span>'
+        : (a.sito.voto ? '<span class="voto v' + a.sito.voto + '">' + a.sito.voto + "</span>" : "–")) + "</span></td>";
+    h += '<td><span class="sub num">' + (a.google.rating ? esc(a.google.rating) + " ★" : "–") +
+         (a.google.recensioni ? ' <span style="color:var(--fg-faint)">(' + esc(a.google.recensioni) + ")</span>" : "") + "</span></td>";
+    h += '<td><select class="pill-select" data-stato="' + esc(r.id) + '" ' + statoPill(a) + ">" +
+          STATI.map(s => '<option' + (s === a.stato ? " selected" : "") + ">" + esc(s) + "</option>").join("") + "</select></td>";
+    h += '<td><span class="prefs">' + TEAM.map(m =>
+          '<button data-pref="' + esc(r.id) + '" data-chi="' + m.key + '" aria-pressed="' + !!a.preferenze[m.key] +
+          '" title="' + m.nome + '">' + m.ini + "</button>").join("") + "</span></td>";
+    h += "</tr>";
+  });
+  h += "</tbody></table></div>";
+  $("#view").innerHTML = h;
+  $("#note").textContent = vis.length + " di " + righe.length +
+    " attività · il punteggio è ricalcolato dal vivo, non è un campo salvato · clicca una riga per aprire la scheda";
+  collegaTabella();
+}
+
+function vuoto(){
+  return '<div class="empty"><h2>Il database è vuoto</h2>' +
+    "<p>Ogni riga sarà una struttura da valutare: dove si trova, com'è messa sui social, sul sito e su Google, " +
+    "a che punto siamo nel contatto e chi di voi quattro l'ha segnalata. Il punteggio di priorità si calcola da solo.</p>" +
+    '<div class="acts"><button class="btn btn-primary" id="e1">+ Aggiungi la prima attività</button>' +
+    '<button class="btn" id="e2">Carica 3 righe d\'esempio</button></div>' +
+    '<div class="cols">' +
+    '<div><div class="k">Priorità</div><div class="d">Debolezza digitale × capacità di spesa, da 0 a 100</div></div>' +
+    '<div><div class="k">Presenza social</div><div class="d">Dove sono, dove li porteremmo, voto da 1 a 5</div></div>' +
+    '<div><div class="k">Pipeline</div><div class="d">Dallo stato "da valutare" fino a chiuso, con referenti e chiamate</div></div>' +
+    '<div><div class="k">Preferenze</div><div class="d">Alex, Riccardo, Nadir e Alessandro segnalano le loro</div></div>' +
+    "</div></div>";
+}
+
+/* ===== Scheda ===== */
+function apri(id){
+  const r = righe.find(x => x.id === id);
+  if (!r) return;
+  sel = id; bozza = JSON.parse(JSON.stringify(r.dati));
+  disegnaScheda();
+  $("#scrim").hidden = false; $("#drawer").hidden = false;
+  requestAnimationFrame(() => { $("#scrim").classList.add("open"); $("#drawer").classList.add("open"); });
+  setTimeout(() => { const n = $("#f-nome"); if (n) n.focus(); }, 180);
+}
+function chiudi(){
+  $("#scrim").classList.remove("open"); $("#drawer").classList.remove("open");
+  setTimeout(() => { $("#scrim").hidden = true; $("#drawer").hidden = true; }, 200);
+  sel = null; bozza = null; $("#dstate").textContent = "";
+}
+function campo(label, id, tipo, val, attr){
+  return '<label class="f"><span>' + esc(label) + "</span><input id=\"" + id + '" type="' + tipo +
+    '" value="' + esc(val == null ? "" : val) + '" ' + (attr||"") + "></label>";
+}
+function tendina(label, id, opts, val){
+  return '<label class="f"><span>' + esc(label) + '</span><select id="' + id + '">' +
+    opts.map(o => "<option" + (o === val ? " selected" : "") + ">" + esc(o) + "</option>").join("") + "</select></label>";
+}
+function voti(id, val){
+  return '<div class="rate" id="' + id + '">' + [1,2,3,4,5].map(v =>
+    '<button type="button" data-v="' + v + '" aria-pressed="' + (Number(val) === v) + '">' + v + "</button>").join("") +
+    '<button type="button" data-v="0" aria-pressed="' + (!Number(val)) + '" style="width:auto;padding:0 8px;font-size:11px">n.d.</button></div>';
+}
+function disegnaScheda(){
+  const a = bozza, p = punteggio(a);
+  $("#dtitle").textContent = a.nome || "Nuova attività";
+  let h = "";
+  h += '<div class="scorebox"><div><div class="k" style="font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-faint)">Priorità</div>' +
+    '<div class="big">' + p.totale + '</div><span class="band band-' + banda(p.totale) + '">' + banda(p.totale) + "</span></div>" +
+    "<ul>" + (p.parti.length ? p.parti.map(x => "<li>+" + x[0] + " " + esc(x[1]) + "</li>").join("") : "<li>Compila i campi per calcolarla</li>") + "</ul></div>";
+
+  h += "<fieldset><legend>Identità</legend>" +
+    campo("Nome struttura","f-nome","text",a.nome,'placeholder="Es. Relais…"') +
+    '<div class="row2">' + tendina("Verticale","f-vert",VERTICALI,a.verticale) + tendina("Categoria","f-cat",CATEGORIE,a.categoria) + "</div>" +
+    '<div class="row2">' + tendina("Tipo di località","f-loc",LOCALITA,a.tipoLocalita) + tendina("Apertura","f-ap",APERTURA,a.apertura) + "</div>" +
+    '<div class="row3">' + campo("Comune","f-com","text",a.comune) + campo("Prov.","f-prov","text",a.provincia,'maxlength="4"') + campo("Regione","f-reg","text",a.regione) + "</div>" +
+    "</fieldset>";
+
+  h += "<fieldset><legend>Presenza social</legend>" +
+    '<div class="sgrid">' + SOCIAL.map(s => {
+      const v = a.social[s.key];
+      return '<div class="scard"><div class="top2"><strong>' + esc(s.label) + "</strong>" +
+        '<span class="seg" data-soc="' + s.key + '">' +
+        '<button type="button" data-m="presente" aria-pressed="' + !!v.presente + '">c\'è</button>' +
+        '<button type="button" data-m="daProporre" aria-pressed="' + !!v.daProporre + '">da fare</button></span></div>' +
+        '<input type="text" id="h-' + s.key + '" value="' + esc(v.handle) + '" placeholder="@handle" style="width:100%;margin-bottom:5px">' +
+        '<input type="number" id="n-' + s.key + '" value="' + esc(v.follower == null ? "" : v.follower) + '" placeholder="follower" style="width:100%" min="0"></div>';
+    }).join("") + "</div>" +
+    '<label class="f" style="margin-top:4px"><span>Voto complessivo del posizionamento social (1 = assente o pessimo, 5 = già ottimo)</span>' + voti("f-vs", a.votoSocial) + "</label>" +
+    "</fieldset>";
+
+  h += "<fieldset><legend>Sito e Google</legend>" +
+    campo("URL del sito","f-sito","url",a.sito.url,'placeholder="https://"') +
+    '<label class="f" style="flex-direction:row;align-items:center;gap:7px"><input type="checkbox" id="f-sito-no" ' + (a.sito.assente ? "checked" : "") + ' style="width:auto"><span style="font-size:13px;color:var(--fg)">Non ha un sito</span></label>' +
+    '<label class="f"><span>Voto del sito</span>' + voti("f-sv", a.sito.voto) + "</label>" +
+    '<label class="f"><span>Nota sul sito</span><textarea id="f-sito-nota" placeholder="Com\'è messo, cosa manca, prenotazione diretta…">' + esc(a.sito.nota) + "</textarea></label>" +
+    '<div class="row2">' + campo("Rating Google","f-gr","number",a.google.rating,'step="0.1" min="0" max="5"') + campo("N. recensioni","f-gn","number",a.google.recensioni,'min="0"') + "</div>" +
+    '<label class="f"><span>Nota su Google / recensioni</span><textarea id="f-gnota">' + esc(a.google.nota) + "</textarea></label>" +
+    "</fieldset>";
+
+  h += "<fieldset><legend>Pipeline</legend>" +
+    '<div class="row2">' + tendina("Stato","f-stato",STATI,a.stato) +
+    '<label class="f"><span>Servizi che proporremmo</span><span style="display:flex;gap:10px;flex-wrap:wrap;padding-top:5px">' +
+      SERVIZI.map(s => '<label style="display:flex;gap:5px;align-items:center;font-size:12.5px"><input type="checkbox" id="sv-' + s.key + '" ' + (a.servizi[s.key] ? "checked" : "") + "> " + esc(s.label) + "</label>").join("") +
+    "</span></label></div>" +
+    '<label class="f" style="flex-direction:row;align-items:center;gap:7px"><input type="checkbox" id="f-flag" ' + (a.flag ? "checked" : "") + ' style="width:auto"><span style="font-size:13px;color:var(--fg)">Segnala la riga (barra dorata in tabella)</span></label>' +
+    '<div class="f"><span>Preferenze del team</span><span class="prefs" id="f-prefs">' +
+      TEAM.map(m => '<button type="button" data-chi="' + m.key + '" aria-pressed="' + !!a.preferenze[m.key] + '" title="' + m.nome + '">' + m.ini + "</button>").join("") + "</span></div>" +
+    '<label class="f"><span>Note sulla situazione attuale</span><textarea id="f-note" style="min-height:84px">' + esc(a.note) + "</textarea></label>" +
+    "</fieldset>";
+
+  h += '<fieldset><legend>Referenti</legend><div class="rep" id="rep-ref">' +
+    (a.referenti.length ? a.referenti.map((x,i) =>
+      '<div class="repitem"><button class="btn-ghost del" data-delref="' + i + '" aria-label="Elimina referente">✕</button>' +
+      '<div class="row2"><label class="f"><span>Nome</span><input type="text" data-ref="' + i + '" data-k="nome" value="' + esc(x.nome) + '"></label>' +
+      '<label class="f"><span>Ruolo</span><input type="text" data-ref="' + i + '" data-k="ruolo" value="' + esc(x.ruolo) + '" placeholder="GM, titolare, marketing…"></label></div>' +
+      '<div class="row2"><label class="f"><span>Email</span><input type="email" data-ref="' + i + '" data-k="email" value="' + esc(x.email) + '"></label>' +
+      '<label class="f"><span>Telefono</span><input type="tel" data-ref="' + i + '" data-k="telefono" value="' + esc(x.telefono) + '"></label></div></div>').join("")
+      : '<p class="hint">Nessun referente ancora.</p>') +
+    '</div><button type="button" class="btn" id="addref" style="align-self:flex-start">+ Referente</button></fieldset>';
+
+  h += '<fieldset><legend>Contatti e follow-up</legend><div class="rep" id="rep-tp">' +
+    (a.touchpoint.length ? a.touchpoint.map((x,i) =>
+      '<div class="repitem"><button class="btn-ghost del" data-deltp="' + i + '" aria-label="Elimina contatto">✕</button>' +
+      '<div class="row3"><label class="f"><span>Data</span><input type="date" data-tp="' + i + '" data-k="data" value="' + esc(x.data) + '"></label>' +
+      '<label class="f"><span>Tipo</span><select data-tp="' + i + '" data-k="tipo">' + TIPI_CONTATTO.map(t => "<option" + (t === x.tipo ? " selected" : "") + ">" + esc(t) + "</option>").join("") + "</select></label>" +
+      '<label class="f"><span>Prossima azione</span><input type="date" data-tp="' + i + '" data-k="prossima" value="' + esc(x.prossima) + '"></label></div>' +
+      '<label class="f"><span>Esito</span><textarea data-tp="' + i + '" data-k="esito" style="min-height:52px">' + esc(x.esito) + "</textarea></label></div>").join("")
+      : '<p class="hint">Nessun contatto registrato.</p>') +
+    '</div><button type="button" class="btn" id="addtp" style="align-self:flex-start">+ Contatto</button></fieldset>';
+
+  $("#dbody").innerHTML = h;
+  collegaScheda();
+}
+
+function leggiScheda(){
+  const a = bozza, g = id => { const e = document.getElementById(id); return e ? e.value : ""; };
+  const ck = id => { const e = document.getElementById(id); return e ? e.checked : false; };
+  a.nome = g("f-nome").trim(); a.verticale = g("f-vert"); a.categoria = g("f-cat");
+  a.tipoLocalita = g("f-loc"); a.apertura = g("f-ap");
+  a.comune = g("f-com").trim(); a.provincia = g("f-prov").trim().toUpperCase(); a.regione = g("f-reg").trim();
+  a.sito.url = g("f-sito").trim(); a.sito.assente = ck("f-sito-no"); a.sito.nota = g("f-sito-nota");
+  a.google.rating = g("f-gr") === "" ? null : Number(g("f-gr"));
+  a.google.recensioni = g("f-gn") === "" ? null : Number(g("f-gn"));
+  a.google.nota = g("f-gnota");
+  a.stato = g("f-stato"); a.flag = ck("f-flag"); a.note = g("f-note");
+  SERVIZI.forEach(s => a.servizi[s.key] = ck("sv-" + s.key));
+  SOCIAL.forEach(s => {
+    a.social[s.key].handle = g("h-" + s.key).trim();
+    const n = g("n-" + s.key);
+    a.social[s.key].follower = n === "" ? null : Number(n);
+  });
+  document.querySelectorAll("[data-ref]").forEach(e => { a.referenti[+e.dataset.ref][e.dataset.k] = e.value; });
+  document.querySelectorAll("[data-tp]").forEach(e => { a.touchpoint[+e.dataset.tp][e.dataset.k] = e.value; });
+  return a;
+}
+
+/* ===== Eventi ===== */
+function collegaTabella(){
+  document.querySelectorAll("th.sortable").forEach(th => th.onclick = () => {
+    const c = th.dataset.sort;
+    if (ordine.campo === c) ordine.dir = ordine.dir === "asc" ? "desc" : "asc";
+    else { ordine.campo = c; ordine.dir = c === "nome" ? "asc" : "desc"; }
+    renderTabella();
+  });
+  document.querySelectorAll("tbody tr[data-id]").forEach(tr => tr.onclick = e => {
+    if (e.target.closest("[data-pref]") || e.target.closest("[data-stato]")) return;
+    apri(tr.dataset.id);
+  });
+  document.querySelectorAll("[data-stato]").forEach(s => s.onchange = () => {
+    const r = righe.find(x => x.id === s.dataset.stato); if (!r) return;
+    const d = JSON.parse(JSON.stringify(r.dati)); d.stato = s.value; salva(r.id, d);
+  });
+  document.querySelectorAll("[data-pref]").forEach(b => b.onclick = e => {
+    e.stopPropagation();
+    const r = righe.find(x => x.id === b.dataset.pref); if (!r) return;
+    const d = JSON.parse(JSON.stringify(r.dati));
+    d.preferenze[b.dataset.chi] = !d.preferenze[b.dataset.chi];
+    b.setAttribute("aria-pressed", String(d.preferenze[b.dataset.chi]));
+    salva(r.id, d);
+  });
+}
+function collegaVuoto(){
+  const e1 = $("#e1"), e2 = $("#e2");
+  if (e1) e1.onclick = creaNuova;
+  if (e2) e2.onclick = esempi;
+}
+function collegaScheda(){
+  $("#dbody").querySelectorAll(".rate").forEach(r => r.querySelectorAll("button").forEach(b => b.onclick = () => {
+    const v = Number(b.dataset.v);
+    if (r.id === "f-vs") bozza.votoSocial = v; else bozza.sito.voto = v;
+    leggiScheda(); disegnaScheda();
+  }));
+  $("#dbody").querySelectorAll("[data-soc]").forEach(seg => seg.querySelectorAll("button").forEach(b => b.onclick = () => {
+    const k = seg.dataset.soc, m = b.dataset.m;
+    leggiScheda();
+    bozza.social[k][m] = !bozza.social[k][m];
+    if (m === "presente" && bozza.social[k].presente) bozza.social[k].daProporre = false;
+    disegnaScheda();
+  }));
+  const fp = $("#f-prefs");
+  if (fp) fp.querySelectorAll("button").forEach(b => b.onclick = () => {
+    leggiScheda();
+    bozza.preferenze[b.dataset.chi] = !bozza.preferenze[b.dataset.chi];
+    disegnaScheda();
+  });
+  const sn = $("#f-sito-no"); if (sn) sn.onchange = () => { leggiScheda(); disegnaScheda(); };
+  ["f-gr","f-gn","f-cat"].forEach(id => { const e = document.getElementById(id); if (e) e.onchange = () => { leggiScheda(); disegnaScheda(); }; });
+  const nm = $("#f-nome"); if (nm) nm.oninput = () => { $("#dtitle").textContent = nm.value || "Nuova attività"; };
+  $("#addref").onclick = () => { leggiScheda(); bozza.referenti.push({nome:"",ruolo:"",email:"",telefono:""}); disegnaScheda(); };
+  $("#addtp").onclick = () => { leggiScheda(); bozza.touchpoint.unshift({data:new Date().toISOString().slice(0,10),tipo:TIPI_CONTATTO[0],esito:"",prossima:""}); disegnaScheda(); };
+  $("#dbody").querySelectorAll("[data-delref]").forEach(b => b.onclick = () => { leggiScheda(); bozza.referenti.splice(+b.dataset.delref,1); disegnaScheda(); });
+  $("#dbody").querySelectorAll("[data-deltp]").forEach(b => b.onclick = () => { leggiScheda(); bozza.touchpoint.splice(+b.dataset.deltp,1); disegnaScheda(); });
+}
+
+function creaNuova(){
+  if (!db){ avvisa("Il database non è raggiungibile da questa vista, non posso creare righe."); return; }
+  const id = "a" + Date.now().toString(36) + Math.random().toString(36).slice(2,6);
+  const d = nuovaAttivita();
+  righe.push({id, dati:d, punti:punteggio(d)});
+  salva(id, d);
+  renderStats(); renderTabella(); apri(id);
+}
+function esempi(){
+  if (!db) return;
+  const base = [
+    {nome:"Esempio · Relais sulle colline", verticale:"Resort / Relais", categoria:"5★", tipoLocalita:"Collina / Tenuta",
+     comune:"Montalcino", provincia:"SI", regione:"Toscana", votoSocial:2,
+     google:{rating:4.7, recensioni:410, nota:"Reputazione ottima, nessun presidio social serio"},
+     sito:{url:"", assente:true, voto:0, nota:"Solo pagina su portale di prenotazione"}},
+    {nome:"Esempio · Hotel fronte mare", verticale:"Hotel di lusso", categoria:"4★ Sup", tipoLocalita:"Mare",
+     comune:"Numana", provincia:"AN", regione:"Marche", votoSocial:3, apertura:"Stagionale",
+     google:{rating:4.3, recensioni:120, nota:""}, sito:{url:"https://esempio.it", assente:false, voto:3, nota:"Sito recente, manca prenotazione diretta"}},
+    {nome:"Esempio · Chalet di montagna", verticale:"Hotel di lusso", categoria:"5★ Lusso", tipoLocalita:"Montagna",
+     comune:"Cortina d'Ampezzo", provincia:"BL", regione:"Veneto", votoSocial:4,
+     google:{rating:4.8, recensioni:260, nota:""}, sito:{url:"https://esempio.it", assente:false, voto:4, nota:""}, stato:"Contattato"}
+  ];
+  base.forEach((b,i) => {
+    const d = normalizza(b);
+    if (i === 0){ d.social.instagram.daProporre = true; d.social.facebook.daProporre = true; d.social.tiktok.daProporre = true; }
+    else { d.social.instagram.presente = true; d.social.facebook.presente = true; d.social.tiktok.daProporre = true; }
+    const id = "demo" + i + Date.now().toString(36);
+    righe.push({id, dati:d, punti:punteggio(d)});
+    salva(id, d);
+  });
+  renderStats(); renderTabella();
+}
+
+$("#add").onclick = creaNuova;
+$("#dclose").onclick = chiudi;
+$("#scrim").onclick = chiudi;
+document.addEventListener("keydown", e => { if (e.key === "Escape" && sel) chiudi(); });
+$("#dsave").onclick = () => {
+  if (!sel) return;
+  const d = leggiScheda();
+  $("#dstate").textContent = "Salvo…";
+  salva(sel, JSON.parse(JSON.stringify(d))).then(ok => {
+    $("#dstate").textContent = ok ? "Salvato" : "Non salvato";
+    if (ok) setTimeout(() => { if (sel) chiudi(); }, 350);
+  });
+};
+$("#ddel").onclick = () => {
+  if (!sel || !db) return;
+  const b = $("#ddel");
+  if (b.dataset.conf !== "1"){ b.dataset.conf = "1"; b.textContent = "Confermi?"; setTimeout(() => { b.dataset.conf = ""; b.textContent = "Elimina"; }, 3500); return; }
+  const id = sel;
+  db.collection("attivita").doc(id).delete().catch(() => avvisa("Eliminazione non riuscita."));
+  righe = righe.filter(r => r.id !== id);
+  b.dataset.conf = ""; b.textContent = "Elimina";
+  chiudi(); renderStats(); renderTabella();
+};
+
+$("#q").oninput = e => { filtri.q = e.target.value; renderTabella(); };
+$("#fStato").onchange = e => { filtri.stato = e.target.value; renderTabella(); };
+$("#fLoc").onchange = e => { filtri.loc = e.target.value; renderTabella(); };
+$("#fVert").onchange = e => { filtri.vert = e.target.value; renderTabella(); };
+$("#cPref").onclick = e => { filtri.pref = !filtri.pref; e.currentTarget.setAttribute("aria-pressed", String(filtri.pref)); renderTabella(); };
+$("#cFlag").onclick = e => { filtri.flag = !filtri.flag; e.currentTarget.setAttribute("aria-pressed", String(filtri.flag)); renderTabella(); };
+
+STATI.forEach(s => $("#fStato").insertAdjacentHTML("beforeend", "<option>" + esc(s) + "</option>"));
+LOCALITA.forEach(s => $("#fLoc").insertAdjacentHTML("beforeend", "<option>" + esc(s) + "</option>"));
+VERTICALI.forEach(s => $("#fVert").insertAdjacentHTML("beforeend", "<option>" + esc(s) + "</option>"));
+$("#me").innerHTML = TEAM.map(m => '<option value="' + m.key + '">' + esc(m.nome) + "</option>").join("");
+try { const v = localStorage.getItem("ydg-io"); if (v && TEAM.some(m => m.key === v)) io = v; } catch(_){}
+$("#me").value = io;
+$("#me").onchange = e => { io = e.target.value; try { localStorage.setItem("ydg-io", io); } catch(_){} renderStats(); renderTabella(); };
+
+/* primo frame senza db */
+renderStats();
+$("#view").innerHTML = vuoto();
+collegaVuoto();
+
+/* ===== Avvio capability ===== */
+(async () => {
+  try {
+    user = await claude.use("user");
+    if (user){
+      const can = await user.can("data.write");
+      if (can === false) scrivibile = false;
+      try {
+        const me = await user.me();
+        const n = (me && me.name || "").toLowerCase();
+        const hit = TEAM.find(m => n.includes(m.nome.toLowerCase()));
+        if (hit && !localStorage.getItem("ydg-io")){ io = hit.key; $("#me").value = io; }
+      } catch(_){}
+    }
+  } catch(_){}
+  if (!scrivibile) avvisa("Puoi consultare il benchmark ma non modificarlo: serve il livello Contributor nel menu di condivisione.");
+
+  try { db = await claude.use("db"); } catch(_){ db = null; }
+  if (!db){
+    avvisa("Database non raggiungibile da questa vista: accedi con il tuo account per vedere e modificare i dati.");
+    return;
+  }
+  db.collection("attivita").onSnapshot(
+    snap => {
+      righe = snap.docs.map(d => { const dati = normalizza(d.data()); return {id:d.id, dati, punti:punteggio(dati)}; });
+      renderStats();
+      if (!sel) renderTabella(); else { renderTabella(); }
+    },
+    err => { avvisa(err && err.code === "revoked" ? "Accesso al database revocato: ricarica la pagina." : "Connessione al database interrotta: ricarica la pagina."); }
+  );
+})();
+</script>
