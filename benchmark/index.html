@@ -47,20 +47,28 @@ h1{font-size:20px;font-weight:800;letter-spacing:-.035em}
 .meter.big{height:10px;margin-top:0}
 .olab{font-size:12.5px;color:var(--fg-muted);margin-top:8px;text-wrap:pretty}
 .fasi{display:flex;flex-direction:column;gap:10px;margin-bottom:12px}
-.fase{background:var(--surface-2);border-radius:var(--r);padding:14px 16px;
-  display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,340px);gap:18px;align-items:start}
-.fcol{display:flex;flex-direction:column;gap:9px;min-width:0}
-.fmat{grid-column:1 / -1;border-top:1px solid var(--line);padding-top:11px;margin-top:2px;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
-@media (max-width:780px){.fase{grid-template-columns:1fr;gap:12px}}
+.fase{background:var(--surface-2);border-radius:var(--r);overflow:hidden}
 .fase.piena{box-shadow:inset 3px 0 0 var(--accent)}
-.fh{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
-.fn{font-size:14px;font-weight:700;letter-spacing:-.01em}
-.fn em{font-style:normal;color:var(--fg-faint);font-weight:800;margin-right:6px}
-.fp{font-size:12.5px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;white-space:nowrap}
-.fd{margin:0;font-size:12.5px;line-height:1.45;color:var(--fg-faint);text-wrap:pretty}
-.fase .meter{margin-top:0}
-.fase textarea{min-height:82px;font-size:12.5px;background:var(--surface-3);border-color:transparent}
-.fase textarea:focus{border-color:var(--line-strong)}
+.fhead{display:flex;align-items:center;gap:10px;padding:11px 13px}
+.fnum{font-size:12px;font-weight:800;color:var(--fg-faint);font-variant-numeric:tabular-nums;flex:none;min-width:14px}
+.fhead .fnome{flex:1 1 auto;min-width:0;background:transparent;border:1px solid transparent;padding:4px 7px;font-size:14px;font-weight:700;letter-spacing:-.01em}
+.fhead .fnome:hover{border-color:var(--line-strong)}
+.fhead .fnome:focus{background:var(--surface-3);border-color:var(--line-strong)}
+.fcount{font-size:12px;color:var(--fg-muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.fp{font-size:12.5px;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums;white-space:nowrap;min-width:38px;text-align:right}
+.fmove{display:flex;gap:2px;flex:none}
+.fmove button{width:22px;height:22px;border-radius:5px;border:1px solid transparent;background:none;color:var(--fg-faint);display:grid;place-items:center;font-size:11px;padding:0}
+.fmove button:hover:not(:disabled){background:var(--surface-4);color:var(--fg)}
+.fmove button:disabled{opacity:.25;cursor:default}
+.fbar{padding:0 13px 11px}
+.fbody{border-top:1px solid var(--line);padding:12px 13px;display:flex;flex-direction:column;gap:11px}
+.fbody .fdesc{background:transparent;border:1px solid transparent;padding:3px 7px;font-size:12.5px;color:var(--fg-faint);width:100%}
+.fbody .fdesc:hover{border-color:var(--line-strong)}
+.fbody .fdesc:focus{background:var(--surface-3);color:var(--fg);border-color:var(--line-strong)}
+.fbody>textarea{min-height:58px;font-size:12.5px;background:var(--surface-3);border-color:transparent}
+.fbody>textarea:focus{border-color:var(--line-strong)}
+.azioni{display:flex;gap:8px;flex-wrap:wrap}
+
 .mat{display:flex;flex-direction:column;gap:8px;width:100%}
 .mcard{background:var(--surface-3);border-radius:10px;overflow:hidden}
 .mhead{display:flex;align-items:center;gap:9px;padding:9px 11px}
@@ -68,11 +76,15 @@ h1{font-size:20px;font-weight:800;letter-spacing:-.035em}
 .mhead input[type=text]:hover{border-color:var(--line-strong)}
 .mhead input[type=text]:focus{background:var(--surface-2)}
 .mcard.ok .mhead input[type=text]{color:var(--fg-faint);text-decoration:line-through}
-.mpct{font-size:11.5px;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums;white-space:nowrap}
+.mpct{font-size:11.5px;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums;white-space:nowrap;min-width:32px}
 .mconta{font-size:11.5px;color:var(--fg-faint);font-variant-numeric:tabular-nums;white-space:nowrap}
 .apri{width:24px;height:24px;flex:none;border-radius:6px;border:1px solid var(--line-strong);background:none;color:var(--fg-muted);display:grid;place-items:center;font-size:10px;padding:0;transition:transform .15s}
 .apri[aria-expanded=true]{transform:rotate(180deg);background:var(--surface-4)}
-.mbody{border-top:1px solid var(--line);padding:11px;display:flex;flex-direction:column;gap:9px}
+.mbody{border-top:1px solid var(--line);padding:11px;display:flex;flex-direction:column;gap:10px}
+.vmeta{display:grid;grid-template-columns:1fr 2fr;gap:9px}
+@media (max-width:560px){.vmeta{grid-template-columns:1fr}}
+.vmeta input{background:var(--surface-2);border-color:transparent;font-size:12.5px}
+.vmeta input:focus{border-color:var(--line-strong)}
 .tasks{display:flex;flex-direction:column;gap:3px}
 .trow{display:flex;align-items:center;gap:8px}
 .trow input[type=text]{flex:1 1 auto;min-width:0;background:transparent;border-color:transparent;padding:3px 6px;font-size:12.5px}
@@ -426,15 +438,9 @@ function punteggio(a){
 function banda(n){ return n >= 65 ? "caldo" : n >= 38 ? "tiepido" : "freddo"; }
 
 /* ===== Stato ===== */
-let righe = [], lavori = [], task = [], noteFasi = {}, aperti = new Set();
+let righe = [], fasi = [], voci = [], task = [], aperti = new Set();
 try { const v = localStorage.getItem("ydg-aperti"); if (v) aperti = new Set(JSON.parse(v)); } catch(_){}
 const ricordaAperti = () => { try { localStorage.setItem("ydg-aperti", JSON.stringify([...aperti])); } catch(_){} };
-const taskDi = id => task.filter(t => t.dati.lav === id).sort((a,b) => (a.dati.ordine - b.dati.ordine) || a.id.localeCompare(b.id));
-function quotaMateriale(l){
-  const t = taskDi(l.id);
-  if (!t.length) return l.dati.fatto ? 100 : 0;
-  return Math.round(t.filter(x => x.dati.fatto).length / t.length * 100);
-}
 let db = null, user = null, scrivibile = true, io = TEAM[0].key;
 let sel = null, bozza = null, filtri = {q:"",stato:"",loc:"",vert:"",can:"",pref:false,flag:false};
 let ordine = {campo:"punteggio", dir:"desc"};
@@ -489,6 +495,12 @@ function salva(id, dati, coll){
       : "Salvataggio non riuscito. Riprova tra un momento."); return false; });
   coda.set(id, p);
   return p;
+}
+function attivo(){
+  const e = document.activeElement;
+  if (!e) return false;
+  for (let i = 0; i < arguments.length; i++) if (e.hasAttribute(arguments[i])) return true;
+  return false;
 }
 function avvisa(t){
   $("#banner").innerHTML = t ? '<div class="banner">' + esc(t) + "</div>" : "";
@@ -769,145 +781,228 @@ function leggiScheda(){
 }
 
 /* ===== Avanzamento per fasi ===== */
-function avanzamento(f){
-  const n = g => righe.filter(r => GRUPPI[g].includes(r.dati.stato)).length;
-  if (f.auto === "lista")        return {val:righe.length, tot:OBIETTIVI.lista, testo:righe.length + " di " + OBIETTIVI.lista};
-  if (f.auto === "contattate")   return {val:n("contattate"), tot:OBIETTIVI.contattate, testo:n("contattate") + " di " + OBIETTIVI.contattate};
-  if (f.auto === "appuntamenti") return {val:n("appuntamenti"), tot:OBIETTIVI.appuntamenti, testo:n("appuntamenti") + " di " + OBIETTIVI.appuntamenti};
-  if (f.auto === "proposte")     return {val:n("proposte"), tot:OBIETTIVI.proposte, testo:n("proposte") + " di " + OBIETTIVI.proposte};
-  if (f.auto === "mrr"){
+/* Le fasi stanno nel database: si rinominano, si riordinano, se ne aggiungono.
+   Le sei di partenza restano agganciate ai numeri; una fase aggiunta a mano
+   prende la percentuale dalle sue voci. */
+const FASI_BASE = {
+  ricerca:      {nome:"Ricerca attività",     auto:"lista",        desc:"Strutture schedate nel raggio di " + ZONA.raggioKm + " km", ordine:1},
+  materiali:    {nome:"Materiali di vendita", auto:null,           desc:"Brochure, volantini, biglietti, PDF, casi studio",          ordine:2},
+  contatto:     {nome:"Contatto attività",    auto:"contattate",   desc:"Visita, chiamata o referral",                               ordine:3},
+  appuntamenti: {nome:"Appuntamenti",         auto:"appuntamenti", desc:"Incontri fissati con chi decide",                           ordine:4},
+  proposte:     {nome:"Proposte inviate",     auto:"proposte",     desc:"Preventivi consegnati al titolare",                         ordine:5},
+  chiusura:     {nome:"Chiusure",             auto:"mrr",          desc:"Clienti firmati, fee mensile acquisita",                    ordine:6}
+};
+const conta = g => righe.filter(r => GRUPPI[g].includes(r.dati.stato)).length;
+const AUTO = {
+  lista:        () => ({val:righe.length,       tot:OBIETTIVI.lista,        testo:righe.length + " di " + OBIETTIVI.lista}),
+  contattate:   () => ({val:conta("contattate"),   tot:OBIETTIVI.contattate,   testo:conta("contattate") + " di " + OBIETTIVI.contattate}),
+  appuntamenti: () => ({val:conta("appuntamenti"), tot:OBIETTIVI.appuntamenti, testo:conta("appuntamenti") + " di " + OBIETTIVI.appuntamenti}),
+  proposte:     () => ({val:conta("proposte"),     tot:OBIETTIVI.proposte,     testo:conta("proposte") + " di " + OBIETTIVI.proposte}),
+  mrr:          () => {
     const m = righe.filter(r => GRUPPI.vinti.includes(r.dati.stato))
       .reduce((t,r) => t + (Number(r.dati.economia && r.dati.economia.fee) || 0), 0);
     return {val:m, tot:OBIETTIVI.mrr, testo:eur(m) + " di " + eur(OBIETTIVI.mrr)};
   }
-  if (!lavori.length) return {val:0, tot:0, testo:"nessun materiale"};
-  const quote = lavori.map(quotaMateriale);
-  const media = Math.round(quote.reduce((a,b) => a+b, 0) / quote.length);
-  return {val:media, tot:100, testo:quote.filter(q => q === 100).length + " di " + lavori.length + " completi"};
+};
+
+const vociDi = f => voci.filter(v => v.dati.fase === f).sort((a,b) => (a.dati.ordine - b.dati.ordine) || a.id.localeCompare(b.id));
+const taskDi = v => task.filter(t => t.dati.voce === v).sort((a,b) => (a.dati.ordine - b.dati.ordine) || a.id.localeCompare(b.id));
+function quotaVoce(v){
+  const t = taskDi(v.id);
+  if (!t.length) return v.dati.fatto ? 100 : 0;
+  return Math.round(t.filter(x => x.dati.fatto).length / t.length * 100);
+}
+function fasiOrdinate(){
+  if (!fasi.length) return Object.keys(FASI_BASE)
+    .map(k => ({id:k, dati:Object.assign({nota:""}, FASI_BASE[k])}))
+    .sort((a,b) => a.dati.ordine - b.dati.ordine);
+  return fasi.slice().sort((a,b) => (a.dati.ordine - b.dati.ordine) || a.id.localeCompare(b.id));
+}
+function avanzamento(f){
+  if (f.dati.auto && AUTO[f.dati.auto]) return AUTO[f.dati.auto]();
+  const vs = vociDi(f.id);
+  if (!vs.length) return {val:0, tot:0, testo:"nessuna voce"};
+  const q = vs.map(quotaVoce);
+  const media = Math.round(q.reduce((a,b) => a+b, 0) / q.length);
+  return {val:media, tot:100, testo:q.filter(x => x === 100).length + " di " + vs.length + " complete"};
 }
 const quotaDi = x => x.tot > 0 ? Math.max(0, Math.min(100, Math.round(x.val / x.tot * 100))) : 0;
 
+function scrivi(coll, lista, id, campo, val){
+  const o = lista.find(x => x.id === id); if (!o) return;
+  o.dati = Object.assign({}, o.dati, {[campo]: val});
+  salva(id, o.dati, coll);
+}
+const apriChiudi = id => { if (aperti.has(id)) aperti.delete(id); else aperti.add(id); ricordaAperti(); renderFasi(); };
+
 function renderFasi(){
-  const dati = FASI.map(f => { const x = avanzamento(f); return {f, x, q:quotaDi(x)}; });
-  const tot = Math.round(dati.reduce((t,d) => t + d.q, 0) / dati.length);
+  const lista = fasiOrdinate();
+  const calc = lista.map(f => { const x = avanzamento(f); return {f, x, q:quotaDi(x)}; });
+  const tot = calc.length ? Math.round(calc.reduce((t,d) => t + d.q, 0) / calc.length) : 0;
   $("#pctTot").textContent = tot + "%";
   const mt = $("#meterTot");
   mt.className = "meter big" + (tot >= 100 ? " full" : "");
   mt.firstElementChild.style.width = tot + "%";
-  $("#labTot").textContent = "Media delle sei fasi · " + dati.filter(d => d.q >= 100).length + " su 6 complete";
+  $("#labTot").textContent = "Media di " + calc.length + " fasi · " + calc.filter(d => d.q >= 100).length + " complete";
 
-  $("#fasi").innerHTML = dati.map((d,i) =>
-    '<div class="fase' + (d.q >= 100 ? " piena" : "") + '">' +
-      '<div class="fcol">' +
-        '<div class="fh"><span class="fn"><em>' + (i+1) + '</em>' + esc(d.f.nome) + '</span><span class="fp">' + d.q + "%</span></div>" +
-        '<div class="meter' + (d.q >= 100 ? " full" : "") + '"><span style="width:' + d.q + '%"></span></div>' +
-        '<p class="fd"><b style="color:var(--fg-muted)">' + esc(d.x.testo) + "</b> · " + esc(d.f.desc) + "</p>" +
+  $("#fasi").innerHTML = calc.map((d,i) => {
+    const ap = aperti.has(d.f.id), base = FASI_BASE[d.f.id];
+    return '<div class="fase' + (d.q >= 100 ? " piena" : "") + '">' +
+      '<div class="fhead">' +
+        '<button type="button" class="apri" data-aprif="' + esc(d.f.id) + '" aria-expanded="' + ap + '" aria-label="Apri o chiudi la fase">▾</button>' +
+        '<span class="fnum">' + (i+1) + "</span>" +
+        '<input type="text" class="fnome" data-fnome="' + esc(d.f.id) + '" value="' + esc(d.f.dati.nome) + '" placeholder="Nome della fase">' +
+        '<span class="fcount">' + esc(d.x.testo) + "</span>" +
+        '<span class="fp">' + d.q + "%</span>" +
+        '<span class="fmove">' +
+          '<button type="button" data-su="' + esc(d.f.id) + '"' + (i === 0 ? " disabled" : "") + ' aria-label="Sposta su">▲</button>' +
+          '<button type="button" data-giu="' + esc(d.f.id) + '"' + (i === calc.length-1 ? " disabled" : "") + ' aria-label="Sposta giù">▼</button>' +
+          (base ? "" : '<button type="button" data-delf="' + esc(d.f.id) + '" aria-label="Elimina fase">✕</button>') +
+        "</span>" +
       "</div>" +
-      '<textarea data-nota="' + d.f.key + '" placeholder="Annotazioni su questa fase…">' + esc(noteFasi[d.f.key] || "") + "</textarea>" +
-      (d.f.auto === null
-        ? '<div class="fmat"><div class="mat" id="mat"></div><button type="button" class="btn" id="addlav">+ Materiale</button></div>'
-        : "") +
-    "</div>").join("");
+      '<div class="fbar"><div class="meter' + (d.q >= 100 ? " full" : "") + '"><span style="width:' + d.q + '%"></span></div></div>' +
+      (ap ? '<div class="fbody">' +
+        '<input type="text" class="fdesc" data-fdesc="' + esc(d.f.id) + '" value="' + esc(d.f.dati.desc || "") + '" placeholder="Descrizione della fase">' +
+        '<div class="mat" data-voci="' + esc(d.f.id) + '"></div>' +
+        '<div class="azioni"><button type="button" class="btn" data-addvoce="' + esc(d.f.id) + '">+ Voce</button></div>' +
+        '<textarea data-nota="' + esc(d.f.id) + '" placeholder="Annotazioni su questa fase…">' + esc(d.f.dati.nota || "") + "</textarea>" +
+      "</div>" : "") +
+    "</div>";
+  }).join("") + '<div class="azioni" style="margin-top:4px"><button type="button" class="btn" id="addfase">+ Fase</button></div>';
 
-  renderMateriali();
-  $("#fasi").querySelectorAll("[data-nota]").forEach(t => t.onchange = () => {
-    const k = t.dataset.nota;
-    noteFasi[k] = t.value;
-    salva(k, {nota:t.value}, "fasi");
+  $("#fasi").querySelectorAll("[data-voci]").forEach(box => renderVoci(box, box.dataset.voci));
+  collegaFasi(lista);
+}
+
+function collegaFasi(lista){
+  const box = $("#fasi");
+  box.querySelectorAll("[data-aprif]").forEach(b => b.onclick = () => apriChiudi(b.dataset.aprif));
+  box.querySelectorAll("[data-fnome]").forEach(e => e.onchange = () => scriviFase(e.dataset.fnome, "nome", e.value));
+  box.querySelectorAll("[data-fdesc]").forEach(e => e.onchange = () => scriviFase(e.dataset.fdesc, "desc", e.value));
+  box.querySelectorAll("[data-nota]").forEach(e => e.onchange = () => scriviFase(e.dataset.nota, "nota", e.value));
+  box.querySelectorAll("[data-su]").forEach(b => b.onclick = () => sposta(lista, b.dataset.su, -1));
+  box.querySelectorAll("[data-giu]").forEach(b => b.onclick = () => sposta(lista, b.dataset.giu, +1));
+  box.querySelectorAll("[data-delf]").forEach(b => b.onclick = () => {
+    if (!db) return;
+    const id = b.dataset.delf;
+    vociDi(id).forEach(v => { taskDi(v.id).forEach(t => db.collection("task").doc(t.id).delete().catch(()=>{})); db.collection("voci").doc(v.id).delete().catch(()=>{}); });
+    db.collection("fasi").doc(id).delete().catch(() => avvisa("Eliminazione non riuscita."));
+    fasi = fasi.filter(x => x.id !== id);
+    voci = voci.filter(v => v.dati.fase !== id);
+    renderFasi();
   });
-  const ad = $("#addlav");
-  if (ad) ad.onclick = () => {
+  box.querySelectorAll("[data-addvoce]").forEach(b => b.onclick = () => {
     if (!db){ avvisa("Il database non è raggiungibile da questa vista, non posso creare voci."); return; }
-    const id = "l" + Date.now().toString(36) + Math.random().toString(36).slice(2,5);
-    const d = {titolo:"", fatto:false, nota:"", ordine:lavori.length + 1};
-    lavori.push({id, dati:d});
-    salva(id, d, "lavori");
+    const fase = b.dataset.addvoce;
+    const id = "v" + Date.now().toString(36) + Math.random().toString(36).slice(2,5);
+    const d = {fase, titolo:"", fatto:false, nota:"", scadenza:"", link:"", ordine:vociDi(fase).length + 1};
+    voci.push({id, dati:d});
+    salva(id, d, "voci");
+    renderFasi();
+    setTimeout(() => { const e = $('[data-voce="' + id + '"]'); if (e) e.focus(); }, 60);
+  });
+  const af = $("#addfase");
+  if (af) af.onclick = () => {
+    if (!db){ avvisa("Il database non è raggiungibile da questa vista, non posso creare fasi."); return; }
+    const id = "f" + Date.now().toString(36) + Math.random().toString(36).slice(2,5);
+    const d = {nome:"", desc:"", auto:null, nota:"", ordine:lista.length + 1};
+    fasi = fasiOrdinate().concat([{id, dati:d}]);
+    salvaTutteLeFasi();
+    salva(id, d, "fasi");
     aperti.add(id); ricordaAperti();
     renderFasi();
-    setTimeout(() => { const e = $('[data-lav="' + id + '"]'); if (e) e.focus(); }, 60);
+    setTimeout(() => { const e = $('[data-fnome="' + id + '"]'); if (e) e.focus(); }, 60);
   };
 }
 
-function renderMateriali(){
-  const box = $("#mat");
-  if (!box) return;
-  if (!lavori.length){ box.innerHTML = '<p class="hint">Nessun materiale in elenco.</p>'; return; }
-  box.innerHTML = lavori.map(l => {
-    const t = taskDi(l.id), q = quotaMateriale(l), ap = aperti.has(l.id);
+function scriviFase(id, campo, val){
+  const cur = fasiOrdinate().find(x => x.id === id); if (!cur) return;
+  const dati = Object.assign({}, cur.dati, {[campo]: val});
+  const i = fasi.findIndex(x => x.id === id);
+  if (i >= 0) fasi[i] = {id, dati}; else fasi = fasiOrdinate().map(x => x.id === id ? {id, dati} : x);
+  salva(id, dati, "fasi");
+}
+function sposta(lista, id, d){
+  const i = lista.findIndex(x => x.id === id);
+  const j = i + d;
+  if (i < 0 || j < 0 || j >= lista.length) return;
+  const ord = lista.slice();
+  const [x] = ord.splice(i,1); ord.splice(j,0,x);
+  fasi = ord.map((f,k) => ({id:f.id, dati:Object.assign({}, f.dati, {ordine:k+1})}));
+  salvaTutteLeFasi();
+  renderFasi();
+}
+function salvaTutteLeFasi(){ fasi.forEach(f => salva(f.id, f.dati, "fasi")); }
+
+function renderVoci(box, fase){
+  const vs = vociDi(fase);
+  if (!vs.length){ box.innerHTML = '<p class="hint">Nessuna voce. Aggiungine una per spezzare questa fase.</p>'; return; }
+  box.innerHTML = vs.map(v => {
+    const t = taskDi(v.id), q = quotaVoce(v), ap = aperti.has(v.id);
     return '<div class="mcard' + (q === 100 ? " ok" : "") + '">' +
       '<div class="mhead">' +
         (t.length
           ? '<span class="mpct">' + q + "%</span>"
-          : '<button type="button" class="spunta" data-fatto="' + esc(l.id) + '" aria-pressed="' + !!l.dati.fatto + '" aria-label="Segna come fatto">✓</button>') +
-        '<input type="text" data-lav="' + esc(l.id) + '" value="' + esc(l.dati.titolo) + '" placeholder="Che materiale">' +
+          : '<button type="button" class="spunta" data-vfatto="' + esc(v.id) + '" aria-pressed="' + !!v.dati.fatto + '" aria-label="Segna come fatta">✓</button>') +
+        '<input type="text" data-voce="' + esc(v.id) + '" value="' + esc(v.dati.titolo) + '" placeholder="Titolo della voce">' +
         (t.length ? '<span class="mconta">' + t.filter(x => x.dati.fatto).length + " / " + t.length + " task</span>" : "") +
-        '<button type="button" class="apri" data-apri="' + esc(l.id) + '" aria-expanded="' + ap + '" aria-label="Apri o chiudi">▾</button>' +
-        '<button type="button" class="btn-ghost" data-dellav="' + esc(l.id) + '" aria-label="Elimina materiale">✕</button>' +
+        '<button type="button" class="apri" data-apriv="' + esc(v.id) + '" aria-expanded="' + ap + '" aria-label="Apri o chiudi">▾</button>' +
+        '<button type="button" class="btn-ghost" data-delvoce="' + esc(v.id) + '" aria-label="Elimina voce">✕</button>' +
       "</div>" +
       (ap ? '<div class="mbody">' +
+        '<div class="vmeta">' +
+          '<label class="f"><span>Entro il</span><input type="date" data-vscad="' + esc(v.id) + '" value="' + esc(v.dati.scadenza || "") + '"></label>' +
+          '<label class="f"><span>Link di riferimento</span><input type="url" data-vlink="' + esc(v.id) + '" value="' + esc(v.dati.link || "") + '" placeholder="https://"></label>' +
+        "</div>" +
         '<div class="tasks">' + (t.length ? t.map(x =>
           '<div class="trow' + (x.dati.fatto ? " ok" : "") + '">' +
             '<button type="button" class="spunta sm" data-tfatto="' + esc(x.id) + '" aria-pressed="' + !!x.dati.fatto + '" aria-label="Segna il task">✓</button>' +
             '<input type="text" data-task="' + esc(x.id) + '" value="' + esc(x.dati.titolo) + '" placeholder="Che cosa va fatto">' +
             '<button type="button" class="btn-ghost" data-deltask="' + esc(x.id) + '" aria-label="Elimina task">✕</button>' +
-          "</div>").join("") : '<p class="vuoto-task">Nessun task. Aggiungine uno per spezzare il lavoro.</p>') + "</div>" +
-        '<button type="button" class="btn" data-addtask="' + esc(l.id) + '" style="align-self:flex-start">+ Task</button>' +
-        '<textarea data-mnota="' + esc(l.id) + '" placeholder="Appunti, riferimenti, misure, preventivi…">' + esc(l.dati.nota || "") + "</textarea>" +
+          "</div>").join("") : '<p class="vuoto-task">Nessun task.</p>') + "</div>" +
+        '<div class="azioni"><button type="button" class="btn" data-addtask="' + esc(v.id) + '">+ Task</button></div>' +
+        '<textarea data-vnota="' + esc(v.id) + '" placeholder="Appunti, riferimenti, preventivi…">' + esc(v.dati.nota || "") + "</textarea>" +
       "</div>" : "") +
     "</div>";
   }).join("");
 
-  const scriviLav = (id, campo, val) => {
-    const l = lavori.find(x => x.id === id); if (!l) return;
-    l.dati = Object.assign({}, l.dati, {[campo]: val});
-    salva(id, l.dati, "lavori");
-  };
-  const scriviTask = (id, campo, val) => {
-    const x = task.find(y => y.id === id); if (!x) return;
-    x.dati = Object.assign({}, x.dati, {[campo]: val});
-    salva(id, x.dati, "task");
-  };
-
-  box.querySelectorAll("[data-apri]").forEach(b2 => b2.onclick = () => {
-    const id = b2.dataset.apri;
-    if (aperti.has(id)) aperti.delete(id); else aperti.add(id);
-    ricordaAperti(); renderFasi();
+  box.querySelectorAll("[data-apriv]").forEach(b => b.onclick = () => apriChiudi(b.dataset.apriv));
+  box.querySelectorAll("[data-vfatto]").forEach(b => b.onclick = () => {
+    const v = voci.find(x => x.id === b.dataset.vfatto); if (!v) return;
+    scrivi("voci", voci, v.id, "fatto", !v.dati.fatto); renderFasi();
   });
-  box.querySelectorAll("[data-fatto]").forEach(b2 => b2.onclick = () => {
-    const l = lavori.find(x => x.id === b2.dataset.fatto); if (!l) return;
-    scriviLav(l.id, "fatto", !l.dati.fatto); renderFasi();
-  });
-  box.querySelectorAll("[data-lav]").forEach(e => e.onchange = () => scriviLav(e.dataset.lav, "titolo", e.value));
-  box.querySelectorAll("[data-mnota]").forEach(e => e.onchange = () => scriviLav(e.dataset.mnota, "nota", e.value));
-  box.querySelectorAll("[data-dellav]").forEach(b2 => b2.onclick = () => {
+  box.querySelectorAll("[data-voce]").forEach(e => e.onchange = () => scrivi("voci", voci, e.dataset.voce, "titolo", e.value));
+  box.querySelectorAll("[data-vnota]").forEach(e => e.onchange = () => scrivi("voci", voci, e.dataset.vnota, "nota", e.value));
+  box.querySelectorAll("[data-vscad]").forEach(e => e.onchange = () => scrivi("voci", voci, e.dataset.vscad, "scadenza", e.value));
+  box.querySelectorAll("[data-vlink]").forEach(e => e.onchange = () => scrivi("voci", voci, e.dataset.vlink, "link", e.value.trim()));
+  box.querySelectorAll("[data-delvoce]").forEach(b => b.onclick = () => {
     if (!db) return;
-    const id = b2.dataset.dellav;
-    db.collection("lavori").doc(id).delete().catch(() => avvisa("Eliminazione non riuscita."));
-    taskDi(id).forEach(x => db.collection("task").doc(x.id).delete().catch(() => {}));
-    lavori = lavori.filter(x => x.id !== id);
-    task = task.filter(x => x.dati.lav !== id);
+    const id = b.dataset.delvoce;
+    taskDi(id).forEach(t => db.collection("task").doc(t.id).delete().catch(()=>{}));
+    db.collection("voci").doc(id).delete().catch(() => avvisa("Eliminazione non riuscita."));
+    voci = voci.filter(x => x.id !== id);
+    task = task.filter(t => t.dati.voce !== id);
     renderFasi();
   });
-  box.querySelectorAll("[data-tfatto]").forEach(b2 => b2.onclick = () => {
-    const x = task.find(y => y.id === b2.dataset.tfatto); if (!x) return;
-    scriviTask(x.id, "fatto", !x.dati.fatto); renderFasi();
+  box.querySelectorAll("[data-tfatto]").forEach(b => b.onclick = () => {
+    const x = task.find(y => y.id === b.dataset.tfatto); if (!x) return;
+    scrivi("task", task, x.id, "fatto", !x.dati.fatto); renderFasi();
   });
-  box.querySelectorAll("[data-task]").forEach(e => e.onchange = () => scriviTask(e.dataset.task, "titolo", e.value));
-  box.querySelectorAll("[data-deltask]").forEach(b2 => b2.onclick = () => {
+  box.querySelectorAll("[data-task]").forEach(e => e.onchange = () => scrivi("task", task, e.dataset.task, "titolo", e.value));
+  box.querySelectorAll("[data-deltask]").forEach(b => b.onclick = () => {
     if (!db) return;
-    const id = b2.dataset.deltask;
+    const id = b.dataset.deltask;
     db.collection("task").doc(id).delete().catch(() => avvisa("Eliminazione non riuscita."));
     task = task.filter(x => x.id !== id);
     renderFasi();
   });
-  box.querySelectorAll("[data-addtask]").forEach(b2 => b2.onclick = () => {
+  box.querySelectorAll("[data-addtask]").forEach(b => b.onclick = () => {
     if (!db){ avvisa("Il database non è raggiungibile da questa vista, non posso creare task."); return; }
-    const lav = b2.dataset.addtask;
+    const voce = b.dataset.addtask;
     const id = "t" + Date.now().toString(36) + Math.random().toString(36).slice(2,5);
-    const d = {lav, titolo:"", fatto:false, ordine:taskDi(lav).length + 1};
+    const d = {voce, titolo:"", fatto:false, ordine:taskDi(voce).length + 1};
     task.push({id, dati:d});
     salva(id, d, "task");
-    aperti.add(lav); ricordaAperti();
     renderFasi();
     setTimeout(() => { const e = $('[data-task="' + id + '"]'); if (e) e.focus(); }, 60);
   });
@@ -1081,13 +1176,29 @@ collegaVuoto();
     avvisa("Database non raggiungibile da questa vista: accedi con il tuo account per vedere e modificare i dati.");
     return;
   }
-  db.collection("lavori").onSnapshot(
+  db.collection("fasi").onSnapshot(
     snap => {
-      lavori = snap.docs.map(d => {
+      fasi = snap.docs.map(d => {
+        const x = d.data() || {}, base = FASI_BASE[d.id] || {};
+        return {id:d.id, dati:{
+          nome: x.nome != null ? x.nome : (base.nome || ""),
+          desc: x.desc != null ? x.desc : (base.desc || ""),
+          auto: base.auto || null,
+          nota: x.nota || "",
+          ordine: Number(x.ordine) || base.ordine || 99
+        }};
+      });
+      if (!attivo("data-fnome","data-fdesc","data-nota")) renderFasi();
+    },
+    () => {}
+  );
+  db.collection("voci").onSnapshot(
+    snap => {
+      voci = snap.docs.map(d => {
         const x = d.data() || {};
-        return {id:d.id, dati:{titolo:x.titolo||"", fatto:!!x.fatto, nota:x.nota||"", ordine:Number(x.ordine)||0}};
-      }).sort((a,b) => (a.dati.ordine - b.dati.ordine) || a.id.localeCompare(b.id));
-      renderFasi();
+        return {id:d.id, dati:{fase:x.fase||"", titolo:x.titolo||"", fatto:!!x.fatto, nota:x.nota||"", scadenza:x.scadenza||"", link:x.link||"", ordine:Number(x.ordine)||0}};
+      });
+      if (!attivo("data-voce","data-vnota","data-vscad","data-vlink")) renderFasi();
     },
     () => {}
   );
@@ -1095,17 +1206,9 @@ collegaVuoto();
     snap => {
       task = snap.docs.map(d => {
         const x = d.data() || {};
-        return {id:d.id, dati:{lav:x.lav||"", titolo:x.titolo||"", fatto:!!x.fatto, ordine:Number(x.ordine)||0}};
+        return {id:d.id, dati:{voce:x.voce||"", titolo:x.titolo||"", fatto:!!x.fatto, ordine:Number(x.ordine)||0}};
       });
-      if (!document.activeElement || !document.activeElement.hasAttribute("data-task")) renderFasi();
-    },
-    () => {}
-  );
-  db.collection("fasi").onSnapshot(
-    snap => {
-      noteFasi = {};
-      snap.docs.forEach(d => { noteFasi[d.id] = (d.data() || {}).nota || ""; });
-      if (!document.activeElement || !document.activeElement.hasAttribute("data-nota")) renderFasi();
+      if (!attivo("data-task")) renderFasi();
     },
     () => {}
   );
