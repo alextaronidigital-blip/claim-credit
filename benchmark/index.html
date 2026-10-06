@@ -6,9 +6,9 @@
 :root{
   --bg:#000000; --surface:#0C0C0C; --surface-2:#141414; --surface-3:#1E1E1E; --surface-4:#2A2A2A;
   --crema:#E9E6DF; --grigio:#9B9B9B;
-  --line:rgba(255,255,255,.09); --line-strong:rgba(255,255,255,.18); --line-acc:rgba(250,70,22,.3);
+  --line:rgba(255,255,255,.09); --line-strong:rgba(255,255,255,.18); --line-acc:rgba(224,102,31,.32);
   --fg:#F4F3F1; --fg-muted:#A2A2A0; --fg-faint:#6B6B69;
-  --accent:#FA4616; --accent-dim:#C8390F; --accent-mid:rgba(250,70,22,.26); --accent-soft:rgba(250,70,22,.13);
+  --accent:#E0661F; --accent-dim:#B0501A; --accent-mid:rgba(224,102,31,.26); --accent-soft:rgba(224,102,31,.13);
   --accent-ink:#0A0A0A;
   --r:12px; --r-lg:18px; --r-pill:999px;
   --font-ui:"Archivo",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
@@ -79,13 +79,13 @@ textarea{resize:vertical;min-height:62px;line-height:1.55}
 /* ---------- griglia ---------- */
 .tablebox{overflow-x:auto;background:var(--bg);border:1px solid var(--line);border-radius:var(--r);margin:0 0 12px}
 table{border-collapse:collapse;width:100%;min-width:1230px}
-th:nth-child(2),td:nth-child(2){min-width:216px}
+th:nth-child(2),td:nth-child(2){min-width:200px}
 td:nth-child(3),td:nth-child(8),td:nth-child(10){white-space:nowrap}
-th{position:sticky;top:0;z-index:5;background:var(--accent);color:var(--accent-ink);text-align:left;font-size:10px;letter-spacing:.11em;text-transform:uppercase;font-weight:800;padding:9px 12px;white-space:nowrap}
+th{position:sticky;top:0;z-index:5;background:var(--accent);color:var(--accent-ink);text-align:left;font-size:10px;letter-spacing:.09em;text-transform:uppercase;font-weight:800;padding:9px 9px;white-space:nowrap}
 th.sortable{cursor:pointer;user-select:none}
 th.sortable:hover{background:var(--accent-dim)}
 th .dir{opacity:.75}
-td{padding:11px 12px;border-top:1px solid var(--line-acc);vertical-align:middle}
+td{padding:10px 9px;border-top:1px solid var(--line-acc);vertical-align:middle}
 tbody tr:first-child td{border-top:0}
 tbody tr{cursor:pointer}
 tbody tr:hover td{background:var(--surface-2)}
@@ -99,7 +99,7 @@ tfoot td{border-top:1px solid var(--accent);background:var(--accent-soft);font-w
 .sub{font-size:11px;color:var(--fg-muted)}
 .score{display:inline-flex;align-items:center;gap:9px;justify-content:flex-end;width:100%}
 .score b{font-size:18px;font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.045em}
-.band{font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;padding:3px 8px;border-radius:var(--r-pill);font-weight:800;min-width:64px;text-align:center}
+.band{font-size:9px;letter-spacing:.09em;text-transform:uppercase;padding:3px 7px;border-radius:var(--r-pill);font-weight:800;min-width:58px;text-align:center}
 .band-caldo{background:var(--accent);color:var(--accent-ink)}
 .band-tiepido{background:var(--accent-mid);color:var(--accent)}
 .band-freddo{background:var(--surface-3);color:var(--fg-faint)}
@@ -111,10 +111,10 @@ tfoot td{border-top:1px solid var(--accent);background:var(--accent-soft);font-w
 .v5{background:var(--surface-3);color:var(--fg-faint)}
 .v0{background:var(--surface-2);color:var(--fg-faint)}
 .pill{display:inline-block;font-size:11px;padding:3px 9px;border-radius:var(--r-pill);border:1px solid var(--line-strong);white-space:nowrap}
-.pill-select{appearance:none;-webkit-appearance:none;border:1px solid transparent;border-radius:var(--r-pill);padding:4px 11px;font-size:11px;font-weight:700;letter-spacing:.03em;cursor:pointer;max-width:170px}
+.pill-select{appearance:none;-webkit-appearance:none;border:1px solid transparent;border-radius:var(--r-pill);padding:4px 9px;font-size:10.5px;font-weight:700;letter-spacing:.02em;cursor:pointer;max-width:152px}
 .pill-select option{background:var(--surface-2);color:var(--fg)}
-.soc{display:flex;gap:4px}
-.soc i{width:24px;height:21px;border-radius:6px;display:grid;place-items:center;font-size:9.5px;font-weight:800;font-style:normal}
+.soc{display:flex;gap:3px}
+.soc i{width:22px;height:20px;border-radius:5px;display:grid;place-items:center;font-size:9px;font-weight:800;font-style:normal}
 .soc i.on{background:var(--crema);color:#111}
 .soc i.want{background:var(--accent-mid);color:var(--accent)}
 .soc i.off{background:var(--surface-3);color:var(--fg-faint)}
