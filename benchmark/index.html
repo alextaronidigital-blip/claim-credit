@@ -81,11 +81,18 @@ h1{font-size:20px;font-weight:800;letter-spacing:-.035em}
 
 .mat{display:flex;flex-direction:column;gap:8px;width:100%}
 .mcard{background:var(--surface-3);border-radius:10px;overflow:hidden}
-.mhead{display:flex;align-items:center;gap:9px;padding:9px 11px}
-.mhead input[type=text]{flex:1 1 auto;min-width:0;background:transparent;border-color:transparent;padding:4px 6px;font-size:13.5px;font-weight:700}
-.mhead input[type=text]:hover{border-color:var(--line-strong)}
-.mhead input[type=text]:focus{background:var(--surface-2)}
-.mcard.ok .mhead input[type=text]{color:var(--fg-faint);text-decoration:line-through}
+.mhead{display:flex;align-items:center;gap:9px;padding:9px 11px;cursor:pointer}
+.mhead:hover{background:var(--surface-4)}
+.mhead .vtit{flex:1 1 auto;min-width:0;padding:4px 2px;font-size:13.5px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mhead .vtit:empty::before{content:"Senza titolo";color:var(--fg-faint)}
+.mhead input[type=text]{flex:1 1 auto;min-width:0;background:var(--surface-2);border:1px solid var(--line-strong);border-radius:7px;padding:4px 7px;font-size:13.5px;font-weight:700}
+.mcard.ok .mhead .vtit{color:var(--fg-faint);text-decoration:line-through}
+.segni{display:flex;gap:5px;align-items:center;flex:none}
+.segno{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;padding:2px 7px;border-radius:var(--r-pill);background:var(--surface-2);color:var(--fg-muted);white-space:nowrap}
+.segno.urgente{background:var(--accent-mid);color:var(--accent)}
+.vazioni{display:flex;gap:2px;flex:none}
+.vazioni button{width:24px;height:24px;border-radius:6px;border:1px solid transparent;background:none;color:var(--fg-faint);display:grid;place-items:center;font-size:11px;padding:0}
+.vazioni button:hover{background:var(--surface-2);color:var(--fg)}
 .mpct{font-size:11.5px;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums;white-space:nowrap;min-width:32px}
 .mconta{font-size:11.5px;color:var(--fg-faint);font-variant-numeric:tabular-nums;white-space:nowrap}
 .apri{width:24px;height:24px;flex:none;border-radius:6px;border:1px solid var(--line-strong);background:none;color:var(--fg-muted);display:grid;place-items:center;font-size:10px;padding:0;transition:transform .15s}
@@ -955,7 +962,7 @@ function scriviFase(id, campo, val){
 }
 /* Trascinamento in stile iOS: tieni premuto, le fasi tremano, le trascini e
    le altre slittano per farti posto. */
-let scuoti = false, presa = null, rinomina = null;
+let scuoti = false, presa = null, rinomina = null, rinominaV = null;
 const GAP = 10;
 
 function collegaTrascinamento(box, lista){
@@ -1048,20 +1055,38 @@ function chiudiPresa(e, card, box){
 }
 function salvaTutteLeFasi(){ fasi.forEach(f => salva(f.id, f.dati, "fasi")); }
 
+function segniVoce(v, t){
+  const out = [];
+  if (t.length) out.push('<span class="segno">' + t.filter(x => x.dati.fatto).length + " / " + t.length + " task</span>");
+  if (v.dati.scadenza){
+    const oggi = new Date().toISOString().slice(0,10);
+    const d = v.dati.scadenza.split("-");
+    out.push('<span class="segno' + (v.dati.scadenza < oggi ? " urgente" : "") + '">' + d[2] + "/" + d[1] + "</span>");
+  }
+  if ((v.dati.nota || "").trim()) out.push('<span class="segno" title="Ha appunti">note</span>');
+  if (v.dati.link) out.push('<span class="segno" title="Ha un link">link</span>');
+  return out.join("");
+}
+
 function renderVoci(box, fase){
   const vs = vociDi(fase);
   if (!vs.length){ box.innerHTML = '<p class="hint">Nessuna voce. Aggiungine una per spezzare questa fase.</p>'; return; }
   box.innerHTML = vs.map(v => {
     const t = taskDi(v.id), q = quotaVoce(v), ap = aperti.has(v.id);
     return '<div class="mcard' + (q === 100 ? " ok" : "") + '">' +
-      '<div class="mhead">' +
+      '<div class="mhead" data-apriv2="' + esc(v.id) + '">' +
         (t.length
           ? '<span class="mpct">' + q + "%</span>"
           : '<button type="button" class="spunta" data-vfatto="' + esc(v.id) + '" aria-pressed="' + !!v.dati.fatto + '" aria-label="Segna come fatta">✓</button>') +
-        '<input type="text" data-voce="' + esc(v.id) + '" value="' + esc(v.dati.titolo) + '" placeholder="Titolo della voce">' +
-        (t.length ? '<span class="mconta">' + t.filter(x => x.dati.fatto).length + " / " + t.length + " task</span>" : "") +
-        '<button type="button" class="apri" data-apriv="' + esc(v.id) + '" aria-expanded="' + ap + '" aria-label="Apri o chiudi">▾</button>' +
-        '<button type="button" class="btn-ghost" data-delvoce="' + esc(v.id) + '" aria-label="Elimina voce">✕</button>' +
+        (rinominaV === v.id
+          ? '<input type="text" data-voce="' + esc(v.id) + '" value="' + esc(v.dati.titolo) + '" placeholder="Titolo della voce">'
+          : '<span class="vtit">' + esc(v.dati.titolo) + "</span>") +
+        '<span class="segni">' + segniVoce(v, t) + "</span>" +
+        '<span class="vazioni">' +
+          '<button type="button" data-rinv="' + esc(v.id) + '" aria-label="Rinomina la voce">✎</button>' +
+          '<button type="button" class="apri" data-apriv="' + esc(v.id) + '" aria-expanded="' + ap + '" aria-label="' + (ap ? "Chiudi" : "Apri") + '">▾</button>' +
+          '<button type="button" data-delvoce="' + esc(v.id) + '" aria-label="Elimina voce">✕</button>' +
+        "</span>" +
       "</div>" +
       (ap ? '<div class="mbody">' +
         '<div class="vmeta">' +
@@ -1080,12 +1105,25 @@ function renderVoci(box, fase){
     "</div>";
   }).join("");
 
-  box.querySelectorAll("[data-apriv]").forEach(b => b.onclick = () => apriChiudi(b.dataset.apriv));
+  box.querySelectorAll("[data-apriv2]").forEach(h => h.onclick = e => {
+    if (e.target.closest("input, textarea, button")) return;
+    apriChiudi(h.dataset.apriv2);
+  });
+  box.querySelectorAll("[data-apriv]").forEach(b => b.onclick = e => { e.stopPropagation(); apriChiudi(b.dataset.apriv); });
+  box.querySelectorAll("[data-rinv]").forEach(b => b.onclick = e => {
+    e.stopPropagation();
+    rinominaV = b.dataset.rinv; renderFasi();
+    setTimeout(() => { const i = $("[data-voce]"); if (i){ i.focus(); i.select(); } }, 30);
+  });
   box.querySelectorAll("[data-vfatto]").forEach(b => b.onclick = () => {
     const v = voci.find(x => x.id === b.dataset.vfatto); if (!v) return;
     scrivi("voci", voci, v.id, "fatto", !v.dati.fatto); renderFasi();
   });
-  box.querySelectorAll("[data-voce]").forEach(e => e.onchange = () => scrivi("voci", voci, e.dataset.voce, "titolo", e.value));
+  box.querySelectorAll("[data-voce]").forEach(e => {
+    e.onclick = ev => ev.stopPropagation();
+    e.onkeydown = ev => { if (ev.key === "Enter") e.blur(); if (ev.key === "Escape"){ rinominaV = null; renderFasi(); } };
+    e.onblur = () => { scrivi("voci", voci, e.dataset.voce, "titolo", e.value); rinominaV = null; renderFasi(); };
+  });
   box.querySelectorAll("[data-vnota]").forEach(e => e.onchange = () => scrivi("voci", voci, e.dataset.vnota, "nota", e.value));
   box.querySelectorAll("[data-vscad]").forEach(e => e.onchange = () => scrivi("voci", voci, e.dataset.vscad, "scadenza", e.value));
   box.querySelectorAll("[data-vlink]").forEach(e => e.onchange = () => scrivi("voci", voci, e.dataset.vlink, "link", e.value.trim()));
