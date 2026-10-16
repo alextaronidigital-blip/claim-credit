@@ -473,6 +473,20 @@ let ordine = {campo:"punteggio", dir:"desc"};
 const coda = new Map();
 
 const $ = s => document.querySelector(s);
+// Rigo di servizio: dice che cosa ha letto davvero la pagina. Serve a capire
+// i casi in cui lo schermo dice «vuoto» e il database invece ha i dati.
+function diagnostica(t){
+  let e = document.getElementById("diag");
+  if (!e){
+    e = document.createElement("p");
+    e.id = "diag"; e.className = "note";
+    e.style.cssText = "font-size:11.5px;color:var(--fg-faint);padding-top:6px";
+    const n = document.getElementById("note");
+    if (n && n.parentNode) n.parentNode.insertBefore(e, n.nextSibling);
+    else document.querySelector("main").appendChild(e);
+  }
+  e.textContent = "⚙︎ " + t;
+}
 const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 
 function nuovaAttivita(){
@@ -1393,6 +1407,8 @@ const entro = (p, ms) => Promise.race([Promise.resolve(p).catch(() => null),
         return {id:d.id, dati:{fase:x.fase||"", titolo:x.titolo||"", fatto:!!x.fatto, nota:x.nota||"", scadenza:x.scadenza||"", link:x.link||"", ordine:Number(x.ordine)||0}}; });
       task = st.docs.map(d => { const x = d.data() || {};
         return {id:d.id, dati:{voce:x.voce||"", titolo:x.titolo||"", fatto:!!x.fatto, ordine:Number(x.ordine)||0}}; });
+      diagnostica("lettura diretta · attivita=" + sa.docs.length + " fasi=" + sf.docs.length +
+                  " voci=" + sv.docs.length + " task=" + st.docs.length);
       righe = sa.docs.map(d => { const dati = normalizza(d.data()); return {id:d.id, dati, punti:punteggio(dati)}; });
       arrivato = true;
       avvisa("");
@@ -1401,6 +1417,7 @@ const entro = (p, ms) => Promise.race([Promise.resolve(p).catch(() => null),
       renderTabella();
     } catch(e){
       console.error("lettura diretta", e);
+      diagnostica("lettura diretta FALLITA · " + (e && e.code ? e.code : "") + " " + (e && e.message ? e.message : e));
       avvisa("Non riesco a leggere il database: ricarica la pagina.");
     }
   };
@@ -1443,6 +1460,7 @@ const entro = (p, ms) => Promise.race([Promise.resolve(p).catch(() => null),
   );
   db.collection("attivita").onSnapshot(
     snap => {
+      diagnostica("flusso live · attivita=" + snap.docs.length);
       arrivato = true;
       avvisa("");
       righe = snap.docs.map(d => { const dati = normalizza(d.data()); return {id:d.id, dati, punti:punteggio(dati)}; });
