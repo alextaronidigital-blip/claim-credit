@@ -1,0 +1,18 @@
+{
+  "centro": { "nome": "Siusi allo Sciliar (BZ)", "lat": 46.5361, "lon": 11.5531 },
+  "raggioKm": 50,
+  "zone": [
+    "Siusi allo Sciliar", "Castelrotto", "Alpe di Siusi", "Fiè allo Sciliar", "Tires",
+    "Ortisei", "Santa Cristina Valgardena", "Selva di Val Gardena", "Laion", "Castelrotto San Valentino",
+    "Bolzano", "Renon Soprabolzano", "Collalbo Renon", "Nova Levante", "Nova Ponente",
+    "Carezza al Lago", "San Genesio Atesino", "Chiusa", "Villandro", "Barbiano",
+    "Velturno", "Bressanone", "Varna", "Naz-Sciaves", "Rio di Pusteria",
+    "Maranza", "Valles Rio di Pusteria", "Luson", "Funes", "Val di Funes",
+    "Corvara in Badia", "La Villa Badia", "San Cassiano Badia", "Badia", "San Martino in Badia",
+    "Ortisei Bulla", "Vigo di Fassa", "Pozza di Fassa", "Canazei", "Moena",
+    "Predazzo", "Cavalese", "Appiano sulla Strada del Vino", "Caldaro sul Lago", "Termeno",
+    "Egna", "Ora", "Merano", "Lana", "Scena",
+    "Tirolo Merano", "Naturno", "Avelengo", "Verano", "Sarentino",
+    "Laives", "Vadena", "Bronzolo", "Aldino", "Montagna Bolzano"
+  ]
+}

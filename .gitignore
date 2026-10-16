@@ -1,0 +1,3 @@
+# La chiave Google Places non entra MAI in git
+.env.local
+*.key
