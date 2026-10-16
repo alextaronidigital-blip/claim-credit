@@ -1,0 +1,6615 @@
+{
+  "lettoIl": "2026-10-16",
+  "avvertenza": "Link trovato = social presente. Link NON trovato = DA VERIFICARE, non assente.",
+  "maxKm": 35,
+  "candidate": 685,
+  "conSocial": 428,
+  "senzaLinkInHomepage": 137,
+  "sitiIlleggibili": 118,
+  "strutture": [
+    {
+      "placeId": "ChIJN3HITFRteEcRLkS2ZcgEEGg",
+      "nome": "Piccolo Hotel Sciliar",
+      "sito": "https://www.piccolohotelsciliar.com/alpe-di-siusi/it/il-nostro-hotel-1/",
+      "social": {
+        "instagram": "piccolo_hotel_sciliar",
+        "facebook": "piccolohotelsciliar"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJw223-ioNeEcRSBFxQ2yrl0A",
+      "nome": "Albergo Valentinerhof",
+      "sito": "http://www.valentinerhof.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ-ZU-XClzeEcR8GsjdYKSRbQ",
+      "nome": "Hotel Schwarzer Adler",
+      "sito": "https://www.hotelschwarzeradler.it/",
+      "social": {
+        "instagram": "schwarzeradlerseis",
+        "facebook": "hotelschwarzeradlerseis"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJNSsTfC1zeEcR85YeKp7kjdQ",
+      "nome": "Hotel Mirabell Alpine Garden Resort & Spa",
+      "sito": "https://www.hotel-mirabell.net/",
+      "social": {
+        "instagram": "hotel.mirabell",
+        "facebook": "hotelmirabell",
+        "youtube": "UCPNs_nITxBsdJUynGP5-qVg"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJCVehC_cJeEcRA-tt_fPsDRs",
+      "nome": "Parc Hotel Florian",
+      "sito": "http://www.hotelflorian.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJH0hPRClzeEcR1In20hzAsdw",
+      "nome": "Hotel Enzian",
+      "sito": "http://www.enzianhotel.com/",
+      "social": {
+        "facebook": "people"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJey3HciZzeEcRkhTxBPaLp6M",
+      "nome": "Hotel Salegg",
+      "sito": "https://www.hotelsalegg.com/?utm_source=google-my-business",
+      "social": {
+        "instagram": "hotelsalegg",
+        "facebook": "hotelsalegg"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJfTixJMMMeEcRGsYHDbMCthk",
+      "nome": "Artnatur Dolomites",
+      "sito": "https://www.artnatur-dolomites.com/",
+      "social": {
+        "instagram": "artnaturdolomites",
+        "facebook": "ArtnaturDolomites"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJk9XiUylzeEcRTuxFH_Pti8c",
+      "nome": "Activehotel Diana",
+      "sito": "http://www.hotel-diana.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJNXRbxdVyeEcR-iJu31oVE0c",
+      "nome": "Hotel Villa Madonna - Ristorante",
+      "sito": "https://villamadonna.it/",
+      "social": {
+        "instagram": "hotel_villamadonna_siusi",
+        "facebook": "AlbergoVillaMadonna"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJX9HPS1ELeEcRpoWJvoIpXcA",
+      "nome": "Sonus Alpis",
+      "sito": "https://www.sonus-alpis.com/?utm_source=GoogleMyBusiness&utm_medium=KlickWebsite&utm_campaign=GoogleMyBusiness",
+      "social": {
+        "instagram": "sonusalpis",
+        "facebook": "sonusalpis"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJpwl1GihzeEcR1bYLAbFVTMc",
+      "nome": "Sensoria Dolomites",
+      "sito": "https://www.sensoriadolomites.com/?utm_source=google&utm_medium=organic&utm_campaign=google_mybusiness&utm_term=hotel",
+      "social": {
+        "instagram": "sensoria_dolomites",
+        "facebook": "sensoria.dolomites"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJnxjCulVseEcRY_AWk4SMjbY",
+      "nome": "Hotel Seel Aus",
+      "sito": "https://www.hotelseelaus.it/en/",
+      "social": {
+        "instagram": "hotelseelaus",
+        "facebook": "SeelAusSeiserAlm"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJey3HciZzeEcRSs0TJMksknM",
+      "nome": "Albergo Vigilerhof",
+      "sito": "http://www.vigilerhof.it/",
+      "social": {
+        "instagram": "vigilerhof",
+        "facebook": "vigilerhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJFejRxdNyeEcRKNd07WRiXGo",
+      "nome": "Hotel Bad Ratzes",
+      "sito": "https://www.badratzes.it/?utm_source=GoogleMyBusiness&utm_medium=KlickWebsite&utm_campaign=GoogleMyBusiness",
+      "social": {
+        "instagram": "bad_ratzes",
+        "facebook": "Hotel-Bad-Ratzes-101918744497781"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJJwmcZ9ZyeEcRCmno0bV3aro",
+      "nome": "Hotel Waldrast",
+      "sito": "https://hotel-waldrast.com/?utm_source=google&utm_medium=organic&utm_campaign=MyBusiness_Waldrast",
+      "social": {
+        "instagram": "waldrast",
+        "facebook": "waldrastdolomiti"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJg1CSbrZyeEcRe2cmDajpkFw",
+      "nome": "Hotel Seiser Alm Urthaler",
+      "sito": "https://www.seiseralm.com/?utm_source=GMB&utm_medium=Website&utm_campaign=GoogleMyBusiness",
+      "social": {
+        "instagram": "urthaler_seiseralm",
+        "facebook": "seiseralmurthaler"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ-2CdbMUMeEcRENyC07B8MpA",
+      "nome": "Hotel Alpenflora",
+      "sito": "https://www.alpenflora.com/?utm_source=GMB&utm_medium=Referral&utm_campaign=Website-Link",
+      "social": {
+        "instagram": "hotel_alpenflora_kastelruth",
+        "facebook": "Hotel.Alpenflora",
+        "youtube": "hotelalpenflora9797"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJ_Q7xrtwMeEcREcv4_RZOUn4",
+      "nome": "Hotel Mayr",
+      "sito": "https://hotelmayr.com/",
+      "social": {
+        "instagram": "hotelmayr",
+        "facebook": "hotelresidencemayr"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJO4b829wMeEcRnbryUojmQvs",
+      "nome": "Hotel Villa Kastelruth",
+      "sito": "http://www.hotelkastelruth.com/",
+      "social": {
+        "instagram": "hotelvillakastelruth",
+        "facebook": "villakastelruth",
+        "youtube": "player_api"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJE2Ja1MIMeEcRzt8ny4NOifg",
+      "nome": "Hotel zum Wolf - Al Lupo",
+      "sito": "http://www.hotelwolf.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJtWFM8ucMeEcRTI5pUeEjg20",
+      "nome": "Hotel Cavallino D'Oro Bed & Breakfast",
+      "sito": "http://www.cavallino.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJRVqC3twMeEcRs9U5bmckK5U",
+      "nome": "Hotel Alpenroyal",
+      "sito": "http://www.alpenroyal.net/",
+      "social": {
+        "instagram": "alpenroyal_kastelruth",
+        "facebook": "www.alpenroyal.net"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJxc6fX84MeEcRlS9LP0IQiC8",
+      "nome": "Hotel Cristallo",
+      "sito": "https://www.hotelcristallo.bz/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJI78sws8MeEcRfJKBhgpBzKo",
+      "nome": "Hotel Solaia",
+      "sito": "http://www.solaia.it",
+      "social": {
+        "instagram": "solaia_hotelguesthouse",
+        "facebook": "hotelsolaia",
+        "youtube": "user"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJF8Wx7MIMeEcRn-M58fay4oA",
+      "nome": "Hotel Zum Turm",
+      "sito": "http://www.zumturm.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJZ5L-1NwMeEcRNGZOboEC4gE",
+      "nome": "Abinea Dolomiti Romantic SPA Hotel Südtirol",
+      "sito": "https://www.abinea.com/",
+      "social": {
+        "instagram": "abinea.spahotel",
+        "facebook": "abineadolomitiromanticspahotel",
+        "tiktok": "spahotelabinea"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJPTf51NwMeEcRVe780r2OKCQ",
+      "nome": "Hotel Sonnenhof",
+      "sito": "http://www.hotelsonnenhof.it/",
+      "social": {
+        "instagram": "hotelsonnenhof_"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJAw7mUcMMeEcRYUkE4SjfkwY",
+      "nome": "Hotel Madonna",
+      "sito": "https://www.hotelmadonna.com/",
+      "social": {
+        "instagram": "hotelmadonna",
+        "facebook": "HotelMadonnaKastelruth"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ_Q7xrtwMeEcR5kBPMJ3F7uY",
+      "nome": "Hotel Roßlaufhof",
+      "sito": "http://www.rosslaufhof.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJJVsoVNsMeEcReqNTDtEG0lg",
+      "nome": "Hotel Castel Oswald Von Wolkenstein",
+      "sito": "https://www.hotelcastel.it/",
+      "social": {
+        "instagram": "hotelcastel.dolomites"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJGZDDrNMMeEcREFfY8GEWsiQ",
+      "nome": "Hotel Plunger",
+      "sito": "http://www.hotelplunger.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ85TSX9wMeEcRRTrbc_Oepjc",
+      "nome": "Parc Hotel Tyrol",
+      "sito": "http://www.hoteltyrol.com/",
+      "social": {
+        "instagram": "parc_hotel_tyrol",
+        "facebook": "Parc-Hotel-Tyrol-S-234924683235304"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ10MGlwwNeEcRHK7Y7TsOMf0",
+      "nome": "Hotel Baumwirt",
+      "sito": "https://www.baumwirt.com/",
+      "social": {
+        "instagram": "hotelbaumwirt",
+        "facebook": "HotelBaumwirt"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ52TuVcIMeEcRdS6gDbgfOis",
+      "nome": "Schgaguler Hotel",
+      "sito": "https://www.schgaguler.com/",
+      "social": {
+        "instagram": "schgagulerhotel",
+        "facebook": "schgagulerhotel"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJkU4P5MIMeEcRMwYBqmp1OyI",
+      "nome": "Hotel Lamm",
+      "sito": "https://www.lamm-hotel.it/",
+      "social": {
+        "instagram": "lamm_hotel",
+        "facebook": "hotellammkastelruth"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ-xH-1NwMeEcR8fYg76gb6BA",
+      "nome": "Martina Breakfast Lodge",
+      "sito": "http://www.martina-lodge.com/?utm_source=google&utm_medium=organic&utm_campaign=google_mybusiness&utm_term=hotel",
+      "social": {
+        "facebook": "people"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJ10MGlwwNeEcR0HLcMTME1jU",
+      "nome": "Alpin Relax Chalet Tianes",
+      "sito": "http://www.hotel-tianes.com/",
+      "social": {
+        "instagram": "chalet_tianes",
+        "facebook": "Tianes.Chalet"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJC_REJXENeEcROyo2dSdtytw",
+      "nome": "Hotel Pinei Nature & Spirit",
+      "sito": "http://www.panidersattel.com/",
+      "social": {
+        "instagram": "hotel_pinei"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJk3ysSd0MeEcRMViQilGJB80",
+      "nome": "Kastel Seiser Alm Aparthotel",
+      "sito": "http://www.kastelseiseralm.com/",
+      "social": {
+        "facebook": "aparthotel.kastelseiseralm",
+        "youtube": "UCve1QUvM0_gx2UXXm4RoMew"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJRwVK09oMeEcRTmcNfk6rHcw",
+      "nome": "Aparthotel Viktoria",
+      "sito": "http://www.hotel-viktoria.it/",
+      "social": {
+        "facebook": "Aparthotel-Viktoria-Kastelruth-494366173968035"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJ_Xrs9DINeEcRUAxM3VvBlM4",
+      "nome": "Hotel Ortler",
+      "sito": "http://www.hotelortler.com/",
+      "social": {
+        "facebook": "profile.php"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJoY5V4tlseEcRJVXBHpPk1NM",
+      "nome": "Hotel Steger-Dellai Alpe di Siusi",
+      "sito": "https://www.hotelsteger-dellai.com/",
+      "social": {
+        "instagram": "hotel_steger_dellai",
+        "facebook": "stegerdellai"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJnxjCulVseEcRs881LrLFkf4",
+      "nome": "Berghotel Zorzi",
+      "sito": "http://www.berghotelzorzi.com/",
+      "social": {
+        "instagram": "berghotelzorzi_seiseralm"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJnxjCulVseEcRpKLbpvu5ZTk",
+      "nome": "Albergo Monte Piz",
+      "sito": "https://www.montepiz.com/it/",
+      "social": {
+        "instagram": "hotel_montepiz",
+        "facebook": "HotelMontePiz"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJbbA6abZyeEcRW75VKGq3fqw",
+      "nome": "Hotel Seiser Alm Plaza",
+      "sito": "https://www.seiseralm.com/?utm_source=GMB&utm_medium=Website&utm_campaign=GoogleMyBusiness",
+      "social": {
+        "instagram": "urthaler_seiseralm",
+        "facebook": "seiseralmurthaler"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJnxjCulVseEcRAFzQD0FKv0I",
+      "nome": "Sporthotel Sonne",
+      "sito": "https://www.sporthotelsonne.com/?utm_source=google&utm_medium=organic&utm_campaign=MyBusiness_SporthotelSonne",
+      "social": {},
+      "nota": "Sito non leggibile (UNABLE_TO_VERIFY_LEAF_SIGNATURE): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJZfH5elZteEcR8mBOQzt069M",
+      "nome": "Hotel Chalet Dolomites",
+      "sito": "http://www.chaletdolomites.com/",
+      "social": {
+        "instagram": "hotelchaletdolomites",
+        "facebook": "profile.php"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJNfPinN1qnUcR2U_anj_7swc",
+      "nome": "Romantik Hotel Turm",
+      "sito": "https://www.hotelturm.it/?utm_source=GMB&utm_medium=Website&utm_campaign=GoogleMyBuisness",
+      "social": {
+        "instagram": "romantikhotelturm",
+        "facebook": "romantik.hotel.turm",
+        "youtube": "user"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJ--SM-n5zeEcRVa2AV7jGfGk",
+      "nome": "Hotel Emmy - five elements",
+      "sito": "https://www.hotelemmy.it/",
+      "social": {
+        "instagram": "hotelemmy5elements",
+        "facebook": "HotelEmmy",
+        "youtube": "UCJKemXEm0foTzvsUCDE3YhQ"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJOTkMhH9zeEcRlQeflzHW_aA",
+      "nome": "Hotel Heubad",
+      "sito": "http://www.hotelheubad.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJBYy8jH9zeEcRFey5tG_dqmU",
+      "nome": "Bed & Breakfast Residence Hubertus",
+      "sito": "https://www.hubertus-dolomites.com/de",
+      "social": {
+        "instagram": "hubertus.dolomites",
+        "facebook": "BedBreakfastResidenceHubertus"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJf6U2doB0eEcRhSPKgyHM7Hc",
+      "nome": "Gartenhotel Völser Hof Adults Only",
+      "sito": "https://www.voelserhof.it/",
+      "social": {
+        "instagram": "gartenhotel_voelserhof",
+        "facebook": "Gartenhotel-V"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJZVTEKH1zeEcR0F6JQHt4yOQ",
+      "nome": "Hotel St.Anton",
+      "sito": "http://www.st-anton.it/",
+      "social": {
+        "instagram": "hotelstanton",
+        "facebook": "hotel.st.anton"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJAUAz2JB0eEcRZrof2T5-JPY",
+      "nome": "Hotel Perwanger",
+      "sito": "http://www.perwanger.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJyVOmh4lxeEcRkOgrbs986TA",
+      "nome": "Hotel Dosses",
+      "sito": "http://www.dosses.com/",
+      "social": {
+        "instagram": "hoteldosses",
+        "facebook": "Tiersdosses"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJFRnqK3lxeEcRkeBarVzYjJA",
+      "nome": "Hotel Paradies",
+      "sito": "https://www.paradies.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJf3PiwXlxeEcRONvOkAaIbR8",
+      "nome": "Alpinhotel Vajolet",
+      "sito": "https://www.hotel-vajolet.it/",
+      "social": {
+        "instagram": "alpinhotel_vajolet",
+        "facebook": "vajolet",
+        "youtube": "UCpHAngzl19yCV239KSBHpdg"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJO0Eo1CNyeEcRWyKRhPs6hDw",
+      "nome": "Berghotel Piné",
+      "sito": "http://www.pine.it/",
+      "social": {
+        "instagram": "hotel.pine",
+        "facebook": "BerghotelPine"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJicHeDPVxeEcRBYWNQXciucU",
+      "nome": "Cyprianerhof Dolomit Resort",
+      "sito": "https://www.cyprianerhof.com/?utm_source=google&utm_medium=organic&utm_campaign=google_mybusiness",
+      "social": {
+        "instagram": "cyprianerhof_dolomit_resort",
+        "facebook": "cyprianerhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJyVOmh4lxeEcRaNsineWEaBg",
+      "nome": "Alphotel Panorama",
+      "sito": "https://www.alphotel-panorama.com/it.html",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJVZ9V05xxeEcRenGc7Gy2fvQ",
+      "nome": "Albergo Laurin",
+      "sito": "https://www.gasthof-laurin.com/",
+      "social": {
+        "instagram": "gasthof.laurin.tiers.suedtirol",
+        "facebook": "GasthofLaurin"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJS7Idc4lxeEcR2Op4MsGU3v8",
+      "nome": "Hotel - Pension Pattissenhof",
+      "sito": "http://www.pattissenhof.com/",
+      "social": {
+        "instagram": "hotel_pattissenhof"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJi_6j5CByeEcRNDnyg152PxE",
+      "nome": "Dolomitenhotel Weisslahnbad Hotel Dolomiti Lavina Bianca",
+      "sito": "http://www.weisslahnbad.com/",
+      "social": {
+        "instagram": "dolomitenhotel.weisslahnbad"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJyVOmh4lxeEcRrGo6x3fF_AM",
+      "nome": "Gasthof Edelweiß",
+      "sito": "http://www.gasthof-edelweiss.it/",
+      "social": {
+        "facebook": "gasthof.edelweiss.dolomiten"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJa7c9xoRxeEcRpSyKSsDe5zo",
+      "nome": "Hotel Stefaner - Boutique & Wanderhotel",
+      "sito": "https://www.stefaner.com/?utm_source=GoogleMyBusiness&utm_medium=KlickWebsite&utm_campaign=GoogleMyBusiness",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJxU3Xif4SeEcRZHQt1X8gHK4",
+      "nome": "Hotel Maria",
+      "sito": "http://www.hotelmaria.cc/",
+      "social": {
+        "instagram": "hotelmariavalgardena"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJQae_ZP4SeEcRYGmQCKF4Hfg",
+      "nome": "Hotel Genziana",
+      "sito": "http://www.hotelgenziana.it/",
+      "social": {
+        "instagram": "hotel.genziana.ortisei"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJNd1aBgITeEcRugG47OYl5Yo",
+      "nome": "Hotel Dolomiti Madonna",
+      "sito": "http://www.hotel-madonna.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ20NXS40SeEcRMjCi994HuZM",
+      "nome": "Hotel Digon",
+      "sito": "http://www.hoteldigon.com/",
+      "social": {
+        "instagram": "hoteldigon"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJidVshv4SeEcRDTjRtAlL2aY",
+      "nome": "ADLER Dolomiti",
+      "sito": "http://www.adler-dolomiti.com/",
+      "social": {},
+      "nota": "Sito non leggibile (ERR_SSL_DH_KEY_TOO_SMALL): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJVaw7D_kSeEcRFJK2Akc7UKU",
+      "nome": "Hotel Angelo Engel",
+      "sito": "http://www.hotelangelo.net/",
+      "social": {
+        "instagram": "hotelangeloengel",
+        "youtube": "player_api"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ5zwCp_4SeEcRf7bTXHJNqTk",
+      "nome": "Hotel COSMEA Dolomites",
+      "sito": "http://www.hotelcosmea.it",
+      "social": {
+        "instagram": "hotel.cosmea.dolomites",
+        "facebook": "HotelCosmea",
+        "youtube": "player_api"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJYbdPOfMSeEcRMJAyYPhzcRo",
+      "nome": "Hotel Arnaria",
+      "sito": "http://www.arnaria.com/",
+      "social": {
+        "instagram": "hotel_arnaria"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJPQFZWvcSeEcRsnIlxcxE_Jg",
+      "nome": "Hotel Luna Mondschein",
+      "sito": "http://www.hotel-luna.com/it/",
+      "social": {
+        "facebook": "HotelLunaMondschein"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJAxBg7AETeEcRok6kfS9mxWc",
+      "nome": "Hotel Grones",
+      "sito": "http://www.grones.info/",
+      "social": {
+        "instagram": "hotelgrones",
+        "facebook": "hotelgrones"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJbxXAYv4SeEcRiksTwnpYO20",
+      "nome": "Hotel Garni Snaltnerhof",
+      "sito": "http://www.snaltnerhof.it/",
+      "social": {
+        "instagram": "hotelgarnisnaltnerhof",
+        "facebook": "GarniSnaltnerhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJJZUoy_kSeEcRfs4pEw7OD9w",
+      "nome": "Hotel Fortuna",
+      "sito": "http://www.hotel-fortuna.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ98AkavsSeEcR-bBE958OdAU",
+      "nome": "Hotel Ronce",
+      "sito": "http://www.hotelronce.com/",
+      "social": {
+        "instagram": "hotelronce",
+        "facebook": "Hotel-Ronce-Val-Gardena-223957167685419"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJC9Lqif0SeEcRsOhJa3bKY64",
+      "nome": "Hotel Hell",
+      "sito": "https://www.hotel-hell.it/en/",
+      "social": {
+        "instagram": "hotelhellortisei"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJ8Yw9NPkSeEcRAaSSWRk3wfM",
+      "nome": "Classic Hotel am Stetteneck",
+      "sito": "http://www.stetteneck.com/",
+      "social": {
+        "instagram": "hotelstetteneck_ortisei",
+        "facebook": "stetteneck"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJv3-wso4SeEcRuGSIpEVJs3U",
+      "nome": "Hotel Croce D'Oro",
+      "sito": "http://www.hotelcrocedoro.it/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJhQGncwETeEcR6nEdSQh7kK0",
+      "nome": "Hotel Villa Luise",
+      "sito": "https://www.villaluise.com/ita/lage.php",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJkWnkDwQTeEcRgACyoNkO530",
+      "nome": "Hotel Montchalet",
+      "sito": "https://www.montchalet.it/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJs4IF0PMSeEcRDaOkO8uD1T0",
+      "nome": "Alpin & Vital Hotel La Perla",
+      "sito": "http://www.laperlahotel.info/",
+      "social": {
+        "instagram": "hotel_laperla",
+        "facebook": "AlpinVitalHotelLaPerla"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ6cyX6pMpiEcR3iI1p0kKVks",
+      "nome": "Hotel Pradell",
+      "sito": "http://www.pradell.com/",
+      "social": {
+        "instagram": "hotel_pradell",
+        "facebook": "hotelpradell",
+        "youtube": "PradellDolomites"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJTQkv4PcSeEcR9ZTmsYtf5q4",
+      "nome": "Hotel Niblea Dolomites",
+      "sito": "http://www.niblea.com/",
+      "social": {
+        "instagram": "hotelniblea",
+        "facebook": "piciuelhotel"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJCap40AMTeEcRwhsC_vvhzlg",
+      "nome": "Alpstay - Chalet Hotel Hartmann - Adults Only",
+      "sito": "http://www.hotel-hartmann.com/",
+      "social": {
+        "instagram": "enjoyhartmann",
+        "facebook": "Hotel.Hartmann"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJJbQbMfkSeEcR9HmWkr_WjlY",
+      "nome": "Hotel Garni Walter",
+      "sito": "http://www.garniwalter.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJXSzwMfwSeEcRSGUJSqQEN8g",
+      "nome": "Gardena Grödnerhof Hotel & Spa",
+      "sito": "https://www.gardena.it/",
+      "social": {
+        "instagram": "gardenagroednerhof",
+        "facebook": "gardenagroednerhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJxRp42gMTeEcRz_P_R7MbU4g",
+      "nome": "ADLER Balance",
+      "sito": "http://www.adler-balance.com/",
+      "social": {},
+      "nota": "Sito non leggibile (ERR_SSL_DH_KEY_TOO_SMALL): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJfShONPkSeEcRDUVoJfMJ350",
+      "nome": "Cavallino Bianco Val Gardena - Dolomiti",
+      "sito": "https://www.cavallino-bianco.com/",
+      "social": {
+        "instagram": "cavallinobiancofamilyspa",
+        "facebook": "Cavallino.Bianco.Family.Hotel",
+        "youtube": "cavallinobiancofamilyspa"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJY8d1MPkSeEcRw0jYbM5uVjQ",
+      "nome": "Albergo Sureghes",
+      "sito": "http://www.sureghes.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJnT08YvwSeEcRPqFgfrT29gA",
+      "nome": "Rainell Dolomites Retreat",
+      "sito": "http://www.rainell.com/",
+      "social": {
+        "instagram": "rainell.dolomitesretreat",
+        "facebook": "rainell.dolomitesretreat"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJTQkv4PcSeEcRnFYFSqHeeaM",
+      "nome": "La Cort My Dollhouse - Adults Only",
+      "sito": "https://www.lacort.it/",
+      "social": {
+        "instagram": "lacortmydollhouse",
+        "facebook": "LaCortMyDollhouse",
+        "tiktok": "lacortmydollhouse"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJASPm-QMTeEcRg0BoKn1S6Yg",
+      "nome": "Alpenheim Charming & Spa Hotel",
+      "sito": "http://www.alpenheim.it/",
+      "social": {
+        "instagram": "hotel_alpenheim",
+        "facebook": "hotel.alpenheim"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ2TNvTfUSeEcRuUUyQwfAsN8",
+      "nome": "Hotel Grien",
+      "sito": "https://www.hotel-grien.com/",
+      "social": {
+        "instagram": "hotel_grien",
+        "facebook": "hotelgrien"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJxX9f0AMTeEcRitHDmDmu19E",
+      "nome": "Alpin Garden Luxury Maison & Spa - Adults Only",
+      "sito": "http://www.alpingarden.com/",
+      "social": {
+        "instagram": "alpingarden",
+        "facebook": "alpingarden",
+        "linkedin": "alpin-garden-wellness-resort-"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJg9WZgYISeEcR6bKM2sUdNhM",
+      "nome": "Hotel Albion – Spa Resort Dolomites",
+      "sito": "http://www.albionhotel.net/",
+      "social": {
+        "instagram": "hotelalbion_dolomites",
+        "youtube": "player_api"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJM8fo_wATeEcR9refneaS9vI",
+      "nome": "Albergo Stua Catores",
+      "sito": "http://www.stuacatores.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJq_N0zpkSeEcRtTS42TjQg5E",
+      "nome": "Charme Hotel Uhrerhof",
+      "sito": "https://www.uhrerhof.com/",
+      "social": {
+        "instagram": "charmehotel_uhrerhof",
+        "facebook": "Charme-Hotel-Uhrerhof-480889175327412",
+        "youtube": "player_api"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJu6zUDZcSeEcR0cUrRWHY0L0",
+      "nome": "Hotel Platz",
+      "sito": "https://www.hotelplatz.it/?utm_source=GoogleMyBusiness&utm_medium=KlickWebsite&utm_campaign=GoogleMyBusiness",
+      "social": {
+        "instagram": "hotelplatz",
+        "facebook": "hotelplatz.it"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJyYGyOvkSeEcRegSuoaDwluQ",
+      "nome": "Hotel Albergo BRUNELLO",
+      "sito": "https://www.brunello-dolomites.com/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJlzF4NvwSeEcR37qTJ-VC-dM",
+      "nome": "Garni Panoramik",
+      "sito": "http://www.panoramik.it/",
+      "social": {
+        "facebook": "garnipanoramikortisei"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJw0rzBQITeEcRNy1YAsGaNY8",
+      "nome": "Residence Hotel B&B Fever",
+      "sito": "http://www.residencefever.com/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJfxMttv4SeEcR_wUHG3ThlhU",
+      "nome": "Pension Belaval",
+      "sito": "http://www.pension-belaval.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ9yuqX_0SeEcRvc1WrjxMa-A",
+      "nome": "Luxury B&B August",
+      "sito": "http://www.hotelaugust.it/",
+      "social": {
+        "instagram": "augustluxurybnb"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJUcdXY_gSeEcRSSzJ-ojOmFc",
+      "nome": "Casa al Sole",
+      "sito": "http://www.casa-alsole.it/",
+      "social": {
+        "instagram": "casaalsoleortisei"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJA1Jj92MTeEcRLbyaiembTus",
+      "nome": "St Christina",
+      "sito": "https://www.uridl.it/",
+      "social": {
+        "instagram": "uridl_dolomites",
+        "facebook": "hoteluridl"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJE9KkAGITeEcRC6E6eiIky5s",
+      "nome": "Hotel Carmen Dolomites",
+      "sito": "http://www.hotel-carmen.com/",
+      "social": {
+        "instagram": "hotel__carmen"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJu-LmhZsUeEcR-W_Xn66sPfw",
+      "nome": "Alpenhotel Plaza",
+      "sito": "http://www.alpenhotelplaza.com/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJ90MU1Z0UeEcRLVg872ZOxhg",
+      "nome": "Hotel Touring",
+      "sito": "https://www.hoteltouring.bz/",
+      "social": {
+        "instagram": "hoteltouring_dolomites",
+        "facebook": "hoteltouringvalgardena",
+        "youtube": "player_api"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJy-_8nJwUeEcRUoqGMxm9NKw",
+      "nome": "Hotel Interski",
+      "sito": "http://www.hotel-interski.com/",
+      "social": {
+        "facebook": "hotel.interski"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJncVAMmITeEcRmt1hFi88Y0U",
+      "nome": "Hotel Vernel",
+      "sito": "https://www.hotelvernel.com/",
+      "social": {
+        "instagram": "hotelvernel_valgardena"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJuUm8P28TeEcRrXF1xm6R0Yc",
+      "nome": "Alpstay - Smart Hotel Saslong - Dolomites",
+      "sito": "http://www.saslong.eu/",
+      "social": {
+        "instagram": "smart.hotelsaslong",
+        "facebook": "SaslongDolomites"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJyxflQG8TeEcRf0cumD5lewc",
+      "nome": "Hotel Christeinerhof- Villa Pallua",
+      "sito": "http://www.christeinerhof.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJgZeGuRITeEcR3l3UkAgdd8c",
+      "nome": "Diamant Spa Resort Hotel",
+      "sito": "https://www.hoteldiamant.it/?utm_source=google&utm_medium=organic&utm_campaign=MyBusinessEintragDiamant",
+      "social": {
+        "instagram": "diamant.spa.resort"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJQZ0GKZwUeEcRyvqX3Fe4u9Q",
+      "nome": "Hotel Cristallo",
+      "sito": "http://www.cristallo-hotel.it/",
+      "social": {
+        "instagram": "cristallovalgardena",
+        "facebook": "hotelcristallovalgardena"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJGQh1zWMTeEcRtmFksbdhhE8",
+      "nome": "Hotel Ciamp",
+      "sito": "http://www.ciamp.com/",
+      "social": {
+        "instagram": "hotelciamp",
+        "facebook": "pension.ciamp"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJBavLJWQTeEcRCGfnvrWrziE",
+      "nome": "Dorfhotel Beludei",
+      "sito": "http://www.beludei.com/",
+      "social": {
+        "facebook": "beludei"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJI0vvAY4UeEcRBcLW6sZS2W8",
+      "nome": "Almhotel Col Raiser",
+      "sito": "http://www.colraiser.com/",
+      "social": {
+        "facebook": "colraiser"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJY7ikdpwUeEcR0oY8X0sD5XI",
+      "nome": "Vitalhotel Dosses",
+      "sito": "http://www.dosses.it/",
+      "social": {
+        "instagram": "vitalhoteldosses",
+        "facebook": "HotelDosses"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJe0KWke4UeEcR89BlGDxlnt8",
+      "nome": "Hotel Aaritz",
+      "sito": "http://aaritz.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJE-f0AeQUeEcRCl4I0_4Ozzs",
+      "nome": "Hotel Sun Valley",
+      "sito": "http://www.hotelsunvalley.it/",
+      "social": {
+        "instagram": "sunvalleyhotelselva",
+        "facebook": "hotelsunvalley"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJnXJAxGsVeEcRptz55fSHQS4",
+      "nome": "Hotel Des Alpes",
+      "sito": "https://www.desalpes.info/",
+      "social": {
+        "instagram": "hotel_desalpes_stuben",
+        "facebook": "profile.php"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ123vieUUeEcRoOLLA9a35xE",
+      "nome": "Hotel Linder",
+      "sito": "http://www.linder.it/",
+      "social": {
+        "instagram": "linder_cyclinghotel",
+        "facebook": "Bikehotel.Linder"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJOy0oz_MUeEcRPnbgcVALzlk",
+      "nome": "Hotel Daniel",
+      "sito": "http://www.hoteldaniel.info/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJnTaC5CAVeEcRihhUAubXRoI",
+      "nome": "Hotel Jagdhof in Selva",
+      "sito": "http://jagdhof.bz/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJcyyE4fEUeEcR5fhEp_3w7wE",
+      "nome": "Hotel Fanes",
+      "sito": "https://www.fanes.net/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJ8_y_2uAUeEcRswnvUXIwwd4",
+      "nome": "Mountain Design Hotel Eden Selva",
+      "sito": "https://www.edenselva.com/",
+      "social": {
+        "instagram": "edenselva",
+        "facebook": "hotel.eden.selva",
+        "youtube": "edenselva7102"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJze_axZIUeEcRE05KaxDNj4c",
+      "nome": "Alpenroyal Hotel",
+      "sito": "http://www.alpenroyal.com/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJgX1sF-wUeEcRv-I4P6SJcqI",
+      "nome": "Hotel La Pineta",
+      "sito": "http://www.hotel-la-pineta.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJr11pW-8UeEcRgbtyXVEbyfg",
+      "nome": "Hotel Armin",
+      "sito": "http://www.hotelarmin.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJq9lsPu8UeEcRP2BdEHRZmS0",
+      "nome": "Hotel Ingram",
+      "sito": "http://www.hotelingram.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJY_yOfuQUeEcR5ckM1i1cMaU",
+      "nome": "Hotel Condor",
+      "sito": "http://www.hotelcondor.info/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJXektXvwUeEcRW97OyroTSOI",
+      "nome": "Hotel Val",
+      "sito": "http://www.hotelval.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJoccZpuUUeEcRGNl4VEYLpU4",
+      "nome": "Hotel Dorfer",
+      "sito": "http://www.hoteldorfer.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJM34o5e4UeEcRtsfsl66Qs4M",
+      "nome": "Hotel Stella - my Dolomites Experience",
+      "sito": "https://www.hotel-stella.com/",
+      "social": {
+        "instagram": "hotel_stella_valgardena",
+        "facebook": "hotelstellavalgardena",
+        "youtube": "hotelstella-dolomites"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJ822xd-MUeEcRl5VdejH3D78",
+      "nome": "Hotel Scoiattolo",
+      "sito": "http://www.scoiattolo.info/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJl6Jo1eAUeEcRf_xX6bbAh-s",
+      "nome": "Hotel Genziana",
+      "sito": "https://www.hotel-genziana.it/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJc72dxOYUeEcRasHf_FiCrok",
+      "nome": "Freina Dolomites Hotel",
+      "sito": "http://www.hotelfreina.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJ4fJAsOYUeEcRHdezax3HPYg",
+      "nome": "Hotel Corona Krone",
+      "sito": "http://www.hotel-corona.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJuUI35e4UeEcRWG6AkKRl2eo",
+      "nome": "Hotel Flora",
+      "sito": "https://www.floradolomites.it/de/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJq9lsPu8UeEcRiFxD3X3XDls",
+      "nome": "Albergo Casa Alpina",
+      "sito": "https://www.hotelalpinhaus.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJq9lsPu8UeEcRiRCZ7QQA3uQ",
+      "nome": "Hotel Bellevue",
+      "sito": "http://www.hotelbellevue-valgardena.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJq9lsPu8UeEcRj6n7u_Phh8w",
+      "nome": "Hotel Welponer",
+      "sito": "https://www.welponer.it/",
+      "social": {
+        "instagram": "hotelwelponer",
+        "facebook": "HotelWelponer"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJS2XmGO8UeEcRCDude2kEfk0",
+      "nome": "The Oswald Grand Hotel",
+      "sito": "http://www.hoteloswald.com/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJ8Xjt9O8UeEcRXpAj-G2E7a8",
+      "nome": "Hotel Plazola",
+      "sito": "http://www.hotelplazola.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJq9lsPu8UeEcRNYF3vm4q5dM",
+      "nome": "Hotel Else",
+      "sito": "https://www.hotelelse.com/",
+      "social": {
+        "facebook": "Hotel-Else-129606720425291"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJdx0LcyEVeEcRvmcFHyJomZU",
+      "nome": "Hotel Alpino Di Demetz Luigi & Co. S.N.C.",
+      "sito": "http://www.hotel-alpino.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJMUo9buUUeEcR3mbGnn4IdOw",
+      "nome": "Hotel Serena",
+      "sito": "https://www.hotel-serena.it/",
+      "social": {
+        "facebook": "hotelserenaselva",
+        "youtube": "iframe_api"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ14ZHO-EUeEcRpaK94USin_8",
+      "nome": "Hotel Garnì La Tambra",
+      "sito": "http://www.la-tambra.com/",
+      "social": {
+        "instagram": "garnilatambra"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJsYg2U-4UeEcRWJTVJO51Alc",
+      "nome": "Hotel & Residence Antares",
+      "sito": "https://www.residencehotels.com/dolomiti/val-gardena/selva-di-val-gardena/",
+      "social": {
+        "facebook": "residencehotels.dolomiti"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJR-nv9-QUeEcR2K7waAEUCmk",
+      "nome": "Family Hotel Biancaneve",
+      "sito": "https://www.biancaneve.it/",
+      "social": {
+        "instagram": "biancaneve_familyhotel",
+        "facebook": "Biancaneve.Family.Hotel"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJl4Cod-MUeEcRwJOHVMDWF7g",
+      "nome": "Garni Hotel Bel Vert",
+      "sito": "https://www.belvert.it/it.html",
+      "social": {
+        "instagram": "hotelbelvert",
+        "facebook": "belvert.it",
+        "youtube": "player_api"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJb1ooX4UUeEcRfj1q8FdPa_4",
+      "nome": "Romantic & Family Hotel Gardenia - Gardenahotels",
+      "sito": "https://www.gardenahotels.com/it/hotel-gardenia/hotel/",
+      "social": {
+        "instagram": "gardenahotels",
+        "youtube": "player_api"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJp4UNf-8UeEcR1TQBTNiltBI",
+      "nome": "Hotel Granbaita Dolomites",
+      "sito": "http://www.hotelgranbaita.com/",
+      "social": {
+        "instagram": "hotelgranbaita",
+        "facebook": "granbaita"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJXW6TLewUeEcRCJrsYfV-90w",
+      "nome": "Piccolo - Dolomites & Gourmet Hotel",
+      "sito": "https://www.hotel-piccolo.com/",
+      "social": {
+        "instagram": "piccolo_hotel",
+        "facebook": "PiccoloHotelDolomites"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJK7iJZyAVeEcRTv9TauU7ipA",
+      "nome": "Hotel Edda",
+      "sito": "http://www.hoteledda.it/",
+      "social": {
+        "instagram": "hoteledda",
+        "facebook": "hoteledda.it"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ9S3vj-AUeEcRtenqGOaX_5Q",
+      "nome": "Hotel Somont",
+      "sito": "http://www.hotelsomont.com/",
+      "social": {
+        "instagram": "hotelsomont",
+        "facebook": "HotelSomont"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJw-6sGuMUeEcRq3QeqpPHuVg",
+      "nome": "Garni Hotel Aghél",
+      "sito": "http://www.aghel.it/",
+      "social": {
+        "facebook": "Garni-Hotel-Agh",
+        "youtube": "garniaghel3647"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJq9lsPu8UeEcRZYJMd6UNGDs",
+      "nome": "Hotel Tyrol",
+      "sito": "https://www.tyrolhotel.it/",
+      "social": {
+        "instagram": "tyrolhotel",
+        "facebook": "hoteltyrolselva",
+        "tiktok": "tyrolhotel",
+        "linkedin": "tyrolhotel"
+      },
+      "nota": "",
+      "trovati": 4
+    },
+    {
+      "placeId": "ChIJ123vieUUeEcR2DLSY67V8_Q",
+      "nome": "Hotel Europa",
+      "sito": "http://www.europavalgardena.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJqemLgOQUeEcRpXyl_HeeBaM",
+      "nome": "Hotel Miravalle",
+      "sito": "http://www.hotelmiravalle.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJsSXZGJQUeEcR8aV6VvDqWXQ",
+      "nome": "Hotel Belaval",
+      "sito": "http://www.belaval.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJDSg8VeQUeEcRA_fN6hlMdFs",
+      "nome": "Hotel Garni Mezdi",
+      "sito": "http://www.mezdi.com/",
+      "social": {
+        "instagram": "hotelgarnimezdi"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJ40KF_ewUeEcR8-ftY_blFQE",
+      "nome": "Hotel Portillo Dolomites 1966' S",
+      "sito": "http://www.portillo-dolomites.it/",
+      "social": {
+        "instagram": "portillodolomites1966",
+        "facebook": "PortilloDolomites1966"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ78KzGu8UeEcRUuaGd0G4YKs",
+      "nome": "Boutique Hotel Nives - Dolomites",
+      "sito": "http://www.hotel-nives.com/",
+      "social": {
+        "instagram": "boutiquehotelnives"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJubUx8eUUeEcRjyFYMrZsv58",
+      "nome": "Hotel Mignon",
+      "sito": "http://www.hotel-mignon.it/",
+      "social": {
+        "instagram": "hotel_mignon_selva",
+        "facebook": "Hotel-Mignon--152734311465053"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ_RVmNeEUeEcRV6phFS6bfPE",
+      "nome": "The Laurin Hotel",
+      "sito": "http://www.thelaurin.it/",
+      "social": {
+        "instagram": "hotel_laurin",
+        "facebook": "hotellaurin"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJqV4m7e4UeEcRnppmRig0nDI",
+      "nome": "Hotel Posta Al Cervo",
+      "sito": "http://www.hotelpostaalcervo.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ87aum5sUeEcRx4IdavADj2g",
+      "nome": "Grand Hotel Wolkenstein - Gardenahotels",
+      "sito": "http://www.wolkenstein.it/",
+      "social": {
+        "instagram": "gardenahotels",
+        "youtube": "player_api"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJb4-ike4UeEcR7b9ZW0hwE3M",
+      "nome": "Boutique Hotel Pralong S - Selva Val Gardena",
+      "sito": "https://www.hotelpralong.it/it/hotel",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJba-DvfwUeEcRE68Q8OERb0E",
+      "nome": "Hotel Garni Iris",
+      "sito": "http://www.garni-iris.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJwz7hpuUUeEcRh8Prq60do1g",
+      "nome": "Garni' Franca",
+      "sito": "https://www.garnifranca.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJSS6rhe4UeEcR0SAIprH1u7g",
+      "nome": "Chalet S Dolomites",
+      "sito": "https://www.chalet-s.eu/it/",
+      "social": {
+        "instagram": "_chalet_s_"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJsxK0euUUeEcRWujQg-9y48Y",
+      "nome": "Alpstay - Hotel Acadia - Adults Only",
+      "sito": "http://www.hotel-acadia.com/",
+      "social": {
+        "instagram": "acadia_mountain_home"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJOw2K0uYUeEcRlokNTXQABS4",
+      "nome": "Chalet Elisabeth - dolomites alpin & charme",
+      "sito": "https://www.chaletelisabeth.it/",
+      "social": {
+        "instagram": "chalet_elisabeth"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJT4XmpL8NeEcRpxgZXe_MYE8",
+      "nome": "Hotel Überbacher",
+      "sito": "https://www.ueberbacher.com/",
+      "social": {
+        "instagram": "hotelueberbacher"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJM1TIUBUMeEcRdTMSiz5Ubgo",
+      "nome": "Albergo al Sole",
+      "sito": "https://www.zursonnealbergoalsole.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJp7uAVhUMeEcRkm8Eqq9HTV8",
+      "nome": "Gasthof Krone Lajen Suedtirol",
+      "sito": "http://www.lajen.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ6WRGrWoMeEcRWkjht2QhhKo",
+      "nome": "Hotel Andechserhof & Mountain Sky",
+      "sito": "http://www.andechserhof.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJN14wwz8MeEcRsoVA33GyYO8",
+      "nome": "Hubertusstube",
+      "sito": "http://www.hubertus-stube.com/",
+      "social": {
+        "instagram": "hotel_restaurant_hubertusstube",
+        "facebook": "Hotel-Hubertusstube-342306092501804"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJKVEkTjecgkcRk6xgiy-yqWM",
+      "nome": "B&B HOTEL Bolzano",
+      "sito": "https://www.hotel-bb.com/it/hotel/bolzano?utm_source=googlemaps&utm_medium=fichehotel&utm_campaign=yext",
+      "social": {
+        "youtube": "iframe_api",
+        "linkedin": "bb-hotels-group"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ35ZfLXqegkcRACI0Y9_N8rs",
+      "nome": "Stadt Hotel Città",
+      "sito": "http://www.hotel-citta.com/",
+      "social": {
+        "instagram": "stadt_hotel_citta",
+        "facebook": "stadthotelcitta",
+        "linkedin": "stadt-hotel-citt"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJ7WEEOHeegkcRap65T11aoYM",
+      "nome": "Hotel Regina",
+      "sito": "http://www.hotelreginabz.it/",
+      "social": {
+        "instagram": "hotelreginabz",
+        "facebook": "hotelreginabz"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJvZpfbXqegkcRsvhNs3ZY6mw",
+      "nome": "Feichter Hotel & Living Bozen Bolzano Südtirol Alto Adige",
+      "sito": "http://www.hotelfeichter.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJN3qAn7KdgkcRjbSQwe9NTX0",
+      "nome": "Hotel Restaurant Lewald",
+      "sito": "http://www.lewald.it/",
+      "social": {
+        "facebook": "Hotel-Restaurant-Lewald-350747135035549"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJJRbJqnCegkcRs9ZSDXy7zFM",
+      "nome": "Parkhotel Laurin",
+      "sito": "https://www.laurin.it/",
+      "social": {},
+      "nota": "Sito non leggibile (ERR_SSL_DH_KEY_TOO_SMALL): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJM7eUGHKfgkcRjhhDjYepZLc",
+      "nome": "Hotel Post Gries",
+      "sito": "https://www.hotel-post-gries.com/",
+      "social": {
+        "instagram": "hotelpostgries",
+        "facebook": "hotelpostgriesbozen"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJk0y1JnGegkcRz2NIHv5AEH8",
+      "nome": "Youth Hostel Bolzano",
+      "sito": "https://www.jugendherberge.bz/it/bolzano/ostello/",
+      "social": {
+        "instagram": "youthhostelsbz",
+        "facebook": "youthhostelsbz"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJzQKzLnqegkcR3WcvpOjt2Lc",
+      "nome": "Hotel Greif",
+      "sito": "https://www.greif.it/",
+      "social": {},
+      "nota": "Sito non leggibile (ERR_SSL_DH_KEY_TOO_SMALL): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJLZ8mm2CegkcRnR39WTokGlk",
+      "nome": "Hotel Hanny",
+      "sito": "https://www.hotelhanny.it/de/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJywKzLnqegkcR4l4z1KtJzdQ",
+      "nome": "Parkhotel Luna Mondschein",
+      "sito": "http://www.parkhotelmondschein.com/",
+      "social": {
+        "instagram": "parkhotelmondschein"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJvb2Z1Q2egkcROQaKAGq4stg",
+      "nome": "Hotel Magdalener Hof",
+      "sito": "http://www.magdalenerhof.it/?utm_source=google&utm_medium=organic&utm_campaign=google_mybusiness&utm_term=hotel",
+      "social": {
+        "instagram": "hotel_magdalener_hof",
+        "facebook": "people"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJg-acvmSegkcRA28sw5dz8pY",
+      "nome": "Villa Anita Rooms & Apartments Bolzano",
+      "sito": "http://www.villaanitabolzano.it/",
+      "social": {
+        "instagram": "villaanitabolzanorooms",
+        "facebook": "villaanitabolzano"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJUSRsCYCcgkcRDR8E20T_kDI",
+      "nome": "Four Points by Sheraton Bolzano",
+      "sito": "https://www.marriott.com/en-us/hotels/bzofp-four-points-bolzano/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0",
+      "social": {},
+      "nota": "Sito non leggibile (HTTP 403): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJD5LPuXGegkcR3146lDw8Cvc",
+      "nome": "Hotel Scala Stiegl",
+      "sito": "http://www.scalahot.com/",
+      "social": {
+        "instagram": "hotelstiegl",
+        "facebook": "people"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJFUp0k_qfgkcR-jn5y9K0tHw",
+      "nome": "Palais Hörtenberg",
+      "sito": "https://palais-hoertenberg.com/",
+      "social": {
+        "instagram": "palaishoertenberg",
+        "facebook": "hoertenberghomes"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJzxFnNHqegkcRa9zrMzk7iSs",
+      "nome": "Hotel Figl",
+      "sito": "http://www.figl.net/",
+      "social": {
+        "instagram": "hotelfigl",
+        "facebook": "hotelfigl"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJsZwxZdWfgkcRihmjbFc6qZ0",
+      "nome": "Hotel Regina",
+      "sito": "http://www.hotel-regina.it/",
+      "social": {
+        "instagram": "hotelreginasuedtirol",
+        "facebook": "hotel.regina.oberbozen"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJN7XxidWfgkcRlW6AGPUmTo0",
+      "nome": "Hotel Latemar",
+      "sito": "http://www.hotel-latemar.net/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJo2m5FNyfgkcRPYVPXIDRPvw",
+      "nome": "AEON hotel - an adults only place",
+      "sito": "http://www.aeon.it/",
+      "social": {
+        "instagram": "aeonhotel"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJydgOF9WfgkcRi6Q4ioYo5Es",
+      "nome": "Gloriette Boutiquehotel",
+      "sito": "https://www.gloriette-guesthouse.com/",
+      "social": {
+        "instagram": "gloriette_guesthouse",
+        "facebook": "Gloriette.Guesthouse"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJyU9hFtWfgkcRc9NitfwtD9I",
+      "nome": "Parkhotel Holzner",
+      "sito": "https://www.parkhotel-holzner.com/?utm_source=GMB&utm_medium=Referral&utm_campaign=Website-Link",
+      "social": {},
+      "nota": "Sito non leggibile (HTTP 404): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJfT6u29efgkcR9Q5yhA4O9lY",
+      "nome": "Hotel Oberbozen Naturidylle Geyrerhof®",
+      "sito": "http://www.geyrerhof.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJDxIqfgl1eEcRo62Y_nh8bzY",
+      "nome": "ADLER Ritten",
+      "sito": "http://www.adler-ritten.com/",
+      "social": {},
+      "nota": "Sito non leggibile (ERR_SSL_DH_KEY_TOO_SMALL): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJpe__xgx1eEcRrr8zsx-W2a8",
+      "nome": "Hotel Lichtenstern",
+      "sito": "https://www.lichtenstern.it/",
+      "social": {
+        "instagram": "lichtensternhotel",
+        "facebook": "hotel.lichtenstern",
+        "tiktok": "lichtensternhotel"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJdxh3dfefgkcRGaJ_ZPDdWtk",
+      "nome": "Pippos Mountain Lodge great Food, Suites & Farm",
+      "sito": "http://www.pippos.it/",
+      "social": {
+        "instagram": "pipposmountainlodge",
+        "facebook": "pipposmountainlodge"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJPbtjNnZ1eEcRmotCkp3MOnE",
+      "nome": "Hotel am Hang",
+      "sito": "http://www.hotelamhang.it/",
+      "social": {
+        "instagram": "HotelamHang",
+        "facebook": "HotelamHang"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJIYRZuZ51eEcRx67vauAcZ9U",
+      "nome": "Hotel Weihrerhof",
+      "sito": "https://www.weihrerhof.com/",
+      "social": {
+        "instagram": "weihrerhof",
+        "facebook": "HotelWeihrerhof",
+        "youtube": "player_api"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJ42WDBHZ1eEcR5QhnClgTMBs",
+      "nome": "Apipura",
+      "sito": "https://www.hotel-rinner.it/",
+      "social": {
+        "facebook": "sharer.php"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJI0xR1NafgkcRF-p0_kCZUiM",
+      "nome": "Haus Rottensteiner",
+      "sito": "http://www.hausrottensteiner.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJAcMdoz6egkcRYm8v9DjKYI0",
+      "nome": "Chalet Grumer Suites & Spa",
+      "sito": "https://www.chaletgrumer.it/",
+      "social": {
+        "instagram": "pipposmountainlodge",
+        "facebook": "pipposmountainlodge"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJJSaVVR91eEcRDTg3PsMiO3M",
+      "nome": "Soggiorno Alpino Costalovara",
+      "sito": "http://www.soggiornoalpino.com/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJ4xINvoh1eEcRo6-VXPlUhQY",
+      "nome": "Albergo Signaterhof",
+      "sito": "http://www.signaterhof.it/",
+      "social": {
+        "instagram": "signaterhof",
+        "facebook": "Signaterhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ39kJj-F0eEcR37pDTMh6CXw",
+      "nome": "Hotel Bemelmans - Post",
+      "sito": "http://www.bemelmans.com/",
+      "social": {
+        "instagram": "bemelmans.post",
+        "facebook": "Hotel.Bemelmans"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ9ROS-XV1eEcRmUp-YPLxsm8",
+      "nome": "Hotel am Wolfsgrubenersee",
+      "sito": "https://www.hotel-wolfsgrubenersee.com/?utm_source=GMB&utm_medium=Referral&utm_campaign=Website-Link",
+      "social": {
+        "instagram": "hotelamwolfsgrubenersee",
+        "facebook": "Hotel.am.Wolfsgrubenersee"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ4yTQCuF0eEcRzuXKLE_ys2I",
+      "nome": "Hotel Dolomiten",
+      "sito": "http://www.hoteldolomiten.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJj8lklSJ1eEcRHaymXkLSs5E",
+      "nome": "Bar Ristorante Hotel Ansitz Kematen - Collalbo (bz)",
+      "sito": "http://www.kematen.it/",
+      "social": {
+        "instagram": "hotel_ansitz_kematen",
+        "facebook": "hotelansitzkematen",
+        "youtube": "user"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJgRAdDal1eEcR3BBY5e0byN0",
+      "nome": "Hotel Dolomitenblick",
+      "sito": "http://hotel-dolomitenblick.eu/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJg-xYxVFweEcRRFLI0Z1xKlU",
+      "nome": "Charmehotel Friedrich",
+      "sito": "https://www.friedrich.it/",
+      "social": {
+        "instagram": "charmehotel_friedrich",
+        "facebook": "brandnamic"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJg-xYxVFweEcRJvQ9LkYfckw",
+      "nome": "Hotel Niggl easy going mounthotel",
+      "sito": "https://www.nigglhof.it/?utm_source=google&utm_medium=organic&utm_campaign=google_mybusiness",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJg-xYxVFweEcRUw3_eJT7Vz0",
+      "nome": "Hotel Berghaus Rosengarten",
+      "sito": "http://www.berghaus-rosengarten.com/",
+      "social": {
+        "instagram": "hotel_berghaus_rosengarten_"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJbXSCEk9weEcRZBRiPDwi52s",
+      "nome": "Gasthof/Albergo Löwen",
+      "sito": "http://www.loewen.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJWZf6DkpweEcRNqqi_67XfAc",
+      "nome": "Hotel Central",
+      "sito": "http://www.hotelcentral.it/",
+      "social": {
+        "instagram": "hotelcentral_welschnofen",
+        "facebook": "hotelcentral.it"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJQR3QGDZweEcRyybRjyTY2B4",
+      "nome": "Romantik Hotel Post",
+      "sito": "http://www.romantikhotelpost.com/",
+      "social": {
+        "instagram": "romantikhotelpost",
+        "facebook": "romantikhotelpost"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJSabfF1ZweEcRlwDqiQMVz5Y",
+      "nome": "Albergo Pensione Erna",
+      "sito": "",
+      "social": {},
+      "nota": "Nessun sito: social non verificabili da qui"
+    },
+    {
+      "placeId": "ChIJSabfF1ZweEcReZaH5rh7cTw",
+      "nome": "engel gourmet&spa",
+      "sito": "https://www.hotel-engel.com/",
+      "social": {
+        "instagram": "wellnesshotel_engel",
+        "facebook": "Wellnessresort.Engel",
+        "youtube": "UC_iiKplGx_jPR3sxobHAxuA"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJV7B86J5veEcRVfAZLiSw7pM",
+      "nome": "Hotel Diana Bike & Ski",
+      "sito": "http://www.diana-hotel.it/",
+      "social": {
+        "instagram": "hotel.diana_dolomiten",
+        "facebook": "Hotel-Diana-Bike-Ski-185600958158358"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJa8FDH9xveEcR_N6MLnhP_xM",
+      "nome": "Dolomiti Hotel ADLER Carezza",
+      "sito": "https://www.hoteladler.it/",
+      "social": {
+        "facebook": "profile.php"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJD4foZUlweEcROMcMkpgihhI",
+      "nome": "Hotel B&B Pardeller",
+      "sito": "http://www.pardeller.com/",
+      "social": {
+        "facebook": "Restaurant-Pardeller-111860578828936"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJjTn2oMxxeEcRR6UbYXx_dfA",
+      "nome": "Hotel Rechenmachers Rosengarten",
+      "sito": "https://www.hotelrosengarten.it/?utm_source=google&utm_medium=organic&utm_campaign=google_mybusiness",
+      "social": {
+        "instagram": "hotel_rechenmachersrosengarten",
+        "facebook": "HotelRestaurantRosengarten"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJT9EYkWR3eEcRIegU2uRmh14",
+      "nome": "ALBERGO STELLA - STERN",
+      "sito": "http://www.hotel-stern.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJt3QKzWZ3eEcRkGsOQad7y20",
+      "nome": "Wellness & Vitalhotel Erica",
+      "sito": "https://www.erica.it/",
+      "social": {
+        "instagram": "erica_wellnessvitalhotel",
+        "facebook": "erica.wellnessvital"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJL6EBgcBweEcRdL-6N39YEkM",
+      "nome": "Hotel Pfösl",
+      "sito": "http://www.pfoesl.it/?utm_source=google&utm_medium=organic&utm_campaign=google_mybusiness&utm_term=hotel",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJCd1SWx15eEcRJO0vXWaw1ro",
+      "nome": "Hotel Leonard",
+      "sito": "https://www.weissenstein-pietralba.com/",
+      "social": {
+        "instagram": "pietralba_weissenstein"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJc_TwN896eEcRS5Kshx_WH-8",
+      "nome": "Hotel Regglbergerhof",
+      "sito": "http://www.regglbergerhof.com/",
+      "social": {
+        "instagram": "regglbergerhof",
+        "facebook": "HotelRegglbergerhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ4SldTIR3eEcRqkCA-9wFjhk",
+      "nome": "Panoramahotel Obkircher",
+      "sito": "https://www.hotelobkircher.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJMSaMYbx6eEcRPQtZ6-hWaYY",
+      "nome": "Hotel Cristal",
+      "sito": "http://www.hotelcristal.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJc_TwN896eEcRaJ4ZXlKAuNE",
+      "nome": "Hotel Royal",
+      "sito": "https://www.h-royal.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJT-aSQRd5eEcRKTr718tXWB8",
+      "nome": "Aparthotel My Daum",
+      "sito": "http://www.mydaum.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJkXWv3716eEcRDqN3e5G9agw",
+      "nome": "Hotel Sonnalp",
+      "sito": "https://www.sonnalp.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJTwlH8r15eEcRE-4Y9qLzAOk",
+      "nome": "Hotel Weißhorn - Corno Bianco",
+      "sito": "https://www.weissenstein-pietralba.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJ_64bgjl4eEcRx08aGYJQ2mo",
+      "nome": "Hotel Peter",
+      "sito": "http://www.hotel-peter.it/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJaXM9-WR3eEcRCU6JO4Im_xk",
+      "nome": "Residence Feldhof",
+      "sito": "https://www.aparthotel-feldhof.com/?utm_source=my-business&utm_medium=organic",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJs3tRmJZveEcRzWlOI_f2kK4",
+      "nome": "Hotel Alpenrose",
+      "sito": "http://www.alpenrose-karersee.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJy_ATDcJveEcRkWSniW-pKJU",
+      "nome": "LAKE & RIVER Hotel-Restaurant",
+      "sito": "https://www.lakeandriver.com/en/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJL6_cJ59veEcRCsNHLJ-76zE",
+      "nome": "Hotel Castel Latemar",
+      "sito": "https://www.castellatemar.com/",
+      "social": {
+        "facebook": "Hotel-Castel-Latemar-Carezza-al-Lago-Bz--105933995294665"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJ6Z7bMVafgkcRy7-5M29fMnk",
+      "nome": "Hotel Saltus",
+      "sito": "https://www.hotel-saltus.com/?utm_source=google&utm_medium=organic&utm_campaign=google_mybusiness",
+      "social": {
+        "instagram": "hotelsaltus",
+        "facebook": "hotel.saltus"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJbxEirCafgkcRM5qdXBeB_Gs",
+      "nome": "Tschögglbergerhof",
+      "sito": "https://www.tschoegglbergerhof.com/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJE5G2heGegkcRnc-04OYrxzQ",
+      "nome": "Hotel Belvedere - Fine Dining, Hideaway & SPA",
+      "sito": "https://www.belvedere-hotel.it/",
+      "social": {
+        "instagram": "hotelbelvederebozen",
+        "facebook": "hotel.belvedere.jenesien",
+        "youtube": "UC1akfaUDFFYbg2gcLZT-V1w"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJwwqnfCCfgkcRETQbHsov9Lc",
+      "nome": "Antica Locanda Al Cervo",
+      "sito": "http://www.hirschenwirt.it/",
+      "social": {
+        "instagram": "gasthofzumhirschenjenesien",
+        "facebook": "gasthofzumhirschenjenesien"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJKZPIjyCfgkcRO0x1ZVrhyN4",
+      "nome": "Luis & die Buabm Hotel Restaurant",
+      "sito": "https://www.luisunddiebuabm.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJhSpL8CafgkcRqTt8aFoyBRI",
+      "nome": "Hotel König Laurin",
+      "sito": "https://www.hotel-koeniglaurin.com/index.php?utm_source=googlemybusiness&utm_medium=organic&utm_campaign=GMB",
+      "social": {
+        "facebook": "Hotel-K"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJ2STqylqZgkcR-7h09f9S6ZA",
+      "nome": "Gasthof Locher",
+      "sito": "https://www.gasthof-locher.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ83J7Ws6YgkcREKSDMuk9-sY",
+      "nome": "Albergo Edelweiss",
+      "sito": "https://www.gasthof-edelweiss.com/",
+      "social": {
+        "instagram": "gasthof_edelweiss_jenesien",
+        "facebook": "gasthofedelweiss"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJX4PxY7sOeEcRG-6CtmVwlrw",
+      "nome": "Brunnerhof Hotel-Restaurant Klausen/Chiusa",
+      "sito": "http://www.brunnerhof.it/",
+      "social": {
+        "instagram": "brunnerhof.it",
+        "facebook": "brunnerhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJw71CbK4OeEcRAV_ppLVDA3w",
+      "nome": "Hotel Der Rierhof",
+      "sito": "https://www.rierhof.it/",
+      "social": {
+        "instagram": "hotel_rierhof"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJ2W7I8rgOeEcRI3QAI6a6yqw",
+      "nome": "Hotel Restaurant Pizzeria Zum Klostersepp",
+      "sito": "http://www.klostersepp.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ6-mPGvQOeEcRuqo-cXjRXaU",
+      "nome": "Hotel Sonnenhof",
+      "sito": "https://www.sonnen-hof.it/",
+      "social": {
+        "facebook": "Naturhotelsonnnenhof"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJX4PxY7sOeEcR0tOkMNRO3P0",
+      "nome": "Hotel Schmuckhof",
+      "sito": "http://www.schmuckhof.it/?utm_source=GoogleMyBusiness&utm_medium=KlickWebsite&utm_campaign=GoogleMyBusiness",
+      "social": {},
+      "nota": "Sito non leggibile (HTTP 404): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJz3QiPsAOeEcRy2uU4yDWs5A",
+      "nome": "Tenuta & Hotel Spitalerhof",
+      "sito": "https://www.spitalerhof.it/",
+      "social": {
+        "instagram": "spitalerhof",
+        "facebook": "Spitalerhof-180525451998116"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJX4PxY7sOeEcRkGkpyqGYvuI",
+      "nome": "Hotel Bischofhof - Bistro Jasmin",
+      "sito": "http://www.bischofhof.it/",
+      "social": {
+        "instagram": "hotel_bischofhof",
+        "facebook": "hotelbischofhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJWwTsVPEOeEcRzqw4sfpi15w",
+      "nome": "Hotel Gnollhof",
+      "sito": "http://www.gnollhof.it/",
+      "social": {
+        "instagram": "_hotel_gnollhof"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJibOSdbAOeEcRgFHmj6RnM58",
+      "nome": "Parkhotel Post",
+      "sito": "http://www.parkhotel-post.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJf3qqadgIeEcR5GHqv0I0SC0",
+      "nome": "Albergo Croce Bianca",
+      "sito": "http://www.gasthaus-weisses-kreuz.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJz2Y821YJeEcR7Kcv9ZDDK_Q",
+      "nome": "Granpanorama Hotel StephansHof",
+      "sito": "https://www.stephanshof.com/?utm_source=GMB&utm_medium=Website&utm_campaign=GoogleMyBusiness",
+      "social": {
+        "instagram": "granpanorama.hotel.stephanshof",
+        "facebook": "granpanorama.hotel.stephanshof",
+        "youtube": "user"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJqTmexVcJeEcRckkbN9B_lD4",
+      "nome": "Hotel Hubertus",
+      "sito": "https://www.hubertus.it/?utm_source=GoogleMyBusiness&utm_medium=KlickWebsite&utm_campaign=GoogleMyBusiness",
+      "social": {
+        "instagram": "hotel.hubertus.villanders",
+        "facebook": "hotel.hubertus.villanders"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ928m4FYJeEcRmREBcyczFyg",
+      "nome": "Hotel Untertheimerhof",
+      "sito": "http://www.hotel-untertheimerhof.com/?utm_source=Google&utm_medium=organic&utm_campaign=Google%20my%20business",
+      "social": {
+        "instagram": "hotel.untertheimerhof",
+        "facebook": "berglandhotel.untertheimerhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJr17o0EIFeEcRvyFHymX1L2U",
+      "nome": "Panorama Hotel Flora",
+      "sito": "https://www.hotel-flora.net/",
+      "social": {
+        "instagram": "panoramahotel_flora",
+        "facebook": "panoramahotelflora"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJbWnkw1YJeEcRBaK928la5o8",
+      "nome": "Sonnenhotel Adler",
+      "sito": "http://www.sonnenhotel-adler.com/",
+      "social": {
+        "facebook": "SonnenhotelAdler"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJGQOwxVcJeEcRIMeaVZQiRSI",
+      "nome": "Granpanorama Hotel Sambergerhof",
+      "sito": "http://www.sambergerhof.com/",
+      "social": {
+        "instagram": "hotel_sambergerhof",
+        "facebook": "sambergerhof",
+        "tiktok": "hotel_sambergerhof",
+        "youtube": "HotelSambergerhofVillanders"
+      },
+      "nota": "",
+      "trovati": 4
+    },
+    {
+      "placeId": "ChIJwVgmla0OeEcRle5EkAHnNxc",
+      "nome": "Sturmhof",
+      "sito": "http://www.sturmhof.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJZ6eC9Hi-gkcR23io5PXiPY0",
+      "nome": "Ansitz Steinbock",
+      "sito": "http://www.ansitzsteinbock.com/",
+      "social": {
+        "instagram": "ansitz_steinbock",
+        "facebook": "AnsitzSteinbock"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJWQFht-ALeEcRXu7w-ORJYdw",
+      "nome": "Pensione Erlacher",
+      "sito": "https://www.pension-erlacher.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJg589Fv0LeEcR9csSYJfkfw8",
+      "nome": "Hotel Pension Residence Gasser",
+      "sito": "https://www.pension-gasser.com/",
+      "social": {
+        "instagram": "pensiongasser",
+        "facebook": "pensionresidencegasser",
+        "youtube": "pensionresidencegasser4639"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJkVhLypALeEcRipQ_-A0WBk0",
+      "nome": "Hotel Haus an der Luck",
+      "sito": "https://www.hausanderluck.it/",
+      "social": {
+        "instagram": "hausanderluck"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJTdyVCZoLeEcRI0awqjIDD7M",
+      "nome": "Hotel Barbianerhof",
+      "sito": "https://barbianerhof.com/",
+      "social": {
+        "instagram": "hotelbarbianerhof",
+        "facebook": "Barbianer-Hof-140314146088841"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJkVhLypALeEcRu7tIqGgE1M8",
+      "nome": "Hotel Eismacherei Rösslwirt Barbian",
+      "sito": "http://www.roesslwirt.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJkVhLypALeEcRzM1OjvHofWQ",
+      "nome": "Gasthof Traube",
+      "sito": "http://www.zurtraube.com/",
+      "social": {
+        "instagram": "hotelzurtraube"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJx1hLypALeEcRtTeY3VG9PmE",
+      "nome": "Hotel Briol",
+      "sito": "http://www.briol.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ5fCzAZELeEcRiuea21HcVI8",
+      "nome": "haus urban Apartments",
+      "sito": "http://www.hausurban.it/",
+      "social": {
+        "instagram": "hausurban_Apartments",
+        "facebook": "hausurbanbarbian"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJSTRv4OgLeEcRgNhFws984F8",
+      "nome": "Gasthof zum Englwirt",
+      "sito": "http://www.englwirt.com/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJr2wy720LeEcR3DWmjwKC7t8",
+      "nome": "Hotel-Chalet Pennhof Urlaub in Südtirol",
+      "sito": "https://www.pennhof.com/",
+      "social": {
+        "instagram": "biohotelpennhof",
+        "facebook": "biohotel.pennhof.suedtirol.barbian"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJQ46mghsPeEcRGWXiU4vc4Wk",
+      "nome": "Taubers Unterwirt Aktiv & Vitalhotel",
+      "sito": "https://www.unterwirt.com/",
+      "social": {
+        "instagram": "hotel_taubersunterwirt",
+        "facebook": "hotelunterwirt"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJw_-vN12ggkcR4IfuBfh2HIE",
+      "nome": "feldthurnerhof vinum-natur-relax",
+      "sito": "http://www.feldthurnerhof.com/",
+      "social": {},
+      "nota": "Sito non leggibile (ERR_SSL_DH_KEY_TOO_SMALL): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJN72eYBsPeEcRaT1K3-biiZ4",
+      "nome": "Hotel Oberwirt",
+      "sito": "http://www.hotel-oberwirt.it/",
+      "social": {
+        "instagram": "hoteloberwirt",
+        "facebook": "keschte.hoteloberwirt"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ053KVwEPeEcRm0_y2Jmgxic",
+      "nome": "Hotel Klammwirt",
+      "sito": "http://www.klammwirt.it/de/klammwirt/klammwirt/hotel-klammwirt.html",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJFaUR7BQFeEcR2sK9v8TzVoA",
+      "nome": "Hotel Tallero Cityhotel",
+      "sito": "http://www.tallero.it/",
+      "social": {
+        "instagram": "cityhotel_tallero",
+        "facebook": "City-Hotel-Tallero-257095037703156"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ10ju3G4FeEcRTGp59DxQP7k",
+      "nome": "Hotel Jarolim",
+      "sito": "http://www.hotel-jarolim.it/",
+      "social": {
+        "instagram": "it"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJO1ye3hIFeEcRq_jGhrP92kI",
+      "nome": "Hotel Tourist",
+      "sito": "https://www.hoteltourist.info/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ72Gfkj8FeEcRGzgAMDRSXko",
+      "nome": "Dominik Alpine City Wellness Hotel",
+      "sito": "https://www.hoteldominik.com/",
+      "social": {
+        "instagram": "hotel_dominik",
+        "facebook": "hoteldominik"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ4d2I8GgFeEcR9XMt4CSbmiE",
+      "nome": "Hotel Krone",
+      "sito": "https://www.krone.bz/?utm_source=googlemybusiness&utm_campaign=GoogleMyBusiness",
+      "social": {
+        "instagram": "krone.brixen",
+        "facebook": "krone.brixen"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ-e6EB0AFeEcRCfNl_lOTaYc",
+      "nome": "Hotel Residence Gasser",
+      "sito": "http://www.gruenerbaum.it/",
+      "social": {
+        "facebook": "Gr"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJpRcqVRUFeEcRZD7oHSjVsSI",
+      "nome": "Grüner Baum",
+      "sito": "http://www.gruenerbaum.it/",
+      "social": {
+        "facebook": "Gr"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJS8-idmoFeEcRYjdu8R6dEGk",
+      "nome": "Hotel Traube",
+      "sito": "https://www.hotelbrixen.it/it/hotel-bressanone/1-0.html",
+      "social": {},
+      "nota": "Sito non leggibile (ERR_SSL_DH_KEY_TOO_SMALL): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJT_EMOhUFeEcR33Xo60a2uRc",
+      "nome": "Adler Historic Guesthouse",
+      "sito": "https://www.adlerbrixen.com/",
+      "social": {
+        "instagram": "adlerbrixen",
+        "facebook": "adlerbrixen"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ6Rq0UdEEeEcRvH1ouDly_mI",
+      "nome": "Hotel Majestic",
+      "sito": "http://www.albergomajestic.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJGWVDCgEFeEcR-eUMpLxLdM8",
+      "nome": "Hotel Löwenhof",
+      "sito": "https://www.loewenhof.it/",
+      "social": {
+        "instagram": "loewenhofbrixen",
+        "facebook": "Loewenhof.it"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJmWq7l2kFeEcRgBRxL0ZBqgQ",
+      "nome": "Albergo Garni' Cremona",
+      "sito": "http://www.garnicremona.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJXUL4NEIFeEcRLTfC1mu8aXI",
+      "nome": "Bushotel Angerer",
+      "sito": "https://hotel-angerer.com/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJCTWXvrYFeEcRpMBnwZzeUuM",
+      "nome": "Boutique Hotel Badhaus",
+      "sito": "https://www.badhaus.it/",
+      "social": {
+        "instagram": "badhaus_brixen",
+        "facebook": "profile.php"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ8U9E8lwFeEcRQPMcadV_2VM",
+      "nome": "Albergo Millanderhof",
+      "sito": "http://www.millanderhof.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJwZeWxFQEeEcRMU705QTfVP4",
+      "nome": "Hotel Goldenes Lamm",
+      "sito": "http://www.goldenes-lamm.net/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJe-QrNVsEeEcRXttGgdYZBDQ",
+      "nome": "Hotel Clara Vahrn - Brixen",
+      "sito": "https://www.hotelclara.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJEfpRBPwEeEcR7DlOstD-ZvU",
+      "nome": "Haus Karin",
+      "sito": "http://www.hauskarin.it/",
+      "social": {
+        "instagram": "haus.karin",
+        "facebook": "Haus-Karin-108220627536836"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJK93K6AMFeEcRDSbDx0aF7j0",
+      "nome": "Garni Maria",
+      "sito": "http://www.garnimaria.net/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ5SjmyPgEeEcRKKHQlOnHKFU",
+      "nome": "Zum Alten Moar",
+      "sito": "http://www.zum-alten-moar.com/",
+      "social": {
+        "instagram": "zum_alten_moar",
+        "facebook": "ZumAltenMoar"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ9SPOi00EeEcRvFaI_nCMMS0",
+      "nome": "Albergo Villa Mayr Burger",
+      "sito": "https://www.villamayr.com/?utm_source=GoogleMyBusiness&utm_medium=KlickWebsite&utm_campaign=GoogleMyBusiness",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJsaishDgEeEcRvfdk3a1OazE",
+      "nome": "Hanserhof",
+      "sito": "http://www.hanserhof.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ4QxyFn4DeEcRM8FgHIgHUfE",
+      "nome": "Hotel Sonneck",
+      "sito": "http://www.hotel-sonneck.it/",
+      "social": {
+        "instagram": "hotel_sonneck",
+        "facebook": "BBHotelSonneck"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJTznRmoMEeEcR_BcZpIQWxIs",
+      "nome": "Hotel Langhof",
+      "sito": "http://www.hotel-langhof.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJLStJg78EeEcRTQfdD2swCLs",
+      "nome": "Hotel Sun",
+      "sito": "https://www.hotel-sun.com/?utm_source=GoogleMyBusiness&utm_medium=KlickWebsite&utm_campaign=GoogleMyBusiness",
+      "social": {
+        "instagram": "hotel_sun_",
+        "facebook": "Hotel-Sun-Natz-474893195899322"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJQyh6WZQEeEcRyQEWxf-R19U",
+      "nome": "Hotel Seehof - nature retreat",
+      "sito": "https://www.seehof.it/?utm_source=GoogleMyBusiness&utm_medium=KlickWebsite&utm_campaign=GoogleMyBusiness",
+      "social": {
+        "instagram": "seehof_nature_retreat",
+        "facebook": "seehof.nature.retreat"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJAxIP9sAEeEcRsqRBBp2rmDM",
+      "nome": "Fürstenhof",
+      "sito": "http://www.fuerstenhof.com/",
+      "social": {
+        "instagram": "furstenhof_natz",
+        "facebook": "people"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJTznRmoMEeEcRaMuLnpAgxtU",
+      "nome": "Mineralienhotel Natznerhof",
+      "sito": "https://mineralienhotel.com/",
+      "social": {
+        "instagram": "mineralienhotel",
+        "facebook": "mineralienhotel"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJPXO6jb8EeEcRZVoescogx-o",
+      "nome": "Hotel Oberbrunn",
+      "sito": "http://www.hotel-oberbrunn.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ47IsIPIEeEcRWoqlKBf9MY4",
+      "nome": "Hotel Hubertushof",
+      "sito": "http://www.hubertushof.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJB6oqIscEeEcR3ogUjW4INHA",
+      "nome": "Residence Schiestlhof",
+      "sito": "https://www.schiestlhof.com/",
+      "social": {
+        "instagram": "residence_schiestlhof"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJxdgDH8EEeEcRjNn619vNerE",
+      "nome": "Hotel Jonathan",
+      "sito": "https://www.hotel-jonathan.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJqZErkYMEeEcR3WWOZKBDim0",
+      "nome": "Hotel Birkenbrunn",
+      "sito": "https://www.hotel-birkenbrunn.it/?utm_source=GoogleMyBusiness&utm_medium=KlickWebsite&utm_campaign=GoogleMyBusiness",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJ98iEXaADeEcRPkW0YH_7XgQ",
+      "nome": "Hotel Leitner",
+      "sito": "http://www.hotel-leitner.com/?utm_source=GoogleMyBusiness&utm_medium=KlickWebsite&utm_campaign=GoogleMyBusiness",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJt6DbcaADeEcRPxM9sT6MP3o",
+      "nome": "Hotel Valserhof",
+      "sito": "https://www.valserhof.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJzVIEX6ADeEcRkfvzEugwdBQ",
+      "nome": "Hotel Weisse Lilie - Mühlbach - B&B",
+      "sito": "https://www.weisselilie.it/?utm_source=my-business&utm_medium=organic",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJe3YOs-fXe0cRq7OWkLLPB9o",
+      "nome": "Hotel Kaserhof",
+      "sito": "https://www.hotel-kaserhof.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJcaI2iaADeEcRN2gmoeDcNt8",
+      "nome": "Albergo Seppi",
+      "sito": "http://www.gasthof-seppi.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJpW8aijUCeEcRkrWciSa3BbI",
+      "nome": "TRATTERHOF - The Mountain Sky Hotel",
+      "sito": "https://www.tratterhof.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJkd3-_QkDeEcRqyx9bWDTvwA",
+      "nome": "Molaris Lodge",
+      "sito": "https://www.molaris.it/",
+      "social": {
+        "instagram": "molaris_lodges",
+        "facebook": "molaris_lodges-107063768006389"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJu_4pfJoDeEcRXUniiSjb0oY",
+      "nome": "Natur & Aktiv Hotel Rogen",
+      "sito": "http://www.hotel-rogen.it/",
+      "social": {
+        "facebook": "naturundaktivhotelrogen"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJ04BkfU0CeEcRudz6z4XiSMA",
+      "nome": "Hotel Oberlechner",
+      "sito": "https://www.purvita.it/",
+      "social": {
+        "facebook": "brandnamic"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJ0bVW0LIDeEcRR_0tdqNo8XM",
+      "nome": "Hotel Edelweiss",
+      "sito": "https://www.hotel-edelweiss.it/?utm_source=GoogleMyBusiness&utm_medium=WebsiteLink&utm_campaign=Local%20SEO",
+      "social": {
+        "instagram": "hoteledelweiss_meransen",
+        "facebook": "hoteledelweissmeransen",
+        "tiktok": "hoteledelweiss_meransen",
+        "youtube": "Edelweissmeransen"
+      },
+      "nota": "",
+      "trovati": 4
+    },
+    {
+      "placeId": "ChIJRwJ9Xv8CeEcROptBBLkMxA4",
+      "nome": "Panoramahotel Huberhof",
+      "sito": "https://www.panoramahotel-huberhof.com/",
+      "social": {
+        "instagram": "panoramahotelhuberhof",
+        "facebook": "panoramahotelhuberhof",
+        "youtube": "UCfS4oq87pdao-T1xHRaMzyg"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJt4GfZkwCeEcR7bBxbivsaFI",
+      "nome": "Hotel Sonnenberg",
+      "sito": "http://www.sonnenberg.it/",
+      "social": {
+        "instagram": "hotel_sonnenberg_meransen",
+        "facebook": "sonnenberg.it",
+        "youtube": "UCZy4DrXJrFq0j-GGPTq9WOw"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJ2wObzgkDeEcRV1u-l9suGYk",
+      "nome": "Alpine Lifestyle Hotel Ambet",
+      "sito": "http://www.ambet.it/",
+      "social": {
+        "instagram": "hotelambet",
+        "facebook": "hotelambet"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJHeG7trIDeEcRuz3dcwkFWS4",
+      "nome": "Hotel Alpenfrieden",
+      "sito": "https://www.hotel-alpenfrieden.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJmeL8zEwCeEcRbeke-5lbrJc",
+      "nome": "Hotel Kristall",
+      "sito": "http://www.hotel-kristall.info/",
+      "social": {
+        "instagram": "hotel_kristall_meransen",
+        "facebook": "kristallmeransen"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJHRGuIlECeEcR89_5UbAp6Yw",
+      "nome": "Hotel Bacherhof",
+      "sito": "http://www.bacherhof.com/",
+      "social": {
+        "instagram": "wellnesshotel_bacherhof",
+        "facebook": "hotel.bacherhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ2X9m0VcCeEcRneiLelJk3jM",
+      "nome": "Hotel Pfeiferhof",
+      "sito": "http://www.pfeiferhof.com/",
+      "social": {
+        "instagram": "pfeiferhof",
+        "facebook": "pfeiferhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJd7m32-oDeEcRvI7yauy6ads",
+      "nome": "Hotel Milla Montis",
+      "sito": "https://www.hotel-milla-montis.com/",
+      "social": {
+        "instagram": "hotel_millamontis",
+        "facebook": "millamontis"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJmxduAS0DeEcRQdwDsjO85Ns",
+      "nome": "Familienhotel Familiamus",
+      "sito": "https://www.familiamus.com/?utm_source=GoogleMyBusiness&utm_medium=KlickWebsite&utm_campaign=GoogleMyBusiness",
+      "social": {
+        "instagram": "familiamus.followthemagic",
+        "facebook": "familiamusfamilienhotel"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJVQ6E-rMDeEcRAy0aLz3goqw",
+      "nome": "Parkhotel Holzerhof",
+      "sito": "https://www.holzerhof.com/",
+      "social": {
+        "instagram": "parkhotelholzerhof",
+        "facebook": "ParkhotelHolzerhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJW3if6UsCeEcRXuixZ-IK7BA",
+      "nome": "Berghotel Hofer",
+      "sito": "http://www.berghotel-hofer.it/",
+      "social": {
+        "facebook": "Berghotel-Hofer-1629914023947760"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJ3_LzrFICeEcRwLEUiJmAtyE",
+      "nome": "Pension Sonnenhof (mit Saunaoase)",
+      "sito": "https://www.pension-sonnenhof.info/?utm_source=GoogleMyBusiness&utm_medium=KlickWebsite&utm_campaign=GoogleMyBusiness",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJnUK-wUsCeEcRvjWujIzimkA",
+      "nome": "Hotel Lärchenhof",
+      "sito": "http://www.aui.it/",
+      "social": {
+        "instagram": "aui_smartasyouare",
+        "facebook": "aui.it"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJXV2zsLIDeEcRbrwHoMr5rQc",
+      "nome": "Hotel Schönblick",
+      "sito": "http://www.hotel-schoenblick.eu/",
+      "social": {
+        "facebook": "Geniesserhotel.Meransen"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJmeL8zEwCeEcRonQoMY1LkFY",
+      "nome": "Gitschberg",
+      "sito": "http://www.gitschberg.it/",
+      "social": {
+        "instagram": "biohotel_gitschberg",
+        "facebook": "BiohotelGitschberg"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJkay207IDeEcRkipPoyvWJes",
+      "nome": "Häuslerhof- Urlaub auf dem Bauernhof",
+      "sito": "http://www.haeuslerhof.com/",
+      "social": {
+        "instagram": "hofschankheisla",
+        "facebook": "Hauslerhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJVxyocEwCeEcRvihk5MWCM5I",
+      "nome": "Family Home Alpenhof",
+      "sito": "https://www.alpenhof.it/",
+      "social": {
+        "instagram": "family_home_alpenhof",
+        "facebook": "familyhomealpenhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJt_zN6k8CeEcRtEn8A6KjSzQ",
+      "nome": "Hotel Schmiedhof",
+      "sito": "http://www.hotel-schmiedhof.com/",
+      "social": {
+        "instagram": "hotel.schmiedhof",
+        "facebook": "Hotel.Schmiedhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJcS7HLIgBeEcRdgg0nvp7gGg",
+      "nome": "Valsegg",
+      "sito": "https://www.valsegg.it/",
+      "social": {
+        "instagram": "valsegg",
+        "facebook": "valsegg.it"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJt6DbcaADeEcRBPJ824G_u-k",
+      "nome": "Hotel Masl",
+      "sito": "https://www.hotel-masl.com/#utm_source=google&utm_medium=organic&utm_campaign=google_mybusiness",
+      "social": {
+        "instagram": "hotelmasl",
+        "facebook": "hotelmasl"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ-doP5vSTd0cRq55jAOOv8vY",
+      "nome": "Hotel Alpenrose",
+      "sito": "http://www.hotel-alpenrose.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJG3jCm_EBeEcReZ9iwtNOLZA",
+      "nome": "Falkensteiner Hotel Falkensteinerhof",
+      "sito": "https://www.falkensteiner.com/hotel-spa-falkensteinerhof/",
+      "social": {
+        "instagram": "falkensteiner_falkensteinerhof",
+        "facebook": "falkensteiner.hotelsandresidences",
+        "youtube": "user"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJBaVxbfMBeEcRjNh--V5BfFM",
+      "nome": "Familienhotel Huber",
+      "sito": "https://www.hotelhuber.com/",
+      "social": {
+        "instagram": "familienhotelhuber",
+        "facebook": "Familienhotel-Huber-206601160100",
+        "tiktok": "familienhotel.huber",
+        "youtube": "familienhotelhuber4114"
+      },
+      "nota": "",
+      "trovati": 4
+    },
+    {
+      "placeId": "ChIJzRZMFIsBeEcRCWCy_i9hb-U",
+      "nome": "Hotel Peintner",
+      "sito": "http://www.hotelpeintner.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJhctYiOYBeEcRpHKfTUdgsQk",
+      "nome": "Hotel Schönwald",
+      "sito": "https://www.hotelschoenwald.com/",
+      "social": {
+        "instagram": "hotel_schoenwald",
+        "facebook": "hotelschoenwald"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJeTr_sefXe0cRppSS0aYv4kU",
+      "nome": "Albergo Hoferhof",
+      "sito": "http://www.hofer-vals.com/",
+      "social": {
+        "instagram": "hofer.vals",
+        "facebook": "houfavols"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJU5XZiDoBeEcRPsIoei-DVjY",
+      "nome": "abis Dolomites",
+      "sito": "http://www.hotelabis.com/",
+      "social": {
+        "instagram": "valserhof_suedtirol",
+        "facebook": "hotel.valserhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJPWS8G_IBeEcRD5Yg_lTocIc",
+      "nome": "Der Wiesenhof",
+      "sito": "http://www.derwiesenhof.it/",
+      "social": {
+        "facebook": "Pension-Der-Wiesenhof-Vals-M"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJe3YOs-fXe0cRpk77xU4lSOQ",
+      "nome": "linara mountain family stay",
+      "sito": "https://linara-family.it/",
+      "social": {
+        "instagram": "linara.family",
+        "facebook": "profile.php"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ6Rq0UdEEeEcRgc7f8Mq0iak",
+      "nome": "Hotel Bergschlössl",
+      "sito": "https://www.bergschloessl.com/",
+      "social": {
+        "instagram": "bergschloessl",
+        "facebook": "HotelBergschloessl",
+        "tiktok": "hotelbergschloessl",
+        "youtube": "bergschloessl"
+      },
+      "nota": "",
+      "trovati": 4
+    },
+    {
+      "placeId": "ChIJmUpGGusbeEcR2irkqu3VCDk",
+      "nome": "Naturhotel Lüsnerhof",
+      "sito": "http://www.luesnerhof.it/",
+      "social": {
+        "instagram": "naturhotel_luesnerhof",
+        "facebook": "luesnerhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ_8ERV8IbeEcRDmypxF2qJIs",
+      "nome": "Hotel Kompatscherhof",
+      "sito": "https://www.kompatscherhof.it/",
+      "social": {
+        "instagram": "kompatscherhof",
+        "facebook": "brandnamic"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ0_uyIpgbeEcRMvY9KCv1NAw",
+      "nome": "Hotel Rosental",
+      "sito": "http://www.hotelrosental.com/?utm_source=google&utm_medium=organic&utm_campaign=Google+My+Business",
+      "social": {},
+      "nota": "Sito non leggibile (ERR_SSL_DH_KEY_TOO_SMALL): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJ5ZyOl38beEcRzj5U86ROhtc",
+      "nome": "Albergo Tulperhof",
+      "sito": "https://tulperhof.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ_3RfVXkbeEcRPWJGpxxBjTM",
+      "nome": "Hotel Herol my mountain retreat",
+      "sito": "http://www.hotel-herol.com/",
+      "social": {
+        "instagram": "herol_mountain_retreat",
+        "facebook": "Herolerhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJgdLtuBcReEcR8PdmvowWueY",
+      "nome": "Hotel & Restaurant Fines",
+      "sito": "https://finesdolomites.com/",
+      "social": {
+        "instagram": "finesdolomites",
+        "facebook": "hotelfines"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJgdLtuBcReEcRVublOy3N2aM",
+      "nome": "Hotel Ranuimüllerhof",
+      "sito": "http://www.ranuimuellerhof.com/",
+      "social": {
+        "instagram": "hotel_ranuimuellerhof",
+        "facebook": "ranuimullerhof.ranuimuellerhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJzxNJVbgReEcRru2Hne7qb0M",
+      "nome": "Hotel Kabis",
+      "sito": "http://www.hotel-kabis.com/",
+      "social": {
+        "instagram": "hotel_kabis",
+        "facebook": "people"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJrXXVqvoOeEcRDDsoTqjRp1Y",
+      "nome": "Hotel Teiserhof",
+      "sito": "http://www.teiserhof.com/",
+      "social": {
+        "facebook": "WanderhotelTeiserhof"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJs7-vbwUReEcRsM2M84okMcE",
+      "nome": "Hotel Tyrol Dolomitesslowliving",
+      "sito": "http://www.tyrol-hotel.eu/",
+      "social": {
+        "instagram": "hotel_tyrol",
+        "facebook": "Hotel-Tyrol-Villn"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJzxNJVbgReEcRjMSqb0dS5G8",
+      "nome": "Viel Nois Guest House",
+      "sito": "http://www.vielnois.com/?utm_source=GoogleMyBusiness&utm_medium=KlickWebsite&utm_campaign=GoogleMyBusiness",
+      "social": {
+        "instagram": "vielnois_guesthouse",
+        "facebook": "Viel-Nois-Guest-House-112059625474831"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJgdLtuBcReEcR0Q1kQT00__8",
+      "nome": "Proihof",
+      "sito": "http://www.proihof.com/",
+      "social": {
+        "instagram": "pfeiferhof",
+        "facebook": "Proihof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJZxLhMboReEcRG-5-26Yoask",
+      "nome": "Gsoihof",
+      "sito": "http://www.hotel-gsoihof.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJv086WLgReEcRLqda2GAx3G4",
+      "nome": "Pensione Garni Raschötzhof",
+      "sito": "http://www.raschoetzhof.it/",
+      "social": {
+        "instagram": "pension_raschoetzhof"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJISea55YReEcRghIVMlJKWpw",
+      "nome": "Pension Sonia",
+      "sito": "https://www.pensionsonia.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJc_Al1AY_eEcR1HioFZi6Fls",
+      "nome": "Hotel Italia Corvara",
+      "sito": "http://www.hotelitaliacorvara.it/",
+      "social": {
+        "instagram": "hotelitaliacorvara",
+        "facebook": "sharer.php",
+        "youtube": "user"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJjYGNgQA_eEcRoL0D9ya1MUk",
+      "nome": "Hotel Christian",
+      "sito": "https://hotelchristian.eu/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJPXDXTK4_eEcR7V4mAbuSGo8",
+      "nome": "Hotel Col Alto",
+      "sito": "http://www.colalto.it/",
+      "social": {
+        "facebook": "brandnamic"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJy5DZLAY_eEcRy0XVm6QdE0I",
+      "nome": "Hotel Arkadia",
+      "sito": "https://www.hotelarkadia.it/",
+      "social": {
+        "instagram": "hotel.arkadia",
+        "facebook": "arkadiacorvara"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJpzluPwA_eEcRPjmkLmJCkDY",
+      "nome": "TH Corvara - Greif Hotel",
+      "sito": "https://www.th-resorts.com/it/strutture/th-corvara/?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_content=websitew",
+      "social": {
+        "instagram": "THResorts",
+        "facebook": "THResorts",
+        "youtube": "th-resorts",
+        "linkedin": "tivigest-hotels-"
+      },
+      "nota": "",
+      "trovati": 4
+    },
+    {
+      "placeId": "ChIJYePoKAE_eEcRoUwwID3UA4s",
+      "nome": "Hotel Villa Eden",
+      "sito": "http://www.villaeden.com/",
+      "social": {
+        "instagram": "hotelvillaeden",
+        "facebook": "villaedencorvara"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJE55ugQU_eEcRCYDzYJcqmGw",
+      "nome": "Berghotel Ladinia",
+      "sito": "http://www.berghotelladinia.it",
+      "social": {
+        "instagram": "berghotelladinia",
+        "facebook": "BerghotelLadinia"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJa_oG9BA_eEcRc_IsSurFpqg",
+      "nome": "Hotel Arlara",
+      "sito": "http://www.arlara.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJcQ5q3QY_eEcR7L7dxlXZBHE",
+      "nome": "Hotel La Plaza",
+      "sito": "http://www.laplaza.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJpfk0-Q8_eEcR53EVB0NV4Mo",
+      "nome": "Hotel Alisander",
+      "sito": "https://caffeit.cyou/albergo-alisander-u1kvna",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJ1x0K9BA_eEcRtWgq_aDLLDs",
+      "nome": "Sporthotel Panorama",
+      "sito": "http://www.sporthotel-panorama.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJeyZIh6o_eEcR02RRO3F3UL4",
+      "nome": "Hotel Pradat",
+      "sito": "https://www.pradat.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJC4KfQ6o_eEcRnQcc9T_INNM",
+      "nome": "Maria Hotel",
+      "sito": "https://www.mariahotel.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJjyqg46k_eEcReVd3O8W30Io",
+      "nome": "Royal Hotel Corvara 3 stelle Alta Badia",
+      "sito": "https://www.royalhotels.eu/?utm_source=google&utm_medium=organic&utm_campaign=mybusiness",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJJ9AoSKo_eEcR54HsdvuhKvE",
+      "nome": "Hotel Ristorante Gran Fanes",
+      "sito": "https://hotelgranfanes.com/",
+      "social": {
+        "instagram": "hotelgranfanes",
+        "facebook": "HotelGranFanes"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJY5JY0AA_eEcRpMSqblegKl4",
+      "nome": "La Tambra - Hotel",
+      "sito": "http://www.latambra.com/",
+      "social": {},
+      "nota": "Sito non leggibile (ERR_SSL_DH_KEY_TOO_SMALL): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJobhX9gU_eEcR-7AgM1FL2Tg",
+      "nome": "Hotel La Perla",
+      "sito": "https://www.laperlacorvara.it/it?utm_source=google&utm_medium=link&utm_campaign=gmb",
+      "social": {
+        "instagram": "laperlacorvara",
+        "facebook": "laperlacorvara"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJE6i_BQY_eEcRz6oD4rN4oz4",
+      "nome": "Dolomites Lifestyle Hotel Marmolada",
+      "sito": "https://www.marmolada.org/",
+      "social": {
+        "instagram": "hotelmarmolada",
+        "facebook": "hotelmarmolada"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJlQvX4Ko_eEcRMNFM2G6v9ps",
+      "nome": "Hotel Sassongher - Preferred Hotels & Resorts",
+      "sito": "https://www.sassongher.it/",
+      "social": {
+        "instagram": "hotelsassongher",
+        "facebook": "hotelsassongher",
+        "youtube": "UCBO1Zi_8X_CbSXsiCA-Cv5w"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJ0bhYIE8_eEcRCUEg2n5_xEc",
+      "nome": "Hotel Posta Zirm",
+      "sito": "https://www.postazirm.com/it/home",
+      "social": {
+        "instagram": "postazirmhotel",
+        "facebook": "postazirmhotel"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJq6ni_T8_eEcRTtpeO1YqMqU",
+      "nome": "Hotel Costes",
+      "sito": "http://www.costes.it/",
+      "social": {
+        "instagram": "hotel.costes",
+        "facebook": "WellnessHotelCostes"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ91471gA_eEcRn0Et-bqk9A4",
+      "nome": "Hotel Table'",
+      "sito": "http://www.table.it/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJrd0IXQ8_eEcRMiCs3Cg4FSQ",
+      "nome": "Albergo Ristorante La Fontana",
+      "sito": "https://www.lafontana.com/",
+      "social": {
+        "facebook": "LaFontanaCorvara"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJaQqPbwY_eEcRSF9vjMuo7b8",
+      "nome": "Villa Tony - Small Romantic Hotel",
+      "sito": "http://www.villatony.com/",
+      "social": {
+        "instagram": "hotelvillatony"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJUQhTVwc_eEcRKLv2fXQsJpQ",
+      "nome": "Movi Family Apart-Hotel",
+      "sito": "http://www.movifamily.it/",
+      "social": {
+        "instagram": "mmh_moviment_hospitality",
+        "facebook": "movimenthospitality",
+        "youtube": "movimentaltabadia"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJkTQzHQc_eEcRZnuaU7BsT-E",
+      "nome": "Hotel Recort - Adults Only",
+      "sito": "https://hotelrecort.it/",
+      "social": {
+        "instagram": "hotel.recort",
+        "facebook": "hotel.recort"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJTxUGL_w-eEcRBKREZ6SRgtY",
+      "nome": "Hotel Bel Sit Sas",
+      "sito": "https://www.belsit.it/",
+      "social": {
+        "facebook": "Hotel-Bel-Sit-250654231651891"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJay8FcwY_eEcR7BvjpbTmyEk",
+      "nome": "Garni RAETIA",
+      "sito": "https://www.garniraetia.it/",
+      "social": {
+        "instagram": "garniraetia",
+        "facebook": "garniraetia"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJjyFAjgA_eEcRIpPtDFJDl-U",
+      "nome": "B&B Bracun App.",
+      "sito": "http://www.bracun.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJB1QK1yA_eEcRJXNmsVGOwyw",
+      "nome": "Hotel & Residence La Villa",
+      "sito": "http://www.hotel-lavilla.it/",
+      "social": {
+        "instagram": "hotelresidence_lavilla",
+        "facebook": "people"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ4zH1ZJA-eEcRF5_exWZUKUQ",
+      "nome": "Hotel Ladinia la Villa - Alta Badia",
+      "sito": "http://www.hotel-ladinia.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJH97ngZo-eEcRs0yEffMkBkE",
+      "nome": "Hotel Stella - Alta Badia",
+      "sito": "https://www.stella-altabadia.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJPQFxy0o5eEcRyFVMYhBTP7w",
+      "nome": "Hotel Alidor",
+      "sito": "https://www.pensionalidor.com/",
+      "social": {
+        "instagram": "wix"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJaZpCIEs5eEcRckJihy_734U",
+      "nome": "Hotel Fanes",
+      "sito": "https://www.hotelfanes.it/?utm_source=GMB&utm_medium=Website&utm_campaign=GoogleMyBusiness",
+      "social": {
+        "instagram": "hotelfanes",
+        "facebook": "profile.php"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJL6tQiUo5eEcRDf5G_lP61e0",
+      "nome": "Hotel La Stua San Cassiano",
+      "sito": "https://www.hotel-lastua.it/",
+      "social": {
+        "instagram": "hotel.lastua",
+        "facebook": "hotel.lastua.san.cassiano"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJB62sF0o5eEcR4bxsgKkFqkM",
+      "nome": "Hotel Vajolet",
+      "sito": "https://hotelvajolet.it/",
+      "social": {
+        "facebook": "hotelvajolet"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJLSFF8kk5eEcR2knSbI8aqHY",
+      "nome": "Hotel Stoeres",
+      "sito": "http://www.hotel-stoeres.com/",
+      "social": {
+        "instagram": "hotelstoeres",
+        "facebook": "hotelstores.it"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJRTM9wEo5eEcR4gR8yYW3ytQ",
+      "nome": "Hotel Falzares - Alta Badia - Provincia di Bolzano",
+      "sito": "https://www.hotelfalzares.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJscgR4Uk5eEcR-GnkAI5zLrc",
+      "nome": "Hotel Steinrösl & Wine Bar Emoziun",
+      "sito": "http://www.steinrosl.it/",
+      "social": {
+        "instagram": "hotel_steinrosl",
+        "facebook": "steinrosl"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJd64um0o5eEcROW1VUMiUty8",
+      "nome": "Hotel Conturines",
+      "sito": "http://www.conturines.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJj_Xhi0o5eEcRjqcfPCHK0z0",
+      "nome": "Hotel Diamant",
+      "sito": "https://www.hoteldiamant.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJwd7njko5eEcRwU9dHRKGs_8",
+      "nome": "Hotel Chalet Pensione Ciasa Alexander",
+      "sito": "http://www.ciasa-alexander.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJXXDEi0o5eEcRhEw8-du9tpg",
+      "nome": "Hotel Laurin",
+      "sito": "https://www.laurinaltabadia.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJ-yMyXLE-eEcRQF6xMJ9Jqrs",
+      "nome": "Dolomites Hotel La Fradora - Wellness & Relax",
+      "sito": "http://www.lafradora.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJBwvNHhY5eEcRUGcHjhTCIT4",
+      "nome": "Hotel Gran Paradiso - Alta Badia",
+      "sito": "http://www.gran-paradiso.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJT9wODjc5eEcRIcazWnXw9yo",
+      "nome": "B&B Hotel Frohsinn",
+      "sito": "https://www.frohsinn.it/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJd64um0o5eEcRKtD2AI39dA8",
+      "nome": "Albergo La Varella Di Canins Christian & C. Sas",
+      "sito": "https://www.albergolavarella.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJj_RIHzg5eEcRsXUFR_3jdOo",
+      "nome": "Villa Flora",
+      "sito": "https://www.villafloralodges.it/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJoTOZCPYieEcRwRmAOowEoco",
+      "nome": "Hotel Armentarola",
+      "sito": "https://www.armentarola.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJ3QSU5LQ-eEcRmpkA3UBycyw",
+      "nome": "Pensione Scunëi",
+      "sito": "http://www.scunei.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJt9LEx0o5eEcRGuzlID984rI",
+      "nome": "Aman Rosa Alpina",
+      "sito": "https://www.aman.com/resorts/aman-rosa-alpina?utm_source=Google&utm_medium=Yext&utm_campaign=yext_listing&utm_id=GMB&y_source=1_MTg2MDI1NjktNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJB62sF0o5eEcRpgVSISdyf6w",
+      "nome": "Albergo Ciasa Planat",
+      "sito": "http://www.ciasaplanat.it/it/residence-san-cassiano/1-0.html",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJc1Fh_zU5eEcRq0Y4mh9Le4Q",
+      "nome": "RESIDENCE ADA",
+      "sito": "https://www.residenceada.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJ4Sr6dUo5eEcRtpK5ClbGjZo",
+      "nome": "Lagacio' Hotel Mountain Residence",
+      "sito": "http://www.lagacio.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJCT_cCRo5eEcR77Ml2XUpe6k",
+      "nome": "Gran Ancei Srl",
+      "sito": "http://www.granancei.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJYzIEAks5eEcRMNYgBPKgajY",
+      "nome": "Ciasa Antersies",
+      "sito": "http://ciasaantersies.info/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJGzV32RY5eEcRiIbdQx1sweM",
+      "nome": "Ciasa Salares",
+      "sito": "http://www.ciasasalares.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJd64um0o5eEcRJdUw0fg4-WU",
+      "nome": "Hotel Tofana EXPLORER'S HOME",
+      "sito": "http://www.hoteltofana.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJo0Aum0o5eEcR2SVj8Y6f5Ro",
+      "nome": "Residence Ploner",
+      "sito": "https://www.residenceploner.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJoykSeYc5eEcR9k3MjZm2IiU",
+      "nome": "Eisenoefen Valparol",
+      "sito": "http://www.hotel-valparol.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJSRWcess9eEcRA1BzRa8fPdI",
+      "nome": "Hotel Badia Hill",
+      "sito": "http://www.badiahill.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJQ0JCVso9eEcRr8Gu5L_zuUc",
+      "nome": "Hotel Serena Badia",
+      "sito": "http://www.hotel-serena.com/",
+      "social": {
+        "instagram": "altabadiaserena",
+        "facebook": "HSerenaBadia"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJh5k3tzQ8eEcRVRjEMso-oIA",
+      "nome": "Hotel San Leonardo",
+      "sito": "http://www.albergo-sanleonardo.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJ424vPMs9eEcRZA_0rqIpdZM",
+      "nome": "Hotel Melodia del Bosco",
+      "sito": "http://www.melodiadelbosco.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJE7LyH8s9eEcRky5npUZ0zhY",
+      "nome": "Hotel Gran Ander",
+      "sito": "http://www.granander.it/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJp6UjP8s9eEcR0aRXg_6Uwmo",
+      "nome": "Pic Hotel Runcac",
+      "sito": "https://www.runcac.com/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJC11tZTI8eEcRIcdbMdz08kQ",
+      "nome": "Hotel Gardenazza",
+      "sito": "https://hotelgardenazza.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJcf5JRjM8eEcRaJhwc-qzDUk",
+      "nome": "Hotel La Müda",
+      "sito": "https://www.lamuda.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJscj5yMw9eEcRDzLlf-bPh0U",
+      "nome": "Hotel Miramonti",
+      "sito": "https://miramontihotel.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJvf_hVMs9eEcRmGlPi8VLpdA",
+      "nome": "Ustaria Posta",
+      "sito": "https://www.ustariaposta.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJX6sAkys8eEcRbEkD80aoG0g",
+      "nome": "Hotel Lech da Sompunt",
+      "sito": "https://www.lechdasompunt.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJ2zd-jSg8eEcRgknDABDc6do",
+      "nome": "Naturhotel Miraval",
+      "sito": "http://www.naturhotelmiraval.com/",
+      "social": {
+        "instagram": "miraval.naturhotel.altabadia",
+        "facebook": "miraval.naturhotel"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ-e8TFLgieEcR4aNuPaP9A3w",
+      "nome": "Ciasa Pradel - Urlaub am Bauernhof",
+      "sito": "https://www.pradel.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ5SGIO7gieEcRUfdDzdZBbNU",
+      "nome": "Gasthof Dasser",
+      "sito": "http://www.dasser.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJLzSC9bcieEcRuAyhekbrxjU",
+      "nome": "B&B Pineta",
+      "sito": "https://bb-pineta.mondoinviaggio.top/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJPbpdGQ8YeEcRaWW6jvOgCl0",
+      "nome": "Chalet Frapes",
+      "sito": "http://www.frapes.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJmVLS-nsXeEcRbBFIi5EgaS4",
+      "nome": "Ütia de Börz",
+      "sito": "http://www.boerz.it/",
+      "social": {
+        "instagram": "utia_de_borz",
+        "facebook": "utiadeborz",
+        "tiktok": "utia_de_borz",
+        "linkedin": "sass-dlacia-spa"
+      },
+      "nota": "",
+      "trovati": 4
+    },
+    {
+      "placeId": "ChIJ-e8TFLgieEcRo1Dfl8uORY8",
+      "nome": "Pensione Torr",
+      "sito": "http://www.torr.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJQayyOdZoeEcR_Abaz10ceqY",
+      "nome": "Hotel Vigo",
+      "sito": "http://www.hotelvigo.it/",
+      "social": {
+        "facebook": "Ghettapietro"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJkynRST1peEcRlvRH0LBgOiE",
+      "nome": "Hotel Meida - Pozza di Fassa",
+      "sito": "http://www.hotelmeida.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJKdjKEWlqeEcR9R1fHA3ldmA",
+      "nome": "Hotel Ladinia",
+      "sito": "https://www.hotelladinia.com/",
+      "social": {
+        "instagram": "hotel_ladinia_dolomites_view"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJf42HIj9peEcR0WY_pX8_Syo",
+      "nome": "Alpine Touring Hotel",
+      "sito": "http://www.touringhotel.info/",
+      "social": {
+        "instagram": "alpinetouringhotel",
+        "facebook": "TouringHotelValdiFassa"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJdWQiHz1peEcRjq38u-EKGeM",
+      "nome": "Hotel Chalet Sas Morin",
+      "sito": "https://www.sasmorin.it/",
+      "social": {
+        "instagram": "hotelsasmorin",
+        "facebook": "HotelSasMorin"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJW4jRKhhpeEcRicpIvxxLF58",
+      "nome": "Albergo San Nicolò",
+      "sito": "https://www.hotelsannicolo.it/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJAcNMFT9peEcRhM3uvQXGNnQ",
+      "nome": "Hotel Europa - Pera di Fassa",
+      "sito": "https://www.hoteleuropavaldifassa.com/?utm_source=google_maps&utm_medium=organic&utm_campaign=mybusiness",
+      "social": {
+        "instagram": "hoteleuropa.peradifassa",
+        "facebook": "HotelEuropaValdiFassa"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJixsDxRtpeEcR4w2Reij3Nzk",
+      "nome": "Hotel Laurino",
+      "sito": "http://www.hotellaurino.it/",
+      "social": {
+        "facebook": "hotellaurinopozzadifassa"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJFZcSFCRpeEcRrmdyJwwIoqE",
+      "nome": "Arnika Dolomiti MoveHotel",
+      "sito": "http://www.arnikahotel.it/",
+      "social": {
+        "instagram": "arnika_dolomiti_h",
+        "facebook": "MoveHotelArnika.PozzadiFassa.Dolomiti"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJta1bem5qeEcRM5kXdvSQ-5U",
+      "nome": "Albergo Canazei",
+      "sito": "http://www.albergocanazei.it/",
+      "social": {},
+      "nota": "Sito non leggibile (UNABLE_TO_VERIFY_LEAF_SIGNATURE): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJgQwE4wlqeEcRnPhQHqmBrVk",
+      "nome": "Active Hotel Aurora Canazei",
+      "sito": "http://www.hotelauroracanazei.it/",
+      "social": {
+        "instagram": "activehotelaurora",
+        "facebook": "hotelauroracanazei"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJS7lJiG5qeEcR5cXbsjzhiQ8",
+      "nome": "Hotel La Perla Wellness & Beauty",
+      "sito": "https://hotellaperla.net/",
+      "social": {
+        "instagram": "hotellaperlacanazei",
+        "facebook": "hotel.la.perla.canazei",
+        "youtube": "user"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJgQnx5nhqeEcRn-nGwyG3oYU",
+      "nome": "Hotel Bellavista",
+      "sito": "http://www.bellavistahotel.it/",
+      "social": {
+        "facebook": "Hotel-Bellavista-110742882353538"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJJXKpbWlqeEcRS8dZBe2BH_M",
+      "nome": "Locanda degli Artisti Art Hotel Canazei",
+      "sito": "https://www.locandadegliartisti.art/?utm_source=google_maps&utm_medium=organic&utm_campaign=mybusiness",
+      "social": {
+        "instagram": "locandadegliartisti.art",
+        "facebook": "LocandaDegliArtistiArtHotel",
+        "youtube": "HotelLocandadegliArtisti"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJNch3em5qeEcRckyjK_3Zgdg",
+      "nome": "Hotel Pareda",
+      "sito": "http://www.hotelpareda.it/",
+      "social": {},
+      "nota": "Sito non leggibile (fetch failed): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJ2bja825qeEcRjXiwoxTWpeA",
+      "nome": "Albergo alla Rosa - B&B",
+      "sito": "https://www.hotelallarosa.com/",
+      "social": {
+        "instagram": "hotelallarosa",
+        "facebook": "hotelallarosa"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJC0gFxm5qeEcRauW6ouEfw1Q",
+      "nome": "Croce Bianca Leisure & Spa",
+      "sito": "https://www.hotelcrocebianca.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJneWYjm5qeEcRBfhUx-y0Ebc",
+      "nome": "Hotel Rita",
+      "sito": "http://www.hotelrita.com/",
+      "social": {
+        "instagram": "hotel.rita.canazei",
+        "facebook": "HotelRitaCanazei"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJK-c0hpNreEcR-AIid_oGDH8",
+      "nome": "Chalet Margoni",
+      "sito": "https://chaletmargoni.it/",
+      "social": {
+        "instagram": "chalet.margoni",
+        "facebook": "chaletmargonicanazei"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ8Rnz-W5qeEcRG7pU9iU0EWM",
+      "nome": "Union Hotels Canazei",
+      "sito": "https://www.unionhotelscanazei.it/",
+      "social": {
+        "instagram": "unionhotelscanazei",
+        "facebook": "unionhotelscanazei",
+        "youtube": "UCP6AJpjAEjZTrx5N4I1I_fQ"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJ5aA1xa9reEcR-y0blS7e2fo",
+      "nome": "Dolomiten Hotel Irma",
+      "sito": "https://www.albergoirma.it/",
+      "social": {
+        "instagram": "dolomitenhotelirma",
+        "facebook": "people"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ3WgILmhqeEcRNO1bWaZlYKI",
+      "nome": "Hotel Cesa Tyrol",
+      "sito": "https://www.hotelcesatyrol.com/",
+      "social": {
+        "instagram": "hotelcesatyrol",
+        "facebook": "cesatyrolhotelcanazei"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJX6930hpmeEcRH0vsRZR5ars",
+      "nome": "Hotel Moena",
+      "sito": "https://www.hotel-moena.it/",
+      "social": {
+        "instagram": "hotel_moena",
+        "facebook": "hotelmoena"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJETmt3LBneEcRjxg4-AJxfxE",
+      "nome": "Active Alm Hotel Moena",
+      "sito": "http://www.almhotel.it/",
+      "social": {
+        "instagram": "almhotel.it",
+        "facebook": "almhotelmoena"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ77jYNRxmeEcReoBEYzxtJ84",
+      "nome": "Hotel Fanes 3 Stelle Superior con Piscina e Spa in Val di Fassa a Moena",
+      "sito": "http://www.hotelfanes.com/",
+      "social": {
+        "instagram": "hotelfanesmoena",
+        "facebook": "hotelfanes"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ237GW_ZjeEcRKB2zM5mv3m0",
+      "nome": "Hotel Touring Predazzo",
+      "sito": "http://www.touringpredazzo.com/",
+      "social": {
+        "instagram": "touringpredazzo",
+        "facebook": "officialtouringpredazzo"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJc3DH9-5jeEcR195bWUHj50c",
+      "nome": "Hotel Cimon Dolomites",
+      "sito": "http://www.hotelcimon.it/",
+      "social": {
+        "instagram": "hotel_cimon_dolomites",
+        "facebook": "hotelcimonpredazzo"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ4-GOLvhjeEcRieH2Mu1ZXa4",
+      "nome": "Hotel Sass Maor",
+      "sito": "http://www.sassmaor.com/",
+      "social": {
+        "facebook": "hotelSassMaorPredazzo"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJzaJnlwtkeEcRhL-0XMAgCOM",
+      "nome": "Hotel Ristorante \"La Montanara \"",
+      "sito": "http://www.hotelmontanara.com/",
+      "social": {
+        "instagram": "hotel_la_montanara",
+        "facebook": "hotellamontanara"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ5R-k1mxleEcRM8FoyrqhCe0",
+      "nome": "Hotel Villa Melì 3s | Hotel a Predazzo",
+      "sito": "https://villameli.it/",
+      "social": {
+        "instagram": "hotelvillameli",
+        "facebook": "hotelvillameli"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJc2cZRvFjeEcRyjR2eIaMLFc",
+      "nome": "Liz Hotel & Apartments",
+      "sito": "http://www.lizhotel.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJiYQAOPZjeEcRixAss2lkXD0",
+      "nome": "Active Hotel Ancora",
+      "sito": "http://www.ancora.it/",
+      "social": {
+        "instagram": "fiemme_holidays",
+        "facebook": "hotelfiemmeholidays"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJpS9UbvZjeEcR9RYjjvuMVog",
+      "nome": "Active Hotel Rosat",
+      "sito": "https://www.activehotelrosat.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJUZd16_VjeEcRiYcUGuMyZok",
+      "nome": "Hotel Bellaria",
+      "sito": "http://www.hotelbellaria.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJn2kFzfNjeEcRp93lRWogKB4",
+      "nome": "Aparthotel Majestic",
+      "sito": "https://www.aparthotel-majestic.it/it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJJ7KAlf18eEcRNdOy3i9nir4",
+      "nome": "La Roccia Wellness Hotel Cavalese Trentino",
+      "sito": "https://larocciacavalese.com/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJxZVom_18eEcR1mF5Yahlj34",
+      "nome": "Albergo Panorama",
+      "sito": "http://www.panoramacavalese.it/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJmZ4HQf98eEcRYuSOGl2yXyY",
+      "nome": "Hotel Bellavista",
+      "sito": "http://www.hotelbellavista.eu/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJTx5hGJt9eEcRgBDZdZZIKUk",
+      "nome": "Albergo Dolomiti - Cavalese",
+      "sito": "http://www.albergodolomiticavalese.it/",
+      "social": {
+        "instagram": "albergodolomiticavalese",
+        "facebook": "albergodolomiticavalese"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ6TQSRlN8eEcRw6y2eR79fIw",
+      "nome": "Park Hotel Bellacosta",
+      "sito": "https://www.parkhotelbellacosta.net/",
+      "social": {
+        "instagram": "park_hotel_bellacosta_cavalese"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJQ4CQM1R8eEcRJaGZ8-jG0aA",
+      "nome": "Historic Hotel Ristorante La Stua",
+      "sito": "http://www.hotellastua.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJRWDev1V8eEcRlF2uFqJ5KTg",
+      "nome": "Romantic Hotel Excelsior - Cavalese",
+      "sito": "http://www.excelsiorcavalese.com/",
+      "social": {},
+      "nota": "Sito non leggibile (ERR_SSL_DH_KEY_TOO_SMALL): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJa9otyEV8eEcR2ax2ji1dIQ4",
+      "nome": "Park Hotel Trunka Lunka",
+      "sito": "http://www.trunkalunka.net/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ45RpOR19eEcRMm6l01zDlio",
+      "nome": "Hotel Antico Mas Del Medico Cavalese",
+      "sito": "http://www.anticomasdelmedico.com/",
+      "social": {
+        "instagram": "masdelmedico",
+        "facebook": "masdelmedico"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJadykLFV8eEcRoIXRNq9vFOg",
+      "nome": "Park Hotel Azalea",
+      "sito": "https://www.ecoparkhotelazalea.it/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJmdWP9v98eEcRRGlsPmwBO4s",
+      "nome": "Hotel Lagorai Panoramic Resort",
+      "sito": "http://www.hotel-lagorai.com/",
+      "social": {
+        "instagram": "lagoraipanoramicresort",
+        "youtube": "UCbWMDsy3XeBQ0dk5DqPK5Uw"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJab17NNN8eEcRH6A4pQWmmbs",
+      "nome": "Hotel Orso Grigio",
+      "sito": "http://www.hotelorsogrigio.it/",
+      "social": {
+        "instagram": "orsogrigio_cavalese",
+        "facebook": "orsogrigiocavalese"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJFWrYYIZ9eEcRrYWrwpsmW4A",
+      "nome": "ALPURIS HOTEL",
+      "sito": "http://www.alpuris.it/",
+      "social": {
+        "instagram": "alpurishotel",
+        "facebook": "alpurishotel"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ49Vjzax9eEcRyAxIt0QAg88",
+      "nome": "Goccia D' Oro",
+      "sito": "https://www.facebook.com/VillaGocciaDOro/",
+      "social": {},
+      "nota": "Sito non leggibile (HTTP 400): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJW3u6v8B9eEcRbOpktFrawMw",
+      "nome": "Albergo Stella ** Cavalese",
+      "sito": "https://lerais.it/it/albergo-stella",
+      "social": {
+        "instagram": "le_rais_coop_sociale",
+        "facebook": "coopsocialelerais"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJb0y-1LB9eEcRUD0EovQDawo",
+      "nome": "Family Hotel Veronza",
+      "sito": "https://www.hotelveronza.it/?utm_source=google_maps&utm_medium=organic&utm_campaign=mybusiness",
+      "social": {
+        "instagram": "family_hotel_veronza"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJT0fV1FV8eEcRq9sodXC6JRs",
+      "nome": "B&B Hotel Salvanel",
+      "sito": "https://www.hotelsalvanel.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJv9evNkV8eEcRPAav3cufyNk",
+      "nome": "Hotel Garni Edy Daiano Cavalese",
+      "sito": "https://www.garniedy.it/",
+      "social": {
+        "instagram": "garniedy",
+        "facebook": "garniedy"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJrziifFV8eEcR_OmlhI3Bzm4",
+      "nome": "Bio Boutique Hotel Laurino",
+      "sito": "https://www.bioboutiquehotellaurino.it/it/",
+      "social": {
+        "instagram": "hotelgarnilaurino",
+        "facebook": "hotelgarnilaurino",
+        "youtube": "hotelgarnilaurino2383"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJu-T9uHSbgkcRhhgfyWKAKQM",
+      "nome": "Hotel Christof",
+      "sito": "http://www.christof.it/",
+      "social": {
+        "instagram": "hotel.christof",
+        "facebook": "HotelChristof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJeX1W-4GDgkcRbN101g37g-k",
+      "nome": "Hotel Thalhof am See",
+      "sito": "http://www.thalhof.it/",
+      "social": {
+        "instagram": "hotelthalhof",
+        "facebook": "thalhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJiRMqtoGDgkcR7d4hFYj8fKo",
+      "nome": "Kalterer See Hof",
+      "sito": "http://www.kaltererseehof.com/",
+      "social": {
+        "instagram": "kaltererseehof",
+        "facebook": "kaltererseehof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJRzcCiVeBgkcRPxYqq43tD5M",
+      "nome": "Hotel Seegarten",
+      "sito": "https://www.seegarten.it/en/hotel",
+      "social": {
+        "instagram": "see.garten",
+        "facebook": "Hotel-Restaurant-Cafe-Seegarten-303571166472377"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJO8QTU4eDgkcRJ8DMgWgaJMA",
+      "nome": "Hotel Garni Seeberg",
+      "sito": "http://www.seeberg-kaltern.com/",
+      "social": {
+        "instagram": "see.garten",
+        "facebook": "Hotel-Restaurant-Cafe-Seegarten-303571166472377"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJwyitE56DgkcRKsem5DvSEeo",
+      "nome": "Parc Hotel Am See",
+      "sito": "https://www.parchotel.info/?utm_source=google&utm_medium=organic&utm_campaign=google_mybusiness&utm_term=hotel",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ0yUvKoeDgkcR57KCZTRbMFg",
+      "nome": "Hotel Restaurant Haus am Hang",
+      "sito": "http://www.hausamhang.it/",
+      "social": {
+        "instagram": "hotelhausamhang"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJ7aa2eZiEgkcRgiCxDk0WuwQ",
+      "nome": "Seehotel Ambach",
+      "sito": "https://www.seehotel-ambach.com/",
+      "social": {
+        "instagram": "seehotelambach1973",
+        "facebook": "pg"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ0cHf27uEgkcRrLVj8HKjXlc",
+      "nome": "SEELEITEN - Lake Spa Hotel",
+      "sito": "https://www.seeleiten.it/?utm_source=google&utm_medium=organic&utm_campaign=google_mybusiness",
+      "social": {
+        "instagram": "hotelseeleiten",
+        "facebook": "Hotel.Seeleiten",
+        "youtube": "UCpDBPoYN8wiLHISk9Em94FQ"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJLXp8eaKDgkcRjh0np9gk7K4",
+      "nome": "Gasthof Klughammer",
+      "sito": "http://www.pensionklughammer.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJA9ZS7IaDgkcRsMjgpTBBreU",
+      "nome": "Hotel Hasslhof",
+      "sito": "https://www.hasslhof.com/?utm_source=google&utm_medium=organic&utm_campaign=MyBusiness_hasslhof",
+      "social": {
+        "instagram": "hotelhasslhof",
+        "facebook": "Hasslhof",
+        "youtube": "UCCFMQn4jmOEnb4_KwJ08-Mw"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJdZFmWr-EgkcRU5FU8QgaXwU",
+      "nome": "Hotel Weingarten",
+      "sito": "http://www.hotel-weingarten.it/",
+      "social": {
+        "facebook": "Hotel.Weingarten"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJ8-tiQZ6DgkcRMvqI1aZZPdA",
+      "nome": "Pension - Restaurant Klughammer",
+      "sito": "http://pensionklughammer.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ4WYrB7eEgkcRBUtKgNYzSWw",
+      "nome": "Panorama Designhotel",
+      "sito": "http://www.designhotel-panorama.com/",
+      "social": {
+        "facebook": "designhotelpanorama"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJ5UD3bYGDgkcR56sVTuJj0gc",
+      "nome": "Garni - Hotel Sonnleitenhof",
+      "sito": "http://www.sonnleitenhof.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJNc0TSbyDgkcR-lt48ghUp5o",
+      "nome": "Pension Leuchtenburg",
+      "sito": "http://www.leuchtenburg.it/",
+      "social": {
+        "instagram": "pensionleuchtenburg"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJKY49cEibgkcR6gWudnB-iuo",
+      "nome": "Hotel Tannhof",
+      "sito": "http://www.tannhof.it/",
+      "social": {
+        "instagram": "tannhof_hotel_restaurant"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJZR8e0YGDgkcRDatS489waTs",
+      "nome": "Seeperle",
+      "sito": "http://www.seeperle.com/?utm_source=GoogleMyBusiness&utm_medium=KlickWebsite&utm_campaign=GoogleMyBusiness",
+      "social": {
+        "instagram": "seeperle.landgasthof.weingut",
+        "facebook": "LandgasthofSeePerle"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJM4GmGLeEgkcRZfCez32EL5o",
+      "nome": "Hotel Torgglhof Kaltern",
+      "sito": "https://www.torgglhof.it/?utm_source=google&utm_medium=organic&utm_campaign=MyBusiness_Torgglhof",
+      "social": {
+        "instagram": "hotel.torgglhof.kaltern",
+        "facebook": "hotel.torgglhof.kaltern",
+        "youtube": "UCudvvQw5gLzzbMz57UiTj3A"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJBZ318LqEgkcRSYLFptelEHo",
+      "nome": "Hotel Jagdhof",
+      "sito": "http://www.jagdhof-kaltern.com/",
+      "social": {
+        "instagram": "hotel_jagdhof_kaltern",
+        "facebook": "Hotel-Jagdhof-Torgglkeller-114876981882057"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJizlF1OqEgkcRxQUTrcnQ1LI",
+      "nome": "Hotel Malga",
+      "sito": "https://www.hotel-malga.com/",
+      "social": {
+        "instagram": "angiethaler",
+        "facebook": "hotelmalga"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJX3wSnVCBgkcRaqzyMRrqATI",
+      "nome": "Traminerhof",
+      "sito": "http://www.traminerhof.it/",
+      "social": {
+        "instagram": "traminerhof",
+        "facebook": "traminerhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ17iyg1CBgkcREHajmjX-kLs",
+      "nome": "Panorama",
+      "sito": "http://www.panorama-tramin.com/",
+      "social": {
+        "instagram": "panorama_tramin2021",
+        "facebook": "profile.php"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJj7Hb-lGBgkcRDyIidfLjmVg",
+      "nome": "Hotel Pernhof",
+      "sito": "http://www.pernhof.com/",
+      "social": {
+        "instagram": "hotel_restaurant_pernhof",
+        "facebook": "Pernhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ89zVjVmBgkcRV1RWC2imrdk",
+      "nome": "TIROLERIN",
+      "sito": "http://www.tirolerin.it/",
+      "social": {
+        "instagram": "tirolerin_tramin",
+        "facebook": "GarniHotelTirolerin"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJy9QpIzaBgkcRoTTKZIRb7tg",
+      "nome": "Garni Hotel Ritterhof Frühstückspension - Tramin",
+      "sito": "http://www.ritterhof-tramin.it/",
+      "social": {
+        "instagram": "ritterhoftramin",
+        "facebook": "GarniHotelRitterhofTramin"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJnX73m_eDgkcRWH4TTN88hxU",
+      "nome": "Hotel Plattenhof",
+      "sito": "https://www.plattenhof.it/?utm_source=google&utm_medium=organic&utm_campaign=google_mybusiness&utm_term=hotel",
+      "social": {
+        "instagram": "plattenhof_hotel_tramin",
+        "facebook": "PlattenhofTramin"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJc4a_RJ-BgkcRXgLy4gL_9XQ",
+      "nome": "Hotel Villner Hof",
+      "sito": "http://www.villnerhof.com/",
+      "social": {
+        "facebook": "villnerhof"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJY8kRRQeBgkcR8q0IIhRrhFg",
+      "nome": "Ristorante Hotel Andreas Hofer",
+      "sito": "http://www.hotelandreashofer.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJpQumipyAgkcRZcBTlM8ahyc",
+      "nome": "Das Alte Rathaus",
+      "sito": "https://dasalterathaus.com/",
+      "social": {
+        "instagram": "piazzetta.restaurant",
+        "facebook": "dasalterathaus"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJRxbVLiaCgkcRffb9Pxr-KG0",
+      "nome": "Amadeus Ora&Amore",
+      "sito": "http://www.hotel-amadeus.it/",
+      "social": {
+        "instagram": "amadeus_oraamore"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJz47X0iWCgkcRcZGg8XKpt2I",
+      "nome": "Hotel Markushof - Adults only",
+      "sito": "http://www.hotelmarkushof.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJNdqjSyiCgkcRcoh2dtO7WCs",
+      "nome": "Hotel Heide Park",
+      "sito": "http://www.hotelheide.it/",
+      "social": {
+        "instagram": "hotelheide_park",
+        "facebook": "hotelheide"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJDTnrWlW5gkcRk3FfwNynR0A",
+      "nome": "Hotel Therme Merano",
+      "sito": "http://www.hoteltermemerano.it/",
+      "social": {},
+      "nota": "Sito non leggibile (ERR_SSL_DH_KEY_TOO_SMALL): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJBTHbNVK5gkcRBGWl0ikLizQ",
+      "nome": "City Hotel Merano",
+      "sito": "https://www.hotelsmerano.it/city-hotel-merano",
+      "social": {
+        "instagram": "cityhotelmerano",
+        "facebook": "cityhotelmerano"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ7TJYGlW5gkcR1Ci4zPMam4U",
+      "nome": "Hotel Aurora",
+      "sito": "http://www.hotel-aurora-meran.com/",
+      "social": {
+        "instagram": "hotelaurorameran",
+        "facebook": "aurora.meran"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJScYMwwW8gkcRSqPozd9gCnw",
+      "nome": "Villa Laurus",
+      "sito": "https://www.hotelsmerano.it/hotel-villalaurus-merano",
+      "social": {
+        "facebook": "policies"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJC2O12FS5gkcRP8_PsXyiBko",
+      "nome": "Hotel Meranerhof",
+      "sito": "https://www.meranerhof.com/",
+      "social": {
+        "instagram": "hotelmeranerhof",
+        "facebook": "classic.hotel.meranerhof",
+        "youtube": "UCWq9ZiioJouHs_qFh2YUk7Q"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJnZ8mP_i7gkcR0N8DWIoaOKY",
+      "nome": "Hotel Kolping",
+      "sito": "http://www.kolpingmeran.it/",
+      "social": {
+        "instagram": "hotel_kolping_meran",
+        "facebook": "Kolpingmeran"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJvTeEN1O5gkcRNei_qwOJPQM",
+      "nome": "Flora Hotel & Suites",
+      "sito": "https://www.hotelsmerano.it/hotel-flora-merano",
+      "social": {
+        "facebook": "merano.hotelflora"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJO7AVXwm8gkcRK6fa7EusUGY",
+      "nome": "Hotel Tiffany",
+      "sito": "http://www.hotel-tiffany.net/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJR9cYPgi8gkcRVSEC8BEG6J4",
+      "nome": "B&B Cityhotel Aster",
+      "sito": "http://www.hotelaster.com/",
+      "social": {
+        "instagram": "hotelaster",
+        "facebook": "hotelastermeran"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJjWx5Bvm7gkcRiHlizbcyeyQ",
+      "nome": "Hotel Adria",
+      "sito": "http://www.hotel-adria.com/",
+      "social": {
+        "instagram": "_adria_meran",
+        "facebook": "hotel.adria.meran"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJp0-LIqq-gkcRHYntQr4yzYQ",
+      "nome": "Hotel Schönbrunn",
+      "sito": "http://www.schoenbrunn.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ191M-VS5gkcR_6QvMeKSKss",
+      "nome": "Hotel Europa Splendid",
+      "sito": "https://www.europa-splendid.com/it/",
+      "social": {
+        "instagram": "hotel_europa_splendid",
+        "facebook": "hotel.europa.splendid"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ3x37-wi8gkcR6oMXcD1Q5w0",
+      "nome": "Hotel Juliane",
+      "sito": "http://www.juliane.it/",
+      "social": {
+        "facebook": "offsite_event.php",
+        "youtube": "iframe_api"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ_yql-1K5gkcRqQe7BmsvMs4",
+      "nome": "Grand Hotel Bellevue",
+      "sito": "http://www.hotel-bellevue-meran.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJK-nH9qm-gkcRcb93yg7JsHY",
+      "nome": "Hotel Isabella",
+      "sito": "http://www.hotel-isabella.com/",
+      "social": {
+        "facebook": "hotel.isabella"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJAyigTdy9gkcRwwyTrcedDTU",
+      "nome": "Hotel Schwarzschmied",
+      "sito": "https://www.schwarzschmied.com/",
+      "social": {
+        "instagram": "schwarzschmied"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJaUGwjsC9gkcRtM5N-gzQmD8",
+      "nome": "Hotel Pfeiss 4 Sterne -- Lana bei Meran --",
+      "sito": "https://pfeiss.com/?utm_source=google&utm_medium=organic&utm_campaign=MyBusinessEintragPfeissaign=MyBusinessEintragPfeiss",
+      "social": {
+        "facebook": "Genusshotel.Pfeiss",
+        "youtube": "UCl2_UoAUCS39IUIDAHabfrw"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJSbi_9Nm9gkcRcXeb24YyaGA",
+      "nome": "Hotel Verena",
+      "sito": "http://www.hotel-verena.com/",
+      "social": {
+        "facebook": "hotel.verena"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJi2xaTO69gkcRMYWv6resat4",
+      "nome": "Schlosshof Resort - Hotel & Camping",
+      "sito": "https://www.schlosshof.it/",
+      "social": {
+        "instagram": "schlosshofresort",
+        "facebook": "SchlosshofResort"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJqcra0nO-gkcR-hKDe0yC778",
+      "nome": "Hotel Braunsbergerhof",
+      "sito": "https://www.braunsbergerhof.com/",
+      "social": {
+        "instagram": "hotel.braunsbergerhof",
+        "facebook": "hotel.braunsbergerhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJqcra0nO-gkcRV6FaH0kgv4A",
+      "nome": "Hotel Kröllnerhof",
+      "sito": "http://www.kroellnerhof.com/",
+      "social": {
+        "instagram": "kroellnerhof_lana",
+        "facebook": "hotelkroellnerhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJFe_Hqtm9gkcRmm0DvdIkWpQ",
+      "nome": "Hotel Jardis",
+      "sito": "https://www.jardis.it/?utm_source=google&utm_medium=organic&utm_campaign=google_mybusiness&utm_term=hotel",
+      "social": {
+        "instagram": "boutiquehoteljardis",
+        "facebook": "boutiquehoteljardis"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJHYYdG-q9gkcRsqkpGkA-Hfk",
+      "nome": "Hotel Gschwangut",
+      "sito": "https://www.gschwangut.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJB0KTMem9gkcRHNzZ_jKPgeI",
+      "nome": "Garni Hotel Katzenthalerhof",
+      "sito": "https://www.katzenthalerhof.com/",
+      "social": {
+        "instagram": "katzenthalerhof",
+        "facebook": "katzenthalerhof.garnihotel"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ2Xw0YLe9gkcR1fyLmr65qDw",
+      "nome": "Boutique Hotel Wiesenhof",
+      "sito": "https://www.wiesenhof-lana.it/",
+      "social": {
+        "instagram": "wiesenhoflana",
+        "facebook": "wiesenhoflana"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJg2foRMe9gkcRzC3bcRmr1q4",
+      "nome": "Hotel Sonnenhof Sonnenhof",
+      "sito": "https://www.hotel-sonnenhof.info/",
+      "social": {
+        "facebook": "Pension-Sonnenhof-355759034559414"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJ7YzncMW9gkcRs09VuP-MDAk",
+      "nome": "Im Tiefenbrunn",
+      "sito": "https://www.tiefenbrunn.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJW7Fkyve9gkcR4zd3W_O8Su0",
+      "nome": "Hotel Der Waldhof",
+      "sito": "http://www.derwaldhof.com/",
+      "social": {
+        "instagram": "hotelderwaldhof",
+        "facebook": "HotelDerWaldhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJIUT2SJO9gkcR9cnvrN_IHbs",
+      "nome": "Albergo Unteranger",
+      "sito": "http://www.unteranger.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJpWd3Q1y-gkcRNvWb6Rcktak",
+      "nome": "Vigilius Mountain Resort",
+      "sito": "http://www.vigilius.it/",
+      "social": {
+        "instagram": "vigiliusmountainresort",
+        "facebook": "vigiliusmountainresort",
+        "linkedin": "vigilius-mountain-resort"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJqcra0nO-gkcRoATkLGSpbLM",
+      "nome": "Hotel Garni Vigilhof",
+      "sito": "https://www.vigilhof.it/",
+      "social": {
+        "facebook": "Hotel.Garni.Vigilhof"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJ66KyN9e9gkcRT7tUId3tDLQ",
+      "nome": "Hotel Eichhof",
+      "sito": "http://www.eichhof.net/",
+      "social": {},
+      "nota": "Sito non leggibile (ERR_SSL_DH_KEY_TOO_SMALL): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJZcNdokG9gkcRiR9xsTu_a_k",
+      "nome": "Villa Arnica",
+      "sito": "http://www.villaarnica.it/",
+      "social": {
+        "instagram": "villaarnica"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJWYUJGMC9gkcRlhSRQHL0ohg",
+      "nome": "Pensione Hilpold",
+      "sito": "http://www.pensionhilpold.it/",
+      "social": {
+        "facebook": "pensionhilpold"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJK1fH-RyWgkcR1Ma-YAvOD2I",
+      "nome": "Hotel Restaurant Kirchsteiger",
+      "sito": "http://www.kirchsteiger.com/",
+      "social": {
+        "instagram": "kirchsteiger_hotel_restaurant",
+        "facebook": "Hotel-Restaurant-Kirchsteiger-316456988379344"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ7cEGWoy9gkcR8kZXGAumfd8",
+      "nome": "Hotel Ballguthof am Golfplatz",
+      "sito": "https://www.ballguthof.com/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=271793310710655120",
+      "social": {
+        "instagram": "ballguthof",
+        "facebook": "Hotel-Ballguthof-501373689932846"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJSTCBrfe9gkcRBpMUekGY_TY",
+      "nome": "Pensione Kofler",
+      "sito": "http://www.pensionkofler.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJZ8N0bO27gkcRmhJfByOgBkE",
+      "nome": "Schenna Resort",
+      "sito": "https://www.schennaresort.com/?utm_source=google&utm_medium=organic&utm_campaign=google_mybusiness&utm_term=Hotel",
+      "social": {
+        "instagram": "schennaresort",
+        "facebook": "SchennaResort",
+        "tiktok": "schenna.resort4"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJfQypVPO7gkcRaLeRwgw4tQY",
+      "nome": "Astor Hotel Scena",
+      "sito": "http://www.astorhotel.info/",
+      "social": {},
+      "nota": "Sito non leggibile (ERR_SSL_DH_KEY_TOO_SMALL): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJPQEsN8K7gkcR2e2MyEo6woU",
+      "nome": "Hotel Tyrol - Schenna",
+      "sito": "https://www.hotel-tyrol-schenna.com/",
+      "social": {
+        "instagram": "tyrolhotel_schenna",
+        "facebook": "Hotel.Tyrol.Schenna"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJIbqmKsC7gkcRxNWtw6uhxDs",
+      "nome": "Hotel Hilburger",
+      "sito": "https://www.hilburger.it/",
+      "social": {
+        "instagram": "hotelhilburger",
+        "facebook": "HotelHilburger"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJTVNTmsO7gkcR9fbQYoxBylg",
+      "nome": "Hotel Tenne",
+      "sito": "https://www.hotel-tenne.com/?utm_source=googlemybusiness&utm_medium=organic&utm_campaign=GMB",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJK3o_4sG7gkcRxfSh4dneMKk",
+      "nome": "Hotel Schennerhof",
+      "sito": "https://www.schennerhof.com/de/schennerhof.html?utm_source=google&utm_medium=organic&utm_campaign=googe_mybusiness&utm_term=Hotel",
+      "social": {
+        "instagram": "hotelrestaurantschennerhof",
+        "facebook": "Hotel.Restaurant.Schennerhof",
+        "youtube": "user"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJXQA4WcS7gkcRrPPfHUpRnKE",
+      "nome": "Hotel Schlosswirt",
+      "sito": "http://www.schlosswirt.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ-2VfZMS7gkcR6ktoDOpmBr0",
+      "nome": "Hotel Kiendl",
+      "sito": "https://www.hotel-kiendl.com/?utm_source=google&utm_medium=organic&utm_campaign=MyBusinessEintragKiendl",
+      "social": {
+        "instagram": "hotel_kiendl",
+        "facebook": "HotelKiendlinSchenna"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJuU0aqEq6gkcR1R20AFQQ1Hc",
+      "nome": "Lifestyle Hotel Alpin",
+      "sito": "https://www.schennahotels.com/kleine-hotels-schenna?utm_source=google&utm_medium=organic&utm_campaign=google_business_profile&utm_term=hotel",
+      "social": {
+        "instagram": "schennahotels_eschenlohe_alpin",
+        "facebook": "hoteleschenlohe"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJDSn7Nca7gkcRO2WPLlNQMtM",
+      "nome": "Family Hotel Gutenberg",
+      "sito": "https://www.hotelgutenberg.eu/",
+      "social": {
+        "instagram": "familyhotelgutenberg",
+        "facebook": "hotelgutenberg"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJk0rhHcm7gkcR712akaARv3c",
+      "nome": "Hotel Fürstenhof Schenna",
+      "sito": "https://www.fuerstenhof.net/index.php?utm_source=googlemybusiness&utm_medium=organic&utm_campaign=GMB",
+      "social": {
+        "instagram": "hotelfuerstenhof",
+        "facebook": "people"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJN4skcg-8gkcR1FzNJAbxesE",
+      "nome": "Hotel Walter",
+      "sito": "https://www.hotel-walter.it/?utm_source=googlemybusiness&utm_medium=organic&utm_campaign=GMB",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJDSn7Nca7gkcRtFP4H4vgOHw",
+      "nome": "Hotel Bergland",
+      "sito": "http://www.bergland.net/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJa3oDsnDTfkcRJzBn1dHYpVQ",
+      "nome": "Hotel Grünwalderhof",
+      "sito": "https://www.gruenwalderhof.com/index.php?utm_source=googlemybusiness&utm_medium=organic&utm_campaign=GMB",
+      "social": {
+        "instagram": "hotelgruenwalderhof",
+        "facebook": "profile.php"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJXQA4WcS7gkcR3yCKMzM2Ptc",
+      "nome": "Hotel Finkennest",
+      "sito": "https://www.finkennest.it/it/finkennest-panoramic-garden-resort-spa/il-finkennest.html",
+      "social": {
+        "instagram": "hotelfinkennest",
+        "facebook": "hotelfinkennest"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJs-f7qeu7gkcRjBMJ5VZbEEs",
+      "nome": "Aparthotel Ritterhof Schenna",
+      "sito": "http://www.ritterhof-schenna.com/",
+      "social": {
+        "instagram": "ritterhof.schenna",
+        "facebook": "ritterhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJnWxTN_m7gkcRWjaVvpWsKoI",
+      "nome": "Hotel Garni Lichtenau",
+      "sito": "http://www.lichtenau.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJxyXF4ke6gkcR0oAAlFaWjyc",
+      "nome": "Hotel Hohenwart",
+      "sito": "http://www.hohenwart.com/",
+      "social": {
+        "instagram": "hotel_hohenwart",
+        "facebook": "hotelhohenwart",
+        "youtube": "UCCytqXBLSj_vxEBrHHAuCTw"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJs9JGgey7gkcRvuU3kGsL5OM",
+      "nome": "Hotel Lagrein",
+      "sito": "http://www.hotellagrein.com/",
+      "social": {
+        "instagram": "hotellagrein",
+        "facebook": "hotel.lagrein"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJuZJF05S7gkcRaB68YeyRK-Y",
+      "nome": "Pensione Zunnelerhof",
+      "sito": "https://www.zunneler.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJq0Lo7MO7gkcR4ThtYrLsr5s",
+      "nome": "Christophs Hotel",
+      "sito": "https://www.christophshotel-schenna.com/",
+      "social": {
+        "instagram": "christophshotel",
+        "facebook": "christophshotel"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJUXPEp5S7gkcRVoqBLAVY-K4",
+      "nome": "Pension zum Burggräffler",
+      "sito": "http://www.zumburggraefler.com/",
+      "social": {
+        "instagram": "zumburggraefler",
+        "facebook": "zumburggraeflerschenna"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJzxgqqx27gkcRYfKnT-bybh0",
+      "nome": "Schenna",
+      "sito": "",
+      "social": {},
+      "nota": "Nessun sito: social non verificabili da qui"
+    },
+    {
+      "placeId": "ChIJy_q6B8S7gkcRZ9G_hxVVHUg",
+      "nome": "Hotel Panorama",
+      "sito": "http://www.panorama.schenna.com/",
+      "social": {
+        "instagram": "hotel_panorama_schenna"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJ3UImicG7gkcRGg9b9oRyPc0",
+      "nome": "Hotel Resmairhof",
+      "sito": "http://www.resmairhof.it/",
+      "social": {
+        "instagram": "hotelresmairhof",
+        "facebook": "brandnamic"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJxyXF4ke6gkcRmfTG27paQ7I",
+      "nome": "Hotel Starkenberg",
+      "sito": "https://www.hotel-starkenberg.com/",
+      "social": {
+        "instagram": "hotelstarkenberg",
+        "facebook": "Fam.Mair"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJodOdSvS7gkcR6XhuspGYclk",
+      "nome": "HOTEL APPARTEMENT SCHMIED HANS",
+      "sito": "https://www.schmiedhans.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJs-2D0b2-gkcRvy7Ruxf_es4",
+      "nome": "Hotel Alpenrose",
+      "sito": "https://www.alpenrose-hotel.it/?utm_source=googlemybusiness&utm_medium=organic&utm_campaign=GMB",
+      "social": {
+        "instagram": "alpenroseschenna",
+        "facebook": "Hotel-Alpenrose-Schenna-458258487518712"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJoxGRhey7gkcRxxzfg2OoGAw",
+      "nome": "Boutique Hotel Eschenlohe",
+      "sito": "https://www.schennahotels.com/hotel-schenna-4-sterne?utm_source=google&utm_medium=organic&utm_campaign=google_business_profile&utm_term=hotel",
+      "social": {
+        "instagram": "schennahotels_eschenlohe_alpin",
+        "facebook": "hoteleschenlohe"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJSbZKPcS7gkcRov6oS2AGSDA",
+      "nome": "Hotel Finkenhof",
+      "sito": "https://www.hotel-fink.com/finkenhof",
+      "social": {
+        "instagram": "hotel.finkenhof",
+        "facebook": "hotelfinkenhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJWSOkHsa7gkcR8aMu8Uq9D0w",
+      "nome": "Oliven- & Genusshotel Hirzer",
+      "sito": "http://www.hirzer.com/",
+      "social": {
+        "instagram": "olivenhotel_hirzer",
+        "facebook": "brandnamic"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ-3p3t5S7gkcRO3xEkgxR5Zk",
+      "nome": "Hotel Garni Ehrenfels",
+      "sito": "http://www.ehrenfels.info/",
+      "social": {
+        "instagram": "ehrenfelsschenna",
+        "facebook": "Hotel-Garni-Ehrenfels-411175788943528"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJPxk6o_S7gkcRBgl3dXKsWVI",
+      "nome": "Alpenpalais Kröll",
+      "sito": "http://www.hotel-kroell-schenna.com/",
+      "social": {
+        "instagram": "alpenpalaiskroell"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJw7x57ZW7gkcReQmVJY52hYs",
+      "nome": "Boutique Hotel St. Georgen",
+      "sito": "https://www.hotel-georgen-schenna.com/?utm_source=GoogleMyBusiness&utm_medium=KlickWebsite&utm_campaign=GoogleMyBusiness",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJxYfj_vS7gkcRVPQbeZz3tlA",
+      "nome": "Solea Südtirol",
+      "sito": "https://suedtirol.solea-hotels.com/?utm_source=GoogleMyBusiness&utm_medium=KlickWebsite&utm_campaign=GoogleMyBusiness",
+      "social": {
+        "instagram": "soleahotel.suedtirol",
+        "facebook": "soleahotel.suedtirol"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ11lWzsG7gkcRk9y0xsSSwjQ",
+      "nome": "Hotel Walder a Scena Sudtirolo",
+      "sito": "http://www.hotelwalder.com/",
+      "social": {
+        "instagram": "hotelwalderschenna",
+        "facebook": "Hotel.Walder.Schenna",
+        "youtube": "user"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJxyXF4ke6gkcR2v2lHjPLaJc",
+      "nome": "Hotel Ifinger",
+      "sito": "https://www.hotel-ifinger.it/index.php?utm_source=googlemybusiness&utm_medium=organic&utm_campaign=GMB",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJF4uakcq7gkcRKIPz8xX_zU4",
+      "nome": "Baumgartner's Blumenhotel",
+      "sito": "http://www.blumenhotel.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ05pgdfm7gkcRuQ_1E8P921U",
+      "nome": "Garni Kleefeld",
+      "sito": "http://www.kleefeld.schenna.com/",
+      "social": {
+        "instagram": "garni.kleefeld",
+        "facebook": "GarniKleefeld"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJWdh1Qb27gkcR0fYYzFCNa4k",
+      "nome": "Rastlhof",
+      "sito": "https://rastlhof.com/",
+      "social": {
+        "facebook": "Rastlhof"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJTyATtci7gkcR2n5a6Ofr348",
+      "nome": "Hotel Grafenstein",
+      "sito": "http://www.grafenstein.info/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJq6MlEOq7gkcRGfRVp-DI4p4",
+      "nome": "Inklusivhotel Taushof",
+      "sito": "http://www.inklusivhotel.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJh8SWj8q7gkcRXoqAHhnLXGw",
+      "nome": "Hotel Langwies",
+      "sito": "https://www.langwies.it/",
+      "social": {
+        "instagram": "hotel.langwies",
+        "facebook": "Hotel-Langwies-Schenna-151642808189190"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ3zqbYO27gkcRcq1R5CGgzMk",
+      "nome": "Hotel Sunnwies Fam. Dosser - Schenna",
+      "sito": "http://www.sunnwies.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ4bGPKpW7gkcRL50A6r8HFJk",
+      "nome": "Schenna Garni Eden - Bed and Breakfast bei Meran",
+      "sito": "https://www.garnieden.it/",
+      "social": {
+        "instagram": "garni_eden_schenna",
+        "facebook": "GarniEdenSchenna"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ-2VfZMS7gkcRHt9UwPvF-P8",
+      "nome": "Albergo Wunderlehof",
+      "sito": "https://www.wunderlehof.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJF6_JQsS7gkcRxUqvozsiqhk",
+      "nome": "Hotel Erzherzog Johann",
+      "sito": "https://www.hotel-erzherzogjohann.com/index.php?utm_source=googlemybusiness&utm_medium=organic&utm_campaign=GMB",
+      "social": {
+        "instagram": "hotel_erzherzog_johann"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJt2gNGGi5gkcRbxrW4DHNSwI",
+      "nome": "Hotel Zum Tiroler Adler",
+      "sito": "http://www.zumtiroleradler.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJv_vyVVm5gkcRzhy7T4jXnI0",
+      "nome": "Hotel Alpenhof",
+      "sito": "http://www.alpenhof-tirol.com/",
+      "social": {
+        "instagram": "deralpenhof",
+        "facebook": "AlpenhofTirol"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJI0unr2m5gkcRlNf4wY1-LC0",
+      "nome": "Panorama Vital Hotel Rimmele",
+      "sito": "http://www.rimmele.it/",
+      "social": {
+        "facebook": "HotelRimmele"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJqZiqo265gkcR7xoK5kUznTw",
+      "nome": "Tiroler Kreuz Restaurant Hotel Dorf Tirol",
+      "sito": "https://www.tirolerkreuz.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJqZiqo265gkcRu8mfOMU-f94",
+      "nome": "Hotel Alpentirolis",
+      "sito": "http://www.hotelalpentirolis.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJo_6GVW-5gkcRZuhQKVsNgsc",
+      "nome": "Hotel Haselried",
+      "sito": "https://haselried.mondoinviaggio.top/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJqZiqo265gkcRljlAB7LzSAs",
+      "nome": "Albergo Tritscherhof",
+      "sito": "https://www.tritscherhof.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJZ1pW6RsPeEcRII134ZqiQQ8",
+      "nome": "Stricker Aparthotel",
+      "sito": "https://www.hotelstricker.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJTdHJrWm5gkcRGSgxJ_P-2ng",
+      "nome": "Hotel Ortler",
+      "sito": "https://www.dorftirol-hotels.com/de/hotel-ortler",
+      "social": {
+        "instagram": "ortler_dorftirolhotels",
+        "facebook": "Hotel.Ortler.DorfTirol"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJQZlAtWe5gkcRCxVG0a0eaN8",
+      "nome": "Örtlerhof",
+      "sito": "http://www.oertlerhof.com/",
+      "social": {
+        "instagram": "oertlerhof",
+        "facebook": "oertlerhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJv_vyVVm5gkcRg_FgIYyfMsM",
+      "nome": "Hotel Paradies",
+      "sito": "http://www.paradies-tirol.it/",
+      "social": {
+        "instagram": "hotelparadiesdorftirol",
+        "facebook": "hotelparadiesdorftirol"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJW4913l-5gkcRSHHdGCGmLY8",
+      "nome": "Hotel Weger",
+      "sito": "http://www.hotelweger.com/",
+      "social": {
+        "facebook": "hotelweger.dorftirol"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJ1x1Xom65gkcRpgXOPoM76lU",
+      "nome": "Hotel Lechner",
+      "sito": "https://www.hotel-lechner.com/",
+      "social": {
+        "instagram": "hotelresidencelechner",
+        "facebook": "Residence-Lechner-und-Hotel-Lechner-Dorf-Tirol-584730878203842"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJT9h-Imi5gkcRFy0fzHY7Okg",
+      "nome": "SPA & Relax Hotel Erika",
+      "sito": "https://www.erika.it/",
+      "social": {
+        "instagram": "hotelerika",
+        "facebook": "wellnesshotel.erika"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJI7gZdxO5gkcRNqwnqoVKt2c",
+      "nome": "Hotel per Cani Mair am Ort",
+      "sito": "http://www.mairamort.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJg_Q70UK5gkcRr9YPxLirUiI",
+      "nome": "Hotel Castel Tirolo",
+      "sito": "https://www.hotel-castel.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJN0t7UWi5gkcRlnxxJB0QH-o",
+      "nome": "Hotel Turmwies",
+      "sito": "https://www.turmwies.com/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJ5RfsIWC5gkcRL0ysnoROrVU",
+      "nome": "Hotel Der Eichenhof",
+      "sito": "http://www.eichenhof.it/",
+      "social": {
+        "facebook": "hoteldereichenhof"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJI0unr2m5gkcRIyGUoEQ6PjY",
+      "nome": "Panoramahotel Am Sonnenhang",
+      "sito": "http://www.sonnenhang.it/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJyRAzDPm4gkcRbVf63ZGex6M",
+      "nome": "MARINIs giardino Hotel",
+      "sito": "http://www.marinisgiardino.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJdbHdV2-5gkcRzyLHXyyT0GE",
+      "nome": "Appartement-Hotel Anthea / Pension Pichler",
+      "sito": "https://www.anthea.bz.it/",
+      "social": {
+        "instagram": "appartement_anthea"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJeZGSS2a5gkcRQQLSz_9gWjo",
+      "nome": "Hotel Karin",
+      "sito": "http://www.hotel-karin.com/",
+      "social": {},
+      "nota": "Sito non leggibile (timeout): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJ53SJbmu5gkcRD56y32_sSSk",
+      "nome": "Hotel Patrizia",
+      "sito": "https://www.hotel-patrizia.it/",
+      "social": {
+        "instagram": "hotelpatrizia",
+        "facebook": "Hotel.Patrizia.DorfTirol",
+        "youtube": "user",
+        "linkedin": "hotel-patrizia"
+      },
+      "nota": "",
+      "trovati": 4
+    },
+    {
+      "placeId": "ChIJzbWa-Fu5gkcR9Pb614tpBec",
+      "nome": "Breakfast Hotel Traubenheim",
+      "sito": "https://traubenheim.it/",
+      "social": {
+        "facebook": "Hotel.Traubenheim"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJfya2Use8gkcRflI2VpVURmA",
+      "nome": "Hotel Avelina",
+      "sito": "http://www.hotel-avelina.com/?utm_source=google&utm_medium=organic&utm_campaign=google_mybusiness&utm_content=hotel",
+      "social": {
+        "instagram": "hotelavelina",
+        "facebook": "hotelavelina.hafling"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJaxwBp4-8gkcR31U9lCFbkDY",
+      "nome": "Apartment Hotel Christine **** in Hafling bei Meran, Meranerland, Südtirol, Italien",
+      "sito": "http://www.aparthotel-christine.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ9dkIOJu8gkcRrpZ4D2A9T44",
+      "nome": "Chalet Mirabell",
+      "sito": "https://www.chalet-mirabell.com/",
+      "social": {
+        "instagram": "chaletmirabell",
+        "facebook": "chaletmirabell",
+        "youtube": "UCRMfEq057kIjMA19PGYJyZQ"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJcVsb-ZS8gkcRcTUBECj9zKs",
+      "nome": "Hotel Der Mesnerwirt",
+      "sito": "https://www.mesnerwirt.it/",
+      "social": {
+        "instagram": "dermesnerwirt",
+        "facebook": "mesnerwirt"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJB8NPxp68gkcRdhLHeLSGvM8",
+      "nome": "Hotel Hirzer 2781",
+      "sito": "https://www.hotel-hirzer.com/?utm_source=GoogleMyBusiness&utm_medium=KlickWebsite&utm_campaign=GoogleMyBusiness",
+      "social": {
+        "instagram": "hotelhirzer2781",
+        "facebook": "hotelhirzer"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ5_-MmJq8gkcRNzRQuwpvlME",
+      "nome": "Hotel Sonnenheim",
+      "sito": "https://www.sonnenheim.com/?utm_source=google&utm_medium=organic&utm_campaign=google_mybusiness",
+      "social": {
+        "instagram": "hotelsonnenheim",
+        "facebook": "brandnamic"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJB8NPxp68gkcRCoXUuDvIEkA",
+      "nome": "Viktoria Alpine Hideaway",
+      "sito": "http://www.hotel-viktoria.com/",
+      "social": {
+        "instagram": "viktoria_alpinehideaway",
+        "facebook": "alpinesparesortviktoria",
+        "tiktok": "viktoria_alpinehideaway"
+      },
+      "nota": "",
+      "trovati": 3
+    },
+    {
+      "placeId": "ChIJ-Xe4GFy7gkcRiPEzoMQU-zQ",
+      "nome": "Josef Mountain Resort",
+      "sito": "http://www.josef.bz/",
+      "social": {},
+      "nota": "Sito non leggibile (ERR_SSL_DH_KEY_TOO_SMALL): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJB8NPxp68gkcRHkKXGljakC4",
+      "nome": "Hotel Viertler",
+      "sito": "https://www.viertlerhof.it/index.php?utm_source=googlemybusiness&utm_medium=organic&utm_campaign=GMB",
+      "social": {
+        "instagram": "hotelviertler",
+        "facebook": "HotelViertlerhof"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJRSjJqo28gkcRIhn3JbwyEY4",
+      "nome": "Miramonti Boutique Hotel, an SLH Hotel",
+      "sito": "https://www.hotel-miramonti.com/",
+      "social": {
+        "instagram": "miramontiboutiquehotel",
+        "facebook": "Miramonti.Meran"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJVXfLS5m8gkcRazwasiQ-1tc",
+      "nome": "Hotel Salten Hafling",
+      "sito": "https://www.salten.it/?utm_source=googlemybusiness&utm_medium=organic&utm_campaign=GMB",
+      "social": {
+        "instagram": "hotelsalten",
+        "facebook": "Hotel-Salten-136115026405660"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJB8NPxp68gkcRJIQE3QuKoZQ",
+      "nome": "Hotel Falzeben",
+      "sito": "https://www.falzeben.com/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJ6d0Jque8gkcRq1hsS5oJax0",
+      "nome": "San Luis retreat hotel & lodges",
+      "sito": "http://www.sanluis-hotel.com/",
+      "social": {
+        "instagram": "sanluislodges",
+        "facebook": "sanluislodges"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJq6qqqrq8gkcRZc-DNcsnVs4",
+      "nome": "Hotel Sulfner",
+      "sito": "https://www.hotel-sulfner.com/index.php?utm_source=googlemybusiness&utm_medium=organic&utm_campaign=GMB",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJs6ZnxTW9gkcR0Sg6DW-F83s",
+      "nome": "Restaurant Hotel Oberwirt S - Vöran - Südtirol",
+      "sito": "http://www.hotel-oberwirt.com/?utm_source=google&utm_medium=mybusiness",
+      "social": {
+        "instagram": "oberwirt_voeran",
+        "facebook": "Oberwirt.Hotel.Restaurant.Voeran"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJsxZQRSW9gkcRMEMeG-quOPU",
+      "nome": "Gasthof Zum Grünen Baum Vöran",
+      "sito": "https://www.gruener-baum.net/index.php",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJTzF4bJiigkcRjYlMVAPymBo",
+      "nome": "Pensione Alber",
+      "sito": "https://www.hotel-alber.com/it",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJrxiHKFShgkcRfh10LG5Jl5Q",
+      "nome": "Hotel Olympia",
+      "sito": "http://www.hotel-olympia.net/",
+      "social": {
+        "instagram": "hotel__olympia",
+        "facebook": "hotelolympia.sarntal"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJY3HjllahgkcRXO1cjYGcVtg",
+      "nome": "Hotel Gasthof Höllriegl",
+      "sito": "http://www.hoellriegl.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ9TUtFlmhgkcR9ElPbdEVAG4",
+      "nome": "Hotel Residence Hofstaett",
+      "sito": "http://www.hofstaett.com/",
+      "social": {},
+      "nota": "Sito non leggibile (ENOTFOUND): da verificare a mano"
+    },
+    {
+      "placeId": "ChIJAU6ONKCmgkcR9BZ6prXRiKA",
+      "nome": "Hotel Alpenblick",
+      "sito": "http://www.alpenblick.bz.it/de/hotel-alpenblick.html",
+      "social": {
+        "instagram": "hotelalpenblick_sarntal",
+        "facebook": "alpenblicksarntal"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJzRuotm6hgkcR7rZ5xKt06fE",
+      "nome": "Hotel & Restaurant Bad Schörgau",
+      "sito": "http://www.bad-schoergau.com/",
+      "social": {
+        "instagram": "bad_schoergau",
+        "facebook": "bad.schoergau"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJw1WdtaGmgkcRRS3w5DCY0s8",
+      "nome": "Boutique Hotel Kircher",
+      "sito": "https://www.hotel-kircher.com/?utm_source=GoogleMyBusiness&utm_medium=KlickWebsite&utm_campaign=GoogleMyBusiness",
+      "social": {
+        "instagram": "hotelkircher",
+        "facebook": "BoutiqueHotelKircher"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJa91GecengkcRW3ABf355uE0",
+      "nome": "Hotel Hohenegg",
+      "sito": "https://www.hohenegg-sarntal.com/it",
+      "social": {
+        "instagram": "hotel_hohenegg",
+        "facebook": "Hotel-Hohenegg-150270348485622"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJg3aI-nevgkcR1arhlh3LbZY",
+      "nome": "Albergo - Gasthof Rabenstein",
+      "sito": "http://www.hotel-sarntal.it/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJPQ--ikipgkcRd52u8pvi4iI",
+      "nome": "Penserhof | Alpine Hotel & Restaurant",
+      "sito": "http://www.penserhof.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJmyM-zTadgkcR223ljmJ_BbA",
+      "nome": "Hotel Ideal Park",
+      "sito": "http://www.hotelidealpark.it/",
+      "social": {
+        "instagram": "accounts",
+        "facebook": "hotelidealpark"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJ1wziFEedgkcR1NSq_uxA0Co",
+      "nome": "Hotel Steiner",
+      "sito": "https://www.hotelsteiner.com/",
+      "social": {
+        "facebook": "hotelsteinerleifers"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJcSTwTEidgkcRr1LZ6Le4eOw",
+      "nome": "Hotel Albero Verde",
+      "sito": "http://www.hotel-gruenerbaum.com/",
+      "social": {
+        "instagram": "hotel.gruener.baum",
+        "facebook": "Hotel.Gruener.Baum.Leifers.Suedtirol"
+      },
+      "nota": "",
+      "trovati": 2
+    },
+    {
+      "placeId": "ChIJSc_xaAWdgkcReZWAZ7RmnYE",
+      "nome": "Hotel Ristorante Raffl",
+      "sito": "https://www.hotelraffl.com/",
+      "social": {
+        "facebook": "hotelraffl"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJheb9MGudgkcRhcBE5m1Mvek",
+      "nome": "Hotel Rotwand",
+      "sito": "http://www.rotwand.com/",
+      "social": {
+        "facebook": "HotelRotwandRestaurant"
+      },
+      "nota": "",
+      "trovati": 1
+    },
+    {
+      "placeId": "ChIJ5bnpXNuCgkcRlV0gtRKo0JY",
+      "nome": "Hotel Stampfer",
+      "sito": "http://www.hotel-stampfer.com/?lang=it",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJJbuumkZ-eEcR-T0SEjl7rNo",
+      "nome": "Hotel Langeshof",
+      "sito": "https://www.langeshof.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJ6WSOTIN4eEcRIHs0jagv3xM",
+      "nome": "Albergo Schönblick",
+      "sito": "https://www.schoenblick-aldein.com/",
+      "social": {},
+      "nota": "Nessun link social nella homepage: da verificare a mano",
+      "trovati": 0
+    },
+    {
+      "placeId": "ChIJOzJcFr-BgkcRPkA1748B9Eo",
+      "nome": "Manna Resort",
+      "sito": "https://www.mannaresort.it/",
+      "social": {
+        "instagram": "manna_resort_montan",
+        "facebook": "mannaresortmontan"
+      },
+      "nota": "",
+      "trovati": 2
+    }
+  ]
+}

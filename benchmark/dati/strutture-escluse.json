@@ -1,0 +1,1836 @@
+{
+  "quante": 251,
+  "escluse": [
+    {
+      "nome": "Hotel Salegg",
+      "comune": "Castelrotto",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Cavallino D'Oro Bed & Breakfast",
+      "comune": "Castelrotto",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Seiser Alm Plaza",
+      "comune": "Castelrotto",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Sporthotel Sonne",
+      "comune": "Castelrotto",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Rose-Wenzer",
+      "comune": "Fiè allo Sciliar",
+      "perche": [
+        "rating sotto 4.3 (4.1): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Albergo Kreuzwirt - Croce Bianca",
+      "comune": "Fiè allo Sciliar",
+      "perche": [
+        "rating sotto 4.3 (3.9): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Bed & Breakfast Residence Hubertus",
+      "comune": "Fiè allo Sciliar",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel - Pension Pattissenhof",
+      "comune": "Tiers",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Enzian",
+      "comune": "Tires",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Hotel Elvis",
+      "comune": "Castelrotto",
+      "perche": [
+        "rating sotto 4.3 (4): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Rodes",
+      "comune": "Ortisei",
+      "perche": [
+        "rating sotto 4.3 (4.1): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Pension Sonnalp",
+      "comune": "Ortisei",
+      "perche": [
+        "rating sotto 4.3 (4.1): non lavora bene",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Garni Snaltnerhof",
+      "comune": "Ortisei",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Croce D'Oro",
+      "comune": "Ortisei",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Villa Luise",
+      "comune": "Ortisei",
+      "perche": [
+        "tipo guest_house"
+      ]
+    },
+    {
+      "nome": "Hotel Villa Emilia",
+      "comune": "Ortisei",
+      "perche": [
+        "rating sotto 4.3 (3.9): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Garni Walter",
+      "comune": "Sankt Ulrich",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Garni Panoramik",
+      "comune": "Castelrotto",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Residence Hotel B&B Fever",
+      "comune": "Ortisei",
+      "perche": [
+        "meno di 80 recensioni",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Pension Belaval",
+      "comune": "Ortisei",
+      "perche": [
+        "meno di 80 recensioni",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Luxury B&B August",
+      "comune": "Castelrotto",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotiday Room Collection - Ortisei",
+      "comune": "Ortisei",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Diamant Spa Resort Hotel",
+      "comune": "Santa Cristina Valgardena",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Jagdhof in Selva",
+      "comune": "Selva di Val Gardena",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Solaia",
+      "comune": "Selva di Val Gardena",
+      "perche": [
+        "rating sotto 4.3 (3.9): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Albergo Casa Alpina",
+      "comune": "Selva di Val Gardena",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Alaska",
+      "comune": "Selva di Val Gardena",
+      "perche": [
+        "rating sotto 4.3 (4.1): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel & Residence Antares",
+      "comune": "Selva di Val Gardena",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Garni Hotel Bel Vert",
+      "comune": "Selva di Val Gardena",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Garni Hotel Aghél",
+      "comune": "Selva di Val Gardena",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Astor Suites B&B Hotel",
+      "comune": "Selva di Val Gardena",
+      "perche": [
+        "rating sotto 4.3 (3.9): non lavora bene",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Garni Mezdi",
+      "comune": "Selva di Val Gardena",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Olympia-Selva di Val Gardena",
+      "comune": "Selva di Val Gardena",
+      "perche": [
+        "rating sotto 4.3 (4): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Garni Iris",
+      "comune": "Selva di Val Gardena",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Garni' Franca",
+      "comune": "Selva di Val Gardena",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Chalet Elisabeth - dolomites alpin & charme",
+      "comune": "Selva di Val Gardena",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "B&B HOTEL Bolzano",
+      "comune": "Bolzano",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Asterix",
+      "comune": "Bolzano",
+      "perche": [
+        "rating sotto 4.3 (3.6): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Chrys Hotel",
+      "comune": "Bolzano",
+      "perche": [
+        "rating sotto 4.3 (4.1): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Dolomiti",
+      "comune": "Bolzano",
+      "perche": [
+        "rating sotto 4.3 (3.9): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Trattoria Hofer",
+      "comune": "Bolzano",
+      "perche": [
+        "rating sotto 4.3 (4.1): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Regina",
+      "comune": "Bolzano",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Ariston",
+      "comune": "Bolzano",
+      "perche": [
+        "rating sotto 4.3 (3.5): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Fiera",
+      "comune": "Bolzano",
+      "perche": [
+        "rating sotto 4.3 (3.8): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Adria",
+      "comune": "Bolzano",
+      "perche": [
+        "rating sotto 4.3 (3.7): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Restaurant Lewald",
+      "comune": "Bolzano",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Parkhotel Werth",
+      "comune": "Bolzano",
+      "perche": [
+        "rating sotto 4.3 (3.9): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Youth Hostel Bolzano",
+      "comune": "Bolzano",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene",
+        "tipo hostel",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Parkhotel Luna Mondschein",
+      "comune": "Bolzano",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Villa Anita Rooms & Apartments Bolzano",
+      "comune": "Bolzano",
+      "perche": [
+        "tipo apartment_complex",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Gardenhotel Premstaller",
+      "comune": "Bolzano",
+      "perche": [
+        "rating sotto 4.3 (3.4): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Central Rooms",
+      "comune": "Bolzano",
+      "perche": [
+        "rating sotto 4.3 (2.2): non lavora bene",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Bella Posta Hotel",
+      "comune": "Renon",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Pippos Mountain Lodge great Food, Suites & Farm",
+      "comune": "Renon",
+      "perche": [
+        "tipo restaurant"
+      ]
+    },
+    {
+      "nome": "Hotel Rinner",
+      "comune": "Renon",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Naturhotel Wieserhof",
+      "comune": "Renon",
+      "perche": [
+        "rating sotto 4.3 (4.1): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Haus Rottensteiner",
+      "comune": "Renon",
+      "perche": [
+        "tipo bed_and_breakfast"
+      ]
+    },
+    {
+      "nome": "Albergo Signaterhof",
+      "comune": "Renon",
+      "perche": [
+        "tipo restaurant"
+      ]
+    },
+    {
+      "nome": "Hotel Dolomitenblick",
+      "comune": "Renon",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Albergo Pensione Erna",
+      "comune": "Nova Levante",
+      "perche": [
+        "meno di 80 recensioni",
+        "garni / pensione / residence: fuori fascia di spesa",
+        "scheda Google senza indirizzo vero: non è una struttura"
+      ]
+    },
+    {
+      "nome": "Albergo Nova Levante",
+      "comune": "Nova Levante",
+      "perche": [
+        "meno di 80 recensioni",
+        "scheda Google senza indirizzo vero: non è una struttura"
+      ]
+    },
+    {
+      "nome": "Hotel B&B Pardeller",
+      "comune": "Nova Levante",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Aparthotel My Daum",
+      "comune": "Nova Ponente",
+      "perche": [
+        "tipo bed_and_breakfast"
+      ]
+    },
+    {
+      "nome": "Hotel Weißhorn - Corno Bianco",
+      "comune": "Nova Ponente",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Albergo Cavallino",
+      "comune": "Nova Ponente",
+      "perche": [
+        "rating sotto 4.3 (–): non lavora bene",
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Residence Feldhof",
+      "comune": "Nova Ponente",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Leonhard",
+      "comune": "Nova Ponente",
+      "perche": [
+        "rating sotto 4.3 (2.5): non lavora bene",
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Golf Hotel Carezza",
+      "comune": "San Giovanni di Fassa",
+      "perche": [
+        "rating sotto 4.3 (4.1): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Castel Latemar",
+      "comune": "Nova Levante",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Albergo Cavallino",
+      "comune": "San Genesio Atesino",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Hotel Restaurant Sylvanerhof",
+      "comune": "Chiusa",
+      "perche": [
+        "rating sotto 4.3 (4): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Gasthof Lamm",
+      "comune": "Chiusa",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Albergo Croce Bianca",
+      "comune": "Chiusa",
+      "perche": [
+        "tipo restaurant"
+      ]
+    },
+    {
+      "nome": "Pensione Erlacher",
+      "comune": "Villandro",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Pension Residence Gasser",
+      "comune": "Villanders",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "haus urban Apartments",
+      "comune": "Barbiano",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Gasthof zum Englwirt",
+      "comune": "Barbiano",
+      "perche": [
+        "tipo restaurant"
+      ]
+    },
+    {
+      "nome": "Hotel Oberwirt",
+      "comune": "Velturno",
+      "perche": [
+        "tipo restaurant"
+      ]
+    },
+    {
+      "nome": "Hotel Klammwirt",
+      "comune": "Velturno",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Residence Gasser",
+      "comune": "Bressanone",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Löwenhof",
+      "comune": "Bressanone",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Albergo Garni' Cremona",
+      "comune": "Bressanone",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Haus Karin",
+      "comune": "Varna",
+      "perche": [
+        "meno di 80 recensioni",
+        "tipo bed_and_breakfast"
+      ]
+    },
+    {
+      "nome": "Garni Maria",
+      "comune": "Varna",
+      "perche": [
+        "tipo bed_and_breakfast",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Albergo Villa Mayr Burger",
+      "comune": "Varna",
+      "perche": [
+        "tipo bed_and_breakfast"
+      ]
+    },
+    {
+      "nome": "Hotel Langhof",
+      "comune": "Naz-Sciaves",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Fürstenhof",
+      "comune": "Naz-Sciaves",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Residence Schiestlhof",
+      "comune": "Naz-Sciaves",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Panoramik",
+      "comune": "Rio di Pusteria",
+      "perche": [
+        "rating sotto 4.3 (4): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Weisse Lilie - Mühlbach - B&B",
+      "comune": "Rio di Pusteria",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Albergo Seppi",
+      "comune": "Rio di Pusteria",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Fichtenhof",
+      "comune": "Rio di Pusteria",
+      "perche": [
+        "rating sotto 4.3 (4.1): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Pension Sonnenhof (mit Saunaoase)",
+      "comune": "Mühlbach",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Maranza Resort",
+      "comune": "Mühlbach",
+      "perche": [
+        "rating sotto 4.3 (2.9): non lavora bene",
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Untersteiner Konrad",
+      "comune": "Rio di Pusteria",
+      "perche": [
+        "rating sotto 4.3 (3): non lavora bene",
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Meransnerhof",
+      "comune": "Mühlbach",
+      "perche": [
+        "rating sotto 4.3 (3.2): non lavora bene",
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Pension Marianne",
+      "comune": "Mühlbach",
+      "perche": [
+        "meno di 80 recensioni",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Häuslerhof- Urlaub auf dem Bauernhof",
+      "comune": "Rio di Pusteria",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Pension Mühlsteigerhof",
+      "comune": "Mühlbach",
+      "perche": [
+        "meno di 80 recensioni",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Meransen",
+      "comune": "Mühlbach",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Albergo Hoferhof",
+      "comune": "Mühlbach",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Residence Grunwald",
+      "comune": "Rio di Pusteria",
+      "perche": [
+        "meno di 80 recensioni",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Proihof",
+      "comune": "Funes",
+      "perche": [
+        "tipo bed_and_breakfast"
+      ]
+    },
+    {
+      "nome": "Pensione Garni Raschötzhof",
+      "comune": "Funes",
+      "perche": [
+        "tipo bed_and_breakfast",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Pension Sonia",
+      "comune": "Villnöß",
+      "perche": [
+        "tipo guest_house",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Miramonti Corvara",
+      "comune": "Corvara in Badia",
+      "perche": [
+        "rating sotto 4.3 (3.6): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Maso Weber Hotel Corvara",
+      "comune": "Corvara in Badia",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene",
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "HOTEL BOREST",
+      "comune": "Corvara in Badia",
+      "perche": [
+        "rating sotto 4.3 (3.9): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Table'",
+      "comune": "Corvara in Badia",
+      "perche": [
+        "scheda Google senza indirizzo vero: non è una struttura"
+      ]
+    },
+    {
+      "nome": "Garni RAETIA",
+      "comune": "Corvara in Badia",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "B&B Bracun App.",
+      "comune": "Corvara in Badia",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Planac",
+      "comune": "Corvara in Badia",
+      "perche": [
+        "rating sotto 4.3 (3.7): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel & Residence La Villa",
+      "comune": "Badia",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "La villa",
+      "comune": "Badia",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Hotel Chalet Pensione Ciasa Alexander",
+      "comune": "Badia",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Villa Al Sole",
+      "comune": "Badia",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "B&B Hotel Frohsinn",
+      "comune": "Badia",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Pensione Scunëi",
+      "comune": "Badia",
+      "perche": [
+        "tipo guest_house",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "RESIDENCE ADA",
+      "comune": "Badia",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Lagacio' Hotel Mountain Residence",
+      "comune": "Badia",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Ciasa Antersies",
+      "comune": "Badia",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Ciasa l'Anteriöl",
+      "comune": "Badia",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Albergo Edelraut",
+      "comune": "Badia",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Residence Ploner",
+      "comune": "Badia",
+      "perche": [
+        "meno di 80 recensioni",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Residence Bosco Verde",
+      "comune": "Badia",
+      "perche": [
+        "rating sotto 4.3 (4.1): non lavora bene",
+        "meno di 80 recensioni",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "RESIDENCE *** CiasaVally Sauna&Relax",
+      "comune": "Badia",
+      "perche": [
+        "meno di 80 recensioni",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Eisenoefen Valparol",
+      "comune": "Badia",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Residence A Val",
+      "comune": "Badia",
+      "perche": [
+        "rating sotto 4.3 (4.1): non lavora bene",
+        "meno di 80 recensioni",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Ciasa Milandura",
+      "comune": "Badia",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Residence Vajolet",
+      "comune": "Badia",
+      "perche": [
+        "meno di 80 recensioni",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Aurturist Badia",
+      "comune": "Badia",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Chalet Hotel Diamant",
+      "comune": "San Martino in Badia",
+      "perche": [
+        "rating sotto 4.3 (4): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Ciasa Pradel - Urlaub am Bauernhof",
+      "comune": "San Martino in Badia",
+      "perche": [
+        "meno di 80 recensioni",
+        "tipo private_guest_room"
+      ]
+    },
+    {
+      "nome": "B&B Pineta",
+      "comune": "San Martino in Badia",
+      "perche": [
+        "tipo bed_and_breakfast",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Pradel Dolomites",
+      "comune": "San Martino in Badia",
+      "perche": [
+        "meno di 80 recensioni",
+        "tipo apartment_complex"
+      ]
+    },
+    {
+      "nome": "Pensione Torr",
+      "comune": "San Martino in Badia",
+      "perche": [
+        "meno di 80 recensioni",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "GH Hotel Monzoni",
+      "comune": "San Giovanni di Fassa",
+      "perche": [
+        "rating sotto 4.3 (3.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "GH Hotel Piaz",
+      "comune": "San Giovanni di Fassa",
+      "perche": [
+        "rating sotto 4.3 (3.5): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Europa - Pera di Fassa",
+      "comune": "San Giovanni di Fassa",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Arnika Dolomiti MoveHotel",
+      "comune": "San Giovanni di Fassa",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Dolomiti Canazei",
+      "comune": "Canazei",
+      "perche": [
+        "rating sotto 4.3 (4.1): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Bellavista",
+      "comune": "Canazei",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Park Hotel Faloria",
+      "comune": "Canazei",
+      "perche": [
+        "rating sotto 4.3 (4): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Alpe",
+      "comune": "Canazei",
+      "perche": [
+        "rating sotto 4.3 (4.1): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Albergo alla Rosa - B&B",
+      "comune": "Canazei",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Laurin Canazei - Dolomiti",
+      "comune": "Canazei",
+      "perche": [
+        "rating sotto 4.3 (4): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Il Caminetto Canazei",
+      "comune": "Canazei",
+      "perche": [
+        "rating sotto 4.3 (4): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Union Hotels Canazei",
+      "comune": "Canazei",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Hotel Moena",
+      "comune": "Moena",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Liz Hotel & Apartments",
+      "comune": "Predazzo",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Albergo Vinella Ristorante",
+      "comune": "Predazzo",
+      "perche": [
+        "rating sotto 4.3 (3.9): non lavora bene",
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Residence Predazzo",
+      "comune": "Predazzo",
+      "perche": [
+        "rating sotto 4.3 (4): non lavora bene",
+        "meno di 80 recensioni",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Alpine Hotel San Valier",
+      "comune": "Cavalese",
+      "perche": [
+        "rating sotto 4.3 (4.1): non lavora bene"
+      ]
+    },
+    {
+      "nome": "L'Hotel Grunwald",
+      "comune": "Cavalese",
+      "perche": [
+        "rating sotto 4.3 (4.1): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Park Hotel Sacro Cuore",
+      "comune": "Cavalese",
+      "perche": [
+        "rating sotto 4.3 (4.1): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Park Hotel Bellacosta",
+      "comune": "Cavalese",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Affittacamere Garden Cavalese",
+      "comune": "Cavalese",
+      "perche": [
+        "rating sotto 4.3 (3.6): non lavora bene",
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Goccia D' Oro",
+      "comune": "Cavalese",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Albergo Stella ** Cavalese",
+      "comune": "Cavalese",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Family Hotel Veronza",
+      "comune": "Ville di Fiemme",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "B&B Hotel Salvanel",
+      "comune": "Cavalese",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Garni Edy Daiano Cavalese",
+      "comune": "Ville di Fiemme",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Appiano Sulla Strada Del vino",
+      "comune": "Appiano sulla strada del vino",
+      "perche": [
+        "meno di 80 recensioni",
+        "scheda Google senza indirizzo vero: non è una struttura"
+      ]
+    },
+    {
+      "nome": "Hotel Garni Seeberg",
+      "comune": "Caldaro sulla strada del Vino",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Pension - Restaurant Klughammer",
+      "comune": "Caldaro sulla strada del Vino",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Garni - Hotel Sonnleitenhof",
+      "comune": "Caldaro sulla strada del Vino",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Pension Leuchtenburg",
+      "comune": "Caldaro sulla strada del Vino",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Tannhof",
+      "comune": "Caldaro sulla strada del Vino",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Ristorante Caffe' Seegarten",
+      "comune": "Caldaro sulla strada del Vino",
+      "perche": [
+        "rating sotto 4.3 (4): non lavora bene",
+        "tipo restaurant"
+      ]
+    },
+    {
+      "nome": "Garni Hotel Ritterhof Frühstückspension - Tramin",
+      "comune": "Termeno sulla Strada del Vino",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Villner Hof",
+      "comune": "Egna",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Ristorante Hotel Andreas Hofer",
+      "comune": "Egna",
+      "perche": [
+        "tipo italian_restaurant"
+      ]
+    },
+    {
+      "nome": "Hotel zur Post - Vincenzo Degasperi",
+      "comune": "Egna",
+      "perche": [
+        "rating sotto 4.3 (4): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Villner Hof Dependance",
+      "comune": "Egna",
+      "perche": [
+        "rating sotto 4.3 (–): non lavora bene",
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Emotion Living Design Enjoy",
+      "comune": "Egna",
+      "perche": [
+        "rating sotto 4.3 (–): non lavora bene",
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "PENSION FLORA",
+      "comune": "Ora",
+      "perche": [
+        "rating sotto 4.3 (3.9): non lavora bene",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Abram - Pensione e Ristorante Tipico",
+      "comune": "Ora",
+      "perche": [
+        "rating sotto 4.3 (4.1): non lavora bene",
+        "tipo restaurant",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Elefant",
+      "comune": "Ora",
+      "perche": [
+        "rating sotto 4.3 (3.6): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Christin",
+      "comune": "Ora",
+      "perche": [
+        "rating sotto 4.3 (3.5): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Ristorante Daniela",
+      "comune": "Merano",
+      "perche": [
+        "rating sotto 4.3 (3.4): non lavora bene"
+      ]
+    },
+    {
+      "nome": "B&B Cityhotel Aster",
+      "comune": "Merano",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Brunner - Merano",
+      "comune": "Merano",
+      "perche": [
+        "rating sotto 4.3 (3.9): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Grand Hotel Bellevue",
+      "comune": "Merano",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Schlosshof Resort - Hotel & Camping",
+      "comune": "Lana",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Jardis",
+      "comune": "Lana",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Garni Hotel Katzenthalerhof",
+      "comune": "Lana",
+      "perche": [
+        "tipo bed_and_breakfast",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Sonnenhof Sonnenhof",
+      "comune": "Lana",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Im Tiefenbrunn",
+      "comune": "Lana",
+      "perche": [
+        "tipo bed_and_breakfast"
+      ]
+    },
+    {
+      "nome": "Hotel Garni Vigilhof",
+      "comune": "Lana",
+      "perche": [
+        "meno di 80 recensioni",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Eichhof",
+      "comune": "Lana",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Villa Arnica",
+      "comune": "Lana",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Pensione Hilpold",
+      "comune": "Lana",
+      "perche": [
+        "tipo bed_and_breakfast",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Pensione Kofler",
+      "comune": "Lana",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Graf Hartwig***S",
+      "comune": "Scena",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Hotel Hilburger",
+      "comune": "Scena",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Hotel Tenne",
+      "comune": "Scena",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Hotel Restaurant Tannerhof",
+      "comune": "Scena",
+      "perche": [
+        "rating sotto 4.3 (4.1): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Hotel Garni Lichtenau",
+      "comune": "Scena",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Pensione Zunnelerhof",
+      "comune": "Scena",
+      "perche": [
+        "meno di 80 recensioni",
+        "tipo bed_and_breakfast",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Pension zum Burggräffler",
+      "comune": "Scena",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Schenna",
+      "comune": "Scena",
+      "perche": [
+        "scheda Google senza indirizzo vero: non è una struttura"
+      ]
+    },
+    {
+      "nome": "HOTEL APPARTEMENT SCHMIED HANS",
+      "comune": "Scena",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Garni Ehrenfels",
+      "comune": "Scena",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Pensione Lebenstain",
+      "comune": "Scena",
+      "perche": [
+        "meno di 80 recensioni",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Residence Walchhof",
+      "comune": "Scena",
+      "perche": [
+        "meno di 80 recensioni",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "scena rothof",
+      "comune": "Scena",
+      "perche": [
+        "rating sotto 4.3 (4): non lavora bene",
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Garni Kleefeld",
+      "comune": "Scena",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Rastlhof",
+      "comune": "Scena",
+      "perche": [
+        "tipo restaurant"
+      ]
+    },
+    {
+      "nome": "Residence Dornsberg",
+      "comune": "Scena",
+      "perche": [
+        "meno di 80 recensioni",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Schenna Garni Eden - Bed and Breakfast bei Meran",
+      "comune": "Scena",
+      "perche": [
+        "tipo breakfast_restaurant",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Tirol",
+      "comune": "Tirolo",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene",
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Tirolerhof",
+      "comune": "Lagundo",
+      "perche": [
+        "oltre 35 km (36)"
+      ]
+    },
+    {
+      "nome": "Hotel Alpentirolis",
+      "comune": "Tirolo",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Hotel Haselried",
+      "comune": "Tirolo",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene",
+        "tipo bed_and_breakfast"
+      ]
+    },
+    {
+      "nome": "Albergo Tritscherhof",
+      "comune": "Tirolo",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Hotel Villa Maria",
+      "comune": "Tirolo",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Hotel Turmwies",
+      "comune": "Tirolo",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Appartement-Hotel Anthea / Pension Pichler",
+      "comune": "Tirolo",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Nocturnes",
+      "comune": "Naturno",
+      "perche": [
+        "oltre 35 km (44)"
+      ]
+    },
+    {
+      "nome": "Hotel Belvedere Naturns - Adults Only - 14 plus",
+      "comune": "Naturno",
+      "perche": [
+        "oltre 35 km (44)"
+      ]
+    },
+    {
+      "nome": "Naturns",
+      "comune": "Naturno",
+      "perche": [
+        "oltre 35 km (44)",
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Lindenhof Pure Luxury & Spa DolceVita Resort",
+      "comune": "Naturno",
+      "perche": [
+        "oltre 35 km (44)"
+      ]
+    },
+    {
+      "nome": "Hotel Quellenhof Naturns",
+      "comune": "Naturno",
+      "perche": [
+        "oltre 35 km (46)"
+      ]
+    },
+    {
+      "nome": "Hotel Prokulus - Family & Wellness",
+      "comune": "Naturno",
+      "perche": [
+        "oltre 35 km (44)"
+      ]
+    },
+    {
+      "nome": "Feldhof DolceVita Resort",
+      "comune": "Naturno",
+      "perche": [
+        "oltre 35 km (44)"
+      ]
+    },
+    {
+      "nome": "Schoenblick hotel",
+      "comune": "Naturno",
+      "perche": [
+        "oltre 35 km (44)",
+        "rating sotto 4.3 (3.7): non lavora bene"
+      ]
+    },
+    {
+      "nome": "TYROL family retreat",
+      "comune": "Naturno",
+      "perche": [
+        "oltre 35 km (44)"
+      ]
+    },
+    {
+      "nome": "Hotel Preidlhof",
+      "comune": "Naturno",
+      "perche": [
+        "oltre 35 km (44)"
+      ]
+    },
+    {
+      "nome": "Hotel Garni Sylvanerhof",
+      "comune": "Naturno",
+      "perche": [
+        "oltre 35 km (44)",
+        "meno di 80 recensioni",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Residence Restaurant Naturnserhof",
+      "comune": "Naturno",
+      "perche": [
+        "oltre 35 km (44)",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Kleinkunst Hotel",
+      "comune": "Naturno",
+      "perche": [
+        "oltre 35 km (44)"
+      ]
+    },
+    {
+      "nome": "Hotel Weingarten",
+      "comune": "Naturns",
+      "perche": [
+        "oltre 35 km (44)"
+      ]
+    },
+    {
+      "nome": "La Vimea",
+      "comune": "Naturno",
+      "perche": [
+        "oltre 35 km (44)"
+      ]
+    },
+    {
+      "nome": "Sonnen Resort",
+      "comune": "Naturno",
+      "perche": [
+        "oltre 35 km (44)"
+      ]
+    },
+    {
+      "nome": "Konsortium DolceVita Hotels",
+      "comune": "Naturno",
+      "perche": [
+        "oltre 35 km (44)",
+        "rating sotto 4.3 (4.2): non lavora bene",
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Hotel Lamm",
+      "comune": "Naturno",
+      "perche": [
+        "oltre 35 km (45)"
+      ]
+    },
+    {
+      "nome": "Genusshotel Diamant 4 Sterne",
+      "comune": "Naturns",
+      "perche": [
+        "oltre 35 km (44)"
+      ]
+    },
+    {
+      "nome": "Sunshine Hotels & Residences",
+      "comune": "Naturno",
+      "perche": [
+        "oltre 35 km (44)",
+        "rating sotto 4.3 (3.7): non lavora bene",
+        "meno di 80 recensioni",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Funggashof",
+      "comune": "Naturno",
+      "perche": [
+        "oltre 35 km (44)"
+      ]
+    },
+    {
+      "nome": "Gasthof Goldene Rose",
+      "comune": "Naturno",
+      "perche": [
+        "oltre 35 km (44)",
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "New apartment hotel in Avelengo near Merano, South Tyrol, with breakfast and wellness",
+      "comune": "Avelengo",
+      "perche": [
+        "rating sotto 4.3 (–): non lavora bene",
+        "meno di 80 recensioni",
+        "scheda Google senza indirizzo vero: non è una struttura"
+      ]
+    },
+    {
+      "nome": "Albergo Haflingerhof",
+      "comune": "Avelengo",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Steinerhof - Hafling - Urlaub auf den Bauernhof",
+      "comune": "Avelengo",
+      "perche": [
+        "meno di 80 recensioni",
+        "tipo farmstay"
+      ]
+    },
+    {
+      "nome": "Gasthof Zum Grünen Baum Vöran",
+      "comune": "Verano",
+      "perche": [
+        "rating sotto 4.3 (4.2): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Pensione Alber",
+      "comune": "Verano",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Residence Rossboden",
+      "comune": "Verano",
+      "perche": [
+        "meno di 80 recensioni",
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Hotel Residence Hofstaett",
+      "comune": "Sarentino",
+      "perche": [
+        "garni / pensione / residence: fuori fascia di spesa"
+      ]
+    },
+    {
+      "nome": "Albergo Al Cervo",
+      "comune": "Sarentino",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Hotel Hohenegg",
+      "comune": "Sarentino",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    },
+    {
+      "nome": "Albergo Casagrande",
+      "comune": "Laives",
+      "perche": [
+        "rating sotto 4.3 (3.4): non lavora bene"
+      ]
+    },
+    {
+      "nome": "Albergo Zur Pfleg",
+      "comune": "Laives",
+      "perche": [
+        "meno di 80 recensioni"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3611 @@
+{
+  "fonte": "Google Places API (New) del 2026-10-16 + link social letti dalle homepage",
+  "selezionatoIl": "2026-10-16",
+  "criteri": "Entro 35 km da Siusi, ≥4.3★, ≥80 recensioni, hotel (no garni/pensioni/residence). Ordinate per: social assenti o non presidiati, reputazione, dimensione, vicinanza.",
+  "nonSappiamo": "Stelle, stagionalità e follower: da compilare in hub. Un social non trovato dal bot è DA VERIFICARE, non assente.",
+  "bacino": 553,
+  "fuoriBacino": 251,
+  "quante": 50,
+  "strutture": [
+    {
+      "_placeId": "ChIJ6WRGrWoMeEcRWkjht2QhhKo",
+      "nome": "Hotel Andechserhof & Mountain Sky",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Laion",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 8,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.andechserhof.it/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.6,
+        "recensioni": 488,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via Walther von der Vogelweide, 28, 39040 Laion BZ, Italia · 0471 655694 · https://maps.google.com/?cid=12286982399838996570&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.6★)",
+        "+20 Dimensione giusta (488 recensioni)",
+        "+12 A 8 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJ_Q7xrtwMeEcR5kBPMJ3F7uY",
+      "nome": "Hotel Roßlaufhof",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Castelrotto",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 3,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.rosslaufhof.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.8,
+        "recensioni": 383,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Marinzenweg, 37, 39040 Castelrotto BZ, Italia · 0471 706616 · https://maps.google.com/?cid=16640454952091599078&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.8★)",
+        "+20 Dimensione giusta (383 recensioni)",
+        "+12 A 3 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJbXSCEk9weEcRZBRiPDwi52s",
+      "nome": "Gasthof/Albergo Löwen",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Nova Levante",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 12,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.loewen.it/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.6,
+        "recensioni": 372,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via Dolomiti, 23, 39056 Nova Levante BZ, Italia · 0471 613169 · https://maps.google.com/?cid=7775220923784893540&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.6★)",
+        "+20 Dimensione giusta (372 recensioni)",
+        "+12 A 12 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJKZPIjyCfgkcRO0x1ZVrhyN4",
+      "nome": "Luis & die Buabm Hotel Restaurant",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "San Genesio Atesino",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 17,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "https://www.luisunddiebuabm.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.7,
+        "recensioni": 352,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via Paese, 33, 39050 San Genesio Atesino BZ, Italia · 0471 354138 · https://maps.google.com/?cid=16053328650127625275&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.7★)",
+        "+20 Dimensione giusta (352 recensioni)",
+        "+12 A 17 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJw223-ioNeEcRSBFxQ2yrl0A",
+      "nome": "Albergo Valentinerhof",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Castelrotto",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 2,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.valentinerhof.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.7,
+        "recensioni": 332,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via S. Valentino, 10, 39040 Siusi BZ, Italia · 0471 706270 · https://maps.google.com/?cid=4654377221386998088&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.7★)",
+        "+20 Dimensione giusta (332 recensioni)",
+        "+12 A 2 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJGZDDrNMMeEcREFfY8GEWsiQ",
+      "nome": "Hotel Plunger",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Castelrotto",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 3,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.hotelplunger.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.8,
+        "recensioni": 305,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via S. Valentino, 26/2, 39040 Castelrotto BZ, Italia · 0471 706421 · https://maps.google.com/?cid=2644200541128251152&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.8★)",
+        "+20 Dimensione giusta (305 recensioni)",
+        "+12 A 3 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJC0gFxm5qeEcRauW6ouEfw1Q",
+      "nome": "Croce Bianca Leisure & Spa",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Canazei",
+      "provincia": "TN",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 18,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "https://www.hotelcrocebianca.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.6,
+        "recensioni": 298,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via Roma, 3, 38032 Canazei TN, Italia · 0462 601111 · https://maps.google.com/?cid=6107760573602784618&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.6★)",
+        "+20 Dimensione giusta (298 recensioni)",
+        "+12 A 18 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJg-xYxVFweEcRJvQ9LkYfckw",
+      "nome": "Hotel Niggl easy going mounthotel",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Nova Levante",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 12,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "https://www.nigglhof.it/?utm_source=google&utm_medium=organic&utm_campaign=google_mybusiness",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.9,
+        "recensioni": 297,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Pretzenbergerweg, Via Pretzenberg, 10, 39056 Nova Levante BZ, Italia · 0471 613117 · https://maps.google.com/?cid=5508499680511521830&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.9★)",
+        "+20 Dimensione giusta (297 recensioni)",
+        "+12 A 12 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJOTkMhH9zeEcRlQeflzHW_aA",
+      "nome": "Hotel Heubad",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Fiè allo Sciliar",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 4,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.hotelheubad.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.7,
+        "recensioni": 282,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Schlernstr. 13, Via Sciliar, 12, 39050 Fiè allo Sciliar BZ, Italia · 0471 725020 · https://maps.google.com/?cid=11600663723661789077&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.7★)",
+        "+20 Dimensione giusta (282 recensioni)",
+        "+12 A 4 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJk9XiUylzeEcRTuxFH_Pti8c",
+      "nome": "Activehotel Diana",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Castelrotto",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 1,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.hotel-diana.it/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.7,
+        "recensioni": 280,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via S. Osvaldo, 3, 39040 Siusi BZ, Italia · 0471 704070 · https://maps.google.com/?cid=14378847863767952462&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.7★)",
+        "+20 Dimensione giusta (280 recensioni)",
+        "+12 A 1 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJM8fo_wATeEcR9refneaS9vI",
+      "nome": "Albergo Stua Catores",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Ortisei",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 11,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.stuacatores.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.6,
+        "recensioni": 258,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Streda Sacun, 49, 39046 Ortisei BZ, Italia · 0471 796682 · https://maps.google.com/?cid=17507342120634005494&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.6★)",
+        "+20 Dimensione giusta (258 recensioni)",
+        "+12 A 11 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJe0KWke4UeEcR89BlGDxlnt8",
+      "nome": "Hotel Aaritz",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Selva di Val Gardena",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 16,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://aaritz.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.8,
+        "recensioni": 252,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Str. Meisules, 229, 39048 Selva di Val Gardena BZ, Italia · 0471 795011 · https://maps.google.com/?cid=16113427825559982323&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.8★)",
+        "+20 Dimensione giusta (252 recensioni)",
+        "+12 A 16 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJLZ8mm2CegkcRnR39WTokGlk",
+      "nome": "Hotel Hanny",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Città d'arte",
+      "comune": "Bolzano",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 15,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "https://www.hotelhanny.it/de/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.6,
+        "recensioni": 216,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via San Pietro, 4, 39100 Bolzano BZ, Italia · 0471 973498 · https://maps.google.com/?cid=6420484051806526877&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.6★)",
+        "+20 Dimensione giusta (216 recensioni)",
+        "+12 A 15 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJE2Ja1MIMeEcRzt8ny4NOifg",
+      "nome": "Hotel zum Wolf - Al Lupo",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Castelrotto",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 4,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.hotelwolf.it/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.7,
+        "recensioni": 211,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via Oswald Von Wolkenstein, 5, 39040 Castelrotto BZ, Italia · 0471 706332 · https://maps.google.com/?cid=17908931721171558350&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.7★)",
+        "+20 Dimensione giusta (211 recensioni)",
+        "+12 A 4 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJqemLgOQUeEcRpXyl_HeeBaM",
+      "nome": "Hotel Miravalle",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Selva di Val Gardena",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 16,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.hotelmiravalle.it/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.6,
+        "recensioni": 205,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Streda Dantercëpies, 51, 39048 Selva di Val Gardena BZ, Italia · 0471 795166 · https://maps.google.com/?cid=11746969441242807461&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.6★)",
+        "+20 Dimensione giusta (205 recensioni)",
+        "+12 A 16 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJZxLhMboReEcRG-5-26Yoask",
+      "nome": "Gsoihof",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Villnöß",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 16,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.hotel-gsoihof.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.7,
+        "recensioni": 182,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Vollergnadenweg, 4, 39040 Villnöß, Autonome Provinz Bozen - Südtirol, Italia · 0472 840003 · https://maps.google.com/?cid=14513457446267055643&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.7★)",
+        "+20 Dimensione giusta (182 recensioni)",
+        "+12 A 16 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJyxflQG8TeEcRf0cumD5lewc",
+      "nome": "Hotel Christeinerhof- Villa Pallua",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Santa Cristina Valgardena",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 12,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.christeinerhof.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.6,
+        "recensioni": 181,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Str. Palua, 16, 39047 Santa Cristina Valgardena BZ, Italia · 0471 793366 · https://maps.google.com/?cid=539135899916453759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.6★)",
+        "+20 Dimensione giusta (181 recensioni)",
+        "+12 A 12 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJsSXZGJQUeEcR8aV6VvDqWXQ",
+      "nome": "Hotel Belaval",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Selva di Val Gardena",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 14,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.belaval.it/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.8,
+        "recensioni": 180,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Streda La Selva, 91, 39048 Selva di Val Gardena BZ, Italia · 0471 795260 · https://maps.google.com/?cid=8383990499290818033&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.8★)",
+        "+20 Dimensione giusta (180 recensioni)",
+        "+12 A 14 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJ4SldTIR3eEcRqkCA-9wFjhk",
+      "nome": "Panoramahotel Obkircher",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Deutschnofen",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 16,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "https://www.hotelobkircher.it/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.8,
+        "recensioni": 172,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Platzviertel, 6, 39050 Deutschnofen, Autonome Provinz Bozen - Südtirol, Italia · 0471 616542 · https://maps.google.com/?cid=1841415744311541930&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.8★)",
+        "+20 Dimensione giusta (172 recensioni)",
+        "+12 A 16 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJY8d1MPkSeEcRw0jYbM5uVjQ",
+      "nome": "Albergo Sureghes",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Castelrotto",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 10,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.sureghes.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.6,
+        "recensioni": 164,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via Setil, 5, 39046 Ortisei BZ, Italia · 0471 796256 · https://maps.google.com/?cid=3771323570837801155&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.6★)",
+        "+20 Dimensione giusta (164 recensioni)",
+        "+12 A 10 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJq9lsPu8UeEcRiRCZ7QQA3uQ",
+      "nome": "Hotel Bellevue",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Selva di Val Gardena",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 16,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.hotelbellevue-valgardena.it/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.6,
+        "recensioni": 155,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via Daunei, 9, 39048 Selva di Val Gardena BZ, Italia · 0471 795227 · https://maps.google.com/?cid=16491618906643435657&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.6★)",
+        "+20 Dimensione giusta (155 recensioni)",
+        "+12 A 16 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJyVOmh4lxeEcRaNsineWEaBg",
+      "nome": "Alphotel Panorama",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Tires",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 7,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "https://www.alphotel-panorama.com/it.html",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.9,
+        "recensioni": 137,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Frazione Cipriano, 33, 39050 Tires BZ, Italia · 0471 642119 · https://maps.google.com/?cid=1758801776206863208&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.9★)",
+        "+20 Dimensione giusta (137 recensioni)",
+        "+12 A 7 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJ4yTQCuF0eEcRzuXKLE_ys2I",
+      "nome": "Hotel Dolomiten",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Renon",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 7,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.hoteldolomiten.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.7,
+        "recensioni": 131,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Strickerboden, 4, 39054 Renon BZ, Italia · 0471 356134 · https://maps.google.com/?cid=7112294658415977934&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.7★)",
+        "+20 Dimensione giusta (131 recensioni)",
+        "+12 A 7 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJ8Xjt9O8UeEcRXpAj-G2E7a8",
+      "nome": "Hotel Plazola",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Selva di Val Gardena",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 16,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.hotelplazola.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.8,
+        "recensioni": 122,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Str. Col da Lech, 98, 39048 Selva di Val Gardena BZ, Italia · 0471 795172 · https://maps.google.com/?cid=12676934133967196254&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.8★)",
+        "+20 Dimensione giusta (122 recensioni)",
+        "+12 A 16 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJJZUoy_kSeEcRfs4pEw7OD9w",
+      "nome": "Hotel Fortuna",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Ortisei",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 10,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.hotel-fortuna.it/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.7,
+        "recensioni": 114,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Strada Stazione, 11, 39046 Ortisei BZ, Italia · 0471 797978 · https://maps.google.com/?cid=15857119372841176702&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.7★)",
+        "+20 Dimensione giusta (114 recensioni)",
+        "+12 A 10 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJN7XxidWfgkcRlW6AGPUmTo0",
+      "nome": "Hotel Latemar",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Renon",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 11,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.hotel-latemar.net/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.7,
+        "recensioni": 112,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via della Chiesa, 1, 39054 Renon BZ, Italia · 0471 345286 · https://maps.google.com/?cid=10182118641651183253&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.7★)",
+        "+20 Dimensione giusta (112 recensioni)",
+        "+12 A 11 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJb4-ike4UeEcR7b9ZW0hwE3M",
+      "nome": "Boutique Hotel Pralong S - Selva Val Gardena",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Selva di Val Gardena",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 16,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "https://www.hotelpralong.it/it/hotel",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.7,
+        "recensioni": 107,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "SS242, 341, 39048 Selva di Val Gardena BZ, Italia · 0471 795370 · https://maps.google.com/?cid=8292094794991779821&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.7★)",
+        "+20 Dimensione giusta (107 recensioni)",
+        "+12 A 16 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJa7c9xoRxeEcRpSyKSsDe5zo",
+      "nome": "Hotel Stefaner - Boutique & Wanderhotel",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Tires",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 7,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "https://www.stefaner.com/?utm_source=GoogleMyBusiness&utm_medium=KlickWebsite&utm_campaign=GoogleMyBusiness",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.8,
+        "recensioni": 95,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via S. Cipriano, 65, 39050 San Cipriano BZ, Italia · 0471 642175 · https://maps.google.com/?cid=4244606091285638309&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 87,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.8★)",
+        "+20 Dimensione giusta (95 recensioni)",
+        "+12 A 7 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJq6MlEOq7gkcRGfRVp-DI4p4",
+      "nome": "Inklusivhotel Taushof",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Scena",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 32,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.inklusivhotel.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.8,
+        "recensioni": 400,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via Scena, 30, 39017 Scena BZ, Italia · 0473 944333 · https://maps.google.com/?cid=11448934069934879769&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 83,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.8★)",
+        "+20 Dimensione giusta (400 recensioni)",
+        "+8 A 32 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJN4skcg-8gkcR1FzNJAbxesE",
+      "nome": "Hotel Walter",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Scena",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 32,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "https://www.hotel-walter.it/?utm_source=googlemybusiness&utm_medium=organic&utm_campaign=GMB",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.8,
+        "recensioni": 314,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via Scena, 49, 39017 Scena BZ, Italia · 0473 945666 · https://maps.google.com/?cid=13941720605168327892&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 83,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.8★)",
+        "+20 Dimensione giusta (314 recensioni)",
+        "+8 A 32 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJHeG7trIDeEcRuz3dcwkFWS4",
+      "nome": "Hotel Alpenfrieden",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Rio di Pusteria",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 32,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "https://www.hotel-alpenfrieden.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.8,
+        "recensioni": 312,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via Aussereck, 8, 39037 Maranza BZ, Italia · 0472 520173 · https://maps.google.com/?cid=3339706136828657083&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 83,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.8★)",
+        "+20 Dimensione giusta (312 recensioni)",
+        "+8 A 32 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJHYYdG-q9gkcRsqkpGkA-Hfk",
+      "nome": "Hotel Gschwangut",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Lana",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 31,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "https://www.gschwangut.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.7,
+        "recensioni": 289,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via Pascolo, 12, 39011 Lana BZ, Italia · 0473 561527 · https://maps.google.com/?cid=17950572134806432178&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 83,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.7★)",
+        "+20 Dimensione giusta (289 recensioni)",
+        "+8 A 31 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJwyitE56DgkcRKsem5DvSEeo",
+      "nome": "Parc Hotel Am See",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Vadena",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 28,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "https://www.parchotel.info/?utm_source=google&utm_medium=organic&utm_campaign=google_mybusiness&utm_term=hotel",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.7,
+        "recensioni": 283,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Klughammer, 9, 39052 Kaltern am See BZ, Italia · 0471 960000 · https://maps.google.com/?cid=16866493234160256810&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 83,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.7★)",
+        "+20 Dimensione giusta (283 recensioni)",
+        "+8 A 28 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJj_Xhi0o5eEcRjqcfPCHK0z0",
+      "nome": "Hotel Diamant",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Badia",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 29,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "https://www.hoteldiamant.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.8,
+        "recensioni": 272,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Strada Micurà de Rü, 29, 39030 San Cassiano BZ, Italia · 0471 849499 · https://maps.google.com/?cid=4455126700490991502&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 83,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.8★)",
+        "+20 Dimensione giusta (272 recensioni)",
+        "+8 A 29 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJF4uakcq7gkcRKIPz8xX_zU4",
+      "nome": "Baumgartner's Blumenhotel",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Scena",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 33,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.blumenhotel.it/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.8,
+        "recensioni": 244,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via Verdines, 11, 39017 Scena BZ, Italia · 0473 945767 · https://maps.google.com/?cid=5678475174936281896&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 83,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.8★)",
+        "+20 Dimensione giusta (244 recensioni)",
+        "+8 A 33 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJ5SGIO7gieEcRUfdDzdZBbNU",
+      "nome": "Gasthof Dasser",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "San Martino in Badia",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 31,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.dasser.it/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.6,
+        "recensioni": 240,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Str. Tor, 20, 39030 San Martino in Badia BZ, Italia · 0474 523120 · https://maps.google.com/?cid=15378739218385991505&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 83,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.6★)",
+        "+20 Dimensione giusta (240 recensioni)",
+        "+8 A 31 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJjYGNgQA_eEcRoL0D9ya1MUk",
+      "nome": "Hotel Christian",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Corvara in Badia",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 24,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "https://hotelchristian.eu/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.9,
+        "recensioni": 224,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Str. Agà, 2, 39033 Corvara in Badia BZ, Italia · 0471 836201 · https://maps.google.com/?cid=5274195817585163680&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 83,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.9★)",
+        "+20 Dimensione giusta (224 recensioni)",
+        "+8 A 24 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJ47IsIPIEeEcRWoqlKBf9MY4",
+      "nome": "Hotel Hubertushof",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Naz-Sciaves",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 25,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.hubertushof.it/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.7,
+        "recensioni": 222,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via St. Helena, 15, 39040 Naz-Sciaves BZ, Italia · 0472 412003 · https://maps.google.com/?cid=10246248903152601690&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 83,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.7★)",
+        "+20 Dimensione giusta (222 recensioni)",
+        "+8 A 25 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJ5ZyOl38beEcRzj5U86ROhtc",
+      "nome": "Albergo Tulperhof",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Luson",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 30,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "https://tulperhof.it/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.6,
+        "recensioni": 213,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via Berg, 3, 39040 Luson BZ, Italia · 0472 413760 · https://maps.google.com/?cid=15530186835397721806&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 83,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.6★)",
+        "+20 Dimensione giusta (213 recensioni)",
+        "+8 A 30 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJ-doP5vSTd0cRq55jAOOv8vY",
+      "nome": "Hotel Alpenrose",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Rio di Pusteria",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 34,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.hotel-alpenrose.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.7,
+        "recensioni": 200,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Kirchdorfstraße, 36, 39037 Valles BZ, Italia · 0472 547183 · https://maps.google.com/?cid=17794478467193216683&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 83,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.7★)",
+        "+20 Dimensione giusta (200 recensioni)",
+        "+8 A 34 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJzRZMFIsBeEcRCWCy_i9hb-U",
+      "nome": "Hotel Peintner",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Rio di Pusteria",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 35,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.hotelpeintner.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.7,
+        "recensioni": 158,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Hinterlände, 10, 39037 Valles BZ, Italia · 0472 547115 · https://maps.google.com/?cid=16532539615864840201&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 83,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.7★)",
+        "+20 Dimensione giusta (158 recensioni)",
+        "+8 A 35 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJTyATtci7gkcR2n5a6Ofr348",
+      "nome": "Hotel Grafenstein",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Scena",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 33,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.grafenstein.info/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.6,
+        "recensioni": 156,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via Verdines, 32/B, 39017 Scena BZ, Italia · 0473 945765 · https://maps.google.com/?cid=10367264248498388698&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 83,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.6★)",
+        "+20 Dimensione giusta (156 recensioni)",
+        "+8 A 33 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJJbuumkZ-eEcR-T0SEjl7rNo",
+      "nome": "Hotel Langeshof",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Anterivo",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 31,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "https://www.langeshof.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.7,
+        "recensioni": 151,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via Katharina Lanz, 3, 39040 Anterivo BZ, Italia · 0471 882027 · https://maps.google.com/?cid=15757104681309060601&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 83,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.7★)",
+        "+20 Dimensione giusta (151 recensioni)",
+        "+8 A 31 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJ3zqbYO27gkcRcq1R5CGgzMk",
+      "nome": "Hotel Sunnwies Fam. Dosser - Schenna",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Scena",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 32,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.sunnwies.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.7,
+        "recensioni": 150,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via Pichler, 1, 39017 Scena BZ, Italia · 0473 945613 · https://maps.google.com/?cid=14541173364297411954&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 83,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.7★)",
+        "+20 Dimensione giusta (150 recensioni)",
+        "+8 A 32 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJyRAzDPm4gkcRbVf63ZGex6M",
+      "nome": "MARINIs giardino Hotel",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Tirolo",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 35,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.marinisgiardino.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.8,
+        "recensioni": 149,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Falknerpromenade, V. Principale, 28, 39019 Tirolo BZ, Italia · 0473 923666 · https://maps.google.com/?cid=11801575697879291757&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 83,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.8★)",
+        "+20 Dimensione giusta (149 recensioni)",
+        "+8 A 35 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJPXO6jb8EeEcRZVoescogx-o",
+      "nome": "Hotel Oberbrunn",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Naz-Sciaves",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 26,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.hotel-oberbrunn.it/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.9,
+        "recensioni": 148,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via Oberbrunnergasse, 8, 39040 Naz BZ, Italia · 0472 415125 · https://maps.google.com/?cid=16917526580167596645&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 83,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.9★)",
+        "+20 Dimensione giusta (148 recensioni)",
+        "+8 A 26 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJDSn7Nca7gkcRtFP4H4vgOHw",
+      "nome": "Hotel Bergland",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Scena",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 33,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.bergland.net/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.6,
+        "recensioni": 129,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via Ifinger, 35, 39017 Scena BZ, Italia · 0473 945959 · https://maps.google.com/?cid=8951151147540304820&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 83,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.6★)",
+        "+20 Dimensione giusta (129 recensioni)",
+        "+8 A 33 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJw7x57ZW7gkcReQmVJY52hYs",
+      "nome": "Boutique Hotel St. Georgen",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Scena",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 32,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "https://www.hotel-georgen-schenna.com/?utm_source=GoogleMyBusiness&utm_medium=KlickWebsite&utm_campaign=GoogleMyBusiness",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.8,
+        "recensioni": 124,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via Sant Georgen, 36c, 39017 Scena BZ, Italia · 0473 945788 · https://maps.google.com/?cid=10053572096062458233&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 83,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.8★)",
+        "+20 Dimensione giusta (124 recensioni)",
+        "+8 A 32 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJaxwBp4-8gkcR31U9lCFbkDY",
+      "nome": "Apartment Hotel Christine **** in Hafling bei Meran, Meranerland, Südtirol, Italien",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Avelengo",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 29,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.aparthotel-christine.it/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.8,
+        "recensioni": 117,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Hafling bei Meran, Südtirol, Via Falzeben, 16, 39010 Avelengo BZ, Italia · 0473 378021 · https://maps.google.com/?cid=3931742674473539039&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 83,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.8★)",
+        "+20 Dimensione giusta (117 recensioni)",
+        "+8 A 29 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    },
+    {
+      "_placeId": "ChIJIUT2SJO9gkcR9cnvrN_IHbs",
+      "nome": "Albergo Unteranger",
+      "verticale": "Hotel di lusso",
+      "categoria": "Non classificato",
+      "tipoLocalita": "Montagna",
+      "comune": "Lana",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "apertura": "Da verificare",
+      "stato": "Da valutare",
+      "canale": "Da definire",
+      "km": 31,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.unteranger.it/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.7,
+        "recensioni": 111,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Via Schnatterpeck, 27, 39011 Lana BZ, Italia · 0473 561273 · https://maps.google.com/?cid=13483153722421791221&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Nessun link social nella homepage: da verificare a mano",
+      "_preselezione": 83,
+      "_perche": [
+        "+35 Nessun link social in homepage (da verificare)",
+        "+20 Reputazione eccellente (4.7★)",
+        "+20 Dimensione giusta (111 recensioni)",
+        "+8 A 31 km da Siusi"
+      ],
+      "creataIl": "2026-10-16"
+    }
+  ]
+}
