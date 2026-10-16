@@ -182,6 +182,7 @@ tr.b-tiepido td:first-child::before{background:var(--accent-dim)}
 tr.flagged td:first-child::before{height:34px;width:4px;background:var(--crema)}
 tfoot td{border-top:1px solid var(--accent);background:var(--accent-soft);font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.06em}
 .name{font-weight:700;display:block;line-height:1.3;font-size:14px}
+.catena{color:var(--accent);font-size:12px;vertical-align:1px}
 .sub{font-size:12px;color:var(--fg-muted);text-wrap:pretty}
 .score{display:inline-flex;align-items:center;gap:9px;justify-content:flex-end;width:100%}
 .score b{font-size:18px;font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.045em}
@@ -325,9 +326,11 @@ legend{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--
       <select id="fLoc"><option value="">Ogni località</option></select>
       <select id="fVert"><option value="">Ogni verticale</option></select>
       <select id="fCan"><option value="">Ogni canale</option></select>
+      <select id="fReg"><option value="">Ogni regione</option></select>
       <div class="chipset">
         <button class="chip" id="cPref" aria-pressed="false">Solo mie preferenze</button>
         <button class="chip" id="cFlag" aria-pressed="false">Solo segnalate</button>
+        <button class="chip" id="cCatena" aria-pressed="false">Solo catene</button>
       </div>
     </div>
     <div id="view"></div>
@@ -384,13 +387,14 @@ const SOCIAL = [
 const SOCIAL_CHIAVE = ["instagram","facebook","tiktok"];
 const LOCALITA = ["Mare","Montagna","Collina / Tenuta","Lago","Città d'arte","Terme"];
 const VERTICALI = ["Hotel di lusso","Resort / Relais","Agriturismo di charme","Ristorazione","Wellness / SPA","Altro"];
-const CATEGORIE = ["5★ Lusso","5★","4★ Sup","4★","Boutique","Non classificato"];
+const CATEGORIE = ["4★ Sup","4★","3★ Sup","3★","Boutique","5★","5★ Lusso","Non classificato"];
 const APERTURA = ["Tutto l'anno","Stagionale","Chiuso","Da verificare"];
 const SERVIZI = [
   {key:"social",label:"Social organico"},
-  {key:"ads",label:"Advertising"},
-  {key:"sito",label:"Sito / Landing"},
-  {key:"fotovideo",label:"Foto / Video"}
+  {key:"sito",label:"Sito con prenotazione"},
+  {key:"portali",label:"Booking / AirBnB"},
+  {key:"crm",label:"CRM + Email"},
+  {key:"ads",label:"ADV"}
 ];
 const TIPI_CONTATTO = ["Chiamata","Email","DM","Incontro","Altro"];
 const CANALI = ["Da definire","Referral","Warm contact","Visita di persona","Chiamata a freddo"];
@@ -443,11 +447,16 @@ function punteggio(a){
   if (debole && rat >= 4.5 && rec >= 100){ t += 20; parti.push([20, "Struttura forte su Google, mal comunicata"]); }
   else if (debole && rat >= 4.2 && rec >= 40){ t += 10; parti.push([10, "Buona reputazione Google"]); }
   else if (rat >= 4.5 && rec >= 100){ t += 5; parti.push([5, "Reputazione Google solida"]); }
+  // Bersaglio: 3/4 stelle lusso. Il titolare decide da solo e raramente ha già
+  // un'agenzia; un 5 stelle di solito ce l'ha, o è dentro una catena.
   const cat = a.categoria || "";
-  if (cat === "5★ Lusso"){ t += 15; parti.push([15, "Fascia lusso"]); }
-  else if (cat === "5★"){ t += 12; parti.push([12, "Cinque stelle"]); }
-  else if (cat === "4★ Sup" || cat === "Boutique"){ t += 8; parti.push([8, "Fascia alta"]); }
-  else if (cat === "4★"){ t += 5; parti.push([5, "Quattro stelle"]); }
+  if (cat === "4★ Sup" || cat === "Boutique"){ t += 15; parti.push([15, "Fascia bersaglio"]); }
+  else if (cat === "4★"){ t += 13; parti.push([13, "Fascia bersaglio"]); }
+  else if (cat === "3★ Sup"){ t += 10; parti.push([10, "Tre stelle superior"]); }
+  else if (cat === "3★"){ t += 7; parti.push([7, "Tre stelle"]); }
+  else if (cat === "5★"){ t += 4; parti.push([4, "Cinque stelle, fuori fascia"]); }
+  else if (cat === "5★ Lusso"){ t += 2; parti.push([2, "Lusso, quasi sempre con agenzia"]); }
+  if (a.catena){ t -= 15; parti.push([-15, "Catena o gruppo: marketing centralizzato"]); }
   const np = TEAM.filter(m => a.preferenze && a.preferenze[m.key]).length;
   if (np){ const p = Math.min(np * 5, 20); t += p; parti.push([p, "Segnalata da " + np + (np === 1 ? " persona" : " persone")]); }
   return { totale: Math.max(0, Math.min(100, Math.round(t))), parti: parti.sort((x,y) => y[0]-x[0]) };
@@ -459,7 +468,7 @@ let righe = [], fasi = [], voci = [], task = [], aperti = new Set();
 try { const v = localStorage.getItem("ydg-aperti"); if (v) aperti = new Set(JSON.parse(v)); } catch(_){}
 const ricordaAperti = () => { try { localStorage.setItem("ydg-aperti", JSON.stringify([...aperti])); } catch(_){} };
 let db = null, user = null, scrivibile = true, io = TEAM[0].key;
-let sel = null, bozza = null, filtri = {q:"",stato:"",loc:"",vert:"",can:"",pref:false,flag:false};
+let sel = null, bozza = null, filtri = {q:"",stato:"",loc:"",vert:"",can:"",reg:"",pref:false,flag:false,catena:false};
 let ordine = {campo:"punteggio", dir:"desc"};
 const coda = new Map();
 
@@ -473,7 +482,7 @@ function nuovaAttivita(){
     nome:"", verticale:VERTICALI[0], categoria:CATEGORIE[0], tipoLocalita:LOCALITA[0],
     comune:"", provincia:"", regione:"", apertura:APERTURA[0],
     stato:STATI[0], flag:false, note:"",
-    canale:CANALI[0], referralDa:"", km:null, lingua:LINGUE[0], inseritaDa:"",
+    canale:CANALI[0], referralDa:"", km:null, lingua:LINGUE[0], inseritaDa:"", catena:false, gruppo:"",
     sito:{url:"", assente:false, voto:0, nota:""},
     seo:{voto:0, nota:""},
     adv:{meta:false, google:false, nota:""},
@@ -532,6 +541,8 @@ function visibili(){
     if (filtri.loc && a.tipoLocalita !== filtri.loc) return false;
     if (filtri.vert && a.verticale !== filtri.vert) return false;
     if (filtri.can && a.canale !== filtri.can) return false;
+    if (filtri.reg && (a.regione || "") !== filtri.reg) return false;
+    if (filtri.catena && !a.catena) return false;
     if (filtri.pref && !a.preferenze[io]) return false;
     if (filtri.flag && !a.flag) return false;
     if (q){
@@ -578,6 +589,7 @@ function statoPill(a){
 }
 
 function renderTabella(){
+  popolaRegioni();
   const vis = visibili();
   if (!righe.length){ $("#view").innerHTML = vuoto(); collegaVuoto(); return; }
   const th = (campo, label, extra) =>
@@ -595,8 +607,9 @@ function renderTabella(){
     const a = r.dati, p = r.punti;
     h += '<tr data-id="' + esc(r.id) + '" class="b-' + banda(p.totale) + (a.flag ? " flagged" : "") + '">';
     h += '<td class="r"><span class="score"><b>' + p.totale + '</b><span class="band band-' + banda(p.totale) + '">' + banda(p.totale) + "</span></span></td>";
-    h += "<td><span class=\"name\">" + (esc(a.nome) || '<span style="color:var(--fg-faint)">Senza nome</span>') + "</span>" +
-         '<span class="sub">' + esc([a.comune, a.provincia && "(" + a.provincia + ")", a.tipoLocalita,
+    h += "<td><span class=\"name\">" + (a.catena ? '<span class="catena" title="' + esc(a.gruppo || "Catena o gruppo") + '">⛓</span> ' : "") +
+         (esc(a.nome) || '<span style="color:var(--fg-faint)">Senza nome</span>') + "</span>" +
+         '<span class="sub">' + esc([a.comune, a.provincia && "(" + a.provincia + ")", a.regione, a.tipoLocalita,
            Number(a.km) ? a.km + " km" : "", a.lingua === "Italiano" ? "" : a.lingua].filter(Boolean).join(" · ")) + "</span></td>";
     h += '<td><span class="sub">' + esc(a.categoria) + "</span></td>";
     h += '<td><span class="soc">' + SOCIAL.map(s => {
@@ -700,6 +713,8 @@ function disegnaScheda(){
       '<label class="f"><span>In lista grazie a</span><select id="f-ins"><option value="">—</option>' +
         TEAM.map(m => '<option value="' + m.key + '"' + (m.key === a.inseritaDa ? " selected" : "") + ">" + esc(m.nome) + "</option>").join("") +
       "</select></label></div>" +
+    '<div class="row2"><label class="f" style="flex-direction:row;align-items:center;gap:7px;padding-top:6px"><input type="checkbox" id="f-catena" ' + (a.catena ? "checked" : "") + ' style="width:auto"><span style="font-size:13px;color:var(--fg)">Fa parte di una catena o di un gruppo</span></label>' +
+      campo("Nome del gruppo","f-gruppo","text",a.gruppo,'placeholder="Es. ADLER, Falkensteiner…"') + "</div>" +
     '<p class="hint">Il raggio di lavoro è ' + ZONA.raggioKm + " km da " + ZONA.centro + ": dentro ci si va di persona, fuori si chiama. La distanza entra nel punteggio.</p>" +
     "</fieldset>";
 
@@ -776,6 +791,7 @@ function leggiScheda(){
   a.tipoLocalita = g("f-loc"); a.apertura = g("f-ap");
   a.comune = g("f-com").trim(); a.provincia = g("f-prov").trim().toUpperCase(); a.regione = g("f-reg").trim();
   a.canale = g("f-canale"); a.referralDa = g("f-refda").trim(); a.lingua = g("f-lingua"); a.inseritaDa = g("f-ins");
+  a.catena = ck("f-catena"); a.gruppo = g("f-gruppo").trim();
   a.km = g("f-km") === "" ? null : Number(g("f-km"));
   a.adv.meta = ck("adv-meta"); a.adv.google = ck("adv-google"); a.adv.nota = g("f-advnota");
   a.sito.url = g("f-sito").trim(); a.sito.assente = ck("f-sito-no"); a.sito.nota = g("f-sito-nota");
@@ -1212,7 +1228,7 @@ function collegaScheda(){
     disegnaScheda();
   });
   const sn = $("#f-sito-no"); if (sn) sn.onchange = () => { leggiScheda(); disegnaScheda(); };
-  ["f-gr","f-gn","f-cat","f-canale","f-km","adv-meta","adv-google"].forEach(id => { const e = document.getElementById(id); if (e) e.onchange = () => { leggiScheda(); disegnaScheda(); }; });
+  ["f-gr","f-gn","f-cat","f-canale","f-km","adv-meta","adv-google","f-catena"].forEach(id => { const e = document.getElementById(id); if (e) e.onchange = () => { leggiScheda(); disegnaScheda(); }; });
   const nm = $("#f-nome"); if (nm) nm.oninput = () => { $("#dtitle").textContent = nm.value || "Nuova attività"; };
   $("#addref").onclick = () => { leggiScheda(); bozza.referenti.push({nome:"",ruolo:"",email:"",telefono:""}); disegnaScheda(); };
   $("#addtp").onclick = () => { leggiScheda(); bozza.touchpoint.unshift({data:new Date().toISOString().slice(0,10),tipo:TIPI_CONTATTO[0],esito:"",prossima:""}); disegnaScheda(); };
@@ -1294,13 +1310,21 @@ $("#fStato").onchange = e => { filtri.stato = e.target.value; renderTabella(); }
 $("#fLoc").onchange = e => { filtri.loc = e.target.value; renderTabella(); };
 $("#fVert").onchange = e => { filtri.vert = e.target.value; renderTabella(); };
 $("#fCan").onchange = e => { filtri.can = e.target.value; renderTabella(); };
+$("#fReg").onchange = e => { filtri.reg = e.target.value; renderTabella(); };
 $("#cPref").onclick = e => { filtri.pref = !filtri.pref; e.currentTarget.setAttribute("aria-pressed", String(filtri.pref)); renderTabella(); };
 $("#cFlag").onclick = e => { filtri.flag = !filtri.flag; e.currentTarget.setAttribute("aria-pressed", String(filtri.flag)); renderTabella(); };
+$("#cCatena").onclick = e => { filtri.catena = !filtri.catena; e.currentTarget.setAttribute("aria-pressed", String(filtri.catena)); renderTabella(); };
 
 STATI.forEach(s => $("#fStato").insertAdjacentHTML("beforeend", "<option>" + esc(s) + "</option>"));
 LOCALITA.forEach(s => $("#fLoc").insertAdjacentHTML("beforeend", "<option>" + esc(s) + "</option>"));
 VERTICALI.forEach(s => $("#fVert").insertAdjacentHTML("beforeend", "<option>" + esc(s) + "</option>"));
 CANALI.forEach(s => $("#fCan").insertAdjacentHTML("beforeend", "<option>" + esc(s) + "</option>"));
+function popolaRegioni(){
+  const sel2 = $("#fReg"), cur = sel2.value;
+  const regs = [...new Set(righe.map(r => r.dati.regione).filter(Boolean))].sort();
+  sel2.innerHTML = '<option value="">Ogni regione</option>' + regs.map(r => "<option>" + esc(r) + "</option>").join("");
+  sel2.value = cur;
+}
 $("#me").innerHTML = TEAM.map(m => '<option value="' + m.key + '">' + esc(m.nome) + "</option>").join("");
 try { const v = localStorage.getItem("ydg-io"); if (v && TEAM.some(m => m.key === v)) io = v; } catch(_){}
 $("#me").value = io;
