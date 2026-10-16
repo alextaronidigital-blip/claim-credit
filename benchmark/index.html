@@ -480,10 +480,10 @@ function diagnostica(t){
   if (!e){
     e = document.createElement("p");
     e.id = "diag"; e.className = "note";
-    e.style.cssText = "font-size:11.5px;color:var(--fg-faint);padding-top:6px";
-    const n = document.getElementById("note");
-    if (n && n.parentNode) n.parentNode.insertBefore(e, n.nextSibling);
-    else document.querySelector("main").appendChild(e);
+    e.style.cssText = "font-size:11.5px;color:var(--fg-faint);margin:0;padding:8px 22px 0";
+    // In testa, non in coda: se la pagina sembra vuota il rigo deve vedersi subito.
+    const m = document.querySelector("main");
+    if (m) m.insertBefore(e, m.firstChild);
   }
   e.textContent = "⚙︎ " + t;
 }
