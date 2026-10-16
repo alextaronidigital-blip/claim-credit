@@ -472,7 +472,7 @@ let sel = null, bozza = null, filtri = {q:"",stato:"",loc:"",vert:"",can:"",reg:
 let ordine = {campo:"punteggio", dir:"desc"};
 const coda = new Map();
 
-const VERSIONE_PAGINA = "23";
+const VERSIONE_PAGINA = "24";
 /* Copia di sicurezza delle righe al 16/10/2026: la pagina non deve MAI
    sembrare vuota quando il database tace. Se il database risponde, i suoi
    dati sostituiscono questa copia; se tace, si vede la copia con scritto
@@ -1404,6 +1404,10 @@ const entro = (p, ms) => Promise.race([Promise.resolve(p).catch(() => null),
   // La pagina scrive da sola che cosa ha visto: è l'unico modo onesto di
   // capire che cosa succede su un browser che non è il mio.
   const referto = (campi) => {
+    // Solo quando c'è qualcosa che non va: a ogni apertura sarebbe churn
+    // inutile su un database condiviso.
+    const storto = !righe.length || (campi && (campi.errore || String(campi.passo||"").includes("FALLITA") || String(campi.passo||"").includes("ERRORE")));
+    if (!storto) return;
     try {
       db.doc("diagnostica/ultimo").set(Object.assign({
         quando: new Date().toISOString(),
