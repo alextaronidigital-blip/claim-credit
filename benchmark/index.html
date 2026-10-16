@@ -1464,7 +1464,14 @@ const entro = (p, ms) => Promise.race([Promise.resolve(p).catch(() => null),
   );
   db.collection("attivita").onSnapshot(
     snap => {
-      const conteggioLive = "flusso live · attivita=" + snap.docs.length;
+      const conteggioLive = "flusso live · attivita=" + snap.docs.length +
+        (snap.metadata && snap.metadata.fromCache ? " (dalla cache)" : "");
+      // Un'istantanea vuota presa dalla cache non cancella quello che abbiamo
+      // già letto davvero: è il motivo per cui la pagina tornava vuota.
+      if (!snap.docs.length && righe.length && snap.metadata && snap.metadata.fromCache){
+        diagnostica(conteggioLive + " · ignorata, tengo le " + righe.length + " righe lette", true);
+        return;
+      }
       arrivato = true;
       avvisa("");
       righe = snap.docs.map(d => { const dati = normalizza(d.data()); return {id:d.id, dati, punti:punteggio(dati)}; });
