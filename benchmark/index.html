@@ -475,7 +475,10 @@ const coda = new Map();
 const $ = s => document.querySelector(s);
 // Rigo di servizio: dice che cosa ha letto davvero la pagina. Serve a capire
 // i casi in cui lo schermo dice «vuoto» e il database invece ha i dati.
-function diagnostica(t){
+function diagnostica(t, soloSeServe){
+  // Di norma invisibile: si fa vedere solo quando non c'è niente a schermo
+  // o quando qualcosa è andato storto. Il silenzio è il problema, non il rigo.
+  if (soloSeServe && righe.length) { const v = document.getElementById("diag"); if (v) v.remove(); return; }
   let e = document.getElementById("diag");
   if (!e){
     e = document.createElement("p");
@@ -1407,14 +1410,15 @@ const entro = (p, ms) => Promise.race([Promise.resolve(p).catch(() => null),
         return {id:d.id, dati:{fase:x.fase||"", titolo:x.titolo||"", fatto:!!x.fatto, nota:x.nota||"", scadenza:x.scadenza||"", link:x.link||"", ordine:Number(x.ordine)||0}}; });
       task = st.docs.map(d => { const x = d.data() || {};
         return {id:d.id, dati:{voce:x.voce||"", titolo:x.titolo||"", fatto:!!x.fatto, ordine:Number(x.ordine)||0}}; });
-      diagnostica("lettura diretta · attivita=" + sa.docs.length + " fasi=" + sf.docs.length +
-                  " voci=" + sv.docs.length + " task=" + st.docs.length);
+      const conteggi = "lettura diretta · attivita=" + sa.docs.length + " fasi=" + sf.docs.length +
+                  " voci=" + sv.docs.length + " task=" + st.docs.length;
       righe = sa.docs.map(d => { const dati = normalizza(d.data()); return {id:d.id, dati, punti:punteggio(dati)}; });
       arrivato = true;
       avvisa("");
       renderStats();
       try { renderFasi(); } catch(e){ console.error("renderFasi", e); }
       renderTabella();
+      diagnostica(conteggi, true);
     } catch(e){
       console.error("lettura diretta", e);
       diagnostica("lettura diretta FALLITA · " + (e && e.code ? e.code : "") + " " + (e && e.message ? e.message : e));
@@ -1460,7 +1464,7 @@ const entro = (p, ms) => Promise.race([Promise.resolve(p).catch(() => null),
   );
   db.collection("attivita").onSnapshot(
     snap => {
-      diagnostica("flusso live · attivita=" + snap.docs.length);
+      const conteggioLive = "flusso live · attivita=" + snap.docs.length;
       arrivato = true;
       avvisa("");
       righe = snap.docs.map(d => { const dati = normalizza(d.data()); return {id:d.id, dati, punti:punteggio(dati)}; });
@@ -1468,6 +1472,7 @@ const entro = (p, ms) => Promise.race([Promise.resolve(p).catch(() => null),
       // Una fase che non si disegna non deve portarsi via la tabella.
       try { renderFasi(); } catch(e){ console.error("renderFasi", e); }
       renderTabella();
+      diagnostica(conteggioLive, true);
     },
     err => { avvisa(err && err.code === "revoked" ? "Accesso al database revocato: ricarica la pagina." : "Connessione al database interrotta: ricarica la pagina."); }
   );
