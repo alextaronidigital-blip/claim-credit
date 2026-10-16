@@ -1371,6 +1371,40 @@ const entro = (p, ms) => Promise.race([Promise.resolve(p).catch(() => null),
   // Se il database non risponde, dillo: il silenzio sembra un archivio vuoto.
   let arrivato = false;
   setTimeout(() => { if (!arrivato) avvisa("Il database non ha ancora risposto. Ricarica la pagina; se resta così, avvisa Alex."); }, 15000);
+
+  // Primo disegno con una lettura diretta: il flusso live può restare muto
+  // (è successo il 16/10), e in quel caso la pagina sembrava vuota.
+  const leggiSubito = async () => {
+    try {
+      const [sa, sf, sv, st] = await Promise.all([
+        db.collection("attivita").get(), db.collection("fasi").get(),
+        db.collection("voci").get(), db.collection("task").get()
+      ]);
+      fasi = sf.docs.map(d => {
+        const x = d.data() || {}, base = FASI_BASE[d.id] || {};
+        return {id:d.id, dati:{
+          nome: x.nome != null ? x.nome : (base.nome || ""),
+          desc: x.desc != null ? x.desc : (base.desc || ""),
+          auto: base.auto || null, nota: x.nota || "",
+          ordine: Number(x.ordine) || base.ordine || 99
+        }};
+      });
+      voci = sv.docs.map(d => { const x = d.data() || {};
+        return {id:d.id, dati:{fase:x.fase||"", titolo:x.titolo||"", fatto:!!x.fatto, nota:x.nota||"", scadenza:x.scadenza||"", link:x.link||"", ordine:Number(x.ordine)||0}}; });
+      task = st.docs.map(d => { const x = d.data() || {};
+        return {id:d.id, dati:{voce:x.voce||"", titolo:x.titolo||"", fatto:!!x.fatto, ordine:Number(x.ordine)||0}}; });
+      righe = sa.docs.map(d => { const dati = normalizza(d.data()); return {id:d.id, dati, punti:punteggio(dati)}; });
+      arrivato = true;
+      avvisa("");
+      renderStats();
+      try { renderFasi(); } catch(e){ console.error("renderFasi", e); }
+      renderTabella();
+    } catch(e){
+      console.error("lettura diretta", e);
+      avvisa("Non riesco a leggere il database: ricarica la pagina.");
+    }
+  };
+  leggiSubito();
   db.collection("fasi").onSnapshot(
     snap => {
       fasi = snap.docs.map(d => {
