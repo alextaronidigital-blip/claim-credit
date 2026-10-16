@@ -1338,27 +1338,39 @@ $("#view").innerHTML = vuoto();
 collegaVuoto();
 
 /* ===== Avvio capability ===== */
+// Nessuna attesa senza scadenza: se una chiamata resta appesa la pagina
+// deve comunque arrivare ai dati, altrimenti resta muta sullo stato vuoto.
+const entro = (p, ms) => Promise.race([Promise.resolve(p).catch(() => null),
+  new Promise(r => setTimeout(() => r(null), ms))]);
+
+// Chi sei: utile, non indispensabile. Gira per conto suo e non blocca i dati.
 (async () => {
   try {
-    user = await claude.use("user");
+    user = await entro(claude.use("user"), 6000);
     if (user){
-      const can = await user.can("data.write");
-      if (can === false) scrivibile = false;
-      try {
-        const me = await user.me();
-        const n = (me && me.name || "").toLowerCase();
-        const hit = TEAM.find(m => n.includes(m.nome.toLowerCase()));
-        if (hit && !localStorage.getItem("ydg-io")){ io = hit.key; $("#me").value = io; }
-      } catch(_){}
+      const can = await entro(user.can("data.write"), 4000);
+      if (can === false){
+        scrivibile = false;
+        avvisa("Puoi consultare il benchmark ma non modificarlo: serve il livello Contributor nel menu di condivisione.");
+      }
+      const me = await entro(user.me(), 4000);
+      const n = (me && me.name || "").toLowerCase();
+      const hit = TEAM.find(m => n.includes(m.nome.toLowerCase()));
+      if (hit && !localStorage.getItem("ydg-io")){ io = hit.key; $("#me").value = io; }
     }
   } catch(_){}
-  if (!scrivibile) avvisa("Puoi consultare il benchmark ma non modificarlo: serve il livello Contributor nel menu di condivisione.");
+})();
 
-  try { db = await claude.use("db"); } catch(_){ db = null; }
+// I dati, per primi.
+(async () => {
+  try { db = await entro(claude.use("db"), 12000); } catch(_){ db = null; }
   if (!db){
     avvisa("Database non raggiungibile da questa vista: accedi con il tuo account per vedere e modificare i dati.");
     return;
   }
+  // Se il database non risponde, dillo: il silenzio sembra un archivio vuoto.
+  let arrivato = false;
+  setTimeout(() => { if (!arrivato) avvisa("Il database non ha ancora risposto. Ricarica la pagina; se resta così, avvisa Alex."); }, 15000);
   db.collection("fasi").onSnapshot(
     snap => {
       fasi = snap.docs.map(d => {
@@ -1397,9 +1409,12 @@ collegaVuoto();
   );
   db.collection("attivita").onSnapshot(
     snap => {
+      arrivato = true;
+      avvisa("");
       righe = snap.docs.map(d => { const dati = normalizza(d.data()); return {id:d.id, dati, punti:punteggio(dati)}; });
       renderStats();
-      renderFasi();
+      // Una fase che non si disegna non deve portarsi via la tabella.
+      try { renderFasi(); } catch(e){ console.error("renderFasi", e); }
       renderTabella();
     },
     err => { avvisa(err && err.code === "revoked" ? "Accesso al database revocato: ricarica la pagina." : "Connessione al database interrotta: ricarica la pagina."); }
