@@ -165,7 +165,8 @@ textarea{resize:vertical;min-height:62px;line-height:1.55}
 /* ---------- griglia ---------- */
 .tablebox{overflow-x:auto;background:var(--bg);border:1px solid var(--line);border-radius:var(--r);margin:0 0 12px}
 table{border-collapse:collapse;width:100%;min-width:1360px}
-th:nth-child(2),td:nth-child(2){min-width:224px}
+th:nth-child(2),td:nth-child(2){width:360px;min-width:360px}
+td{vertical-align:middle}
 td:nth-child(3),td:nth-child(8),td:nth-child(10){white-space:nowrap}
 th{position:sticky;top:0;z-index:5;background:var(--accent);color:var(--accent-ink);text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:800;padding:10px;white-space:nowrap}
 th.sortable{cursor:pointer;user-select:none}
@@ -184,7 +185,8 @@ tfoot td{border-top:1px solid var(--accent);background:var(--accent-soft);font-w
 .name{font-weight:700;display:block;line-height:1.3;font-size:14px}
 .catena{color:var(--accent);font-size:12px;vertical-align:1px}
 .sub{font-size:12px;color:var(--fg-muted);text-wrap:pretty}
-.score{display:inline-flex;align-items:center;gap:9px;justify-content:flex-end;width:100%}
+.score{display:inline-flex;align-items:center;gap:9px;justify-content:flex-end;white-space:nowrap}
+th:first-child,td:first-child{width:118px}
 .score b{font-size:18px;font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.045em}
 .band{font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:var(--r-pill);font-weight:800;min-width:66px;text-align:center}
 .band-caldo{background:var(--accent);color:var(--accent-ink)}
@@ -210,9 +212,12 @@ tfoot td{border-top:1px solid var(--accent);background:var(--accent-soft);font-w
 .prefs button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
 
 /* ---------- foto e recensioni (Google Places, 20/10) ---------- */
-.riga-nome{display:flex;align-items:center;gap:10px;min-width:0}
-.thumb{width:54px;height:40px;flex:none;border-radius:7px;object-fit:cover;background:var(--surface-3);display:block}
+.riga-nome{display:flex;align-items:center;gap:13px;min-width:0}
+.thumb{width:96px;height:68px;flex:none;border-radius:9px;object-fit:cover;background:var(--surface-3);display:block}
 .thumb.vuota{display:grid;place-items:center;color:var(--fg-faint);font-size:10px}
+.riga-testi{min-width:0;display:flex;flex-direction:column;gap:3px}
+.riga-testi .name{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.riga-testi .sub{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;line-height:1.35}
 .hero{width:100%;height:190px;object-fit:cover;border-radius:var(--r-lg);display:block;background:var(--surface-2)}
 .hero-cap{font-size:11px;color:var(--fg-faint);margin-top:5px}
 .somm{font-size:13px;color:var(--fg-muted);text-wrap:pretty;margin-top:8px}
@@ -647,11 +652,15 @@ function renderTabella(){
     h += '<td class="r"><span class="score"><b>' + p.totale + '</b><span class="band band-' + banda(p.totale) + '">' + banda(p.totale) + "</span></span></td>";
     h += '<td><span class="riga-nome">' +
          (a.foto ? '<img class="thumb" src="foto/' + esc(a.foto) + '" alt="" loading="lazy">'
-                 : '<span class="thumb vuota">–</span>') + "<span style=\"min-width:0\">" +
+                 : '<span class="thumb vuota">–</span>') + '<span class="riga-testi">' +
          "<span class=\"name\">" + (a.catena ? '<span class="catena" title="' + esc(a.gruppo || "Catena o gruppo") + '">⛓</span> ' : "") +
          (esc(a.nome) || '<span style="color:var(--fg-faint)">Senza nome</span>') + "</span>" +
-         '<span class="sub">' + esc([a.comune, a.provincia && "(" + a.provincia + ")", a.regione, a.tipoLocalita,
-           Number(a.km) ? a.km + " km" : "", a.lingua === "Italiano" ? "" : a.lingua].filter(Boolean).join(" · ")) + "</span></span></span></td>";
+         '<span class="sub">' + esc([
+             a.comune + (a.provincia ? " (" + a.provincia + ")" : ""),
+             a.tipoLocalita,
+             Number(a.km) ? a.km + " km da Siusi" : "",
+             a.lingua === "Italiano" ? "" : a.lingua
+           ].filter(x => x && x.trim()).join(" · ")) + "</span></span></span></td>";
     h += '<td><span class="sub">' + esc(a.categoria) + "</span></td>";
     h += '<td><span class="soc">' + SOCIAL.map(s => {
           const v = a.social[s.key] || {};
