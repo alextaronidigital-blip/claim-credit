@@ -1,0 +1,2180 @@
+{
+  "presoIl": "2026-10-20",
+  "fonte": "Google Places API (New) · places details + photo media",
+  "quante": 70,
+  "conFoto": 70,
+  "senzaFoto": 0,
+  "errori": 0,
+  "strutture": [
+    {
+      "id": "g04307727d8",
+      "placeId": "ChIJ5SGIO7gieEcRUfdDzdZBbNU",
+      "nome": "Gasthof Dasser",
+      "sommario": "Camere suggestive in guesthouse raffinata con ristorante, oltre a colazione e parcheggio inclusi.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Hotel a conduzione famigliare\nIl servizio è sempre gentile e accogliente.\nPunto di forza sono l'atredmaneto in stile tradizionale, la pulizia e soprattutto il cibo!!! Davvero squisito\nIl sabato vengono offerti gratuitamente talgieri di affettati e formaggi e vino nella cantina e si canta e si brinda tutti insieme, seguita da cena tradizionale con stinco.\nLa colazione viene servita in una veranda riscaldata accoglientissima.\nIn conclusione venite qui se cercate un luogo in cui sentirvi davvero a casa, dove si è trattati come amici e non ospiti, e si mangia e dorme davvero bene.❤️🫶🏼✨",
+          "lingua": "it",
+          "quando": "7 mesi fa",
+          "autore": "Centro Mindfulness Firenze"
+        },
+        {
+          "voto": 5,
+          "testo": "Esperienza meravigliosa!\n\nAbbiamo soggiornato in questo hotel a conduzione familiare per tre notti scegliendo la mezza pensione, ed è stata un’esperienza davvero piacevole. La camera matrimoniale, così come il bagno, era molto ampia, pulitissima e arredata con uno stile moderno ma equilibrato, perfettamente in armonia con il carattere storico della struttura.\nLa colazione a buffet e la cena servita a portate sono state entrambe eccellenti: piatti gustosi preparati con prodotti locali di qualità.\nUn valore aggiunto è senza dubbio rappresentato dalla cordialità, dalla gentilezza e dall’attenzion",
+          "lingua": "it",
+          "quando": "9 mesi fa",
+          "autore": "Adele Bagattoni"
+        },
+        {
+          "voto": 5,
+          "testo": "Non posso desiderare di più. Da anni veniamo e continueremo a venire all'Hotel Dasser\nVi spiego perché.\nQuando entri qui, é come entrare in casa, una casa delle Dolomiti in legno, estremamente curata nei dettagli, calda e accogliente. Non solo nell'arredamento ma anche nella gestione, familiare, da più generazioni.\nPerciò se vi aspettate l'albergo grande e con tutti i servizi non é questo.\nQui c'è tutto ma anche all'insegna della semplicità.\nI punti forti sono:\nLa cucina: da toscana che sa cucinare bene vi assicuro che qui é ottima e abbondante! E sempre con la scelta anche nella formula mezza",
+          "lingua": "it",
+          "quando": "8 mesi fa",
+          "autore": "Marina Ciampelli"
+        }
+      ],
+      "foto": "g04307727d8.jpg",
+      "fotoAttribuzione": "Gasthof Dasser"
+    },
+    {
+      "id": "g0d6702509a",
+      "placeId": "ChIJHeG7trIDeEcRuz3dcwkFWS4",
+      "nome": "Hotel Alpenfrieden",
+      "sommario": "Alloggi comodi in hotel in stile chalet con colazione inclusa, spa e ristorante classico italiano.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Abbiamo soggiornato in questo albergo e ci siamo trovati davvero molto bene. La struttura è accogliente, pulita e ben curata, con uno staff sempre disponibile e gentile. La piscina è un vero punto di forza: ampia, pulita e perfetta per rilassarsi durante la giornata. Anche la colazione è stata abbondante e di qualità.\nCene varie e sempre buonissime.\nL'unico piccolo aspetto da segnalare è la vicinanza a una chiesa con campanile, che al mattino può farsi sentire, ma nulla che rovini l'esperienza complessiva.\nNel complesso, un soggiorno piacevole che consigliamo senza dubbio!",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Chiara Ivaldi"
+        },
+        {
+          "voto": 5,
+          "testo": "Ottimo hotel. Per alcuni aspetti potrebbe essere anche un 4 stelle.\nPulizia, cibo, servizio tutto ottimo",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "Michele O."
+        },
+        {
+          "voto": 5,
+          "testo": "Ottimo hotel in zona tranquilla e soleggiata. Le camere sono nuove e molto curate, pulizia ottima. Cibo buonissimo, menu vario e molta attenzione alle intolleranze alimentari, con molta scelta e alternative. Personale molto cordiale e disponibile. Zona piscina tranquilla, adatta ai bambini. Zona giochi esterna molto varia , con ping pong, tappeto elastico, giochi x i piu piccoli, calcio balilla, sdrai e rilassanti e prendere il sole per gli adulti.\nPossibilita di caricare l auto elettrica.\nSuper consigliato per una vacanza di natura e relax.",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Antonio serena"
+        }
+      ],
+      "foto": "g0d6702509a.jpg",
+      "fotoAttribuzione": "Hotel Alpenfrieden"
+    },
+    {
+      "id": "g0de13759f8",
+      "placeId": "ChIJyxflQG8TeEcRf0cumD5lewc",
+      "nome": "Hotel Christeinerhof- Villa Pallua",
+      "sommario": "Camere in stile rustico in hotel alpino con ristorante, bar, giardino lussureggiante e spa.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Ho appena concluso un soggiorno super piacevole e rilassante nella struttura Christeinerhof. L'albergo è leggermente fuori dal paese di Santa Cristina,ma collegato bene con skibus e navetta dell'albergo agli impianti sciistici. Skiroom efficiente, finalmente i miei scarponi erano caldi al mattino e viene consegnato un lock per i propri sci o tavola da snowboard. Pulizia eccellente, ottima colazione e buona qualità della cena. Quello che rende speciale questo posto è il calore della famiglia,la cura e l'attenzione che dedicano agli ospiti dell' albergo. Per il mio compleanno mi hanno fatto trov",
+          "lingua": "it",
+          "quando": "8 mesi fa",
+          "autore": "Giulia Elena Sattibaldi"
+        },
+        {
+          "voto": 5,
+          "testo": "Sono rimasto piacevolmente colpito dalla qualità della struttura, dalla sua posizione vicina al centro di Santa Cristina e comodamente servita da bus e ski bus per spostarsi agevolmente in Val Gardena e raggiungere le numerose piste del comprensorio. Inoltre plus molto importanti: la cortesia e professionalità dello staff sempre disponibile; una ski room attrezzata con locker per gli sci e scarponi sempre caldi al mattino; un’accogliente zona relax con sauna e bagno turco e infine una ottima cucina.  Consiglio a tutti questo hotel per un soggiorno in val Gardena!",
+          "lingua": "it",
+          "quando": "8 mesi fa",
+          "autore": "Giacomo Cellai"
+        },
+        {
+          "voto": 5,
+          "testo": "Soggiorno eccellente\n\nHotel in posizione eccellente, con una struttura ben curata. Tutti i servizi sono presenti e funzionano perfettamente.\nLe camere sono spaziose, nuove, confortevoli e soprattutto pulitissime.\nAnche sul fronte ristorazione siamo rimasti molto soddisfatti: colazione ricca e varia, e menù serali di ottima qualità, sempre curati nei dettagli.\nUn grande merito va anche al personale, sempre gentile, cordiale e professionale.\nUn ringraziamento speciale alla cameriera che si è presa cura di noi durante i pasti: una ragazza educata, attenta e disponibile, che ha reso l’esperienza a",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Linda"
+        }
+      ],
+      "foto": "g0de13759f8.jpg",
+      "fotoAttribuzione": "Hotel Christeinerhof- Villa Pallua"
+    },
+    {
+      "id": "g12e2240212",
+      "placeId": "ChIJyRAzDPm4gkcRbVf63ZGex6M",
+      "nome": "MARINIs giardino Hotel",
+      "sommario": "Struttura informale con camere luminose con vista sulle montagne, ristorante accogliente e due piscine.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Hotel elegante con splendida vista sulla Val Venosta. Giardini molto curati con magnifici fiori rendono ancor più piacevole il soggiorno in questa struttura, dotata di camere confortevoli, ben insonorizzate e comode per raggiungere qualsiasi zona dell'hotel. Prima colazione con ampia scelta di pietanze dolci e salate di prima qualità. Possibilità di cenare al ristorante dell'hotel con menù che varia ogni sera. Personale gentile e molto accogliente. Zona fitness con piscine e sauna pulitissima e ben organizzata. Garage coperto per le auto. Davvero un hotel gestito in modo impeccabile!",
+          "lingua": "it",
+          "quando": "5 anni fa",
+          "autore": "Anna Fumagalli"
+        },
+        {
+          "voto": 5,
+          "testo": "L'Hotel Marini é uno di quei posti in cui ci si sente accolti e coccolati con professionalità e sorriso. É una struttura curata in ogni sua parte, colazione ricca e gustosa, cena ottima e carta dei vini eccellente.\nLo scenario é bellissimo...un vero e proprio bel vedere. Da consigliare sempre e senza esitazioni.",
+          "lingua": "it",
+          "quando": "4 anni fa",
+          "autore": "Michele Frezza"
+        },
+        {
+          "voto": 5,
+          "testo": "Prima volta in questo meraviglioso hotel,\nIo e la mia fidanzata siamo stati 4 giorni immersi nelle Dolomiti, ci hanno coccolato e viziato, personale eccellente, gentile ed educato ha saputo in ogni momento farci godere la nostra vacanza.\nLa vista è mozzafiato colazione e cena in terrazza fronte Dolomiti è qualcosa di impagabile. Il giardino è un sogno.\nLa spa è rigenerante curata nei piccoli dettagli.\nLe camere classiche, spaziose e pulitissime.\nPrezzi giusti per il periodo e la qualità di tutti i servizi.\nNon vediamo l'ora di tornarci, già ci manca tutto.\nA presto.",
+          "lingua": "it",
+          "quando": "7 anni fa",
+          "autore": "Patrizio Sillavi"
+        }
+      ],
+      "foto": "g12e2240212.jpg",
+      "fotoAttribuzione": "MARINIs giardino Hotel"
+    },
+    {
+      "id": "g13bff8fa23",
+      "placeId": "ChIJF4uakcq7gkcRKIPz8xX_zU4",
+      "nome": "Baumgartner's Blumenhotel",
+      "sommario": "Hotel moderno che offre vista sulle montagne, ristorante elegante, piscine, spa e colazione inclusa.",
+      "recensioni": [
+        {
+          "voto": 1,
+          "testo": "Abbiamo soggiornato al Baumgartner’s Blumenhotel per due notti a Ferragosto con la nostra cagnolina (barboncino nano di 3 kg). L’hotel si presenta come “pet friendly”, ma la realtà è ben diversa: i cani non hanno accesso a nessuna area comune, né al ristorante né al giardino. Nonostante i 15€ al giorno richiesti per il cane, non viene offerto alcun servizio (nessuna ciotola, nessuna accoglienza dedicata, nessuna possibilità di stare con noi durante i pasti).\n\nAl primo giorno di colazione ho provato almeno a prendere un caffè con la mia cagnolina, ma il personale mi ha letteralmente cacciato da",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Marion Angeli"
+        },
+        {
+          "voto": 4,
+          "testo": "Buon soggiorno per un weekend, in un contesto tranquillo, pulito e dotato di un’ampia zona spa e piscine. Colazione abbondante e assortita, cena con ottimi piatti e selezioni. Clientela soprattutto svizzero-tedesca. Unici appunti da fare sono: piscine troppo piene di cloro, hanno scolorito persino i nostri costumi, da rivedere il dosaggio. Richiesta di cambio lettino per nostra figlia, in quanto difettoso e traballante, non soddisfatta in reception. Alla fine, non avendoci fatto sapere più nulla, nostra figlia ha dormito con noi stringendoci tutti. Offrite camere triple e non doppie con upgrad",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Gianluca"
+        },
+        {
+          "voto": 4,
+          "testo": "Ero a Merano per lavoro e ci siamo concessi una pausa di piacere presso questo Hotel per una notte. Recentemente ristrutturato, sia gli spazi comuni che le stanze quindi molto bello visivamente. Personale cordiale in tutti gli ambiti. Stanza doppia con balcone di buone dimensioni, molto comoda e bella. Il bagno era sfortunatamente non ancora ristrutturato, sfigurava affianco alla camera invece nuova. Aperitivo di benvenuto molto buono. Area wellness ben tenuta, leggermente piccola ma d'estate non c'è troppa gente. Piscina esterna molto bella. Cena un po deludente: piatti buoni ma non ottimi e ",
+          "lingua": "it",
+          "quando": "2 anni fa",
+          "autore": "Andrès Di"
+        }
+      ],
+      "foto": "g13bff8fa23.jpg",
+      "fotoAttribuzione": "Baumgartner's Blumenhotel"
+    },
+    {
+      "id": "g1975ff9f05",
+      "placeId": "ChIJ-doP5vSTd0cRq55jAOOv8vY",
+      "nome": "Hotel Alpenrose",
+      "sommario": "Accogliente hotel di montagna con camere confortevoli con balcone, area benessere, colazione e cena incluse.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "I propretari ( 2 sorelle e 1 fratello) sono persone gentilissime. Ottima colazione. La struttura ha una SPA e un solarium. La mobilità, per i turisti residenti nelle strutture locali,  è gratuita... abbiamo dimenticato la macchina!",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "Federica Camilli"
+        },
+        {
+          "voto": 5,
+          "testo": "Le proprietarie sono gentilissime ed offrono preziosi consigli per le escursioni. Colazione ottima sia dolce con torte fatte in casa  che salata con ottimi salumi e formaggi. Camere molto pulite. Consigliatissimo!",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "beatrice bianchi"
+        },
+        {
+          "voto": 5,
+          "testo": "Albergo a conduzione familiare situato in bella posizione a Valles. Ottima colazione con la possibilità di prepararsi e portarsi via per il pranzo un panino.\nCordialità ed attenzione dei gestori alle necessità degli ospiti: non mancano mai di salutarti e di interessarsi alle visite/escursioni che hai in programma, o che hai svolto durante il soggiorno.\nCamere spaziose e pulizia in tutti gli ambienti e nelle parti comuni.\nZona benessere proporzionata.\nDall’hotel facilità di accesso agli impianti di risalita ed ai principali sentieri.\nAbbiamo soggiornato 3 notti e ci siamo trovati bene: grazie a",
+          "lingua": "it",
+          "quando": "2 anni fa",
+          "autore": "Massimo Pero"
+        }
+      ],
+      "foto": "g1975ff9f05.jpg",
+      "fotoAttribuzione": "Hotel Alpenrose"
+    },
+    {
+      "id": "g199275d569",
+      "placeId": "ChIJaxwBp4-8gkcR31U9lCFbkDY",
+      "nome": "Apartment Hotel Christine **** in Hafling bei Meran, Meranerland, Südtirol, Italien",
+      "sommario": "Simple units in a casual apartment hotel offering a a spa area & complimentary Wi-Fi.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Abbiamo appena soggiornato all’Apartment Hotel Christine di Avelengo e ne siamo rimasti entusiasti. La nostra suite family era davvero bellissima: spaziosa, curata in ogni dettaglio e dotata di tutti i comfort necessari per un soggiorno rilassante. La struttura in generale è splendida, immersa in una posizione incantevole, a due passi dai sentieri e dal bosco, ideale per chi ama la natura e vuole partire direttamente dall’hotel per passeggiate o escursioni.\nLa vista dal balcone della camera era meravigliosa.\n\nUn altro grande punto di forza è la gestione: la famiglia che conduce l’hotel è davve",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Roberto Cavalle"
+        },
+        {
+          "voto": 5,
+          "testo": "Posizione fantastica. Sia per passeggiare sia per lo shopping a Merano 15 minuti.",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "Patrizio Perin"
+        },
+        {
+          "voto": 5,
+          "testo": "Squisito. I modi dei proprietari, le camere, la colazione, la gentilezza, il posto in se.\n\nSi scrive tanti quando c'è da criticare, solo complimenti lato mio.\n\nNon aggiungo altro se non che è un posto per rilassarsi, adatto alle famiglie e con tanti servizi",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Giuseppe Crucitti"
+        }
+      ],
+      "foto": "g199275d569.jpg",
+      "fotoAttribuzione": "Apartment Hotel Christine **** in Hafling bei Meran, Meranerland, Südtirol, Italien"
+    },
+    {
+      "id": "g223733a892",
+      "placeId": "ChIJsSXZGJQUeEcR8aV6VvDqWXQ",
+      "nome": "Hotel Belaval",
+      "sommario": "Hotel informale con ristorante arredato in legno, bar, colazione inclusa e spa con sauna.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Io e mia moglie abbiamo soggiornato dal 02 al 06 luglio.\nFacciamo questa recensione solo per dire che se ci fossero state 10 stelle da dare, sarebbero state comunque poche.\nIn questo Hotel non manca nulla : accoglienza, camera pulitissima, cucina da ristorante stellato, panorama indescrivibile, ma soprattutto la GENTILEZZA E DISPONIBILITÀ, di tutto lo staff.\nGrazie ancora per averci fatto sentire speciali.\nAlessandro e Maria",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "Alessandro a"
+        },
+        {
+          "voto": 5,
+          "testo": "L'hotel è in un'ottima posizione, è molto bello,  compresa la camera moderna e pulita e silenziosa. Abbiamo apprezzato molto la professionalità e la gentilezza del personale, il cibo è ottimo e di qualità. Consigliatissimo. Noi ci ritorneremo sicuramente.",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "tania Grando"
+        },
+        {
+          "voto": 5,
+          "testo": "Hotel a conduzione familiare da poco rinnovato.\nLe camere sono accoglienti e la pulizia delle stesse è impeccabile.\nCucina molto buona, posizione comoda poco fuori Selva con fermata dell'autobus a pochi metri.\nConsigliatissimo!",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "Luca Loperfido"
+        }
+      ],
+      "foto": "g223733a892.jpg",
+      "fotoAttribuzione": "Hotel Belaval"
+    },
+    {
+      "id": "g22a4fbf073",
+      "placeId": "ChIJj_Xhi0o5eEcRjqcfPCHK0z0",
+      "nome": "Hotel Diamant",
+      "sommario": "Camere e suite di lusso in stile montano con balcone in hotel con ristorante, spa e colazione inclusa.",
+      "recensioni": [
+        {
+          "voto": 4,
+          "testo": "Camera molto spaziosa e ben pulita, ottima vista su montagne circostanti, piste e impianti. Molto silenziosa o ben isolata, comfort elevato, divano letto molto scomodo, sentire i ferri sulla schiena non è stata una bellissima esperienza.\nBuffet a merenda con poca scelta e per lo più (sembra) con prodotti confezionati, o recuperati dalla sera precedente. Nessuna informazione su prodotti a latte crudo, e personale che non sapeva dare risposte in merito. Non il massimo per donne incinta e bambini piccoli.\nMenu cena molto valido e prelibato\nSPA Adults only con costume e senza Aufgussmeister",
+          "lingua": "it",
+          "quando": "9 mesi fa",
+          "autore": "Mattia Esposito"
+        },
+        {
+          "voto": 5,
+          "testo": "Abbiamo soggiornato per cinque giorni a inizio luglio. Siamo stati benissimo. Tutto eccellente! Colazione, merenda pomeridiana e cena super. Sempre con molte opzioni gluten free. Gentilezza dei proprietari e professionalità di tutto lo staff. Si respira il clima familiare e si apprezza la molta attenzione verso gli ospiti. Ottima SPA, ottima camera, pulizia e servizi impeccabili.",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "andrea pisoni"
+        },
+        {
+          "voto": 4,
+          "testo": "Ottimo soggiorno, camere pulitissime e ordinate. Una nota stonata va alla carta igienica usata e le lenzuola bucate ma fortunatamente pulite (cose che in  un hotel a 4 stelle non si dovrebbero trovare) . Anche il cibo non è male e il personale cordiale sia in sala che ai piani .",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Franz"
+        }
+      ],
+      "foto": "g22a4fbf073.jpg",
+      "fotoAttribuzione": "Hotel Diamant"
+    },
+    {
+      "id": "g261c40354a",
+      "placeId": "ChIJDSn7Nca7gkcRtFP4H4vgOHw",
+      "nome": "Hotel Bergland",
+      "sommario": "Hotel caratteristico con camere e suite rustiche, ristorante all'aperto e spa in stile romano con piscina.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Personale disponibile e cordiale anche per  richieste extra e non incluse nel pacchetto del soggiorno. Camera e bagno davvero molto puliti. Presenti alcuni accessori nel bagno che non sempre si trovano in un 3 stelle. Colazione super con scelta tra dolce e salato con ampia scelta. Frutta fresca, vere spremute di arancia. Piscine e  Spa in linea con quanto scritto finora. Non ho avuto occasione di provare la cena.",
+          "lingua": "it",
+          "quando": "6 anni fa",
+          "autore": "Davide Cassaro"
+        },
+        {
+          "voto": 5,
+          "testo": "Tutto davvero spettacolare, personale cordiale sin da subito, cibo ottimo , vista spettacolare, camera con balcone e molto silenziosa. Cè tutto quello che serve per rilassarsi , sauna , piscina interna,esterna,zona solarium  sul tetto ecc. Torneremo sicuramente",
+          "lingua": "it",
+          "quando": "4 anni fa",
+          "autore": "Marco Bena"
+        },
+        {
+          "voto": 5,
+          "testo": "Hotel con vista spettacolare, staff gentilissimo, colazione super , suite meravigliosa",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Oriana Merlo"
+        }
+      ],
+      "foto": "g261c40354a.jpg",
+      "fotoAttribuzione": "Hotel Bergland"
+    },
+    {
+      "id": "g2c56a58bf0",
+      "placeId": "ChIJ47IsIPIEeEcRWoqlKBf9MY4",
+      "nome": "Hotel Hubertushof",
+      "sommario": "Chalet confortevole con camere accoglienti, colazione inclusa, piscina scoperta, spa e ristorante moderno.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Per essere un hotel tre stelle merita senz'altro il massimo dei voti, con un eccellente rapporto qualità prezzo. La camera era ampia, dotata anche di un bel balconcino con sedie tavolino e sdraio, il bagno moderno e funzionale, la TV grande. Purtroppo devo segnalare che il piumino d'estate fa troppo caldo, dato che non ci troviamo ad una altezza eccessiva, ma sinceramente non mi sento di togliere una stella per questo. Il personale è molto gentile e disponibile e c'è una bella piscina, non scontata in un hotel di questa categoria. Lo consiglio certamente!",
+          "lingua": "it",
+          "quando": "2 anni fa",
+          "autore": "Claudia Rubbini"
+        },
+        {
+          "voto": 5,
+          "testo": "Ottima esperienza! Gestione familiare. Cortesia e disponibilità. Il posto è tranquillo. Si mangia bene con un menù abbastanza vario anche con prodotti tipici. Camere pulite. Varie passeggiate da poter fare. A pochi km da Bressanone.  Stanza giochi per i bimbi più piccoli. Ping pong e piscina per i più grandi. Solarium, sauna e palestra per gli adulti. Consigliato!",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Giovanni Filippo Rosset"
+        },
+        {
+          "voto": 4,
+          "testo": "In questo hotel non manca nulla, modesto ma molto pulito. Una piscina separata per i più piccoli, una sala giochi sempre per i bimbi. Una zona wellness confortevole ed una palestra carina. Le camere stile anni 80 ma che vengono curate molto per quanto riguarda la pulizia. Colazione ricca e cena con piatti semplici ma gustosi.WiFi ottimo.",
+          "lingua": "it",
+          "quando": "5 anni fa",
+          "autore": "sere nilde"
+        }
+      ],
+      "foto": "g2c56a58bf0.jpg",
+      "fotoAttribuzione": "Hotel Hubertushof"
+    },
+    {
+      "id": "g31e9a207d0",
+      "placeId": "ChIJIUT2SJO9gkcR9cnvrN_IHbs",
+      "nome": "Albergo Unteranger",
+      "sommario": "Casual rooms with balconies in a warm hotel offering free breakfast & an outdoor saltwater pool.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Ormai per noi è diventato un appuntamento fisso: io e mia moglie scegliamo questo garni ogni anno e ogni volta ci sentiamo come a casa.\nLa colazione è davvero eccellente, abbondante e molto varia, con un'ampia scelta sia di prodotti dolci che salati, capace di soddisfare tutti i gusti. Molto apprezzata anche la piscina, sempre curata e dotata di comode sdraio e ombrelloni, ideale per rilassarsi dopo una giornata di passeggiate. Un ulteriore valore aggiunto è il parcheggio gratuito all'interno della struttura.\nSiamo appena rientrati a Bergamo e già non vediamo l'ora di tornare per la prossima v",
+          "lingua": "it",
+          "quando": "4 mesi fa",
+          "autore": "F B"
+        },
+        {
+          "voto": 5,
+          "testo": "Da diversi anni, ad agosto, veniamo in vacanza a Lana, quest’anno per la prima volta abbiamo alloggiato in questo magnifico albergo. La sig.ra Karoline è gentilissima e disponibile, le camere sono pulitissime così come la zona piscina. Veramente una struttura nella quale ritornare. Arrivederci al 2025!!!",
+          "lingua": "it",
+          "quando": "2 anni fa",
+          "autore": "Simone Grattarola"
+        },
+        {
+          "voto": 5,
+          "testo": "Abbiamo appena alloggiato in questa struttura. Il soggiorno è stato piacevole. Ambiente familiare molto pulito con parcheggio e piscina. Molto cordiali i gestori. Disponibili e gentili. Sempre con il sorriso.\nConsigliatissimo!!!!!",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "MIRIA DI CARLO"
+        }
+      ],
+      "foto": "g31e9a207d0.jpg",
+      "fotoAttribuzione": "Garni-Frühstückspension Unteranger"
+    },
+    {
+      "id": "g3658f7c5f8",
+      "placeId": "ChIJ6WRGrWoMeEcRWkjht2QhhKo",
+      "nome": "Hotel Andechserhof & Mountain Sky",
+      "sommario": "Hotel montano tranquillo con ristorante rustico, bar, palestra, spa e giardino.",
+      "recensioni": [
+        {
+          "voto": 4,
+          "testo": "Soggiorno splendido (ma attenzione al costo dell'acqua).\n\nL'esperienza è stata davvero eccellente sotto quasi tutti i punti di vista.\nLa pulizia della struttura è impeccabile, l'accoglienza e la gentilezza di tutto lo staff ti fanno sentire subito a casa e la cucina (abbiamo usufruito della mezza pensione) è davvero di ottimo livello, con piatti curati e fatti da loro. Laion è inoltre un punto di partenza perfetto per esplorare la zona. Siamo stati benissimo...\nL'unica nota stonata, che consideriamo un vero e proprio scivolone in un soggiorno altrimenti perfetto, riguarda la gestione dell'acqu",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "Andrea Morello"
+        },
+        {
+          "voto": 5,
+          "testo": "Ho trascorso qualche giorno molto piacevole presso questa struttura. Il servizio è stato davvero eccellente: il personale si è dimostrato sempre cordiale, attento e disponibile, pronto a soddisfare ogni richiesta con un sorriso e molta professionalità.\n\nIl buffet merita una menzione speciale: ricco, vario e di alta qualità. Gli ingredienti erano freschi, i piatti ben presentati e adatti a soddisfare diversi gusti. L’unico appunto riguarda la scelta vegetariana, che non era particolarmente ampia, ma davvero apprezzabile. Nonostante la selezione limitata, c’era un paio di opzioni gustose e creat",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Paolo Vaccari"
+        },
+        {
+          "voto": 5,
+          "testo": "Abbiamo soggiornato nella parte nuova di questo albergo. Camere grandi , sempre molto ma davvero pulite e ordinate con un bel terrazzo con un piccolo stendibiancheria,  molto apprezzato il set di asciugamani per la piscina. Bella e funzionale la piscina con annessa zona relax con tisane e frutta fresca ,  posta all ultimo piano;piaciuta anche la zona sauna. Per quanti riguarda i pasti, buona la colazione sia per il salato che per il dolce e anche la cena è abbondante. Al personale va il nostro più grande grazie perché  è sempre stato gentile e disponibile. Da ritornare.",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Simo Tanzini"
+        }
+      ],
+      "foto": "g3658f7c5f8.jpg",
+      "fotoAttribuzione": "Hotel Andechserhof & Mountain Sky"
+    },
+    {
+      "id": "g37ea3bf179",
+      "placeId": "ChIJqemLgOQUeEcRpXyl_HeeBaM",
+      "nome": "Hotel Miravalle",
+      "sommario": "Camere e suite sobrie in hotel informale a conduzione familiare con ristorante rustico e spa.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Abbiamo soggiornato in questa struttura più volte, sia in estate che in inverno, e ogni volta si è confermata una scelta eccellente. La posizione è comodissima, con accesso diretto alle piste (ski in & ski out), ideale per chi ama sciare senza stress.\n\nLa cucina è davvero molto buona, con piatti curati e di qualità, mentre la zona spa è semplicemente eccellente: perfetta per rilassarsi dopo una giornata attiva.\n\nUn posto in cui torniamo sempre volentieri e che consigliamo senza esitazioni.",
+          "lingua": "it",
+          "quando": "un mese fa",
+          "autore": "Polina K."
+        },
+        {
+          "voto": 5,
+          "testo": "5 stelle perché non se ne possono assegnare di più!\nAbbiamo soggiornato una settimana, insieme al nostro bambino di 8 mesi ed è stata un’esperienza positiva sotto ogni punto di vista.\nCamere pulite e riordinate alla perfezione ogni mattina; posizione ottima, con vista spettacolare; spa e piscina fantastiche.\nCucina ottima, ricercata e tradizionale.\nPersonale cordiale, disponibile e flessibile. Sono venuti incontro alle nostre esigenze familiari, sia per il cibo, che per l’allestimento della camera. Ci siamo sentiti a casa.",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "angelica pagliari"
+        },
+        {
+          "voto": 5,
+          "testo": "Esperienza di grandissimo livello. La cortesia e il livello di attenzioni sono da 6 stelle. Abbiamo apprezzato moltissimo l’area wellness, il ristorante, la gentilezza del personale e’ di grande merito. La proprietà ha saputo dare le giuste linee guida per un soggiorno memorabile. Saremo felici se avremo l’opportunità di ritornare in questo  hotel, situato in uno dei posti più belli al mondo, le Dolomiti.",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Lucia Precchia"
+        }
+      ],
+      "foto": "g37ea3bf179.jpg",
+      "fotoAttribuzione": "Hotel Miravalle"
+    },
+    {
+      "id": "g3cbdf217a0",
+      "placeId": "ChIJ_Q7xrtwMeEcR5kBPMJ3F7uY",
+      "nome": "Hotel Roßlaufhof",
+      "sommario": "Hotel elegante in collina che offre ristorante, bar con terrazza, piscina coperta e area spa.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Hotel consigliatissimo, durante il nostro pernottamento è stato tutto perfetto:  camera, cibo, location ecc.\nCamere spaziose e pulite, colazione con un buffet super fornito (le uova sono deliziose), cena con tante scelte e tanta qualità.\nIl punto di forza, per me, è la spa: tantissime piscine interne ed esterne con tanti getti disponibili, diverse saune ecc. In particolare le piscine esterne sono bellissime poiché hanno una vista spettacolare.\nAmpio parcheggio disponibile in loco anche coperto.\nStaff super cordiale!\nUnico consiglio: i dolci disponibili al buffet della merenda sono squisiti e p",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "Michele Conti"
+        },
+        {
+          "voto": 5,
+          "testo": "Un posto meraviglioso dove regna la tranquillità. Personale disponibile,gentile e simpatico. Il cibo è superlativo, consigliato!",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "Silvia F"
+        },
+        {
+          "voto": 5,
+          "testo": "Hotel bellissimo, situato in cima al paese con una vista su tutto Castelrotto.\nSPA fantastica con 3 piscine interne di cui 2 riscaldate + una piascina esterna calda a sfioro con ingresso dall'interno, ed un altra piscina esterna con idromassaggio.\nIl tutto contornato da verde a vista d'occhio e situato ai piedi dello Sciliar.\nAggiungeteci un proprietario simpatico e chiacchierone ed avete il quadro del posto.\nBasta dire che ho trovato molte famiglie che sono venuti per più anni in questo hotel, per capire il piacere di soggiornarci",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Diego Giannini"
+        }
+      ],
+      "foto": "g3cbdf217a0.jpg",
+      "fotoAttribuzione": "Enrico Trimarchi"
+    },
+    {
+      "id": "g4cb38a13b1",
+      "placeId": "ChIJb4-ike4UeEcR7b9ZW0hwE3M",
+      "nome": "Boutique Hotel Pralong S - Selva Val Gardena",
+      "sommario": "Camere e suite raffinate in hotel classico con sala da pranzo in stile rustico-chic, bar e area spa.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Eccellente! Ottima posizione per chi vuole esplorare la meraviglia delle Dolomiti. Cibo ottimo, pulizia eccellente, professionalità 10 e lode. Domenico e Simona i camerieri in sala, ed il terzo ragazzo che non ricordo il nome veri professionisti, sempre sorridenti, accoglienti ed attenti alle esigenze del cliente! La famiglia Denicolò una garanzia di accoglienza e gentilezza. Complimenti per la squadra che avete messo su per la gestione della vostra struttura. Torneremo senz'altro!",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "Nora Marongiu"
+        },
+        {
+          "voto": 5,
+          "testo": "Siamo stati 5 giorni in mezza pensione in questa struttura. Cena con piatti curati e deliziosi. Camere pulite e ordinate, venivano pulite quotidianamente. La nostra camera aveva un balconcino con vista spettacolare. Posizione ottima vicino al centro e tanti percorsi vicini. Il personale sempre molto gentile e disponibile. Il proprietario Christian ci ha consigliato con molta gentilezza percorsi ed escursioni. Grazie per questo splendido soggiorno, torneremo presto!",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Camilla Vicelli"
+        },
+        {
+          "voto": 5,
+          "testo": "Ottimo hotel a conduzione familiare,  camere adeguate così come il bagno. Ottima pulizia.\nColazione e cena di qualità, personale simpatico e attento ai particolari. Veramente ottima la cucina.\nBuon rapporto qualità/prezzo, consigliato\nGrazie!",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Cinzia Ferfoglia"
+        }
+      ],
+      "foto": "g4cb38a13b1.jpg",
+      "fotoAttribuzione": "Alberto Garroni"
+    },
+    {
+      "id": "g56f65b9ddb",
+      "placeId": "ChIJk9XiUylzeEcRTuxFH_Pti8c",
+      "nome": "Activehotel Diana",
+      "sommario": "Hotel confortevole con una spa, un bar, un ristorante e piscine coperta e scoperta.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Io e il mio compagno abbiamo soggiornato in questo hotel 1 settimana nel mese di gennaio. Come posizione è molto comodo perché permette, tramite il servizio di navette (incluso per tutti gli hotel), di raggiungere i diversi impianti sciistici.\nL'hotel e le camere sono molto pulite e belle (unica pecca è che non era possibile autonomamente regolare la temperatura e la camera era molto calda), molto belle anche le aree comuni, sia la zona bar che includeva anche un tavolo da biliardo, che le zone wellness e spa.\nLa cucina era davvero di alto livello, con piatti diversi ogni sera e molta varietà ",
+          "lingua": "it",
+          "quando": "8 mesi fa",
+          "autore": "Beatrice"
+        },
+        {
+          "voto": 5,
+          "testo": "Abbiamo soggiornato all'Active Hotel Diana durante il ponte del 2 giugno e l'esperienza è stata davvero molto positiva.\nL'hotel è molto bello e curato in ogni dettaglio. La nostra camera era spaziosa e confortevole, con un materasso molto comodo e ambienti ben organizzati. La pulizia, sia della stanza sia di tutti gli spazi comuni, è risultata ottima durante tutto il soggiorno.\nMolto apprezzati anche gli ampi spazi verdi e le aree comuni, particolarmente grandi e accoglienti. La SPA è molto piacevole e comprende 2 saune ed un bagno turco, piscina interna ed esterna, idromassaggio e una bella s",
+          "lingua": "it",
+          "quando": "4 mesi fa",
+          "autore": "Elisa Rossi"
+        },
+        {
+          "voto": 5,
+          "testo": "Abbiamo soggiornato presso questa struttura dal 19 al 21 giugno.\nL'hotel si trova in centro a Siusi ed è ben curato.\nLa stanza molto ampia come anche il bagno.\nI servizi offerti sono molto validi (abbiamo noleggiato la bicicletta elettrica ed è stata una bella esperienza).\nArea SPA ben tenuta come anche il giardino esterno.\nNota di merito alla sala giochi per i bimbi: super attrezzata e fornita!\nI piatti proposti per cena sono curati e ricercati.\nLa colazione prevede scelte sia per il salato che per il dolce, con possibilità di ordinare le bevande calde direttamente al personale.\nTutto il pers",
+          "lingua": "it",
+          "quando": "4 mesi fa",
+          "autore": "Serena Carotta"
+        }
+      ],
+      "foto": "g56f65b9ddb.jpg",
+      "fotoAttribuzione": "Activehotel Diana"
+    },
+    {
+      "id": "g5d659ed7fa",
+      "placeId": "ChIJjYGNgQA_eEcRoL0D9ya1MUk",
+      "nome": "Hotel Christian",
+      "sommario": "Hotel alpino sobrio con camere in stile rustico, ristorante/bar informale e sauna.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "La cordialità del titolare e dello staff sono di eccellenza, così come la pulizia della camera e degli ambienti comuni. Colazione completata, la cucina semplice ma non banale , ottima in varietà e qualità. Le camere non sono grandissime ma arredate bene e in stato perfetto, dai balconi la vista sul Gruppo del Sella e del Saslong è mozzafiato. L'hotel è ad un passo dal centro di Corvara ma in una zona quieta silenziosa. Il rapporto qualità prezzo è eccellente per essere nel cuore dell' Alta Badia!!! Complimenti",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "Andrea Gosgnach"
+        },
+        {
+          "voto": 5,
+          "testo": "Assolutamente consigliato! Cibo ottimo e camere molto pulite. La nostra camera era un po' piccola... Magari al momento del preventivo,avendo anche un cane potevano consigliarne una più spaziosa,ma siamo stati benissimo ugualmente. Posizione top, vicino al centro ma zona meno trafficata.",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "ANNALISA Ricagno"
+        },
+        {
+          "voto": 5,
+          "testo": "Io e mio marito, insieme ad una coppia di amici, abbiamo soggiornato in questo hotel la settimana di Ferragosto. Tutto perfetto, il proprietario sempre gentile e accorto a darci consigli su tutto. Anche il personale sempre gentile e disponibile. Per quanto riguarda la colazione c'era di tutto, dal dolce al salato. Per quanto riguarda la cena, ricco buffet più la selezione di due primi, due secondi ed il dessert. Piatti sempre molto ricercati. La cena di Ferragosto da 5 stelle; sia per il cibo, che per la presentazione dei piatti. Hotel molto pulito, silenzioso e in ottima posizione. Lo consigl",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "Rosanna Rossi"
+        }
+      ],
+      "foto": "g5d659ed7fa.jpg",
+      "fotoAttribuzione": "Hotel Christian"
+    },
+    {
+      "id": "g61b8bf2bee",
+      "placeId": "ChIJGZDDrNMMeEcREFfY8GEWsiQ",
+      "nome": "Hotel Plunger",
+      "sommario": "Camere ampie dotate di balcone in hotel alpino esclusivo con ristorante, spa e piscina all'aperto.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Abbiano soggiornato 1 settimana in questo meraviglioso Hotel : tutto dalla stanza con vista mozzafiato sullo Sciliar alla piscina al cibo al personale è stato meraviglioso...\nSi trova a 5 minuti dall accesso controllato all'alpe di Siusi.\nGrazie Hotel Plunger torneremo con la nostra bimba che ha trascorso una vacanza indimenticabile!",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "Antonella Di Mattia"
+        },
+        {
+          "voto": 2,
+          "testo": "Ci tengo a scrivere questa recensione perché da un posto così bello tutto deve essere all'altezza.\nAbbiamo soggiornato in questo albergo, per dieci giorni, tra fine luglio e i primi di agosti.\nLe camere e l'albergo tutto sono bellissimi.\nLa nota dolente é il cibo.\nNon c'è varietà né scelta di piatti locali.\nCi é stato servito: pollo, salmone, tacchino, trota, ma nulla di locale o minimamente lavorato.\nEsasperati, dopo una settimana abbiamo fatto notare che avremmo desiderato più varietà e territorialità.\nCi hanno risposto che se avessimo voluto questo avremmo dovuto prenotare a un 4 stelle.\nAl",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "Bruno Graziano"
+        },
+        {
+          "voto": 4,
+          "testo": "Abbiamo trascorso un piacevole soggiorno in questo hotel, che vanta una posizione davvero spettacolare, immersa nel verde con una vista impagabile sulla Punta Santner e sul massiccio dello Sciliar. Il panorama, da solo, vale il viaggio.\n\nLa struttura è sicuramente bella, anche se in alcune aree risente un po’ del passare degli anni. La spa è ben attrezzata e offre diversi servizi, ma potrebbe beneficiare di un rinnovamento per essere all’altezza del resto dell’hotel. Il vero fiore all’occhiello è invece la piscina esterna, di recentissima realizzazione: acqua piacevolmente riscaldata a 30 °C, ",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "Chiara Cerea"
+        }
+      ],
+      "foto": "g61b8bf2bee.jpg",
+      "fotoAttribuzione": "Hotel Plunger"
+    },
+    {
+      "id": "g6399d70cd2",
+      "placeId": "ChIJZxLhMboReEcRG-5-26Yoask",
+      "nome": "Gsoihof",
+      "sommario": "Hotel rustico-chic con colazione e cena incluse, vista sulle montagne e piscina scoperta stagionale.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Siamo stati 10gg ospiti in questa struttura per la prima volta, felicissimi di averla scelta. Ottima cena e colazione. Personale cordiale e attento , disponibile per qualsiasi esigenza. Camere spaziose e pulite. Una  vista spettacolare sulle Odle.\nUna gestione familiare perfetta.",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "Rossana Gonnelli"
+        },
+        {
+          "voto": 5,
+          "testo": "Siamo stati loro ospiti solo per il ristorante ed abbiamo mangiato benissimo: un menù fisso dell'agriturismo che ci ha sorpreso ad ogni portata sia per la qualità che per la quantità. Personale eccellente e sempre pronto alle esigenze dei clienti. Ambiente molto accogliente e pulito. Assolutamente da non perdere previa prenotazione. Torneremo di sicuro",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "Laura Veroli"
+        },
+        {
+          "voto": 5,
+          "testo": "Non bastano 5 stelline per descrivere questo piccolo albergo di montagna. Qui starete benissimo, rimpiangendo di dover tornare a casa in città. E infatti è sempre overbooking. Ma non disperate, telefonate e una soluzione la troveranno. Le foto del panorama non basta.",
+          "lingua": "it",
+          "quando": "4 mesi fa",
+          "autore": "Maurizio Patane"
+        }
+      ],
+      "foto": "g6399d70cd2.jpg",
+      "fotoAttribuzione": "Hotel Gsoihof"
+    },
+    {
+      "id": "g65c9afdfad",
+      "placeId": "ChIJY8d1MPkSeEcRw0jYbM5uVjQ",
+      "nome": "Albergo Sureghes",
+      "sommario": "Camere e suite in stile minimalista in accogliente hotel montano con ristorante luminoso e colazione inclusa.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Ho trascorso un soggiorno davvero impeccabile in questo hotel. Fin dal mio arrivo sono stato accolto con grande cordialità e professionalità, e l’atmosfera elegante ma allo stesso tempo rilassata mi ha fatto subito sentire a mio agio.\n\nLa camera era spaziosa, pulitissima e curata in ogni dettaglio, con un letto comodissimo e tutti i comfort necessari per un soggiorno piacevole. Anche le aree comuni erano sempre ordinate e silenziose, perfette per chi cerca un po’ di tranquillità.\n\nLa colazione è stata una delle sorprese più piacevoli: ampia scelta, prodotti freschi e di qualità, e un servizio ",
+          "lingua": "it",
+          "quando": "10 mesi fa",
+          "autore": "marco solari"
+        },
+        {
+          "voto": 5,
+          "testo": "Hotel curato e moderno in posizione strategica a Ortisei, personale gentile e disponibile.\nNota di merito alla ristorazione: buonissimo!\nConsigliato.",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "Andrea Castiglioni"
+        },
+        {
+          "voto": 5,
+          "testo": "Hotel sito a poche decine di metri dalla funivia dell'Alpe di Siusi e dell'ufficio skipass. Adiacente c'è un comodo noleggio sci e la piazza centrale di Ortisei dista meno di 2 minuti a piedi! Fantastico.\nC'è anche una convenzione che consente di usufruire gratuitamente della spa MAR DOLOMITI (anche questa pochi minuti a piedi).\nCamere pulite e ben arredate, buona colazione e cena, servizio impeccabile da parte del personale, proprietari alla reception sempre attenti e disponibili! Una piacevolissima scopera! Torneremo sicuramente",
+          "lingua": "it",
+          "quando": "8 mesi fa",
+          "autore": "Andrea Tortorici"
+        }
+      ],
+      "foto": "g65c9afdfad.jpg",
+      "fotoAttribuzione": "Mary W"
+    },
+    {
+      "id": "g6de294e36c",
+      "placeId": "ChIJOTkMhH9zeEcRlQeflzHW_aA",
+      "nome": "Hotel Heubad",
+      "sommario": "Hotel in stile sobrio con ristorante, saune e piscine coperta e scoperta.",
+      "recensioni": [
+        {
+          "voto": 4,
+          "testo": "Abbiamo soggiornato in questo hotel per la prima volta, siamo rimasti piacevolmente sorpresi e soddisfatti. Camere spaziose, essenziali e pulite. Area spa impeccabile, cisi come le due piscine. Buona la colazione che soddisfa ogni esigenza, molto apprezzato anche il menù della cena. La posizione dell'hotel è  strategica, appena fuori dal centro ma con tutti i servizi a portata di mano.\nUnica nota dolente la mancanza di climatizzatore nelle camere al terzo piano/sottotetto che se pur ampie e spaziose, nelle serata ahimè calde, come ci è capitato nelle prime due notti, su fa sentire.\nComunque co",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "Rossano Caporalini"
+        },
+        {
+          "voto": 5,
+          "testo": "Siamo marito e moglie e abbiamo superato i 70 anni. Veniamo in montagna sia in inverno che estate e cerchiamo tranquillità, relax, possibilità di escursioni ormai un po' più semplici. L'Hotel Heubad è perfetto! Ospitalità ottima sotto tutti i punti di vista. Mio marito ha fatto, quasi tutti i giorni, il bagno grazie alle due piscine, io ho goduto del fresco e del silenzio interrotto dal cinguettare degli uccellini e del suono delle campane e avrei approfittato volentieri anche  di massaggi e bagni di fieno che sono prerogative storiche dell'Hotel ma seguendo già delle terapie non volevo interf",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "rosaria melendez"
+        },
+        {
+          "voto": 5,
+          "testo": "Sono oltre 10 anni che passiamo le vacanze in questo albergo e per noi è ormai una seconda casa. Accogliente, pulito e semplicemente straordinario: il posto perfetto per staccare la spina e farsi coccolare. Proprietari fantastici e sempre super disponibili per ogni esigenza. Alla prossima!",
+          "lingua": "it",
+          "quando": "4 mesi fa",
+          "autore": "Alina Arseni"
+        }
+      ],
+      "foto": "g6de294e36c.jpg",
+      "fotoAttribuzione": "Hotel Heubad"
+    },
+    {
+      "id": "g74173144b4",
+      "placeId": "ChIJw7x57ZW7gkcReQmVJY52hYs",
+      "nome": "Boutique Hotel St. Georgen",
+      "sommario": "",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Non sono di lasciare recensioni , ma qui si ci tengo! Siamo stati una settimana ospiti in questo hotel. E devo dire che ci siamo trovati MOLTO BENE. Abbiamo mangiato benissimo,siamo stati nel silenzio , la comodità di partenza per le varie escursioni. Ma sopratutto ,per lui Florian. È stato sempre attento a ogni dettaglio a noi e anche a gli altri ospiti . Ci ha aiutato nelle nostre richieste, ed è sempre stato disponibile. Ci è dispiaciuto andare via,ma sicuramente se torneremo,la nostra tappa è proprio da lui! Grazie Florian per tutto e per la tua gentilezza.\nUn abbraccio Veronica e Anthony",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "Veronica"
+        },
+        {
+          "voto": 5,
+          "testo": "Hotel molto pulito, molto carino,i proprietari gentilissimi e disponibili e la colazione....beh da sola vale il soggiorno...spettacolare",
+          "lingua": "it",
+          "quando": "un mese fa",
+          "autore": "gian luca ruggi"
+        },
+        {
+          "voto": 5,
+          "testo": "Siamo stati ospiti presso la struttura nel mese di aprile…esperienza molto piacevole…bellissimo panorama…gentilezza infinita…la cucina è una “delizia “…super consigliato",
+          "lingua": "it",
+          "quando": "4 mesi fa",
+          "autore": "giuseppe tognarini"
+        }
+      ],
+      "foto": "g74173144b4.jpg",
+      "fotoAttribuzione": "Boutique Hotel St. Georgen"
+    },
+    {
+      "id": "g7a7af3abc2",
+      "placeId": "ChIJwyitE56DgkcRKsem5DvSEeo",
+      "nome": "Parc Hotel Am See",
+      "sommario": "Camere luminose in hotel di lusso con ristorante raffinato, spa, 2 piscine e spiaggia.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Non conoscevo l'Hotel e me ne pento. Chi ama il lago (soprattutto quello di Caldaro) non troverà luogo più incantevole. La vista é spettacolare. Lontano dal traffico si può godere di servizi impeccabili, zona wellness e personale da podio. Massaggi, zona benessere, piscina, terrazza, sala con vista. Passateci e avrete voglia di starci una settimana come minimo. Probabilmente il migliore sul lago. E non lo dico a caso vista la concorrenza ai massimi livelli. Ospitalità Sud Tirolese da applausi. Dovrei continuare per ore. Passateci almeno una volta. Giudicate voi. Voto 10",
+          "lingua": "it",
+          "quando": "7 anni fa",
+          "autore": "Matteo Casarin"
+        },
+        {
+          "voto": 5,
+          "testo": "Abbiamo avuto la possibilità di pranzare presso il ristorante sabato 6 ottobre dell'hotel ed è stata una esperienza davvero piacevole e da ripetere.\nCon il panorama del Lago abbiamo potuto gustare 2 Insalate miste con olive e feta davvero fresche e gustose. A seguire 1 Paillard di vitello con carciofi e mozzarella di bufala e 1 Spiedo di gamberoni su verdure alla griglia e patate all'aneto. Per finire 1 Coppa di lamponi e 1 Coppa di lamponi caldi con gelato cremoso. 2 caffè e 1 bottiglia d'acqua. Totale 108 euro.\nEsperienza da ripetere per quanto è stata piacevole.\nGRAZIE ancora agli amici che",
+          "lingua": "it",
+          "quando": "8 anni fa",
+          "autore": "maurizio tartaglione"
+        },
+        {
+          "voto": 5,
+          "testo": "Posto spettacolare in riva al lago di Caldaro tra i più belli dell'Alto Adige. Colazione a buffet, con ottima scelta tra dolci e salati. Servizio cordiale.",
+          "lingua": "it",
+          "quando": "7 anni fa",
+          "autore": "Stefano Manfredi"
+        }
+      ],
+      "foto": "g7a7af3abc2.jpg",
+      "fotoAttribuzione": "Parc Hotel Am See"
+    },
+    {
+      "id": "g80bd6e25a1",
+      "placeId": "ChIJJZUoy_kSeEcRfs4pEw7OD9w",
+      "nome": "Hotel Fortuna",
+      "sommario": "Camere arredate in modo accogliente in hotel informale con ristorante, bar e vista sulle montagne.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "L’hotel si trova a soli 5 minuti a piedi dal centro di Ortisei. Dispone di un ampio parcheggio. Le camere sono molto pulite, con una splendida vista dalla terrazza. La colazione a buffet è molto abbondante.\nLa Sig.ra Rita ha risposto rapidamente alle mie e-mail, è stata molto gentile e ci ha fornito tante informazioni sia all’arrivo che durante il soggiorno. È una vera padrona di casa.\nRaccomando con piacere questo hotel a chiunque voglia conoscere la zona. Noi sicuramente ci torneremo.",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Mónika Petrovszki"
+        },
+        {
+          "voto": 5,
+          "testo": "Hotel scelto per caso e perché non sono ammessi animali domestici.Molti servizi inclusi come il parcheggio al coperto,ricca colazione al buffet,stanze con terrazzo e bagno privato,panorama fantastico,cassaforte in camera,accesso alla piscina comunale con sauna,accesso ai campi da tennis esterni ed interno presso il Tennis Center di Ortisei,biglietti gratuiti per tutti gli autobus e treni pubblici dell’Alto Adige.Hotel a 300 metri di distanza dal centro ed a 400 metri dagli impianti di risalita per le principali località per escursioni molto piacevoli ed importanti.Al Reception la Sig.ra Rita u",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Uccia 64"
+        },
+        {
+          "voto": 5,
+          "testo": "Struttura molto bella, pulita e ottimamente gestita. Camera con ampio balcone coperto e con splendido affaccio sulle montagne. La proprietaria è stata gentilissima al nostro arrivo (gruppo di 7 persone in 5 camere) e con grandissima disponibilità ci ha aiutato anche per poter trovare un posto nel box per il ricovero e la ricarica delle nostre ebike durante la notte. Ottima colazione e rapporto qualità prezzo. Consiglio e ci tornerò di sicuro.",
+          "lingua": "it",
+          "quando": "4 anni fa",
+          "autore": "Giorgio Farinella"
+        }
+      ],
+      "foto": "g80bd6e25a1.jpg",
+      "fotoAttribuzione": "Hotel Fortuna"
+    },
+    {
+      "id": "g81a44df9e1",
+      "placeId": "ChIJzRZMFIsBeEcRCWCy_i9hb-U",
+      "nome": "Hotel Peintner",
+      "sommario": "Camere semplici in stile alpino in hotel sobrio che offre ristorante rustico e giardino con vista panoramica.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Avrei da scrivere per un ora ,❤️. Prima volta in questo hotel una sorpresa. La proprietaria sempre disponibile per qualsiasi cosa, la cucina ottima. La colazione ottima. La camera perfetta con una vista sulle montagne che mette tranquillità. Consiglio vivamente se volete andare in vacanza e sentirvi come a casa. Grazie di tutto.",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "Anna Ravinetto"
+        },
+        {
+          "voto": 5,
+          "testo": "Si sta proprio bene in questo albergo a conduzione familiare. Circondati da montagne incredibili con possibilità di escursioni spettacolari per noi amanti del trekking. In hotel siamo coccolati da gestori e dai collaboratori che fanno a gara per soddisfare i clienti. Si mangia bene (la mia compagna è vegetariana e ogni giorno hanno sempre qualcosa da proporre per lei). Direi quindi ottimo rapporto qualità prezzo, ottima esperienza. Purtroppo la nostra breve vacanza qui volge al termine... Ma magari torneremo!",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "fabrizio porciani"
+        },
+        {
+          "voto": 5,
+          "testo": "Bellissimo hotel in stile altoatesino,dispone di ampie camere con balcone e un grande parcheggio, se si vuole anche coperto. E tenuto molto bene, pulito e ordinato. La colazione e molto ricca e varia e la cucina ottima specie i dolci. Il personale è gentilissimo e disponibile a ogni richiesta. Colgo l'occasione per salutare Anita sempre gentilissima. Spero di ritornare al più presto.",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Max Grab"
+        }
+      ],
+      "foto": "g81a44df9e1.jpg",
+      "fotoAttribuzione": "Willi Piccolruaz"
+    },
+    {
+      "id": "g82aa62bda7",
+      "placeId": "ChIJq6MlEOq7gkcRGfRVp-DI4p4",
+      "nome": "Inklusivhotel Taushof",
+      "sommario": "Hotel all-inclusive semplice con ristorante, spa e campo da tennis, oltre a piscine coperta e scoperta.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "È la prima volta che ci troviamo presso l'hotel Taushof e con davvero piacere possiamo confermare che ci siamo trovati benissimo ed è uno di quei posti dove torneremo molto volentieri. Dalla reception a tutto lo staff che ci lavora vanno i nostri complimenti per la pulizia delle camere e per il loro comfort, per la cucina ottima a partire dalla colazione molto vasta e tipica del posto, per la disponibilità delle informazioni e soprattutto per l'accoglienza che abbiamo ricevuto fino alla fine del nostro soggiorno. Con noi abbiamo portato i nostri due amici pelosi per vivere appieno il fine sett",
+          "lingua": "it",
+          "quando": "10 mesi fa",
+          "autore": "Monia Costantini"
+        },
+        {
+          "voto": 5,
+          "testo": "Frequento questo hotel da ormai molti anni, e credo non si potrebbe chiedere niente di più da una struttura. Estrema gentilezza ed accortezza dei proprietari e di tutto lo staff, pulizia impeccabile, ottimo cibo ed altissima qualità dei servizi offerti. Hotel dove ci si sente a casa, ma allo stesso tempo coccolati e viziati, consigliatissimo",
+          "lingua": "it",
+          "quando": "7 mesi fa",
+          "autore": "Michael Orwoll"
+        },
+        {
+          "voto": 4,
+          "testo": "Inklusivhotel Taushof si trova nel paesino di Scena in una posizione dominante rispetto a Merano, dando allo stesso l'immagine di un paesaggio da Presepe con tutte le sue lucine in lontananza.\nLa cucina dell' hotel è ottima con ricco buffet. Cena raffinata ed eleganza, ampia scelta di piatti della tradizione con un pizzico di innovazione. Camera pulita forse un po'  piccola per quattro, ma molto accogliente e calda. Personale molto gentile.\nMolto bella l'idea di offrire agli ospiti  la Guest card per raggiungere, con i mezzi pubblici, velocemente i mercatini.\nArea Spa bella ma piscina fredda. ",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Silvia Pasinetti"
+        }
+      ],
+      "foto": "g82aa62bda7.jpg",
+      "fotoAttribuzione": "Inklusivhotel Taushof"
+    },
+    {
+      "id": "g83c4539acf",
+      "placeId": "ChIJJbuumkZ-eEcR-T0SEjl7rNo",
+      "nome": "Hotel Langeshof",
+      "sommario": "Casual lodging offering a free breakfast buffet, plus restaurant & a seasonal outdoor pool.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Una piacevole scoperta.\nAnterivo un paesino che ancora conserva la vera comunità di montagna con persone simpatiche e piene di consigli per la vostra vacanza\nL'hotel è gestito dalla gentilissima signora Adele che con le sue genuine prelibatezze saprà conquistarvi anche a tavola\nNei suoi piatti traspare il suo amore per la cucina e per l'orto di famiglia\nConsigliatissimo\nStefano e Angela",
+          "lingua": "it",
+          "quando": "8 mesi fa",
+          "autore": "AGENDA FARINA"
+        },
+        {
+          "voto": 5,
+          "testo": "Soggiorno eccellente sotto ogni punto di vista. L’ hotel è curato nei minimi dettagli, le camere sono spaziose, pulitissime e molto confortevoli. Il personale è estremamente gentile, professionale e sempre disponibile a soddisfare ogni richiesta con il sorriso. Colazione abbondante e di alta qualità, con prodotti freschi e una grande varietà di scelta. Posizione strategica, perfetta per muoversi comodamente. Un’esperienza davvero piacevole: tornerò sicuramente e lo consiglio vivamente!",
+          "lingua": "it",
+          "quando": "9 mesi fa",
+          "autore": "Roberto Francesco Taurino"
+        },
+        {
+          "voto": 5,
+          "testo": "Abbiamo passato una bellissima settimana in famiglia all'hotel Langeshof. La proprietaria Adele e i figli sono stati super gentili e accoglienti, soprattutto con le nostre due figlie. La cucina è a dir poco sublime,piatti tipici cucinati a regola d'arte. La piscina è la ciliegina sulla torta,ideale per rilassarsi dopo una giornata di camminate. Consigliatissimo per chi vuole trascorrere una settimana di relax in mezzo al verde e al silenzio. Anterivo è una cittadina molto caratteristica, nella settimana in cui abbiamo soggiornato siamo riusciti a partecipare alla sagra di paese, molto diverten",
+          "lingua": "it",
+          "quando": "2 anni fa",
+          "autore": "Stefano De Mitri"
+        }
+      ],
+      "foto": "g83c4539acf.jpg",
+      "fotoAttribuzione": "Hotel Langeshof"
+    },
+    {
+      "id": "g95d88f1818",
+      "placeId": "ChIJM8fo_wATeEcR9refneaS9vI",
+      "nome": "Albergo Stua Catores",
+      "sommario": "Simple property offering free parking & breakfast, plus a restaurant, a lounge & a spa with a sauna.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Abbiamo scoperto questo hotel alcuni anni fa grazie al consiglio di amici e non potevamo chiedere di meglio. La camera si è presentata molto accogliente e impeccabilmente pulita. La cucina è ottima: una menzione d'onore va senza dubbio allo stinco di maiale, davvero squisito! Il personale è stato estremamente disponibile e cordiale, rendendo il soggiorno ancora più piacevole. È stata un'esperienza fantastica da ripetere il prima possibile.",
+          "lingua": "it",
+          "quando": "7 mesi fa",
+          "autore": "Lucia Salvatorelli"
+        },
+        {
+          "voto": 5,
+          "testo": "Ragazzi un posto fantastico siamo stati accolti dalla proprietaria disponibile e gentile. Locale accogliente e confortevole. Si mangia da dio. Ovviamente non fatevi mancare lo stinco che è una vera delizia. Bravi.",
+          "lingua": "it",
+          "quando": "7 mesi fa",
+          "autore": "giuseppe ponzio"
+        },
+        {
+          "voto": 5,
+          "testo": "Eccellente. Ogni volta che veniamo ad Ortisei ci andiamo. Gentilissimi e simpatici. Consiglio lo stinco e i tortelli ai funghi",
+          "lingua": "it",
+          "quando": "9 mesi fa",
+          "autore": "Alberto Rigoni"
+        }
+      ],
+      "foto": "g95d88f1818.jpg",
+      "fotoAttribuzione": "Stua Catores"
+    },
+    {
+      "id": "g99d8fc8975",
+      "placeId": "ChIJ3zqbYO27gkcRcq1R5CGgzMk",
+      "nome": "Hotel Sunnwies Fam. Dosser - Schenna",
+      "sommario": "Hotel informale con bar, ristorante, giardino e spa con piscine coperta e scoperta.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Nel Paese di Scena ho soggiornato in suite con vista panoramica sulla valle.\nOttima cucina.\nCi sono 2 piscine per rinfrescarsi dopo le escursioni",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "Alessandro Marzenta"
+        },
+        {
+          "voto": 5,
+          "testo": "Struttura all’altezza delle più ardue aspettative . Bisogna ringraziare la grande famiglia “Sunnwies” per la grande ospitalità é disponibilità nel dare consigli per una grande esperienza in montagna. Il luogo è molto confortevole  pieno di confort quale la piscina esterna riscaldata ma aggiungo , non per importanza , in ultimo una capacità culinaria alla pari di grandi ristoranti gourmet! Per fortuna che ogni tanto si sceglie bene !!!",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "UMBERTO ROMAGNO"
+        },
+        {
+          "voto": 5,
+          "testo": "la nostra famiglia ha trascorso 3 meravigliose notti in questo hotel dal 23 al 26 dicembre 2024. con ottimo cibo per la vigilia di Natale e il giorno di Natale. le colazioni sono varie. il ragazzo ha fritto omelette, pancake e waffle davanti a noi. La pulizia della camera, la pulizia giornaliera e gli asciugamani sono incredibili al 200%! camera Giardino con vista panoramica sulle montagne. piscina pulita, jacuzzi e piscina all'aperto, saune.-dono molto confortevoli.l'unica cosa senza supervisione .\ngrazie alla famiglia Dosser!!!",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Mari Moro3"
+        }
+      ],
+      "foto": "g99d8fc8975.jpg",
+      "fotoAttribuzione": "Hotel Sunnwies Fam. Dosser - Schenna"
+    },
+    {
+      "id": "ga221bc0cb0",
+      "placeId": "ChIJg-xYxVFweEcRJvQ9LkYfckw",
+      "nome": "Hotel Niggl easy going mounthotel",
+      "sommario": "Hotel essenziale in stile tirolese con camere sobrie, colazione a buffet inclusa, sauna e bar.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Abbiamo trascorso un eccellente soggiorno di coppia in questo hotel a conduzione familiare: il personale ci ha accolto con calore e cortesia e ci ha seguito con professionalità per tutta la permanenza, facendoci sentire subito a casa.\n\nLa posizione è tranquilla e panoramica, con una vista splendida sul Catinaccio e sul Latemar e la struttura risulta ideale come base per escursioni nelle Dolomiti.\n\nLa nostra camera era spaziosa, moderna e perfettamente pulita, dotata di un bel balcone con vista, ampia doccia walk-in e tapparelle elettriche.\n\nDopo le giornate trascorse tra escursion alla scopert",
+          "lingua": "it",
+          "quando": "9 mesi fa",
+          "autore": "Rinaldo Gabbianelli"
+        },
+        {
+          "voto": 5,
+          "testo": "Bel ristorante annesso all'omonimo Hotel. Personale molto gentile, ambiente accogliente, panorama invidiabile. Abbiamo assaggiato la crema di pomodoro al basilico, il tagliere di affettati misti, l'entrecote' di manzo, misto di carni alla griglia, gelato alla vaniglia con lamponi sciroppati caldi, compreso anche il buffet di verdure crude e cotte con  salsine varie ... tutto buonissimo! Prezzo adeguato alla qualità del cibo offerto. Complimenti !",
+          "lingua": "it",
+          "quando": "5 anni fa",
+          "autore": "Daniela Munarolo"
+        },
+        {
+          "voto": 4,
+          "testo": "Una buona pensione, come è d'altra parte facile trovarne da queste parti.\nLa nostra stanza (2 adulti e un bambino) era spaziosa ma forse non ottimizzata per 3 occupanti (il letto aggiunto era in un punto di passaggio), nuovo e funzionale il bagno.\nLa colazione è stata più che soddisfacente, anche se forse non molto varia (poche brioche, formaggi e salumi sempre uguali, ottime le marmellate), la cena sopra le mie aspettative - dopo aver letto alcuni commenti negativi temevo infatti il peggio, ma devo dire che generalmente abbiamo mangiato dignitosamente. Concordo comunque sul fatto che l'aspett",
+          "lingua": "it",
+          "quando": "9 anni fa",
+          "autore": "Andrea"
+        }
+      ],
+      "foto": "ga221bc0cb0.jpg",
+      "fotoAttribuzione": "Niggl Easygoing Mounthotel"
+    },
+    {
+      "id": "ga254e980a6",
+      "placeId": "ChIJe0KWke4UeEcR89BlGDxlnt8",
+      "nome": "Hotel Aaritz",
+      "sommario": "Camere e suite eleganti in hotel montano chic con ristorante rustico e spa con piscina coperta.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Siamo andati un paio di volte a fare un aperitivo, personale super disponibile e gentile, servizio impeccabile e cibo/drinks ottimi. Da tornarci sicuramente !!!",
+          "lingua": "it",
+          "quando": "7 mesi fa",
+          "autore": "Stee_cendron"
+        },
+        {
+          "voto": 1,
+          "testo": "Sono entrata solo per chiedere di poter stare un paio d'ore nella hall consumando qualcosa dal bar e leggendo un libro. La signora della reception guarda il mio barboncino e risponde: \"purtroppo non accettiamo cani\". Le dico che il cane è tranquillo e abituato a viaggiare ma lei impassibile mi invita ad andare al bar accanto. Nel 2025 ancora esistono strutture che non accettano i cani, una vergogna. (Tra l'altro si tratta nel caso specifico di un barboncino nano di 4 kg che dorme tutto il tempo perché ha sempre viaggiato con me ovunque). Davvero molto dispiaciuta.",
+          "lingua": "it",
+          "quando": "9 mesi fa",
+          "autore": "Valentina Perlangeli"
+        },
+        {
+          "voto": 5,
+          "testo": "Settimana perfetta. Hotel super per posizione, pulizia, cortesia. Tutto lo staff attento e disponibile. Ottimo il ristorante, grande la SPA.\nLa stanza grande è pulita.\nAbbiamo prenotato anche per il prossimo anno.\nGrazie per aver contribuito a rendere la settimana impeccabile",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Monica Betti"
+        }
+      ],
+      "foto": "ga254e980a6.jpg",
+      "fotoAttribuzione": "Hotel Aaritz"
+    },
+    {
+      "id": "ga47c420c5f",
+      "placeId": "ChIJa7c9xoRxeEcRpSyKSsDe5zo",
+      "nome": "Hotel Stefaner - Boutique & Wanderhotel",
+      "sommario": "Camere in stile rustico in hotel confortevole con vista sulle montagne, sauna, giardino e deposito sci.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Abbiamo soggiornato all'hotel Stefaner di San Cipriano, nella splendida Val di Tires, e ci siamo trovati davvero molto bene.\nLa camera che ci è stata assegnata era confortevole, dotata di balcone e soprattutto sempre impeccabilmente pulita. Ogni giorno abbiamo trovato un'ottima attenzione alla pulizia e all'ordine.\nMolto buona anche la colazione, servita a buffet, con un'ampia scelta sia di prodotti dolci che salati, in grado di soddisfare tutti i gusti.\nUna nota di merito va sicuramente alla cucina. Tutte le sere siamo stati piacevolmente sorpresi dalla qualità e dalla varietà della cena, com",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "Sergio Sivieri"
+        },
+        {
+          "voto": 5,
+          "testo": "Bellissima esperienza! Camera ottima sia per dimensione sia per pulizia e comfort.\nCibo ottimo! Unico consiglio e nel migliorare la parte dolce della colazione!\nCabinovia a due passi e possibilità di passeggiate direttamente dall’hotel.\nGrazie per l’ospitalità!",
+          "lingua": "it",
+          "quando": "7 mesi fa",
+          "autore": "Luca Balini"
+        },
+        {
+          "voto": 5,
+          "testo": "Trascorso il weekend con la mia compagna\nEsperienza fantastica. Colpiti molto dalla tranquillità del posto. Accolti con cordialità e gentilezza dal personale. Ottimo il menù proposto dallo chef e soprattutto di qualità più che eccellente. Camere impeccabili per pulizia e confort. Grazie dell esperienza a tutti membri dell hotel. Ci rivedremo sicuramente ❤️",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "luigi fino"
+        }
+      ],
+      "foto": "ga47c420c5f.jpg",
+      "fotoAttribuzione": "Hotel Stefaner - Boutique & Wanderhotel"
+    },
+    {
+      "id": "ga7b277b9ad",
+      "placeId": "ChIJ8Xjt9O8UeEcRXpAj-G2E7a8",
+      "nome": "Hotel Plazola",
+      "sommario": "Camere ampie con balcone e vista sulle montagne in hotel moderno con spa e ristorante.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Appena tornati da una settimana di vacanza.\nPulizia, qualità del cibo professionalità del personale di sala e di cucina al top, disponibilità dei proprietari a dare consigli e risolvere eventuali piccoli problemi, veramente ottima struttura dove alloggiare. Se ci aggiungiamo che si trova a venti metri dallo skilift Nives (collegato con il sella ronda), non credo sia facile trovare di meglio a Selva di val Gardena",
+          "lingua": "it",
+          "quando": "6 mesi fa",
+          "autore": "Marco Pulicati"
+        },
+        {
+          "voto": 5,
+          "testo": "Ho frequentato Selva per molti anni e l’hotel Plazola è senz’altro la struttura migliore in cui abbia soggiornato. Ottimo rapporto qualità/prezzo, camere pulitissime e confortevoli, posizione eccellente sia per l’accesso alle piste (incluso il Sellaronda) che per il centro del paese. È possibile usufruire del servizio di mezza pensione, che consiglio vivamente, ed il cibo è sempre di ottima qualità e vi è ampia possibilità di scelta; ottima anche la colazione. Un plauso va poi al personale di sala e di pulizia, sempre gentili e disponibili, e soprattutto alla proprietà dell’hotel (sigg.re Erik",
+          "lingua": "it",
+          "quando": "9 mesi fa",
+          "autore": "David Conti"
+        },
+        {
+          "voto": 5,
+          "testo": "È il secondo anno che torniamo a Selva e soggiorniamo all’Hotel Plazola, consigliatoci la prima volta da amici, ed è sempre un piacere immenso.\nStruttura pulitissima, esteticamente molto bella, tranquilla ma vicinissima al centro del paese (pochi minuti a piedi) a mio parere posizionata in uno dei punti migliori di Selva.\nCamere spaziose, vista dalle ampie finestre eccezionale.\nPersonale eccellente, gentili e riservati, cucina eccellente con menu sempre vari e piatti squisiti.\nHanno una attenzione esemplare verso il cliente.\nPer noi un posto speciale.",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Giulia Perella"
+        }
+      ],
+      "foto": "ga7b277b9ad.jpg",
+      "fotoAttribuzione": "Oreste Riva"
+    },
+    {
+      "id": "gb0aceba4be",
+      "placeId": "ChIJLZ8mm2CegkcRnR39WTokGlk",
+      "nome": "Hotel Hanny",
+      "sommario": "Hotel informale in collina, ristorante di cucina mediterranea e camere con balcone.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Io e il mio compagno abbiamo soggiornato in questa struttura per il weekend del mio compleanno e ce ne siamo innamorati. Trovato per caso perché ci siamo ridotti all’ultimo secondo per trovare un alloggio e all’Hanny si era appena libera una stanza abbiamo prenotato subito. Posizione perfetta, con una vista stupenda che ti calma cuore e mente, in proprietari sono delle persone meravigliose e molto accoglienti, a circa 2 km dal centro e a 50 mt dalla passeggiata lungofiume che ti porta direttamente nel centro storico di Bolzano. Programmiamo di tornare in primavera e sicuramente torneremo a tro",
+          "lingua": "it",
+          "quando": "10 mesi fa",
+          "autore": "Martina Mercatelli"
+        },
+        {
+          "voto": 5,
+          "testo": "Posizione strategica per visitare il centro storico di Bolzano. Risulta inoltre molto comodo per visitare le località vicine a Bolzano. Personale gentilissimo, attento alle esigenze del cliente oltre le nostre aspettative. Consigliato.",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Daniele Pagotto"
+        },
+        {
+          "voto": 5,
+          "testo": "L’hotel anche se un po’ fuori dal centro è estremamente confortevole ed il proprietario è eccezionale, sempre pronto ad assecondare le esigenze degli ospiti.\nHo alloggiato li per una gara di corsa che partiva alle 8 ed avevo bisogno di una colazione al mattino presto: nessun problema, sala colazione aperta alle ore 6!\nDopo la gara, alle ore 15, abbiamo avuto la possibilità di fare una doccia in albergo.\nAvevo anche l’esigenza di mangiare un riso al miele molto presto la mattina e su mia richiesta il proprietario me lo ha cotto la sera prima e lasciato in stanza.\nUltima nota (anche se mangiato ",
+          "lingua": "it",
+          "quando": "4 anni fa",
+          "autore": "gianluca cascioli"
+        }
+      ],
+      "foto": "gb0aceba4be.jpg",
+      "fotoAttribuzione": "Hotel Hanny"
+    },
+    {
+      "id": "gb12105d0fc",
+      "placeId": "ChIJPXO6jb8EeEcRZVoescogx-o",
+      "nome": "Hotel Oberbrunn",
+      "sommario": "Hotel elegante con colazione inclusa, ristorante di lusso e area spa con piscina.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Grazie a Monica, Giorgio, Maddalena, Caterina per l'accoglienza, i consigli dove poter andare i visitari i luoghi. Cucina buonissima. Spa e camere molto confortevoli e curate nei minimi dettagli.\nClaudio e Debora",
+          "lingua": "it",
+          "quando": "4 mesi fa",
+          "autore": "Claudio Miralli"
+        },
+        {
+          "voto": 5,
+          "testo": "Posto bellissimo, posizione molto comoda , personale gentilissimo , la Sign.ra Monica con il marito e la figlia molto disponibili e sempre solari con tutti , i bambini si sono trovati benissimo, cucina ottima come la camera e la pulizia . La piscina super anche la zona relax con la spa . Direi super consigliato  , ci torneremo.",
+          "lingua": "it",
+          "quando": "9 mesi fa",
+          "autore": "Michela Vegini"
+        },
+        {
+          "voto": 4,
+          "testo": "Posto davvero bello, a conduzione famigliare, tutti sempre molto gentili, non fanno mancare nulla in qualsiasi momento.\nSono molto professionali, Monica è molta preparata anche sull’indirizzare le persone nelle varie escursioni.\nL’hotel si trova nel piccolo paesino di Naz, dove regna il silenzio e ci si può rilassare, anche la cucina è ottima e pronta ad ogni evenienza e intolleranza.",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Matteo Furlan"
+        }
+      ],
+      "foto": "gb12105d0fc.jpg",
+      "fotoAttribuzione": "Hotel Oberbrunn"
+    },
+    {
+      "id": "gb640541897",
+      "placeId": "ChIJw223-ioNeEcRSBFxQ2yrl0A",
+      "nome": "Albergo Valentinerhof",
+      "sommario": "Hotel di lusso con bar, ristorante, terrazza e spa con piscine coperta e scoperta.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Abbiamo trascorso tre notti in questo hotel e l’esperienza è stata davvero eccellente. Il servizio è impeccabile e sempre attento, con personale disponibile e cordiale. La zona spa e la piscina sono splendide, perfette per il relax, con una vista spettacolare sullo Sciliar che rende tutto ancora più suggestivo. Nuotare in una piscina riscaldata quando si torna stanchi dalle escursioni è un vero lusso!\nL’atmosfera è molto tranquilla e rilassante, ideale per staccare la spina e rigenerarsi. Complimenti!",
+          "lingua": "it",
+          "quando": "4 mesi fa",
+          "autore": "Lorena B."
+        },
+        {
+          "voto": 5,
+          "testo": "Ci siamo fermati 3 notti per fare trekking sull'Alpe di Susi. La location è ideale (10 min da Compach in macchina) il servizio è impeccabile con camere molto curate che danno sullo Shilliar. Comodissima la formula 3/4 che associa una merenda a colazione e cena. Uno spettacolo quando torni affamato da un lungo trekking. L'ambiente è molto silenzioso e la privacy garantita. Ci siamo trovati benissimo con lo staff che si è dimostrato molto attento ad ogni necessità. Un particolare complimento allo Chef che prepara ogni sera una cena di 5 portate di alto livello. Ci torneremo sicuramente.",
+          "lingua": "it",
+          "quando": "4 mesi fa",
+          "autore": "Massimo D."
+        },
+        {
+          "voto": 5,
+          "testo": "Per caso abbiamo trovato questo hotel da una pubblicità, se tornassimo indietro faremmo la stessa scelta.\nC’è stata la possibilità di usufruire della zona benessere ancora prima del check in, fornendoci tutto il materiale necessario.\nL’ unica nota dolente che l’acqua della piscina era un po’ fredda.\n\nLa camera era pronta prima delle 14, con la roba in camera già sistemata.\nCamera superior molto accogliente, con vista sulle dolomiti sud.\n\nBuffet dei dolci al pomeriggio una vera chicca!\nAbbiamo optato per 3/4 pensione, con cena gourmet eccellente.\n\nDopo cena area relax con camino, divanetti polt",
+          "lingua": "it",
+          "quando": "8 mesi fa",
+          "autore": "Naomi Provenzano"
+        }
+      ],
+      "foto": "gb640541897.jpg",
+      "fotoAttribuzione": "Vita Vital Hotel Valentinerhof"
+    },
+    {
+      "id": "gc22ae2e507",
+      "placeId": "ChIJN7XxidWfgkcRlW6AGPUmTo0",
+      "nome": "Hotel Latemar",
+      "sommario": "Hotel confortevole, sistemazioni informali, ristorante, colazione inclusa, vista monti, sauna e idromassaggio.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Siamo appena tornati dalla vacanza in Alto Adige con la seconda settimana passata presso l'hotel Latemar nella località di Soprabolzano.\nStruttura gestita a livello familiare, con camere spaziose, pulite e silenziose.\nPiscina bellissima, sauna e bagno turco completano la zona relax.\nColazione ottima con dolce e salato e cena in mezza pensione con piatti squisiti e cucinati ottimamente.\nStaff molto cordiale e disponibile.\nComplimenti a tutti e speriamo di tornare anche il prossimo anno!",
+          "lingua": "it",
+          "quando": "2 anni fa",
+          "autore": "Lorenzo Orlandi"
+        },
+        {
+          "voto": 4,
+          "testo": "Hotel molto bello, curato e pulito. La nostra camera era all ultimo piano con il balcone e una bellissima vista sulle montagne. La cosa che ci ha molto deluso è stata la completa assenza di una linea cortesia ( sapone, cuffia, crema etc) praticamente c'era soltanto un flacone di doccia/shampoo e basta. Il cibo è molto buono e ben preparato anche la scelta è minima ( zuppa o primo piatto e un secondo o piatto vegetariano). Il personale e le proprietarie , mamma e figlia, sono ottime padrone di casa. il nostro cagnolino è stato trattato benissimo anche se abbiamo avuto un piccolo malinteso con i",
+          "lingua": "it",
+          "quando": "2 anni fa",
+          "autore": "Egle Castaldi"
+        },
+        {
+          "voto": 5,
+          "testo": "La struttura è molto comoda da raggiungere una volta arrivati con la funivia. C'è solo una salita impegnativa da fare con le valigie. Superato questo, l'ambiente è tranquillo e accogliente. Si mangia bene sia a colazione che a cena. La colazione sia salata che dolce. Le stanze a sud sono panoramiche. La ns aveva un bel balconcino con sdraio, sedie e un piccolo stendino.  Arredo in legno.  Peccato  solo per la moquette. Bellissima la zona benessere con la piscina che dall'interno si apre verso l'esterno sicuramente molto comodo in inverno. Ha un giardino molto curato. Veramente molto bella e co",
+          "lingua": "it",
+          "quando": "2 anni fa",
+          "autore": "Sa Sco"
+        }
+      ],
+      "foto": "gc22ae2e507.jpg",
+      "fotoAttribuzione": "Stefano b."
+    },
+    {
+      "id": "gd2d3aa2b28",
+      "placeId": "ChIJbXSCEk9weEcRZBRiPDwi52s",
+      "nome": "Gasthof/Albergo Löwen",
+      "sommario": "Camere sobrie in hotel informale con ristorante semplice, sauna e parco giochi.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Abbiamo soggiornato nell'Albergo Löwen sia durante la stagione invernale che in quella estiva e ci siamo sempre trovati benissimo. Le camere sono belle e pulite, il ristorante è ottimo e la posizione è ideale. Il valore aggiunto, però, è l'atmosfera: grazie a Luisa e a tutto lo staff, sempre accoglienti e disponibili, ci si sente davvero come a casa. Torneremo sicuramente.",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "fulvio talarico"
+        },
+        {
+          "voto": 5,
+          "testo": "Le camere nuove sono wow!\nProfumo di cirmolo nella stanza e un balconcino affacciato sul bosco molto rilassante.\nLa vicinanza alla strada principale non disturba, gli infissi sono ottimi con addirittura la serranda a tapparella automatica.\nLa posizione è strategica, con fermata dell'autobus esattamente di fronte.\nPosto per le auto in abbondanza per tutti gli ospiti.\nLa cucina è semplice ma con ingredienti di buona qualità.\nGrazie per averci ospitato",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "Leonardo Macchi"
+        },
+        {
+          "voto": 4,
+          "testo": "Signora Luisa e tutto il personale  gentilissimi ( questo  per me è importantissimo), Gasthof pulitissimo,  funzionale e confortevole, cibo ottimo e abbondante.  Mio marito  ha usufruito anche di sauna e infrarossi, molto positivo. Tutto questo compensa ampiamente la posizione non particolarmente panoramica ma comodissima  come punto  di partenza per tante escursioni.  Lo consiglio davvero e ci tornerei volentieri.",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "Adriana Pajetta"
+        }
+      ],
+      "foto": "gd2d3aa2b28.jpg",
+      "fotoAttribuzione": "Gasthof/Albergo Löwen"
+    },
+    {
+      "id": "gd416238a29",
+      "placeId": "ChIJq9lsPu8UeEcRiRCZ7QQA3uQ",
+      "nome": "Hotel Bellevue",
+      "sommario": "Hotel informale in stile chalet con camere rustiche, ristorante, spa e vista panoramica.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Hotel con una ottima posizione, vicina al centro e alle fermate autobus. Ideale per escursionisti con percorsi che partono addirittura vicino l'hotel.\nPulizia impeccabile. Cucina molto buona e varia. I proprietari e il personale sono molto ospitali gentili e disponibili.\nL'area benessere è carina in particolare l'idromassaggio in vasche singole. La veduta sul panorama è unica visto che la struttura si trova leggermente più in alto rispetto al paese.",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "Rosita Scaglione"
+        },
+        {
+          "voto": 5,
+          "testo": "Ho soggiornato all’Hotel Bellevue con un gruppo di amici e ci siamo trovati davvero molto bene.\nL’hotel è curato, accogliente e molto pulito, con un arredamento tipico gardenese che lo rende caldo e piacevole.\nLe stanze sono luminose, silenziose e ben organizzate, ideali per rilassarsi dopo una giornata fuori. Il relax è garantito anche dalla zona spa, una vera toccasana dopo una giornata sugli sci.\nIl menù è molto vario, il cibo è davvero ottimo e sia a colazione che a cena è presente anche un buffet ricco e abbondante.\nA completare il tutto un personale disponibile ed attento, che contribuis",
+          "lingua": "it",
+          "quando": "8 mesi fa",
+          "autore": "Stefano Fognani"
+        },
+        {
+          "voto": 5,
+          "testo": "Ho soggiornato con la mia famiglia in questo meraviglioso hotel, posizione soleggiata e tranquilla, con un panorama davvero suggestivo. L'hotel è a gestione famigliare kelder, molto gentili e disponibili su ogni nostra richiesta. Iniziamo al mattino con un ricco buffet dolci e salato dove c'è davvero di tutto. Per  raggiungere le piste da sci hanno un servizio navetta per l'andata e al ritorno. Al rientro dalla lunga giornata a sciare, un accogliente sauna per rilassarsi.\nLa cena abbiamo trovato tutte le sere un ricco buffet molto vario di antipastini a base di carne, pesce e verdure molto bel",
+          "lingua": "it",
+          "quando": "8 mesi fa",
+          "autore": "Marco Grosso"
+        }
+      ],
+      "foto": "gd416238a29.jpg",
+      "fotoAttribuzione": "Hotel Bellevue"
+    },
+    {
+      "id": "gd9c71f7ca3",
+      "placeId": "ChIJHYYdG-q9gkcRsqkpGkA-Hfk",
+      "nome": "Hotel Gschwangut",
+      "sommario": "Camere, suite e appartamenti accoglienti con balcone in hotel dotato di spa, due piscine e ristorante.",
+      "recensioni": [
+        {
+          "voto": 3,
+          "testo": "Punto di forza di questo hotel  è l'eccellente personale di sala, persone gentilissimi e professionali, la sauna e la sala relax con una bellissima vista sui monti.\nPer la nostra esperienza non possiamo dare un giudizio positivo alla stanza perché, nonostante l'intervento dell'idraulico a detta dell'albergatore,  per tutto il soggiorno abbiamo avuto puzza di fogna provenienti dalla doccia dopo il suo utilizzo. Inoltre, per ben 2 volte abbiamo ritrovato asciugamani e accappatoi sporchi attaccati allo scalda salviette e non sostituiti (premetto che dalla reception ci avevano detto che gli accapp",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Giulio Lo Verso"
+        },
+        {
+          "voto": 4,
+          "testo": "Buon rapporto qualità prezzo. Hotel posto nelle immediate vicinanze del centro di Lana.  Ambienti con arredamenti classici, pulizia nelle camere e nei locali comuni. Piscina e vasca idromassaggio con acqua calda al punto giusto. Personale di sala e reception gentile e disponibile. Buona la cucina tipica tirolese con piatti anche classici italiani. La colazione potrebbe essere migliorata con un buffet più abbondante.",
+          "lingua": "it",
+          "quando": "7 anni fa",
+          "autore": "Michele Casoni"
+        },
+        {
+          "voto": 5,
+          "testo": "Hotel a pochi passi dalla splendida Lana.  All'arrivo colpisce il fascino della piscina dentro un giardino mediterraneo, arricchito da uno specchio d'acqua con tartarughe, qualche simpatica gallina e gli splendidi frutteti circostanti. Atmosfera familiare e cordiale, cibo ottimo e personale gentile. Posizione ottima per escursioni e attività all' aperto. Andare via da qui prepara il cuore alla nostalgia ed alla voglia di ritornarci.",
+          "lingua": "it",
+          "quando": "5 anni fa",
+          "autore": "Mirella Antoniello"
+        }
+      ],
+      "foto": "gd9c71f7ca3.jpg",
+      "fotoAttribuzione": "Hotel Gschwangut"
+    },
+    {
+      "id": "gddcc019ace",
+      "placeId": "ChIJTyATtci7gkcR2n5a6Ofr348",
+      "nome": "Hotel Grafenstein",
+      "sommario": "Hotel esclusivo per una clientela adulta con ristorante, vista sulle montagne e piscine coperta e scoperta.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Si tratta di un hotel adults only collocato nella pittoresca cittadina di Scena. Abbiamo soggiornato nella camera Grafenstein, ristrutturata da poco e con affaccio diretto sulla vallata; sfruttando la posizione alta della struttura si gode di un meraviglioso panorama. Pulizia assolutamente perfetta in ogni ambiente dell’albergo. Servizio accogliente. Abbiamo optato per la mezza pensione per poter girare comodamente durante il giorno, sfruttando anche l’abbonamento ai servizi pubblici fornitoci gratuitamente, quindi posso valutare solo colazione e cena. Tutto molto buono, abbondante e variegato",
+          "lingua": "it",
+          "quando": "un mese fa",
+          "autore": "Loredana Giorgia Dragoni"
+        },
+        {
+          "voto": 5,
+          "testo": "Siamo stati un paio di notti i primi di Dicembre e devo dire siamo rimasti piacevolmente sorpresi l hotel molto bello e tranquillo camere confortevoli e pulitissime, cibo di ottima qualità e curato nei dettagli, lo staff molto cordiale e disponibile...la mattina del mio compleanno mi hanno fatto trovare il tavolo adornato a festa...gesto molto apprezzato. Sicuramente ritorneremo con piacere e lo consigliamo vivamente per chi volesse concedersi una pausa in tranquillità",
+          "lingua": "it",
+          "quando": "10 mesi fa",
+          "autore": "Giusy Lonardi"
+        },
+        {
+          "voto": 5,
+          "testo": "Abbiamo deciso di passare una notte in qst albergo…ci siamo trovati molto bene. Il personale molto cordiale e gentile,e tutti gli spazi della struttura molto belli. La camera silenziosa e calda. Gli spazi comuni molto ben curati. Lo consiglio. Noi non abbiamo fatto camminate ma abbiamo approfittato della sauna e zona relax…tutto molto bello. Da non dimenticare il servizio della cucina. Abbiamo mangiato molto molto bene sia la cena che la colazione!!!",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "elisabetta fedrizzi"
+        }
+      ],
+      "foto": "gddcc019ace.jpg",
+      "fotoAttribuzione": "Hotel Grafenstein"
+    },
+    {
+      "id": "gdf421a92b2",
+      "placeId": "ChIJ5ZyOl38beEcRzj5U86ROhtc",
+      "nome": "Albergo Tulperhof",
+      "sommario": "Camere e suite in stile sobrio in hotel di montagna con colazione e parcheggio inclusi.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Posizione spettacolare con vista valle dalle finestre del maso. Appartamento pulito, ordinato con tutto il necessario. I proprietari molto gentili e sorridenti.",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "ilaria carroli"
+        },
+        {
+          "voto": 5,
+          "testo": "È uno dei migliori albergo ristorante della zona. Luson un piccolo paese ma che degli alberghi eccezionali. Comunque il Tulperhof è situato in alta montagna con una visuale da sballo un panorama unico e da quel.posto si godere della vista del monte putya una meta ambita da tutti per le passeggiate in alta montagna. E da questo albergo si possono vedere gli allenamenti degli atleti che si lanciano col parapendio. La ristorazione tipica del posto con relativo servizio eccellente.",
+          "lingua": "it",
+          "quando": "4 anni fa",
+          "autore": "Francesco Caliendo"
+        },
+        {
+          "voto": 4,
+          "testo": "Siamo andati a trovare i nuovi proprietari dopo 25 anni. Molto migliorato. Vista sempre magnifica",
+          "lingua": "it",
+          "quando": "8 anni fa",
+          "autore": "Donatella Caroli"
+        }
+      ],
+      "foto": "gdf421a92b2.jpg",
+      "fotoAttribuzione": "Gasthof Hotel Tulperhof Lüsen"
+    },
+    {
+      "id": "geb80635efa",
+      "placeId": "ChIJKZPIjyCfgkcRO0x1ZVrhyN4",
+      "nome": "Luis & die Buabm Hotel Restaurant",
+      "sommario": "Camere sobrie, la maggior parte con balcone, in locanda informale con ristorante e vista sulle montagne.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Piccolo hotel molto carino e confortevole a San Genesio, poco distante dai boschi che circondano il paese. Il personale è tutto molto gentile e sorridente, la stanza pulitissima e con tutti i comfort. Colazione abbondante e varia, dolce e salata. Il proprietario-cuoco propone dei piatti molto buoni e ben presentati. C'è una piccola sauna e un'infinity pool al piano alto, da cui si possono vedere le montagne. Consigliato a chi ama la tranquillità e il buon cibo.",
+          "lingua": "it",
+          "quando": "5 mesi fa",
+          "autore": "LUCIA A."
+        },
+        {
+          "voto": 5,
+          "testo": "Un piccolo angolo di puro relax a 10 min da Bolzano. Hotel consigliato da amici, una vera scoperta! Camere molto belle e pulite, stile baita con un tocco di modernità. Il punto forte dell'hotel ovviamente è il ristorante gourmet. Consigliata la degustazione a portate...noi abbiamo scelto 4 portate ad un prezzo giusto direi, 55 euro a testa. Piatti buonissimi, una gioia per il palato! Ciliegina sulla torta è la piccola spa all'ultimo piano....relax puro immerso nel silenzio della valle! 5 stelle meritatissime",
+          "lingua": "it",
+          "quando": "3 anni fa",
+          "autore": "Eliana Trapuzzano"
+        },
+        {
+          "voto": 5,
+          "testo": "Cucina ottima + un bell ambiente per trascorrere e mangiare bene . . .",
+          "lingua": "it",
+          "quando": "6 mesi fa",
+          "autore": "Wilhelm Gregorich"
+        }
+      ],
+      "foto": "geb80635efa.jpg",
+      "fotoAttribuzione": "Luis & die Buabm Hotel Restaurant"
+    },
+    {
+      "id": "gefb24a49af",
+      "placeId": "ChIJC0gFxm5qeEcRauW6ouEfw1Q",
+      "nome": "Croce Bianca Leisure & Spa",
+      "sommario": "Hotel in stile rustico-alpino con ristorante, bar, spa, 2 piscine e palestra.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Prima volta ospiti in questa struttura, ottima accoglienza e servizi ottimi in ogni ambito, pulizia, silenziosità stanze, confort, spa veramente godibile con vista sulle montagne circostanti. Colazione super e massima attenzione da parte di tutto il personale. Veramente di livello e superiore anche alle migliori aspettative. Tutti gli ambienti sono di design, arredati con stile ed eleganza. Complimenti.",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "FRANCESCO CASTAGNOTTO"
+        },
+        {
+          "voto": 5,
+          "testo": "Splendida location. Il servizio impeccabile. La spa molto belle a completa, la signora che la segue molto attenta, simpatica e professionale. Il ristorante offre un menù delizioso, le x\nCamere molto pulite, i letti comodissimi. Il prezzo è giusto per la qualità ed i servizi. In reception professionalita e gentilezza. L'unico neo, bisogna avvisare i clienti che la ricarica veicoli è a pagamento quando viene richiesto. Tornerò sicuramente.",
+          "lingua": "it",
+          "quando": "8 mesi fa",
+          "autore": "Massimiliano Maurig"
+        },
+        {
+          "voto": 5,
+          "testo": "Il mio Hotel del cuore, meraviglioso!! Credo sia l'hotel migliore della Val di Fassa e oltre. Stanze ampie, pulitissime, confortevoli e con il balcone con vista stupenda. La colazione é stratosferica, c'é di tutto e di più, una vera goduria, con lo chef che ti cucina sul momento le uova che preferisci. La Spa fantastica e poi la piscina che dal chiuso si estende all'esterno ( ce ne sono 2), un solarium circondato dal profumo dei pini. C'é la palestra. C'é la possibilità di mangiare anche di sera e il menù é eccellente. I proprietari sono molto cordiali, gentili e soddisfano le esigenze richies",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "angela mileto"
+        }
+      ],
+      "foto": "gefb24a49af.jpg",
+      "fotoAttribuzione": "Croce Bianca Leisure & Spa"
+    },
+    {
+      "id": "gf0892f2421",
+      "placeId": "ChIJ4SldTIR3eEcRqkCA-9wFjhk",
+      "nome": "Panoramahotel Obkircher",
+      "sommario": "",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Soggiorno fantastico!\n​Un vero gioiello di struttura! L'hotel vanta una posizione panoramica bellissima, ideale per rilassarsi. Pulizia eccellente, accoglienza super calorosa e un servizio sempre impeccabile. Nota di merito anche per la cucina, davvero ottima!\n​Una garanzia sotto ogni punto di vista. Torneremo di sicuro!",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "Michela Baldassarri"
+        },
+        {
+          "voto": 5,
+          "testo": "Sono stata in vacanza in questo meraviglioso Hotel 10 gg , la seconda settimana di luglio.\nSono tornata dopo circa 35 anni\ne ho ritrovato tutti i componenti della famiglia  + i nuovi arrivati 😍\nÈ stato davvero emozionante 🥲\n…tutto semplicemente perfetto! Per la prima volta in vacanza sola , con la mia cagnolina mi sono sentita in famiglia e al momento della partenza non ho potuto fare a meno di piangere , triste per la partenza .\nGrazie a tutti voi , siete meravigliosi ! 😍😍😍😍😍😍😍😍😍😍😍",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Donata Secchi"
+        },
+        {
+          "voto": 5,
+          "testo": "Conosco il Panorama hotel da molti anni. La famiglia Pfeifer si migliora di anno in anno. Camere al top, personale sempre attento a soddisfare le esigenze della clientela che viene \"coccolata\" in ogni modo, posizione eccezionale con vista panoramica sul Latemar. Struttura silenziosissima e dotata di svariati confort come sauna e bagno turco. Ottima cucina. Cos'altro dire.....BRAVI! Lo dico ormai da anni",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "STEFANO PICHEZZI"
+        }
+      ],
+      "foto": "gf0892f2421.jpg",
+      "fotoAttribuzione": "Panoramahotel Obkircher"
+    },
+    {
+      "id": "gf666817fb1",
+      "placeId": "ChIJyVOmh4lxeEcRaNsineWEaBg",
+      "nome": "Alphotel Panorama",
+      "sommario": "Hotel confortevole con camere rustiche con balcone e vista sulle montagne, oltre a colazione inclusa.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "🌄 **Un soggiorno da sogno tra le Dolomiti**\n\nHo avuto il piacere di soggiornare all’Hotel Panorama a Tires e non posso che confermare il nome: il panorama è davvero mozzafiato. Situato in una posizione privilegiata, con vista sul massiccio del Catinaccio, l’hotel offre un’atmosfera tranquilla e familiare, perfetta per chi cerca relax e natura.\n\n🛏️ **Camere spaziose e pulite**\nLe stanze sono ampie, ben arredate e curate nei dettagli. La pulizia è impeccabile e il silenzio della zona garantisce un sonno rigenerante.\n\n🍽️ **Cucina semplice ma deliziosa**\nLa cucina è casalinga, genuina e curata.",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Maria Grazia Grisanti"
+        },
+        {
+          "voto": 5,
+          "testo": "La posizione e il panorama sono sicuramente il punto di forza della struttura ma anche il resto non è da meno! Camera pulita e accogliente, cibo sia a colazione sia a cena gustoso e locale, personale molto gentile e disponibile!",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "laura serafin"
+        },
+        {
+          "voto": 5,
+          "testo": "Calorosa e simpatica accoglienza, vista sul Catinaccio impareggiabile, hotel molto curato e spazioso, colazione eccellente e cena genuina, circondato da boschi lontano dal passaggio auto, centro di partenza per bellissime escursioni di ogni difficoltà e malghegenuine. La navetta comodissima porta al punto per prendere vari bus quindi in una settimana non abbiamo usato la macchina. Siamo stati davvero in paradiso. Grazie Rudy !",
+          "lingua": "it",
+          "quando": "3 anni fa",
+          "autore": "Manuela Saya"
+        }
+      ],
+      "foto": "gf666817fb1.jpg",
+      "fotoAttribuzione": "G DC"
+    },
+    {
+      "id": "gf7715c5987",
+      "placeId": "ChIJ4yTQCuF0eEcRzuXKLE_ys2I",
+      "nome": "Hotel Dolomiten",
+      "sommario": "Hotel confortevole con vasca idromassaggio, ristorante, sauna, bar, bagno turco e colazione inclusa.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Consiglio vivamente questo hotel per molteplici motivi fra cui la cura per ogni dettaglio, pulitissimo, zona relax e solarium molto luminosa, colazione Top , conduzione familiare, Katia sempre pronta a consigliarti per il meglio. Potete parcheggiare l auto e dimenticarla, con trenino,bus, ovovia ecc (biglietto che vi fornirà Katia, compreso nella prenotazione) potete fare moltissime escursioni fra boschi e prati, una meraviglia.\nSe non volete muovervi la sera, dopo una bella sauna e bagno turco  potete optare per la cena in hotel , comodo e devo dire anche molto conveniente.\nSicuramente ci tor",
+          "lingua": "it",
+          "quando": "un mese fa",
+          "autore": "Roberta Sambo"
+        },
+        {
+          "voto": 5,
+          "testo": "Questo albergo è l’ospitalità in persona. Struttura recentemente rinnovata, posizione eccellente, gusto finissimo, servizio caldo e amichevole ma non invadente, pulizia perfetta. Ci siamo affezionati a questo posto e di sicuro torneremo. Complimenti a Katia e Helmut per il l’impegno e la passione che mettete nel lavoro.",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "Alfredo Gigliobianco"
+        },
+        {
+          "voto": 5,
+          "testo": "Hotel molto bene tenuto, proprietari di una gentilezza unica, sempre pronti a consigliarti il meglio (per noi che era la prima volta) è stata un valore aggiunto.\nOttima la colazione... grazie di tutto",
+          "lingua": "it",
+          "quando": "9 mesi fa",
+          "autore": "Davide Gamba"
+        }
+      ],
+      "foto": "gf7715c5987.jpg",
+      "fotoAttribuzione": "Hotel Dolomiten"
+    },
+    {
+      "id": "gfcc0452bc4",
+      "placeId": "ChIJE2Ja1MIMeEcRzt8ny4NOifg",
+      "nome": "Hotel zum Wolf - Al Lupo",
+      "sommario": "Hotel accogliente in edificio del XIII secolo con affreschi, camere confortevoli e colazione inclusa.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Hotel molto caratteristico nel centro pedonale di Castelrotto a due passi dalla fermata dei bus, dalla farmacia e da un piccolo supermercato Despar.\nLe camere sono ampie e pulite così come il bagno, dotato di doccia e bidet e Phon per asciugare i capelli.\nLa colazione è molto abbondante e variegata, dal dolce al salato.\nIl personale è molto gentile e disponibile.\nAmpio parcheggio gratuito nel cortile dell'Hotel, altrimenti c'è la possibilità di tenere l'auto nel garage sotterraneo al costo di 10€ al giorno.\nCi siamo trovati veramente molto bene :)",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Daniele Sargiacomo"
+        },
+        {
+          "voto": 5,
+          "testo": "Hotel perfetto per visitare Castelrotto. Situato in pieno centro, proprio a 50 metri dai mercatini Natalizi. Il personale è molto gentile e disponibile.\nLa colazione poi, a buffet, è molto varia, ce n'è per tutti i gusti.\nSuper consigliato!!!",
+          "lingua": "it",
+          "quando": "9 mesi fa",
+          "autore": "Antonio Mastrosimone"
+        },
+        {
+          "voto": 5,
+          "testo": "Ospitalità impeccabile in un affascinante edificio storico situato nel cuore del paese.\nLa colazione è  abbondante e variegata, come solo in queste zone si può trovare: pane fresco di ogni tipo, dolci tradizionali, marmellate artigianali, brioche irresistibili, semi, frutta fresca e numerose opzioni salate.\nLa struttura si trova a pochi passi da tutti i servizi, in particolare dalle navette e dai bus che permettono di raggiungere comodamente non solo l'Alpe, ma anche le splendide città e paesi dell'Alto Adige, come Bolzano, Bressanone e Ortisei, gratuitamente grazie al pass offerto dall'hotel.",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Vivìana Bernardini"
+        }
+      ],
+      "foto": "gfcc0452bc4.jpg",
+      "fotoAttribuzione": "Hotel zum Wolf - Al Lupo"
+    },
+    {
+      "id": "gfea7744a49",
+      "placeId": "ChIJN4skcg-8gkcR1FzNJAbxesE",
+      "nome": "Hotel Walter",
+      "sommario": "Camere accoglienti in struttura confortevole di montagna con ristorante, bar e piscine coperta e scoperta.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Hotel eccellente! Infinita gentilezza e disponibilità di tutto il personale dai proprietari alle cameriere, dal barista alle donne delle pulizie.\n\n-Colazioni abbondanti dolci e salate, cene con varie portate e di qualità eccezionale.\n-Camera confortevole,moderna e sempre pulita.\n-Piscina esterna con sdraio e lettini se il meteo lo permette e diversamente una bella piscina interna dove i miei figli si sono divertiti tantissimo.\n-Una sauna da 50 gradi e una sauna da 90 gradi con ingresso libero ed accesso ad una zona relax.\n-Una bella palestra piccola ma molto funzionale.\n\nHo due gemelli maschio",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Ivan Covais"
+        },
+        {
+          "voto": 4,
+          "testo": "Abbiamo soggiornato (io e mia moglie) una settimana di luglio. Siamo tornati anche quest'anno perchè l'albergo ha un'ottima gestione (famigliare). Daniel e sua madre mettono tutti a proprio agio. La struttura è ben tenuta, il mangiare è buono, vario e curato; dista 10 minuti dal centro di Scena e si può scendere al centro di Merano con una bella passeggiata lungo l'affascinante Passirio... Per quel che riguarda l'esiziale 'rapporto qualità-prezzo', come diceva quel famoso attore in quel famoso film...\"E' OK per me...!\"",
+          "lingua": "it",
+          "quando": "6 anni fa",
+          "autore": "Erminio Zanni"
+        },
+        {
+          "voto": 5,
+          "testo": "Già dai primi momenti passati all' Hotel Walter si trova cortesia, gentilezza e cordialità. Grazie Daniel e allo Staff.....il resto lo dice il panorama, il giardino e l'aria che si vede e si respira dai Vostri balconi. Arrivederci.",
+          "lingua": "it",
+          "quando": "6 anni fa",
+          "autore": "Eugenio Casati"
+        }
+      ],
+      "foto": "gfea7744a49.jpg",
+      "fotoAttribuzione": "Walters Garden Hotel"
+    },
+    {
+      "id": "s01turm",
+      "placeId": "ChIJNfPinN1qnUcR2U_anj_7swc",
+      "nome": "Romantik Hotel Turm",
+      "sommario": "Hotel sofisticato con ristorante, cantina, spa e piscina scoperta.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "sono stato con la moglie e i miei 2 bimbi, anche se consiglio la struttura solo per coppie, ci siamo trovati molto bene! albergo molto pulito, elegante con un personale preparato e sempre disponibile!ho provato la colazione, il pranzo e la cena ed è stato tutto all’altezza di un 5 stelle ! ma ciliegina sulla torta è stata la Spa! toooooop! complimenti continuate così! bravissime anche Besi e Lina le ragazze tutto fare e sempre presenti ..continuate così",
+          "lingua": "it",
+          "quando": "11 mesi fa",
+          "autore": "Roberto Talerico"
+        },
+        {
+          "voto": 1,
+          "testo": "La vista dalla camera sul cimitero è assolutamente terrificante, lanterne e croci, un peccato che un hotel a 5 stelle offra camere come questa. La porta di legno della camera è come entrare in una stalla e non in una stanza. Si sentono tutti i rumori dal corridoio e dal piano superiore perché il soffitto è come carta. Si può letteralmente sentire qualcuno sussurrare dall'alto, per non parlare dei passi, sembra che i cavalli stiano galoppando al piano di sopra. Orribile e una notte insonne. L'unico punto a favore per me è la cordialità del personale.",
+          "lingua": "it",
+          "quando": "11 mesi fa",
+          "autore": "Marko Marić"
+        },
+        {
+          "voto": 5,
+          "testo": "Tornare e scoprire che ancora ci sono tante cose da osservare fa capire che questo hotel è più di un albergo di lusso, è un luogo di grande carattere che non stanca mai!!! Ideale per coccolare occhi e spirito. Bravi!!!!",
+          "lingua": "it",
+          "quando": "9 mesi fa",
+          "autore": "Leti Ciu"
+        }
+      ],
+      "foto": "s01turm.jpg",
+      "fotoAttribuzione": "Romantik Hotel Turm"
+    },
+    {
+      "id": "s02alpina",
+      "placeId": "ChIJnxjCulVseEcRAgzDCQT2-bk",
+      "nome": "Alpina Dolomites",
+      "sommario": "Lussuoso hotel montano con sistemazioni chic, ristorante di lusso, 2 piscine, cigar lounge e spa.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Un ottimo Hotel sulle Alpi di Susi.\nStruttura stupenda, in una posizione fantastica, diretto sulle piste.\nLo staff è tutto molto giovane ma allo stesso tempo preparato e premuroso.\nDalla reception, bar, ristoranti e noleggio sci tutti bravi. (Il noleggio è interno e ben fornito).\nLa camera ed il bagno sono ampi e dal balcone vista sulle Alpi di Susi.\nLa zona Spa è grande e spaziosa. Sia la parte della piscina che là zona saune.\nI ristoranti buoni ma non eccelsi.\nLa cigar room per me che fumo sigari fantastica.\nUnico neo negativo i bimbi che giocano in piscina oltre le 18, qualcuno che controll",
+          "lingua": "it",
+          "quando": "7 mesi fa",
+          "autore": "Martino Spera"
+        },
+        {
+          "voto": 3,
+          "testo": "Premetto che questa recensione nasce da un ritorno da parte nostra in un hotel già frequentato che, rispetto al passato, é sicuramente cambiato, e non in meglio.\nCertamente, posizione e struttura sono letteralmente meravigliosi. Questo è indiscutibile.\nMa siamo tornati in questo resort qualche giorno fa dopo che eravamo già stati altre volte anni fa. E a nostro avviso il resort è peggiorato, sia in alcune scelte estetiche dopo l’ingresso di COMO (era più bello prima nei toni e nei colori più neutri rispetto a questi azzurri grigetti e blu inseriti ora... Ma queste sono cose irrilevanti). Quell",
+          "lingua": "it",
+          "quando": "9 mesi fa",
+          "autore": "chiara"
+        },
+        {
+          "voto": 2,
+          "testo": "Purtroppo non è stata l'esperienza che speravo. Da anni cliente di questo hotel, quando non era ancora parte della catena CO.MO, avevo ricordi molto diversi, di un hotel veramente di lusso, dove regnavano pace ed organizzazione. Non è più così: la spa è un grande parco acquatico con bambini che corrono, urlano e giocano ... non c'è controllo da parte di nessuno ed è tutto demandato al senso civico e di responsabilità delle varie famiglie, con risultati, però, poco soddisfacenti. Una mattina c'era addirittura una famiglia con un cane.... nella spa. Dispiace perchè per anni è stato il fiore all'",
+          "lingua": "it",
+          "quando": "9 mesi fa",
+          "autore": "Alberto"
+        }
+      ],
+      "foto": "s02alpina.jpg",
+      "fotoAttribuzione": "COMO Alpina Dolomites"
+    },
+    {
+      "id": "s03icaro",
+      "placeId": "ChIJ0yMSbckSeEcR_JSh7h80lF8",
+      "nome": "ICARO Hotel",
+      "sommario": "Hotel confortevole con accesso diretto alle piste da sci, ristorante, saune, idromassaggio e piscina coperta.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Hotel meraviglioso con una vista mozzafiato sull'Alpe di Siusi, personale gentilissimo nonchè competente. La palestra (ben equipaggiata) e la SPA rappresentano sicuramente un punto di forza. Un plauso particolare al personale di sala e della cucina nonchè alla Signora massaggiatrice per la sua grande competenza unita alla conoscenza della fisiologia umana. I suoi suggerimenti sono stati dal sottoscritto molto apprezzati",
+          "lingua": "it",
+          "quando": "un mese fa",
+          "autore": "Rosario Spoleti"
+        },
+        {
+          "voto": 5,
+          "testo": "Se volete farvi un regalo e trattarvi bene, venite all'Icaro Hotel.\nCon mia moglie abbiamo trascorso questo ponte del 2 giugno.\nLa struttura è moderna  e molto accogliente,  le camere sono molto curate, rivestite in legno, la nostra era la Monocular, e praticamente tutte hanno la vista sul dolcissimo altopiano e sulle splendide montagne di fronte all'hotel. Solo poche guardano sul retro, con vista comunque molto gradevole. Il personale è veramente  gentile e professionale. In sala ed in cucina lavorano persone veramente molto in gamba. La mezza pensione è,  a nostro  avviso, la combinazione id",
+          "lingua": "it",
+          "quando": "4 mesi fa",
+          "autore": "Carlo Rossi"
+        },
+        {
+          "voto": 5,
+          "testo": "Un sogno ad alta quota: perfezione assoluta all’Hotel Icaro\n\nAbbiamo soggiornato all’Hotel Icaro per un weekend \"tutto al femminile\" in occasione dell’8 marzo (mamma, zia e una bimba di 7 anni) e dobbiamo dire che è stato oltre le aspettative!\nÈ stata un’esperienza magica che ci ha permesso di vivere l’Alpe di Siusi esattamente come desideravamo.\n\nL'hotel si trova direttamente sulle piste ma lontano dagli impianti di massa, una comodità impagabile per chi ama la montagna.\nLa vista dalla camera e dalla sala colazioni abbraccia tutto il comprensorio.\nAbbiamo apprezzato moltissimo la tipologia di",
+          "lingua": "it",
+          "quando": "6 mesi fa",
+          "autore": "Manuela Rosa"
+        }
+      ],
+      "foto": "s03icaro.jpg",
+      "fotoAttribuzione": "ICARO Hotel"
+    },
+    {
+      "id": "s04madonna",
+      "placeId": "ChIJAw7mUcMMeEcRYUkE4SjfkwY",
+      "nome": "Hotel Madonna Alpine & Charm",
+      "sommario": "Hotel elegante con WiFi gratuito, ristorante in stile moderno, bar accogliente e spa con piscina coperta.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Bellissima location recentemente ristrutturata. Grande attenzione riservata ai clienti da parte di tutto il personale, la gestione è comunque familiare e si percepisce. La nostra camera (junior suite harmony) era molto grande con una vista sul massiccio dello Sciliar mozzafiato. Una menzione particolare va riservata alla cucina che vede piatti e sapori totalmente inediti frutto di grande studio e maestria. Molto bene la spa con bagno turco, sauna e grande piscina con nuoto controcorrente. Il tutto è molto curato e la pulizia è eccellente. Assolutamente consigliato.",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "EMANUELA AVANZINI"
+        },
+        {
+          "voto": 5,
+          "testo": "Per la prima volta da quando viaggio, e non è un giorno, se potessi darei a questa struttura 10 stelle! Un servizio di prim'ordine, delle attenzioni che ti riserva una mamma, una cucina strepitosa, un'area wellness pensata per fare stare bene, un giardino grande e attrezzato e tutto questo in un' atmosfera amichevole e mai affettata. Complimenti sinceri per quello che siete riusciti a creare! Grazie per una settimana in cui mi sono sentita una principessa ❤️",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "ALESSANDRA DOMENICHINI"
+        },
+        {
+          "voto": 5,
+          "testo": "Lo consiglio!\nCi siamo trovati veramente bene.\nAspettative pienamente soddisfatte.\nPersonale discreto e professionale\nAmbiente raffinato ma famigliare\nCibo superlativo: una delizia per il palato e per gli occhi\nSpazi adeguati e molto ben tenuti\nPosizione tranquilla",
+          "lingua": "it",
+          "quando": "4 mesi fa",
+          "autore": "Silvia Ghilardi"
+        }
+      ],
+      "foto": "s04madonna.jpg",
+      "fotoAttribuzione": "Hotel Madonna"
+    },
+    {
+      "id": "s05abinea",
+      "placeId": "ChIJZ5L-1NwMeEcRNGZOboEC4gE",
+      "nome": "ABINEA Dolomiti Romantic SPA Hotel",
+      "sommario": "Hotel esclusivo in stile lodge con vista sulle montagne, ristorante e spa con piscina panoramica.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Siamo stati davvero bene!\nNonostante l’impatto iniziale non sia stato eccezionale (struttura adiacente ad un supermercato da un lato e ad un cantiere di fronte) abbiamo avuto modo di ricrederci in poco tempo.\nAbbiamo apprezzato molto la camera e la pulizia in generale, la\ncortesia di tutto il personale, la colazione ottima, il light lunch (dalle 14.30) e la cena davvero di alto livello.\nMolto bella la spa al 1° piano e la piscina panoramica all’ultimo piano.\nBuona scelta di liquori per il dopo cena e simpatia dell’addetto al bar.\nOttimo anche il garage coperto gratuito con posti molto larghi.\n",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "Mario D."
+        },
+        {
+          "voto": 5,
+          "testo": "Già la strada fino ad arrivarci è un pazzesco spettacolo, paesaggi meravigliosi.\nPoi arrivi lì e c’è una bellissima reception ad attenderti con personale super gentile e disponibile, garage privato, ultra easy, camere grandi e ben attrezzate, pulitissime con questo gioco di luci ‘romantic’ suggestivo.\nZona Wellness angolo di paradiso, con zona massaggi che ti addormenti e non te ne accorgi.\nIl rooftop con piscina d’acqua calda con le Dolomiti sullo sfondo e’ quello che più ti lascia a bocca aperta.\nRistorante superlativo e colazione abbondante.\nL’ultima sera ho mangiato una parmigiana di melan",
+          "lingua": "it",
+          "quando": "4 mesi fa",
+          "autore": "Antonio Salvatore"
+        },
+        {
+          "voto": 2,
+          "testo": "Ho prenotato un weekend per l'anniversario con mio marito spendendo anche una cifra non proprio irrisoria ma sembrava stupendo. La camera era molto bello ma c'era 40 gradi senza nemmeno l'aria condizionata; in un hotel del genere con elevate temperature mi aspetto un servizio più elevato o per lo meno riuscire a reperire un ventilatore. Abbiamo portato il cane, ovviamente abbiamo pagato la quota. Nessuno ci ha avvisato (nè al momento della prenotazione, nè in reception) che quel weekend c'era la sagra di paese e facevano i botti ogni due ore (perfino alle 06.00 del mattina con campane e quant'",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "Giada Trevisan"
+        }
+      ],
+      "foto": "s05abinea.jpg",
+      "fotoAttribuzione": "Abinea Dolomiti Romantic SPA Hotel Südtirol"
+    },
+    {
+      "id": "s06seelaus",
+      "placeId": "ChIJnxjCulVseEcRY_AWk4SMjbY",
+      "nome": "Hotel Seelaus",
+      "sommario": "Camere accoglienti dotate di balcone, alcune affacciate sui monti, ristorante e piscina in hotel informale.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Hotel da 4 stelle, ma nel complesso vale oltre 5 stelle.\nCamere stupende, pulizia ottimale, comode e molto accoglienti.\nServizi di ristorante e reception veramente impeccabili da hotel di lusso, grande attenzione al cliente che si sente veramente a casa. Area spa di piccole dimensioni ma di grandissimo carattere.\nIl cibo è favoloso, molto vario e delizioso. Ottima scelta di vini e buffet di primissimo ordine sia a cena che a colazione.\nComplimenti veramente meritatissimi ad ogni membro dello staff, nessuno escluso. Suggerisco questo posto a coloro che hanno bisogno di staccare dallo stress quo",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "Christian"
+        },
+        {
+          "voto": 5,
+          "testo": "È molto più di un hotel: per me è un luogo del cuore. Ogni volta che ho bisogno di staccare è il posto in cui scelgo di tornare.\n\nQui ritrovo sempre il mio equilibrio. Mi sento a casa, accolta con affetto e parte di una grande famiglia. Ogni membro dello staff, nessuno escluso, è speciale e ha la rara capacità di farti sentire una persona speciale. È un'attenzione sincera che difficilmente si trova altrove.\n\nLa pulizia è impeccabile, la cucina è davvero eccezionale e la spa, pur essendo raccolta, è perfetta per rilassarsi e rigenerarsi.\n\nOgni volta che riparto porto con me serenità e la voglia",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "Cristina Lo Verme"
+        },
+        {
+          "voto": 5,
+          "testo": "Ottimo hotel, specialmente la cucina: deliziose colazioni e cene! Atmosfera familiare e accogliente.\nBellissima vista!\n\nSi consiglia l’installazione di un bidet o doccino, al momento mancante nelle camere.",
+          "lingua": "it",
+          "quando": "4 mesi fa",
+          "autore": "Marco Polvani"
+        }
+      ],
+      "foto": "s06seelaus.jpg",
+      "fotoAttribuzione": "Hotel Seel Aus"
+    },
+    {
+      "id": "s07piccolosciliar",
+      "placeId": "ChIJN3HITFRteEcRLkS2ZcgEEGg",
+      "nome": "Piccolo Hotel Sciliar",
+      "sommario": "Hotel confortevole tra le montagne con camere sobrie, piscina coperta, ristorante e colazione inclusa.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Siamo qui solo da un giorno, ma tutto è già interessante, fresco assoluto e tante cose belle.\nA 6 giorni dal nostro arrivo lasciamo questo posto magnifico. La signora Patrizia cordiale, semplice e disponibile così come le ragazze, sappiamo solo il nome della Andrea ma vale per tutte!! Luca con le sue grappe e non solo, lo chef che ha reso le nostre cene una vera e propria scoperta di gusti. (vedete foto) ambiente informale ma attento alla clientela. Le stanze hanno tutto ciò che serve ed il balcone con vista sullo sciliar e sasso piatto regalano ogni mattina, pomeriggio e sera una vista mozzaf",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "Ale Sambu"
+        },
+        {
+          "voto": 5,
+          "testo": "È sempre un piacere tornare in questi luoghi e soggiornare in questo hotel, che offre tutto ciò che serve per staccare dalla routine e trascorrere una splendida vacanza in questo periodo dell'anno.\nUn ringraziamento speciale alla Sig.ra Patrizia, sempre gentilissima e disponibile, e a tutto lo staff per l'accoglienza e la professionalità.\nGrazie davvero a tutti!\nDimenticavo: ho inserito anche una foto panoramica per mostrare la bellezza di questo posto. L'hotel è quello sulla sinistra. 😉",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "Ferdinando Polito"
+        },
+        {
+          "voto": 5,
+          "testo": "Posizione eccellente per tutte le escursioni, camera pulita, si mangia benissimo ed il personale è molto gentile. Per chi cerca un buon punto di appoggio per L'Alpe di Siusi è il posto perfetto.",
+          "lingua": "it",
+          "quando": "4 mesi fa",
+          "autore": "Berto Berto"
+        }
+      ],
+      "foto": "s07piccolosciliar.jpg",
+      "fotoAttribuzione": "Piccolo Hotel Sciliar"
+    },
+    {
+      "id": "s08waldrast",
+      "placeId": "ChIJJwmcZ9ZyeEcRCmno0bV3aro",
+      "nome": "Waldrast Forestside Living",
+      "sommario": "Esclusivo hotel di montagna con colazione e cena incluse, oltre a piscina scoperta e area spa con sauna.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Incantevole struttura sull’Alpe di Siusi, curata in modo eccellente, con camere estremamente confortevoli e un’atmosfera autenticamente di montagna. Per chi, come me, ama questo tipo di sensazioni, è una scelta assolutamente consigliata.\nL’area spa, con piscina esterna riscaldata, rende l’esperienza ancora più speciale e rilassante, nel cuore delle Dolomiti. Ottimo anche il ristorante, così come la colazione, entrambi di altissimo livello.\nUna struttura da consigliare senza esitazioni per una vacanza all’insegna del relax immersi nella natura e nella tranquillità della montagna.",
+          "lingua": "it",
+          "quando": "9 mesi fa",
+          "autore": "Alessio Fabbri"
+        },
+        {
+          "voto": 1,
+          "testo": "Durante il nostro recente soggiorno all’Hotel Waldrast, per una prevista settimana bianca in mezza pensione, abbiamo incontrato una serie di inconvenienti che hanno compromesso notevolmente la nostra esperienza. Purtroppo, a causa di un’imprevista esigenza familiare, ci siamo trovati nella necessità di anticipare la nostra partenza. Nonostante non avessimo effettuato un pagamento anticipato, la nostra richiesta di considerare un adeguamento del prezzo per i servizi non fruiti (quali cene, colazioni e l’accesso alla spa) è stata categoricamente rifiutata.\n\nOltre a ciò, abbiamo riscontrato una q",
+          "lingua": "it",
+          "quando": "2 anni fa",
+          "autore": "Fabio Anzalone"
+        },
+        {
+          "voto": 5,
+          "testo": "Tutto molto bene personale gentilissimo e disponibile camere molto spaziose e pulite.\nOttima la cucina varia e molto curata,bella la spa ma soprattutto la piscina immersa nel verde.\nHotel molto vicino al centro ma nello stesso tempo in una zona molto tranquilla vicina al bosco.\nIdeale x una vacanza rilassante e x staccare la spina.\nSolo un consiglio magari se potete provvedere x installare una struttura x mettere al coperto le auto nel parcheggio sul retro (ad esempio una tettoia) in caso di maltempo.\nGrazie",
+          "lingua": "it",
+          "quando": "4 anni fa",
+          "autore": "Daniele Corbellari"
+        }
+      ],
+      "foto": "s08waldrast.jpg",
+      "fotoAttribuzione": "Waldrast - Forestside Living"
+    },
+    {
+      "id": "s09oswald",
+      "placeId": "ChIJJVsoVNsMeEcReqNTDtEG0lg",
+      "nome": "Hotel Castel Oswald von Wolkenstein",
+      "sommario": "Raffinato hotel montano, vasca idromassaggio panoramica, spa, piscina coperta, ristorante, colazione inclusa.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Eccellente struttura, curata, personale e proprietaria , presenti e disponibili. Ampio giardino, molto curato, così come le aree comuni, idonee per momenti di relax e consumazione dei pasti e della merenda delle 16. Il giudizio espresso per la camera è ovviamente riferito a quella assegnata di 45 m² con due ampi balconi il primo con in  dotazione  di  tavolino e 2 sedie con struttura per stendere ripiegabile, mentre il secondo   con tavolino e due lettini prendi sole dotati di materassino e cuscino integrato, con uno splendido panorama. Piscina coperta e area SPA commisurata alla struttura, co",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "PIER PAOLO DE CHIRICO"
+        },
+        {
+          "voto": 5,
+          "testo": "Esperienza molto positiva! La nostra camera era molto spaziosa e con una vista spettacolare sulle montagne. I locali molto puliti e ben curati. Personale gentile e sempre disponibile. Ottimo cibo e ampia scelta di pietanze. Lo consiglio assolutamente!",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "Elisa Corrà"
+        },
+        {
+          "voto": 5,
+          "testo": "Camera con vista, relax assicurato.\nPersonale super gentile, dai camerieri alla proprietà.\nMolti servizi come piscina e zona wellness al chiuso (costi inclusi nella prenotazione) e idromassaggio e solarium in terrazza.\nParcheggio disponibile e con ricariche per auto elettriche.\nPosizione comoda in meno di 5 minuti si è in centro e si gode immediatamente di accesso a strade esterne per camminate varie.",
+          "lingua": "it",
+          "quando": "4 mesi fa",
+          "autore": "gianpa"
+        }
+      ],
+      "foto": "s09oswald.jpg",
+      "fotoAttribuzione": "Hotel Castel Oswald Von Wolkenstein"
+    },
+    {
+      "id": "s10adlerortisei",
+      "placeId": "ChIJidVshv4SeEcRDTjRtAlL2aY",
+      "nome": "ADLER Dolomiti Spa & Sport Resort",
+      "sommario": "Resort di lusso con camere e suite rustico-chic, colazione inclusa, spa e ristorante.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Hotel che ha fatto la storia della ricettività alberghiera dell'Alto Adige.\nPiù volte rinnovato negli anni, conserva ancora la struttura a torri della ristrutturazione degli anni 80.\nHa una o stupendo giardino che si sviluppa in lunghezza, parallelo alla via principale di Ortisei. Gode di una vista molto suggestiva sul Gruppo Sella e su uno spicchio del Sassolungo.\nPropone camere in gran parte rinnovate e cucina di alto livello, apprezzata più nella tecnica culinaria e nella scelta della materia prima che negli impiattamenti che restano tradizionali.\nHa una centro benessere ampio con diverse p",
+          "lingua": "it",
+          "quando": "4 mesi fa",
+          "autore": "Giorgio Locati"
+        },
+        {
+          "voto": 5,
+          "testo": ".. che dire, l’ADLER Spa Resort Dolomiti, e’ una struttura che, anno dopo anno, continua a rappresentare per me un autentico punto di riferimento.\nPersonalmente, trovare un luogo in cui riuscire davvero a staccare da tutto non è affatto scontato. Eppure, l’ADLER è l’unico posto dove riesco a lasciare alle spalle pensieri, telefoni, preoccupazioni, ritrovando un equilibrio che raramente si riesce a raggiungere altrove.\nUn plauso particolare va a tutto lo staff, sempre cortese, disponibile e preparato, con una menzione speciale per il team delle escursioni: professionisti competenti, appassionat",
+          "lingua": "it",
+          "quando": "4 mesi fa",
+          "autore": "Fabio Ventura"
+        },
+        {
+          "voto": 5,
+          "testo": "l’ADLER é sempre garanzia di qualità, ma il servizio e l’attenzione alla persona lasciano sempre stupiti. É anche forse questo che riesce a creare quell’atmosfera di relax, non devi mai pensare a niente perché pensano a tutto loro dalla colazione al drink dopo cena. Come sempre un soggiorno che ti reimposta l’anima.",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "Giulia “Jules” Marino"
+        }
+      ],
+      "foto": "s10adlerortisei.jpg",
+      "fotoAttribuzione": "ADLER Dolomiti"
+    },
+    {
+      "id": "s11alpingarden",
+      "placeId": "ChIJxX9f0AMTeEcRitHDmDmu19E",
+      "nome": "Alpin Garden Wellness Resort",
+      "sommario": "Hotel montano di lusso con colazione inclusa, spa, due piscine e ristorante raffinato.",
+      "recensioni": [
+        {
+          "voto": 1,
+          "testo": "Esperienza estremamente deludente e assolutamente non all’altezza di un hotel 5 stelle, soprattutto considerando il prezzo di oltre 800 € a notte. Ci aspettavamo un soggiorno di lusso e abbiamo trovato un servizio che, sotto molti aspetti, non raggiunge nemmeno gli standard di strutture di categoria inferiore.\n\nLa SPA è stata la delusione più grande: sul sito vengono proposti molti trattamenti, ma il personale non sembra avere le competenze per eseguirli. Abbiamo prenotato due trattamenti diversi e ricevuto praticamente lo stesso massaggio. Inoltre uno dei massaggiatori ha avuto un atteggiamen",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "Martina Mariagrazia Forzisi"
+        },
+        {
+          "voto": 5,
+          "testo": "Sono tornato dopo un anno: la conferma di un paradiso perfetto (anche con la mia Julia!)\nCi sono tornato a distanza di un anno e l'Alpin Garden Luxury Maison & Spa non solo si conferma una certezza, ma riesce persino a superarsi. Non è un semplice hotel di lusso: è un luogo magico che ti cura dallo stress e ti fa sentire a casa fin dal primo istante. Qui nulla è lasciato al caso e ogni dettaglio è curato in modo maniacale.\nLa vera accoglienza a quattro zampe: il punto più alto va alla gestione dei cani. Troppi hotel dicono di accettare gli animali per poi costringerti a isolarli in stanza. All",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "saverio ciccarone"
+        },
+        {
+          "voto": 5,
+          "testo": "Super hotel! Arredamento di gran classe, camere veramente bellissime, ampie e pulite, bagno enorme con doccia e vasca.\nPersonale gentilissimo, disponibile, professionale, sono ragazzi giovani e lavorano benissimo, sono presenti e pronti a soddisfare ogni richiesta.\nEccezionale la zona spa e la piscina esterna riscaldata, curata, pulita, ottimo lo spazio così come la comodità dei lettini.\nCucina di livello altissimo, piatti tutti buonissimi, cotti alla perfezione e presentati in modo sublime.\nUn hotel super consigliato a dieci minuti a piedi dal centro di Ortisei, bravissimi tutti, da provare e",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "Marco Catelli"
+        }
+      ],
+      "foto": "s11alpingarden.jpg",
+      "fotoAttribuzione": "Alpin Garden Luxury Maison & Spa - Adults Only"
+    },
+    {
+      "id": "s12alpenroyal",
+      "placeId": "ChIJze_axZIUeEcRE05KaxDNj4c",
+      "nome": "Alpenroyal Grand Hotel Gourmet & Spa",
+      "sommario": "Esclusivo hotel di montagna con ristoranti eleganti, piano bar, piscine e spa.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Soggiorno meraviglioso.\nIo e la mia famiglia siamo stati accolti e coccolati da tutto il personale con grande professionalità e gentilezza.\n\nUn ringraziamento speciale al maître Momo, al cameriere Antonio, a Davide responsabile del bar e a Greta, che ha saputo rendere speciali le nostre serate e far sorridere anche il nostro nipotino Gennaro.\n\nQuando un hotel fa sentire una famiglia davvero a casa, soprattutto con dei bambini, significa che dietro c’è passione vera.\nTorneremo sicuramente",
+          "lingua": "it",
+          "quando": "9 mesi fa",
+          "autore": "Serafino Perugino"
+        },
+        {
+          "voto": 5,
+          "testo": "È stata un’esperienza di soggiorno davvero indimenticabile. Viaggio frequentemente in hotel Leading, posso affermare con convinzione che la cordialità e la professionalità dimostrate da questa struttura la collocano senz’altro tra le eccellenze del settore. Desidero esprimere la mia più sincera gratitudine alla famiglia Prinoth, la cui disponibilità è stata costante e sincera per l’intera durata del soggiorno. Il personale della reception si è distinto per competenza e gentilezza, offrendo preziosi suggerimenti sulle baite migliori in cui gustare la cucina locale. L’eleganza e la perfezione de",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "John Rich"
+        },
+        {
+          "voto": 5,
+          "testo": "Un’esperienza straordinaria: lusso, comfort e attenzione ai dettagli.\n\nHo avuto il piacere di soggiornare presso l'Hotel Alpenroyal in qualità di ospite di miei Clienti e posso dire senza esitazione che è stato un soggiorno indimenticabile.\nDall’arrivo alla partenza, ogni dettaglio è stato curato con la massima attenzione, offrendo un’esperienza di lusso autentico.\nLe camere sono eleganti, spaziose e arredate con gusto, con letti incredibilmente confortevoli e una vista mozzafiato sulle montagne che con le loro cime coccolano il centro di Selva Val Gardena.\nLo staff è il vero punto di forza de",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Francesco Ghinelli"
+        }
+      ],
+      "foto": "s12alpenroyal.jpg",
+      "fotoAttribuzione": "Alpenroyal Hotel"
+    },
+    {
+      "id": "s13granvara",
+      "placeId": "ChIJ9XjVTJEUeEcRat7pDySXzxg",
+      "nome": "Granvara Relais & SPA Hotel",
+      "sommario": "Hotel esclusivo che offre spa con vista sulle montagne, ristorante, bar e piscine coperta e scoperta.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Abbiamo soggiornato nel periodo estivo, in camera junior Suite, spaziosa e con vista spettacolare.\nLocation curata in ogni minimo dettaglio, dal ristorante, alle camere, alla zona Spa.\nPersonale accogliente, gentile, sempre disponibile e pronto a soddisfare le esigenze in qualsiasi momento.\nGrazie a tutto questo, mi è sembrato di vivere in un sogno. Non vediamo l'ora di ritornarci.\nGlenda & Giacomo",
+          "lingua": "it",
+          "quando": "un mese fa",
+          "autore": "Glenda"
+        },
+        {
+          "voto": 5,
+          "testo": "Ho soggiornato al Granvara e ho trascorso una splendida vacanza sulle Dolomiti. La struttura è meravigliosa per la posizione invidiabile con una vista stupenda e un impagabile silenzio. Ogni dettaglio è curato e questo rende la permanenza nel resort ancora più piacevole. Il personale è molto cordiale e accogliente, pulizia e ordine sono più che adeguati al livello dell’hotel. L’atmosfera che si respira è rilassante, un luogo di lusso ma familiare. Ho soggiornato in altre strutture di pari livello ma non mi sono mai sentita così accolta. L’area benessere è unica e trovo utile la suddivisione in",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Maria Grazia Graniero"
+        },
+        {
+          "voto": 5,
+          "testo": "Un vero gioiello in Val Gardena! Panorama mozzafiato sulle Dolomiti, camere eleganti e curate nei minimi dettagli. La SPA e le piscine sono straordinarie, perfette per chi cerca relax assoluto. Cucina gourmet eccellente, con piatti ricercati e servizio impeccabile. Personale gentile, professionale e sempre attento. Un soggiorno indimenticabile: torneremo sicuramente!",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Gennaro Ricci"
+        }
+      ],
+      "foto": "s13granvara.jpg",
+      "fotoAttribuzione": "Granvara Relais & SPA Hotel"
+    },
+    {
+      "id": "s14rosaalpina",
+      "placeId": "ChIJt9LEx0o5eEcRGuzlID984rI",
+      "nome": "Rosa Alpina (Rosewood)",
+      "sommario": "Alloggi raffinati in esclusivo hotel montano con ristoranti, spa e piscina coperta.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Hotel più esclusivo di tutta l'area, Aman ha ristrutturato questa iconica struttura, ha riaperto le porte completamente ristrutturato a luglio 2025.Possiede 3 piscine (di cui una family), Spa con tantissimi trattamenti diversi, 2 ristoranti stellati di cui uno asiatico. Merita un soggiorno, almeno una volta nella vita, bellissimo e suggestivo in inverno sotto la neve, ma altrettanto bello anche l'estate, immerso fra le montagne.",
+          "lingua": "it",
+          "quando": "6 mesi fa",
+          "autore": "Massimiliano Moscatelli"
+        },
+        {
+          "voto": 2,
+          "testo": "Siamo stati ospiti esterni all’Hotel Aman di San Cassiano. La hall è molto elegante e spaziosa, con uno stile piacevole, ma purtroppo la delusione è stata grande.\nNella hall c’erano più camini, ma nessuno era acceso, e l’allestimento nel complesso non trasmetteva alcun senso di calore o spirito natalizio. Più che accogliente, l’atmosfera risultava fredda e poco curata.\nAnche il servizio lascia a desiderare. Al momento dell’ordinazione sembrava che il personale non ricordasse cosa avevamo chiesto: metà delle bevande non è arrivata.  Nonostante fossero presenti almeno cinque persone, incluso il ",
+          "lingua": "it",
+          "quando": "10 mesi fa",
+          "autore": "evamaria mayr"
+        },
+        {
+          "voto": 1,
+          "testo": "Fate attenzione al ristorante . Accettano prenotazioni di esterni poi , la sera della cena , ti chiudono le porte e ti telefonano quando pare a loro dicendo che il ristorante non accetta clienti esterni all\n‘Hotel! Professionalità zero",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Maria Caterina Pellegrini"
+        }
+      ],
+      "foto": "s14rosaalpina.jpg",
+      "fotoAttribuzione": "Aman Rosa Alpina"
+    },
+    {
+      "id": "s15colalto",
+      "placeId": "ChIJPXDXTK4_eEcR7V4mAbuSGo8",
+      "nome": "Hotel Col Alto",
+      "sommario": "Sofisticato hotel alpino con cigar lounge, moderno ristorante, spa e piscina coperta.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Uno dei migliori hotel in cui sia mai stato. Davvero, neanche volendo riesco a trovare una critica: camere ampie e comodissime, personale di una disponibilità eccezionale, centro benessere grande e ben organizzato…Cibo, probabilmente la cosa che più ci ha colpito, ottimo e vario sia a colazione che a cena. Siamo stati in estate e la posizione è perfetta per bici/camminate, credo lo sia anche in inverno per sciare.\nNon vediamo l’ora di tornare. Grazie davvero per dei giorni speciali!",
+          "lingua": "it",
+          "quando": "2 anni fa",
+          "autore": "Mattia Martinelli"
+        },
+        {
+          "voto": 5,
+          "testo": "Amo la montagna d'estate e ho soggiornato nel mese di agosto in questa struttura molto accogliente e professionale. Prima cosa: ottimo rapporto qualità-prezzo. La gentilezza del personale ti mette subito a proprio agio e ti fa sentire veramente in \"vacanza\". Camere molto confortevoli, pulite e con una buona vista sulla montagna. Ottimo il servizio bar e la cucina è veramente il top. Colazione con abbondante buffet dolce e salato di prodotti freschi e di qualità. Cena con abbondante buffet e un menù dal quale poter scegliere tra una buona varietà di portate che tiene conto di qualsiasi tipo di ",
+          "lingua": "it",
+          "quando": "4 anni fa",
+          "autore": "Antonio Timpano"
+        },
+        {
+          "voto": 5,
+          "testo": "Una piacevole novità. non avevamo mai soggiornato al Col Alto, Hotel di design in posizione ottima, personale efficiente, gentile e soprattutto sorridente a partire dalla Reception al personale di sala/bar e alle Signore delle pulizie. Colazione e cena con varietà e qualità delle materie prime. che dire della camera...una splendida Suite arredata benissimo con doppi servizi, design e tecnologia. Consigliatissimo!",
+          "lingua": "it",
+          "quando": "2 anni fa",
+          "autore": "marcella rognoni"
+        }
+      ],
+      "foto": "s15colalto.jpg",
+      "fotoAttribuzione": "Hotel Col Alto"
+    },
+    {
+      "id": "s16adlerritten",
+      "placeId": "ChIJDxIqfgl1eEcRo62Y_nh8bzY",
+      "nome": "ADLER Lodge RITTEN",
+      "sommario": "Sistemazioni moderne in hotel di lusso immerso nel bosco con piscina a sfioro, ristorante/bar e spa.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Abbiamo trascorso quattro notti all’ADLER Ritten, nello chalet numero 1 sul laghetto, ed è stata una vacanza davvero incantevole.\n\nLa location è meravigliosa, lo chalet unico ed esclusivo: sauna privata, pontile sul laghetto e vista sulle ninfee. Un posto che ti resta nel cuore.\n\nDurante il soggiorno abbiamo fatto sport, una bellissima uscita in e-bike con una guida molto preparata ed esperta, che ci ha fatto sentire sempre al sicuro nonostante il percorso fosse abbastanza impegnativo. Abbiamo provato anche i massaggi e il personale si è dimostrato davvero competente e attento.\n\nUn ringraziame",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "SARA Tarantino"
+        },
+        {
+          "voto": 5,
+          "testo": "Abbiamo avuto il piacere di vivere un soggiorno semplicemente memorabile presso questa struttura. Fin dal primo momento si percepisce un’organizzazione impeccabile: ogni dettaglio è gestito con precisione e una cura rara.\n\nLa location è splendida, con una vista incantevole sulle montagne del Renon.\n\nLo staff è encomiabile: professionale, preparato e sempre disponibile.\n\nLa pulizia è ai massimi livelli, mentre la proposta culinaria si distingue per qualità e raffinatezza, con piatti curati e gustosi.\n\nLa zona spa è completa e perfettamente organizzata: piscina interna ed esterna con vista, pale",
+          "lingua": "it",
+          "quando": "6 mesi fa",
+          "autore": "Ervis Hasaj"
+        },
+        {
+          "voto": 5,
+          "testo": "Ogni anno questa struttura riesce a migliorarsi, introducendo sempre qualche piacevole novità che rende il soggiorno ancora più speciale.\n\nLa location è semplicemente splendida e viene gestita in modo magistrale da Carmen, sempre sorridente, empatica e disponibile ad accogliere ogni esigenza degli ospiti, e da Hannes, professionale, competente e dotato di una grande creatività.\n\nIl ristorante è un vero punto di forza: Paul e Andrea Bezerra lo guidano in maniera impeccabile, con grande attenzione alla qualità del servizio, alle esigenze degli ospiti e a ogni tipo di allergia o intolleranza alim",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "Andrea Buonomini"
+        }
+      ],
+      "foto": "s16adlerritten.jpg",
+      "fotoAttribuzione": "ADLER Ritten"
+    },
+    {
+      "id": "s17holzner",
+      "placeId": "ChIJyU9hFtWfgkcRc9NitfwtD9I",
+      "nome": "Parkhotel Holzner",
+      "sommario": "Hotel elegante con colazione inclusa, ristorante ampio, spa, piscine e campo da tennis.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Una Gemma dell'Ospitalità\nHo appena concluso un soggiorno indimenticabile in questo hotel e non posso che esprimere la mia più totale soddisfazione. Fin dal check-in, l'accoglienza è stata impeccabile: il personale si è dimostrato estremamente cortese, professionale e sempre disponibile a soddisfare ogni nostra richiesta con straordinaria efficienza.\nLa camera era semplicemente perfetta: spaziosa, arredata con gusto raffinato e mantenuta in condizioni di pulizia impeccabili. Ogni dettaglio era curato nei minimi particolari, dal comfort del letto alla modernità dei servizi. L'ambiente generale ",
+          "lingua": "it",
+          "quando": "10 mesi fa",
+          "autore": "Sergio Cairati"
+        },
+        {
+          "voto": 5,
+          "testo": "E' un albego di montagna che si distingue da tutti gli altri, è moderno? Nell'aspetto no, ma all'atto pratico sì. Ha uno stile \"montagnino\", no, perchè architettonicamente richiama uno stile liberty che si distingue da tutti.\nPiscina riscaldata interna/esterna, saune per famiglie, saune per adulti.\nFood & beverage di livello.\nHo apprezzato la possibilità di ricaricare l'auto.\nMentre si soggiorna, l'auto non serve. A 10 metri dall'albergo c'è la fermata del treno che permette di spostarsi comodamente.\nAltra cosa che ho apprezzato è la vista: Sasso Lungo-Piatto, Catinaccio, Sciliar tutte davanti",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Thomas Bertanzi"
+        },
+        {
+          "voto": 5,
+          "testo": "Un bellissimo Hotel dei primi del 900 conosciuto come il migliore della zona. Tutto è organizzato nei minimi particolari sia per una clientela giovanissima (bambini piccoli) che per una clientela anziana. Grande parco, piscine, zona lettura in mezzo a un grande  prato perfettamente rasato oppure nei salini interni. 2 ristoranti famosi per l'eccellenza dei piatti preparati che per la qualità. (1 Stella Michelin x il ristorante 1908)\nGrandi buffet dal breakfast fino a sera. C'è 1 SPA di rilievo con sauna etc. Corsi di yoga, pilates, acqua gym.... serate sempre speciali e curate.\nCamere ampie, id",
+          "lingua": "it",
+          "quando": "2 anni fa",
+          "autore": "Cristina de Micheli"
+        }
+      ],
+      "foto": "s17holzner.jpg",
+      "fotoAttribuzione": "Parkhotel Holzner"
+    },
+    {
+      "id": "s18laurin",
+      "placeId": "ChIJJRbJqnCegkcRs9ZSDXy7zFM",
+      "nome": "Parkhotel Laurin",
+      "sommario": "Elegante hotel storico con camere e suite raffinate, ristorante elegante e piscina scoperta.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Hotel meraviglioso e personale gentilissimo: ho soggiornato per lavoro e la camera non solo era splendida e spaziosa (camera doppia uso singolo), ma molto pulita e curata in ogni dettaglio, specialmente il bagno. Letto (singolo) molto comodo e colazione molto varia, ricca e con prodotti di alta qualità. Sicuramente ci tornerò e lo consiglio caldamente!",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "Luca Bagatin"
+        },
+        {
+          "voto": 5,
+          "testo": "Il lounge bar più bello di Bolzano, ma non solo. Ambiente curato, proposte ricercate, servizio attento. Personalmente sono un habitué, quindi forse di parte, ma è un locale del quale proprio non riesco a fare a meno. Un ringraziamento speciale a Christian, semplicemente perfetto nella cura del cliente.",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "L B"
+        },
+        {
+          "voto": 5,
+          "testo": "Abbiamo soggiornato in questo hotel durante una visita ai mercatini natalizi di Bolzano.\nL'hotel si trova vicinissimo alla stazione ed al centro storico (Piazza Walther).\nCi sono state offerte due stanze molto spaziose e fantastiche (sullo stesso piano).\nLa cucina è tipica dell'Alto Adige Südtirol.\nÈ presente una piscina esterna riscaldata ed una nuova sauna.\nIl parco interno è molto grande e favoloso.\nL'albergo dispone anche di un elegantissimo bar interno.\nGiudizio: eccellente (il massimo che posso fornire)",
+          "lingua": "it",
+          "quando": "8 mesi fa",
+          "autore": "Danilo Melotto"
+        }
+      ],
+      "foto": "s18laurin.jpg",
+      "fotoAttribuzione": "Parkhotel Laurin"
+    },
+    {
+      "id": "s19engel",
+      "placeId": "ChIJSabfF1ZweEcReZaH5rh7cTw",
+      "nome": "Engel Gourmet & Spa",
+      "sommario": "Hotel di lusso con vista sulla montagna, camere raffinate e un ristorante rinomato, Spa e 2 piscine.",
+      "recensioni": [
+        {
+          "voto": 5,
+          "testo": "Posto meraviglioso, personale davvero disponibile e cortese. È la nostra seconda esperienza all’ Engel e sono sicura che non sarà l’ultima. Ci hanno coccolati dall’inizio alla fine venendo incontro a tutte le nostre esigenze e a quelle dei nostri bambini. Ci hanno consigliato i percorsi più adatti a noi e le esperienze da non perdere. Il cibo è superlativo e un plauso speciale va alla colazione. Non è solo un hotel ma una seconda casa per noi.",
+          "lingua": "it",
+          "quando": "4 mesi fa",
+          "autore": "Laura Giorgi"
+        },
+        {
+          "voto": 4,
+          "testo": "La vacanza è andata bene, ho solo 2 suggerimenti:\n1) le vespe in piscina sono un enorme problema, fate di tutto per eliminarle. In altre strutture ho visto trappole simili ad alveari che attirano le vespe e non le fanno più uscire.\n2) rendere più vario (magari anche con salumi e formaggi) il light lunch per chi ha più appetito.",
+          "lingua": "it",
+          "quando": "2 mesi fa",
+          "autore": "Alessandro Tarin"
+        },
+        {
+          "voto": 5,
+          "testo": "Premetto che viaggiare con una sedia a rotelle non è per niente facile ma in questo hotel abbiamo trovato il massimo confort e disponibilità. Staff gentilissimo, camera stupenda, cibo di alto livello. Piscina esterna e interna riscaldate a puntino. Spa nuova di zecca…relax e pace allo stato puro. Ringrazio tutti perché ci siamo rigenerati…\nPer raggiungere il top suggerirei di migliorare l’ascensore ed eliminare quei pochi gradini che portano alla piscina interna…\nTutto 🔝",
+          "lingua": "it",
+          "quando": "3 mesi fa",
+          "autore": "Raffaella Fiananese"
+        }
+      ],
+      "foto": "s19engel.jpg",
+      "fotoAttribuzione": "engel gourmet & spa"
+    },
+    {
+      "id": "s20tyrolfunes",
+      "placeId": "ChIJs7-vbwUReEcRsM2M84okMcE",
+      "nome": "Hotel Tyrol Dolomites Slow Living",
+      "sommario": "Camere e suite confortevoli con balcone in hotel informale con ristorante, vasca idromassaggio e piscina.",
+      "recensioni": [
+        {
+          "voto": 4,
+          "testo": "Tutto molto bene,\nBella la camera, buono il cibo ed il servizio.\nUn applauso a “Bullo” il nome che ho dato al gattone che gira per il patio.\nPiccoli nei come in tutte le strutture, ma tanti agi e pregi.\nMenzione di merito all’idromassaggio in giardino vista paradiso.\nP.S.\nMa la bontà dei canederli?",
+          "lingua": "it",
+          "quando": "4 mesi fa",
+          "autore": "Andrea Fantini"
+        },
+        {
+          "voto": 1,
+          "testo": "Una settimana fa ho prenotato telefonicamente un soggiorno per agosto. La cortese signora con cui ho parlato mi ha chiesto se potevo anticipare l' arrivo di un giorno, dato che in caso contrario quel giorno la stanza sarebbe rimasta libera. Non mi era possibile, ma la signora ha detto che non era un problema. Abbiamo preso gli accordi necessari. Ma la mail di conferma non è mai arrivata, nonostante un mio sollecito. Il punto è che la prenotazione è stata effettuata, e poi evidentemente rimangiata. Consiglio quindi ai potenziali clienti di andare in vacanza quando conviene all' albergo, per evi",
+          "lingua": "it",
+          "quando": "7 mesi fa",
+          "autore": "Roberto Romani"
+        },
+        {
+          "voto": 5,
+          "testo": "Soggiorno impeccabile sotto ogni aspetto! Appena arrivati siamo stati accolti con un sorriso e una grande professionalità dal personale della reception, sempre disponibile e attento ad ogni nostra richiesta. La camera era spaziosa, arredata con gusto e, soprattutto, di una pulizia straordinaria, quasi maniacale. La colazione a buffet offriva una vasta scelta di prodotti freschi e deliziosi, la cena con menù alla carta strepitosa e la posizione dell'hotel è semplicemente perfetta. Un'esperienza davvero positiva, che ci ha fatto sentire coccolati e a casa. Non vediamo l'ora di tornarci. Grazie A",
+          "lingua": "it",
+          "quando": "un anno fa",
+          "autore": "Claudio Silvestri"
+        }
+      ],
+      "foto": "s20tyrolfunes.jpg",
+      "fotoAttribuzione": "Hotel Tyrol Dolomitesslowliving"
+    }
+  ]
+}
