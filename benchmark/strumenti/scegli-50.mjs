@@ -3,10 +3,11 @@
    Legge: strutture-grezze.json (Places) + social-homepage.json (link social)
    Scrive: strutture-50.json (schema hub) + strutture-50.md (da leggere)
 
-   Il bersaglio dell'hub: struttura che LAVORA BENE (Google alto, molte
-   recensioni) ma COMUNICA MALE (social assenti o non presidiati). Ha i soldi
-   e ha il problema. Fuori fascia: 5★ lusso e grandi resort (già con agenzia),
-   garni/pensioni/residence (non reggono una fee da 10k/mese).
+   Entra tutto il bacino, ordinato. Il bersaglio sta in cima: struttura che
+   LAVORA BENE (Google alto, molte recensioni) ma COMUNICA MALE (social
+   assenti o non presidiati) — ha i soldi e ha il problema. Fuori restano solo
+   garni/pensioni/residence e chi su Google lavora male; le 5 stelle entrano
+   ma segnate. Stringere la lista tocca a chi fa outreach, non a questo file.
 
    Quello che NON sappiamo e non inventiamo: le stelle, la stagionalità, i
    follower. Escono "Non classificato" / "Da verificare" e si compilano in hub.
@@ -21,7 +22,10 @@ const grezzo = JSON.parse(fs.readFileSync(path.join(DATI, "strutture-grezze.json
 const socialFile = path.join(DATI, "social-homepage.json");
 const soc = fs.existsSync(socialFile) ? JSON.parse(fs.readFileSync(socialFile, "utf8")) : { strutture: [] };
 const SOC = new Map(soc.strutture.map(s => [s.placeId, s]));
-const QUANTE = Number(process.argv[2]) || 50;
+/* Nessun tetto: entra tutto il bacino. La rosa non la stringiamo noi, la
+   stringe chi fa outreach, che ha il contesto per farlo. Un numero si puo'
+   ancora passare da riga di comando, per guardare solo le prime N. */
+const QUANTE = Number(process.argv[2]) || Infinity;
 
 /* Il raccolto di ottobre e' precedente alle quattro aree: ha un centro solo,
    Siusi, e nessun campo "area". Glielo attribuiamo qui, senza inventare: tutto
@@ -143,7 +147,7 @@ fs.writeFileSync(path.join(DATI, "strutture-50.json"), JSON.stringify({
   nonSappiamo: "Stelle, stagionalità e follower: da compilare in hub. Un social non trovato dal bot è DA VERIFICARE, non assente.",
   bersaglio: STELLE._bersaglio,
   bacino: bacino.length, fuoriBacino: fuori.length,
-  quante: Math.min(QUANTE, inGioco.length), fuoriFascia: fuoriFascia.length,
+  quante: inGioco.length, fuoriFascia: fuoriFascia.length,
   strutture: scelte.map(r => {
     const s = r.s || {};
     const social = {};
@@ -194,7 +198,7 @@ const riga = r => "| " + [
 ].join(" | ") + " |";
 
 fs.writeFileSync(path.join(DATI, "strutture-50.md"),
-  "# Le " + Math.min(QUANTE, inGioco.length) + " strutture in gioco, piu' " + fuoriFascia.length + " fuori fascia\n\n" +
+  "# Le " + inGioco.length + " strutture in gioco, piu' " + fuoriFascia.length + " fuori fascia\n\n" +
   "**Fonte**: Google Places API (New), raccolto il " + grezzo.raccoltoIl + " · **social**: link letti dalle homepage.\n\n" +
   "**Aree**: " + ZONE.aree.map(a => a.nome + " (" + scelte.filter(r => areaDi(r) === a.id && !cinqueStelle(r)).length + ")").join(" · ") + "\n\n" +
   "**Bacino**: " + bacino.length + " hotel entro " + MAXKM + " km dal centro della propria area, almeno " + MINRAT + "★ e " + MINREC +
@@ -208,7 +212,7 @@ fs.writeFileSync(path.join(DATI, "strutture-50.md"),
   "| Struttura | Comune | Area | Distanza | Google | Social in homepage | Presel. |\n|---|---|---|---|---|---|---|\n" +
   scelte.map(riga).join("\n") + "\n");
 
-console.log("Bacino: " + bacino.length + " · scartate: " + fuori.length + " · in gioco: " + Math.min(QUANTE, inGioco.length) + " · 5 stelle fuori fascia: " + fuoriFascia.length);
+console.log("Bacino: " + bacino.length + " · scartate: " + fuori.length + " · in gioco: " + inGioco.length + " · 5 stelle fuori fascia: " + fuoriFascia.length);
 console.log("Entrate dalla porta piccola (" + MINREC_PICCOLE + "-" + (MINREC-1) + " recensioni, \u2265" + MINRAT_PICCOLE + "\u2605): " + scelte.filter(piccolaMaBuona).length);
 console.log("Fra le scelte — senza sito: " + scelte.filter(r => !r.sito).length +
             " · nessun social in homepage: " + scelte.filter(r => r.sito && r.s && r.s.trovati === 0).length +
