@@ -76,44 +76,50 @@ def glow(cx, cy, rx, ry, gamma=1.4):
 CSS = f"""
 @font-face{{font-family:"Overused Grotesk";src:url("font/OverusedGrotesk-SemiBold.ttf");font-weight:600}}
 @font-face{{font-family:"Overused Grotesk";src:url("font/OverusedGrotesk-Book.ttf");font-weight:400}}
-:root{{--o:{ORANGE};--k:{BLACK};--c:{CHARCOAL};--s:{SILVER};--w:{OFFW}}}
+/* valori presi dal sito ydg-anteprima: --orange #FF7900, --dark #1A1A1A, --dark-2 #111111,
+   grigio dei testi #a9a9a6, titoli interlinea 1.03 e spaziatura -.04em, etichette .075em, raggi 18/24/100 */
+:root{{--o:{ORANGE};--k:{BLACK};--k2:#111111;--c:{CHARCOAL};--g:#a9a9a6;--s:{SILVER};--w:{OFFW}}}
 @page{{size:1920px 1080px;margin:0}}
 html,body{{margin:0;padding:0}}
 body{{font-family:"Overused Grotesk",Inter,Arial,sans-serif;font-weight:400;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 .slide{{width:1920px;height:1080px;position:relative;overflow:hidden;break-after:page;box-sizing:border-box}}
-.dark{{background:var(--k);color:var(--w)}} .light{{background:var(--w);color:var(--k)}} .orange{{background:var(--o);color:var(--k)}}
-.hdr{{position:absolute;top:58px;left:120px;right:120px;display:flex;justify-content:space-between;align-items:center;z-index:2}}
-.hdr svg{{height:32px;width:auto;display:block}}
-.dark .hdr svg{{color:var(--w)}} .light .hdr svg,.orange .hdr svg{{color:var(--k)}}
-.meta,.ftr{{font-size:20px}}
-.dark .meta,.dark .ftr{{color:var(--s)}} .light .meta,.light .ftr{{color:var(--c)}} .orange .meta,.orange .ftr{{color:var(--k)}}
-.ftr{{position:absolute;bottom:54px;left:120px;right:120px;display:flex;justify-content:space-between;z-index:2}}
+.dark{{background:var(--k);color:var(--w)}} .deep{{background:var(--k2);color:var(--w)}}
+.light{{background:var(--w);color:var(--k)}} .orange{{background:var(--o);color:var(--k)}}
+.hdr{{position:absolute;top:64px;left:128px;right:128px;display:flex;justify-content:space-between;align-items:center;z-index:2}}
+.hdr svg{{height:30px;width:auto;display:block}}
+.dark .hdr svg,.deep .hdr svg{{color:var(--w)}} .light .hdr svg,.orange .hdr svg{{color:var(--k)}}
+.meta,.ftr{{font-size:18px;letter-spacing:.01em}}
+.dark .meta,.dark .ftr,.deep .meta,.deep .ftr{{color:#6f6f6c}} .light .meta,.light .ftr{{color:#8a8a86}} .orange .meta,.orange .ftr{{color:var(--k)}}
+.ftr{{position:absolute;bottom:60px;left:128px;right:128px;display:flex;justify-content:space-between;z-index:2}}
 .ftr b{{font-weight:600}}
-.box{{position:absolute;top:178px;left:120px;right:120px;bottom:130px;z-index:2}}
-.eye{{font-weight:600;font-size:25px;letter-spacing:.14em;text-transform:uppercase;display:flex;align-items:center;gap:14px}}
-.dark .eye{{color:var(--o)}} .light .eye,.orange .eye{{color:var(--k)}}
-.light .eye::before{{content:"";width:14px;height:14px;background:var(--o);display:block}}
-h1{{font-weight:600;font-size:50px;line-height:1.12;margin:16px 0 0;letter-spacing:-.005em}}
-.lead{{font-size:28px;line-height:1.42;margin:20px 0 0;max-width:1300px}}
-.dark .lead{{color:var(--s)}} .light .lead{{color:var(--c)}}
-.big{{font-weight:600;font-size:130px;line-height:1.0;letter-spacing:-.02em}}
+.box{{position:absolute;top:168px;left:128px;right:128px;bottom:124px;z-index:2}}
+.eye{{font-weight:600;font-size:18px;letter-spacing:.075em;text-transform:uppercase;color:var(--o)}}
+.light .eye{{color:#B35400}}
+h1{{font-weight:600;font-size:74px;line-height:1.04;letter-spacing:-.04em;margin:22px 0 0}}
+h1 .o{{color:var(--o)}}
+.lead{{font-size:25px;line-height:1.5;margin:22px 0 0;max-width:1150px;color:var(--g)}}
+.light .lead{{color:#6b6b67}}
+.big{{font-weight:600;font-size:130px;line-height:1.0;letter-spacing:-.045em}}
 .o{{color:var(--o)}}
-.note{{font-size:20px;line-height:1.4}}
-.dark .note{{color:var(--s)}} .light .note{{color:var(--c)}}
+.note{{font-size:19px;line-height:1.5;color:var(--g)}}
+.light .note{{color:#7c7c78}}
 ul.l{{list-style:none;margin:0;padding:0}}
-ul.l li{{font-size:28px;line-height:1.38;padding:0 0 18px 34px;position:relative}}
-ul.l li::before{{content:"";position:absolute;left:0;top:15px;width:12px;height:12px;border-radius:50%;background:var(--o)}}
-.tight li{{padding-bottom:9px !important;font-size:25px}}
+ul.l li{{font-size:23px;line-height:1.45;padding:0 0 15px 30px;position:relative;letter-spacing:-.005em}}
+ul.l li::before{{content:"";position:absolute;left:0;top:12px;width:9px;height:9px;border-radius:50%;background:var(--o)}}
+.tight li{{padding-bottom:9px !important;font-size:21px}}
 .orange ul.l li::before,.card.or ul.l li::before{{background:var(--k)}}
-.card{{border-radius:18px;padding:40px 44px;box-sizing:border-box}}
-.card.k{{background:var(--k);color:var(--w)}} .card.c{{background:var(--c);color:var(--w)}} .card.or{{background:var(--o);color:var(--k)}}
-.card h3{{font-weight:600;font-size:28px;margin:0 0 22px}}
-.k .sub,.c .sub{{color:var(--s)}}
-.sub{{font-size:20px;line-height:1.35}}
-.grid{{display:grid;gap:32px}}
-.num{{font-weight:600;font-size:96px;line-height:.9;color:var(--o);letter-spacing:-.02em}}
-.tag{{display:inline-block;font-weight:600;font-size:20px;letter-spacing:.12em;text-transform:uppercase;padding:9px 18px;border-radius:999px}}
-.kpi{{font-weight:600;font-size:50px;line-height:1;color:var(--o)}}
+.card{{border-radius:24px;padding:36px 40px;box-sizing:border-box}}
+.card.k{{background:var(--k2);color:var(--w)}} .card.c{{background:#222220;color:var(--w)}} .card.or{{background:var(--o);color:var(--k)}}
+.card h3{{font-weight:600;font-size:26px;line-height:1.1;letter-spacing:-.02em;margin:0 0 16px}}
+.k .sub,.c .sub{{color:var(--g)}}
+.sub{{font-size:18px;line-height:1.45}}
+.lab{{font-weight:600;font-size:16px;letter-spacing:.075em;text-transform:uppercase}}
+.grid{{display:grid;gap:24px}}
+.num{{font-weight:600;font-size:72px;line-height:.9;color:var(--o);letter-spacing:-.045em}}
+.kpi{{font-weight:600;font-size:46px;line-height:1;color:var(--o);letter-spacing:-.04em}}
+.freccia{{width:64px;height:64px;border-radius:50%;background:var(--o);color:{BLACK};display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:600}}
+.riga{{display:grid;align-items:center;border-top:1px solid rgba(255,255,255,.10)}}
+.light .riga{{border-top:1px solid #E2E0DB}}
 """
 
 def page(theme, body, n=None, bg="", extra="", meta=META):
@@ -142,7 +148,7 @@ def p02():
     cards = "".join(f'<div class="card k" style="min-height:430px"><div class="num">{i+1:02d}</div>'
                     f'<h3 style="margin-top:26px">{E(t)}</h3><div style="font-size:25px;line-height:1.42;color:var(--s)">{E(d)}</div></div>'
                     for i, (t, d) in enumerate(pb))
-    body = (f'<div class="eye">Il punto di partenza</div><h1>Tre cose che costano, ogni stagione</h1>'
+    body = (f'<div class="eye">Il punto di partenza</div><h1>Tre cose che costano, <span class="o">ogni stagione.</span></h1>'
             f'<p class="lead">Non parliamo di «essere sui social». Parliamo di dove una struttura perde ospiti e margine.</p>'
             f'<div class="grid" style="grid-template-columns:repeat(3,1fr);gap:32px;margin-top:40px">{cards}</div>')
     return page("light", body, 2)
@@ -159,7 +165,7 @@ def p03():
              "Gestione manuale e strategica, mai automatismi",
              "La stessa squadra dall'inizio alla fine, risposte dirette alla direzione",
              "Report trasparenti: si vede cosa portiamo"]
-    body = (f'<div class="eye">Chi siamo</div><h1>Uno studio di comunicazione digitale,<br>con un verticale sull\'ospitalità.</h1>'
+    body = (f'<div class="eye">Chi siamo</div><h1>Uno studio di comunicazione digitale,<br>con <span class="o">un verticale sull\'ospitalità.</span></h1>'
             f'<p class="lead">YDG Studio lavora con PMI e attività locali dal 2022. Sull\'ospitalità abbiamo costruito da zero i profili di un hotel e del suo ristorante, e li seguiamo da due stagioni.</p>'
             f'<div class="grid" style="grid-template-columns:1fr 1fr;margin-top:50px;gap:40px">'
             f'<div><div class="sub" style="font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:26px;color:var(--c)">Cosa fa lo studio</div>'
@@ -176,7 +182,7 @@ def p04():
          ("Advertising", "Campagne Meta e Google sui mercati che prenotano, con il budget che decidete voi.")]
     cards = "".join(f'<div class="card c" style="border-top:8px solid {ORANGE};border-radius:6px 6px 18px 18px;min-height:360px">'
                     f'<h3>{E(t)}</h3><div style="font-size:25px;line-height:1.4">{E(d)}</div></div>' for t, d in s)
-    body = (f'<div class="eye">I servizi</div><h1>Cinque leve, una sola regia</h1>'
+    body = (f'<div class="eye">I servizi</div><h1>Cinque leve, <span class="o">una sola regia.</span></h1>'
             f'<p class="lead">Si attivano insieme o una alla volta. Quello che non serve oggi resta fuori dal preventivo.</p>'
             f'<div class="grid" style="grid-template-columns:repeat(5,1fr);gap:24px;margin-top:50px">{cards}</div>')
     return page("dark", body, 4)
@@ -195,7 +201,7 @@ def p05():
                    f'<div class="num" style="font-size:72px">{i+1:02d}</div>'
                    f'<div style="font-weight:600;font-size:25px;margin:22px 0 10px">{E(t)}</div>'
                    f'<div style="font-size:20px;line-height:1.4;color:var(--s)">{E(d)}</div></div>' for i, (t, d) in enumerate(steps))
-    body = (f'<div class="eye">Il metodo</div><h1>Dal primo contatto alla stagione piena</h1>'
+    body = (f'<div class="eye">Il metodo</div><h1>Dal primo contatto <span class="o">alla stagione piena.</span></h1>'
             f'<p class="lead">Il primo mese è di fondamenta e non si pubblica: strategia, intake, shooting. La pubblicazione parte dal secondo.</p>'
             f'<div class="grid" style="grid-template-columns:repeat(7,1fr);gap:22px;margin-top:90px">{cols}</div>')
     return page("dark", body, 5)
@@ -232,11 +238,11 @@ def p07():
               ("+2.300", "Nuovi follower"), ("0,06 €", "Costo per click delle campagne")])]
     cards = ""
     for nome, sett, ms in casi:
-        rows = "".join(f'<div style="padding:14px 0;border-top:1px solid {CHARCOAL}"><div class="kpi">{E(v)}</div>'
+        rows = "".join(f'<div style="padding:11px 0;border-top:1px solid rgba(255,255,255,.10)"><div class="kpi">{E(v)}</div>'
                        f'<div class="sub" style="margin-top:8px">{E(l)}</div></div>' for v, l in ms)
         cards += (f'<div class="card k"><div style="font-weight:600;font-size:28px">{E(nome)}</div>'
                   f'<div class="sub" style="margin:6px 0 20px">{E(sett)}</div>{rows}</div>')
-    body = (f'<div class="eye">Casi studio</div><h1>Numeri veri, non promesse</h1>'
+    body = (f'<div class="eye">Casi studio</div><h1>Numeri veri, <span class="o">non promesse.</span></h1>'
             f'<div class="grid" style="grid-template-columns:repeat(3,1fr);gap:32px;margin-top:44px">{cards}</div>')
     return page("light", body, 7)
 
@@ -249,7 +255,7 @@ def p08():
           "Presenza nella finestra di prenotazione, da dicembre a marzo",
           "TikTok con una linea editoriale dedicata per ciascun brand",
           "Advertising sui mercati esteri che prenotano con anticipo"]
-    body = (f'<div class="eye">Da dove partiamo</div><h1>Cosa funziona, e dove si cresce</h1>'
+    body = (f'<div class="eye">Da dove partiamo</div><h1>Cosa funziona, <span class="o">e dove si cresce.</span></h1>'
             f'<p class="lead">Una fotografia onesta. La strategia di dettaglio nasce dai dati, nelle prime settimane.</p>'
             f'<div class="grid" style="grid-template-columns:1fr 1fr;gap:32px;margin-top:44px">'
             f'<div class="card k" style="min-height:460px"><h3>Cosa funziona già</h3>{ul(ok)}</div>'
@@ -264,27 +270,27 @@ def p09():
             ("Strategia e report", ["Calendario editoriale condiviso", "Rapporto diretto con la direzione", "Report di stagione"])]
     cards = "".join(f'<div class="card c" style="border-top:8px solid {ORANGE};border-radius:6px 6px 18px 18px;min-height:470px">'
                     f'<h3>{E(t)}</h3>{ul(xs, "l tight")}</div>' for t, xs in cols)
-    body = (f'<div class="eye">Il servizio</div><h1>Cosa ricevete</h1>'
+    body = (f'<div class="eye">Il servizio</div><h1>Cosa ricevete, <span class="o">ogni mese.</span></h1>'
             f'<div class="grid" style="grid-template-columns:repeat(4,1fr);gap:28px;margin-top:70px">{cards}</div>')
     return page("dark", body, 9)
 
 # ── 10 investimento
 def p10():
-    rows = "".join(f'<div style="display:grid;grid-template-columns:1fr 360px 380px;align-items:center;padding:24px 34px;border-top:1px solid {SILVER}">'
-                   f'<div><div style="font-weight:600;font-size:28px">{E(a)}</div><div class="sub" style="color:var(--c);margin-top:6px">{E(b)}</div></div>'
-                   f'<div style="font-size:25px;color:var(--c)">{E(c)}</div>'
-                   f'<div style="font-weight:600;font-size:28px;text-align:right">{E(d)}</div></div>' for a, b, c, d in ECONOMIA)
-    head = (f'<div style="display:grid;grid-template-columns:1fr 360px 380px;padding:0 34px 16px" class="sub">'
-            f'<div style="font-weight:600;letter-spacing:.12em;text-transform:uppercase">Fase</div>'
-            f'<div style="font-weight:600;letter-spacing:.12em;text-transform:uppercase">Periodo</div>'
-            f'<div style="font-weight:600;letter-spacing:.12em;text-transform:uppercase;text-align:right">Investimento</div></div>')
-    tot = (f'<div style="display:grid;grid-template-columns:1fr 380px;align-items:center;padding:26px 34px;background:{ORANGE};color:{BLACK};border-radius:14px;margin-top:18px">'
-           f'<div style="font-weight:600;font-size:28px">Totale gestione annua</div>'
-           f'<div style="font-weight:600;font-size:50px;text-align:right">{E(TOTALE_ANNO)}</div></div>')
-    body = (f'<div class="eye">Investimento</div><h1>Il riepilogo economico</h1>'
-            f'<p class="lead">Dodici mesi, con l\'intensità che cambia tra bassa e alta stagione. IVA esclusa.</p>'
-            f'<div style="margin-top:36px">{head}{rows}{tot}</div>'
-            f'<p class="note" style="margin-top:22px">Budget pubblicitario e condizioni alla pagina successiva. Voci tecniche opzionali a pagina 12.</p>')
+    righe = ""
+    for a, b, c, d in ECONOMIA:
+        righe += (f'<div class="riga" style="grid-template-columns:1fr 300px 420px;padding:26px 0">'
+                  f'<div><div style="font-weight:600;font-size:30px;letter-spacing:-.02em">{E(a)}</div>'
+                  f'<div class="sub" style="color:#7c7c78;margin-top:10px;max-width:760px">{E(b)}</div></div>'
+                  f'<div class="lab" style="color:#8a8a86">{E(c)}</div>'
+                  f'<div style="font-weight:600;font-size:46px;letter-spacing:-.035em;text-align:right">{E(d)}</div></div>')
+    tot = (f'<div class="card or" style="display:flex;align-items:center;justify-content:space-between;padding:34px 52px;margin-top:34px">'
+           f'<div><div class="lab">Totale gestione annua</div>'
+           f'<div class="sub" style="margin-top:10px;max-width:620px">Dodici mesi di gestione, produzione compresa. IVA esclusa, budget pubblicitario a parte.</div></div>'
+           f'<div class="big" style="font-size:96px">{E(TOTALE_ANNO)}</div></div>')
+    body = (f'<div class="eye">Investimento</div>'
+            f'<h1>Il riepilogo <span class="o">economico.</span></h1>'
+            f'<div style="margin-top:36px">{righe}</div>{tot}'
+            f'<p class="note" style="margin-top:22px">Le voci tecniche facoltative, sito e portali, sono a pagina 12.</p>')
     return page("light", body, 10)
 
 # ── 11 budget e condizioni
@@ -293,33 +299,39 @@ def p11():
             ("Produzione dilazionabile", "I 6.200 € della produzione si possono ripartire nel corso dell'anno."),
             ("Trasferte escluse", "Le trasferte per gli shooting sono a rimborso spese documentato."),
             ("Budget ADV separato", "Il budget pubblicitario non è compreso nel compenso di gestione.")]
-    rows = "".join(f'<div style="padding:22px 0;border-top:1px solid {CHARCOAL}">'
-                   f'<div style="font-weight:600;font-size:28px">{E(a)}</div>'
-                   f'<div class="sub" style="margin-top:8px">{E(b)}</div></div>' for a, b in cond)
-    body = (f'<div class="eye">Condizioni</div><h1>Budget pubblicitario e condizioni</h1>'
-            f'<div class="grid" style="grid-template-columns:1fr 1.1fr;gap:44px;margin-top:44px">'
-            f'<div class="card or" style="min-height:430px"><div class="sub" style="font-weight:600;letter-spacing:.12em;text-transform:uppercase">Budget Meta consigliato</div>'
-            f'<div class="big" style="font-size:96px;margin:18px 0 10px">400 · 600 €</div>'
-            f'<div style="font-size:28px;line-height:1.4">al mese, tutto l\'anno. Circa 6.000 € all\'anno.</div>'
-            f'<div style="font-size:25px;line-height:1.4;margin-top:22px">È spesa pubblicitaria vostra, versata direttamente a Meta, separata dal compenso dello studio. '
+    rows = "".join(f'<div class="riga" style="grid-template-columns:1fr;padding:26px 0">'
+                   f'<div style="font-weight:600;font-size:26px;letter-spacing:-.02em">{E(a)}</div>'
+                   f'<div class="sub" style="margin-top:10px">{E(b)}</div></div>' for a, b in cond)
+    body = (f'<div class="eye">Condizioni</div>'
+            f'<h1>Budget pubblicitario <span class="o">e condizioni.</span></h1>'
+            f'<div class="grid" style="grid-template-columns:1fr 1.05fr;gap:56px;margin-top:56px">'
+            f'<div class="card or" style="display:flex;flex-direction:column;justify-content:center;min-height:470px">'
+            f'<div class="lab">Budget Meta consigliato</div>'
+            f'<div class="big" style="font-size:112px;margin:20px 0 6px">400 · 600 €</div>'
+            f'<div style="font-size:28px;line-height:1.4;font-weight:600">al mese, tutto l\'anno. Circa 6.000 € all\'anno.</div>'
+            f'<div style="font-size:22px;line-height:1.5;margin-top:26px;max-width:640px">È spesa pubblicitaria vostra, versata direttamente a Meta e separata dal compenso dello studio. '
             f'Più peso da dicembre a marzo, nella finestra di prenotazione, meno in piena estate.</div></div>'
-            f'<div>{rows}</div></div>')
-    return page("dark", body, 11)
+            f'<div style="padding-top:4px">{rows}<div class="riga" style="padding:0"></div></div></div>')
+    return page("deep", body, 11)
 
 # ── 12 voci opzionali (prezzi Nadir)
 def p12():
-    rows = "".join(f'<div style="display:grid;grid-template-columns:1fr 420px 420px;align-items:center;padding:24px 34px;border-top:1px solid {SILVER}">'
-                   f'<div><div style="font-weight:600;font-size:28px">{E(a)}</div><div class="sub" style="color:var(--c);margin-top:6px">{E(b)}</div></div>'
-                   f'<div style="font-weight:600;font-size:25px">{E(c)}</div>'
-                   f'<div style="font-size:25px;color:var(--c);text-align:right">{E(d)}</div></div>' for a, b, c, d in OPZIONALI)
-    head = (f'<div style="display:grid;grid-template-columns:1fr 420px 420px;padding:0 34px 16px" class="sub">'
-            f'<div style="font-weight:600;letter-spacing:.12em;text-transform:uppercase">Voce</div>'
-            f'<div style="font-weight:600;letter-spacing:.12em;text-transform:uppercase">Avvio</div>'
-            f'<div style="font-weight:600;letter-spacing:.12em;text-transform:uppercase;text-align:right">Ricorrente</div></div>')
-    body = (f'<div class="eye">Voci opzionali</div><h1>Sito, portali e tracciamento</h1>'
+    rows = ""
+    for a, b, c, d in OPZIONALI:
+        rows += (f'<div class="riga" style="grid-template-columns:1fr 360px 400px;padding:22px 0">'
+                 f'<div><div style="font-weight:600;font-size:28px;letter-spacing:-.02em">{E(a)}</div>'
+                 f'<div class="sub" style="color:#7c7c78;margin-top:8px;max-width:720px">{E(b)}</div></div>'
+                 f'<div style="font-weight:600;font-size:30px;letter-spacing:-.03em">{E(c)}</div>'
+                 f'<div class="sub" style="color:#7c7c78;text-align:right">{E(d)}</div></div>')
+    head = (f'<div class="riga" style="grid-template-columns:1fr 360px 400px;padding:0 0 14px;border-top:0">'
+            f'<div class="lab" style="color:#8a8a86">Voce</div>'
+            f'<div class="lab" style="color:#8a8a86">Avvio</div>'
+            f'<div class="lab" style="color:#8a8a86;text-align:right">Ricorrente</div></div>')
+    body = (f'<div class="eye">Voci opzionali</div>'
+            f'<h1>Sito, portali <span class="o">e tracciamento.</span></h1>'
             f'<p class="lead">Si aggiungono alla gestione quando servono. Chi ha già un sito che funziona parte senza.</p>'
-            f'<div style="margin-top:36px">{head}{rows}<div style="border-top:1px solid {SILVER}"></div></div>'
-            f'<p class="note" style="margin-top:22px">Hosting 140 € all\'anno a parte. La licenza del motore di prenotazione resta in capo alla struttura. '
+            f'<div style="margin-top:36px">{head}{rows}<div class="riga" style="padding:0"></div></div>'
+            f'<p class="note" style="margin-top:20px">Hosting 140 € all\'anno a parte, licenza del motore di prenotazione in capo alla struttura. '
             f'Il sito è pronto in 4-6 settimane, i portali in 2-3.</p>')
     return page("light", body, 12)
 
@@ -333,7 +345,7 @@ def p13():
                  f'<div><div style="font-weight:600;font-size:28px">{E(n)}</div><div class="sub" style="margin-top:6px">{E(r)}</div></div></div>' for i, n, r in soci)
     cc = "".join(f'<div style="border-top:1px solid {CHARCOAL};padding:20px 0"><div style="font-weight:600;font-size:25px">{E(n)}</div>'
                  f'<div class="sub" style="color:var(--s);margin-top:4px">{E(r)}</div></div>' for n, r in coll)
-    body = (f'<div class="eye">Il team</div><h1>Le persone dietro YDG Studio</h1>'
+    body = (f'<div class="eye">Il team</div><h1>Le persone <span class="o">dietro YDG Studio.</span></h1>'
             f'<p class="lead">Una squadra affiatata: le stesse persone seguono il progetto dall\'inizio alla fine.</p>'
             f'<div class="grid" style="grid-template-columns:repeat(3,1fr);gap:28px;margin-top:44px">{sc}</div>'
             f'<div class="sub" style="font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin:46px 0 4px;color:var(--o)">I collaboratori</div>'
@@ -348,16 +360,16 @@ def p14():
                    f'<div style="position:absolute;top:0;left:0;width:22px;height:22px;border-radius:50%;background:{BLACK}"></div>'
                    f'<div style="font-weight:600;font-size:50px">{i+1:02d}</div>'
                    f'<div style="font-size:25px;line-height:1.38;margin-top:12px">{E(t)}</div></div>' for i, t in enumerate(st))
-    body = (f'<div style="position:absolute;top:120px;left:0;right:0"><div class="eye">Come partiamo</div>'
-            f'<div class="big" style="margin-top:28px;font-size:96px">Grazie del tempo<br>che ci avete dato.</div>'
-            f'<div style="position:relative;margin-top:60px"><div style="position:absolute;top:10px;left:0;right:0;height:2px;background:{BLACK};opacity:.25"></div>'
-            f'<div class="grid" style="grid-template-columns:repeat(5,1fr);gap:36px;position:relative">{cols}</div></div>'
-            f'<div style="display:flex;gap:90px;margin-top:70px">'
+    body = (f'<div style="position:absolute;top:84px;left:0;right:0"><div class="eye">Come partiamo</div>'
+            f'<div class="big" style="margin-top:24px;font-size:84px">Grazie del tempo<br>che ci avete dato.</div>'
+            f'<div style="position:relative;margin-top:44px"><div style="position:absolute;top:10px;left:0;right:0;height:2px;background:{BLACK};opacity:.25"></div>'
+            f'<div class="grid" style="grid-template-columns:repeat(5,1fr);gap:30px;position:relative">{cols}</div></div>'
+            f'<div style="display:flex;gap:90px;margin-top:52px">'
             f'<div><div class="sub" style="font-weight:600;letter-spacing:.12em;text-transform:uppercase">Email</div>'
             f'<div style="font-size:28px;font-weight:600;margin-top:8px">alextaroni@whydg.com</div></div>'
             f'<div><div class="sub" style="font-weight:600;letter-spacing:.12em;text-transform:uppercase">Telefono</div>'
             f'<div style="font-size:28px;font-weight:600;margin-top:8px">+39 339 114 9663</div></div></div>'
-            f'<div class="note" style="margin-top:26px;color:var(--k)">Proposta valida 30 giorni · IVA esclusa</div></div>')
+            f'<div class="note" style="margin-top:20px;color:var(--k)">Proposta valida 30 giorni · IVA esclusa</div></div>')
     return page("orange", body, 14)
 
 PAGINE = [p01, p02, p03, p04, p05, p06, p07, p08, p09, p10, p11, p12, p13, p14]

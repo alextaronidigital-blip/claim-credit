@@ -31,6 +31,18 @@ fotografia di quella struttura.
 
 Nessun numero è inventato: quello che non risulta da queste fonti non è in pagina.
 
+## Design allineato al sito
+
+I valori vengono dal sito nuovo (`ydg-anteprima.nadirbou-digital.workers.dev`), letti dal
+suo CSS, non a occhio: arancio #FF7900, fondo #1A1A1A, fondo profondo #111111, grigio dei
+testi #a9a9a6, titoli a interlinea 1.03 con spaziatura -.04em, etichette a .075em, raggi
+di 24px sulle card. Dal sito arriva anche la firma dei titoli: **prima parte bianca,
+coda arancio, punto finale**. Il font è lo stesso del sito, Overused Grotesk.
+
+Gerarchia: nelle pagine economiche il numero è la cosa più grande della riga, il totale
+sta in una fascia arancio con la cifra a 96px. Gli sforamenti si controllano a macchina,
+confrontando i blocchi di testo del PDF col riquadro del contenuto, non a occhio.
+
 ## Brand
 
 Font, loghi, icone e alone arancio arrivano dal kit del mockup
