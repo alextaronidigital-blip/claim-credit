@@ -181,6 +181,13 @@ tbody td:first-child::before{content:"";position:absolute;left:4px;top:50%;trans
 tr.b-caldo td:first-child::before{background:var(--accent)}
 tr.b-tiepido td:first-child::before{background:var(--accent-dim)}
 tr.flagged td:first-child::before{height:34px;width:4px;background:var(--crema)}
+tr.esclusa td{opacity:.42}
+tr.esclusa:hover td{opacity:.72}
+tr.esclusa td:first-child::before{background:var(--surface-4)!important}
+tr.esclusa .name{text-decoration:line-through;text-decoration-color:var(--fg-faint)}
+tr.esclusa .thumb{filter:grayscale(1)}
+.fuori{display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  padding:1px 6px;border-radius:var(--r-pill);background:var(--surface-4);color:var(--fg-muted);vertical-align:1px;margin-right:2px}
 tfoot td{border-top:1px solid var(--accent);background:var(--accent-soft);font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.06em}
 .name{font-weight:700;display:block;line-height:1.3;font-size:14px}
 .catena{color:var(--accent);font-size:12px;vertical-align:1px}
@@ -350,6 +357,7 @@ legend{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--
         <button class="chip" id="cPref" aria-pressed="false">Solo mie preferenze</button>
         <button class="chip" id="cFlag" aria-pressed="false">Solo segnalate</button>
         <button class="chip" id="cCatena" aria-pressed="false">Solo catene</button>
+        <button class="chip" id="cEscluse" aria-pressed="false">Nascondi escluse</button>
       </div>
     </div>
     <div id="view"></div>
@@ -430,6 +438,8 @@ const FASI = [
   {key:"proposte",     nome:"Proposte inviate",             auto:"proposte",     desc:"Preventivi consegnati al titolare"},
   {key:"chiusura",     nome:"Chiusure",                     auto:"mrr",          desc:"Clienti firmati, fee mensile acquisita"}
 ];
+const ESCLUSE = ["Non in target","Chiuso perso"];
+const esclusa = a => ESCLUSE.includes(a.stato);
 const GRUPPI = {
   contattate:["Contattato","Appuntamento fissato","Proposta inviata","Chiuso vinto"],
   appuntamenti:["Appuntamento fissato","Proposta inviata","Chiuso vinto"],
@@ -487,7 +497,7 @@ let righe = [], fasi = [], voci = [], task = [], aperti = new Set();
 try { const v = localStorage.getItem("ydg-aperti"); if (v) aperti = new Set(JSON.parse(v)); } catch(_){}
 const ricordaAperti = () => { try { localStorage.setItem("ydg-aperti", JSON.stringify([...aperti])); } catch(_){} };
 let db = null, user = null, scrivibile = true, io = TEAM[0].key;
-let sel = null, bozza = null, filtri = {q:"",stato:"",loc:"",vert:"",can:"",reg:"",pref:false,flag:false,catena:false};
+let sel = null, bozza = null, filtri = {q:"",stato:"",loc:"",vert:"",can:"",reg:"",pref:false,flag:false,catena:false,escluse:false};
 let ordine = {campo:"punteggio", dir:"desc"};
 const coda = new Map();
 
@@ -586,6 +596,7 @@ function visibili(){
     if (filtri.can && a.canale !== filtri.can) return false;
     if (filtri.reg && (a.regione || "") !== filtri.reg) return false;
     if (filtri.catena && !a.catena) return false;
+    if (filtri.escluse && esclusa(a)) return false;
     if (filtri.pref && !a.preferenze[io]) return false;
     if (filtri.flag && !a.flag) return false;
     if (q){
@@ -608,12 +619,13 @@ function visibili(){
 
 function renderStats(){
   const n = g => righe.filter(r => GRUPPI[g].includes(r.dati.stato)).length;
+  const inGioco = () => righe.filter(r => !esclusa(r.dati));
   const somma = g => righe.filter(r => GRUPPI[g].includes(r.dati.stato))
     .reduce((t,r) => t + (Number(r.dati.economia && r.dati.economia.fee) || 0), 0);
   const mrrVinto = somma("vinti");
   const quota = (x,t) => Math.max(0, Math.min(100, Math.round(x / t * 100)));
   const dati = [
-    ["In lista", righe.length, "obiettivo " + OBIETTIVI.lista, quota(righe.length, OBIETTIVI.lista)],
+    ["In lista", inGioco().length, "obiettivo " + OBIETTIVI.lista + " · " + (righe.length - inGioco().length) + " escluse", quota(inGioco().length, OBIETTIVI.lista)],
     ["Contattate", n("contattate"), "obiettivo " + OBIETTIVI.contattate, quota(n("contattate"), OBIETTIVI.contattate)],
     ["Appuntamenti", n("appuntamenti"), "obiettivo " + OBIETTIVI.appuntamenti, quota(n("appuntamenti"), OBIETTIVI.appuntamenti)],
     ["Proposte", n("proposte"), "obiettivo " + OBIETTIVI.proposte, quota(n("proposte"), OBIETTIVI.proposte)],
@@ -648,12 +660,13 @@ function renderTabella(){
   }
   vis.forEach(r => {
     const a = r.dati, p = r.punti;
-    h += '<tr data-id="' + esc(r.id) + '" class="b-' + banda(p.totale) + (a.flag ? " flagged" : "") + '">';
+    h += '<tr data-id="' + esc(r.id) + '" class="b-' + banda(p.totale) + (a.flag ? " flagged" : "") + (esclusa(a) ? " esclusa" : "") + '">';
     h += '<td class="r"><span class="score"><b>' + p.totale + '</b><span class="band band-' + banda(p.totale) + '">' + banda(p.totale) + "</span></span></td>";
     h += '<td><span class="riga-nome">' +
          (a.foto ? '<img class="thumb" src="foto/' + esc(a.foto) + '" alt="" loading="lazy">'
                  : '<span class="thumb vuota">–</span>') + '<span class="riga-testi">' +
-         "<span class=\"name\">" + (a.catena ? '<span class="catena" title="' + esc(a.gruppo || "Catena o gruppo") + '">⛓</span> ' : "") +
+         "<span class=\"name\">" + (esclusa(a) ? '<span class="fuori" title="' + esc(a.motivoEsclusione || a.stato) + '">fuori</span> ' : "") +
+         (a.catena ? '<span class="catena" title="' + esc(a.gruppo || "Catena o gruppo") + '">⛓</span> ' : "") +
          (esc(a.nome) || '<span style="color:var(--fg-faint)">Senza nome</span>') + "</span>" +
          '<span class="sub">' + esc([
              a.comune + (a.provincia ? " (" + a.provincia + ")" : ""),
@@ -895,7 +908,8 @@ const FASI_BASE = {
 };
 const conta = g => righe.filter(r => GRUPPI[g].includes(r.dati.stato)).length;
 const AUTO = {
-  lista:        () => ({val:righe.length,       tot:OBIETTIVI.lista,        testo:righe.length + " di " + OBIETTIVI.lista}),
+  lista:        () => { const n = righe.filter(r => !esclusa(r.dati)).length;
+                        return {val:n, tot:OBIETTIVI.lista, testo:n + " di " + OBIETTIVI.lista}; },
   contattate:   () => ({val:conta("contattate"),   tot:OBIETTIVI.contattate,   testo:conta("contattate") + " di " + OBIETTIVI.contattate}),
   appuntamenti: () => ({val:conta("appuntamenti"), tot:OBIETTIVI.appuntamenti, testo:conta("appuntamenti") + " di " + OBIETTIVI.appuntamenti}),
   proposte:     () => ({val:conta("proposte"),     tot:OBIETTIVI.proposte,     testo:conta("proposte") + " di " + OBIETTIVI.proposte}),
@@ -1382,6 +1396,7 @@ $("#fReg").onchange = e => { filtri.reg = e.target.value; renderTabella(); };
 $("#cPref").onclick = e => { filtri.pref = !filtri.pref; e.currentTarget.setAttribute("aria-pressed", String(filtri.pref)); renderTabella(); };
 $("#cFlag").onclick = e => { filtri.flag = !filtri.flag; e.currentTarget.setAttribute("aria-pressed", String(filtri.flag)); renderTabella(); };
 $("#cCatena").onclick = e => { filtri.catena = !filtri.catena; e.currentTarget.setAttribute("aria-pressed", String(filtri.catena)); renderTabella(); };
+$("#cEscluse").onclick = e => { filtri.escluse = !filtri.escluse; e.currentTarget.setAttribute("aria-pressed", String(filtri.escluse)); renderTabella(); };
 
 STATI.forEach(s => $("#fStato").insertAdjacentHTML("beforeend", "<option>" + esc(s) + "</option>"));
 LOCALITA.forEach(s => $("#fLoc").insertAdjacentHTML("beforeend", "<option>" + esc(s) + "</option>"));
