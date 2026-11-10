@@ -23,13 +23,13 @@
       "quante": 0
     }
   ],
-  "criteri": "Entro 35 km dal centro della propria area, ≥4.3★, ≥80 recensioni, hotel (no garni/pensioni/residence), fascia 4★ / 4★ superior. Ordinate per: social assenti o non presidiati, reputazione, dimensione, vicinanza.",
+  "criteri": "Entro 35 km dal centro della propria area, ≥4.3★, ≥80 recensioni, hotel (no garni/pensioni/residence), fascia da 3★ a 4★ superior. Ordinate per: social assenti o non presidiati, reputazione, dimensione, vicinanza.",
   "nonSappiamo": "Stelle, stagionalità e follower: da compilare in hub. Un social non trovato dal bot è DA VERIFICARE, non assente.",
-  "bersaglio": "3 stelle, 3 stelle superior, 4 stelle e 4 stelle superior (decisione del 10/11). Le 5 stelle restano in lista ma segnate fuori target.",
+  "bersaglio": "3 stelle, 3 stelle superior, 4 stelle e 4 stelle superior. Le 5 stelle restano in lista ma segnate fuori target.",
   "bacino": 553,
   "fuoriBacino": 251,
   "quante": 50,
-  "fuoriFascia": 11,
+  "fuoriFascia": 12,
   "strutture": [
     {
       "_placeId": "ChIJ6WRGrWoMeEcRWkjht2QhhKo",
@@ -3743,7 +3743,7 @@
       "area": "Alpe di Siusi e Sud Tirolo",
       "apertura": "Da verificare",
       "stato": "Non in target",
-      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio e 4★ e 4★ superior.",
+      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio va da 3★ a 4★ superior.",
       "canale": "Da definire",
       "km": 1,
       "lingua": "Italiano + Tedesco",
@@ -3817,7 +3817,7 @@
       "area": "Alpe di Siusi e Sud Tirolo",
       "apertura": "Da verificare",
       "stato": "Non in target",
-      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio e 4★ e 4★ superior.",
+      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio va da 3★ a 4★ superior.",
       "canale": "Da definire",
       "km": 15,
       "lingua": "Italiano + Tedesco",
@@ -3891,7 +3891,7 @@
       "area": "Alpe di Siusi e Sud Tirolo",
       "apertura": "Da verificare",
       "stato": "Non in target",
-      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio e 4★ e 4★ superior.",
+      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio va da 3★ a 4★ superior.",
       "canale": "Da definire",
       "km": 10,
       "lingua": "Italiano + Tedesco",
@@ -3965,7 +3965,7 @@
       "area": "Alpe di Siusi e Sud Tirolo",
       "apertura": "Da verificare",
       "stato": "Non in target",
-      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio e 4★ e 4★ superior.",
+      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio va da 3★ a 4★ superior.",
       "canale": "Da definire",
       "km": 10,
       "lingua": "Italiano + Tedesco",
@@ -4039,7 +4039,7 @@
       "area": "Alpe di Siusi e Sud Tirolo",
       "apertura": "Da verificare",
       "stato": "Non in target",
-      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio e 4★ e 4★ superior.",
+      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio va da 3★ a 4★ superior.",
       "canale": "Da definire",
       "km": 25,
       "lingua": "Italiano + Tedesco",
@@ -4113,7 +4113,7 @@
       "area": "Alpe di Siusi e Sud Tirolo",
       "apertura": "Da verificare",
       "stato": "Non in target",
-      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio e 4★ e 4★ superior.",
+      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio va da 3★ a 4★ superior.",
       "canale": "Da definire",
       "km": 31,
       "lingua": "Italiano + Tedesco",
@@ -4187,7 +4187,7 @@
       "area": "Alpe di Siusi e Sud Tirolo",
       "apertura": "Da verificare",
       "stato": "Non in target",
-      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio e 4★ e 4★ superior.",
+      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio va da 3★ a 4★ superior.",
       "canale": "Da definire",
       "km": 10,
       "lingua": "Italiano + Tedesco",
@@ -4261,7 +4261,7 @@
       "area": "Alpe di Siusi e Sud Tirolo",
       "apertura": "Da verificare",
       "stato": "Non in target",
-      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio e 4★ e 4★ superior.",
+      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio va da 3★ a 4★ superior.",
       "canale": "Da definire",
       "km": 10,
       "lingua": "Italiano + Tedesco",
@@ -4324,6 +4324,80 @@
       "creataIl": "2026-11-10"
     },
     {
+      "_placeId": "ChIJDxIqfgl1eEcRo62Y_nh8bzY",
+      "nome": "ADLER Ritten",
+      "verticale": "Hotel di lusso",
+      "categoria": "5 stelle",
+      "tipoLocalita": "Montagna",
+      "comune": "Renon",
+      "provincia": "BZ",
+      "regione": "Trentino-Alto Adige",
+      "area": "Alpe di Siusi e Sud Tirolo",
+      "apertura": "Da verificare",
+      "stato": "Non in target",
+      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio va da 3★ a 4★ superior.",
+      "canale": "Da definire",
+      "km": 9,
+      "lingua": "Italiano + Tedesco",
+      "catena": false,
+      "sito": {
+        "url": "http://www.adler-ritten.com/",
+        "assente": false,
+        "voto": 0,
+        "nota": ""
+      },
+      "seo": {
+        "voto": 0,
+        "nota": ""
+      },
+      "google": {
+        "rating": 4.8,
+        "recensioni": 512,
+        "nota": "Da Google Places il 2026-10-16"
+      },
+      "social": {
+        "instagram": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "facebook": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "tiktok": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "youtube": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        },
+        "linkedin": {
+          "presente": false,
+          "daProporre": true,
+          "handle": "",
+          "follower": null
+        }
+      },
+      "note": "Stella, 20, 39054 Soprabolzano BZ, Italia · 0471 155 1700 · https://maps.google.com/?cid=3922490659572329891&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA · Sito non leggibile (ERR_SSL_DH_KEY_TOO_SMALL): da verificare a mano",
+      "_preselezione": 0,
+      "_perche": [
+        "+20 Reputazione eccellente (4.8★)",
+        "+12 A 9 km da Siusi",
+        "+10 512 recensioni",
+        "-45 5 stelle: fuori dalla fascia 4★ / 4★ superior"
+      ],
+      "creataIl": "2026-11-10"
+    },
+    {
       "_placeId": "ChIJNfPinN1qnUcR2U_anj_7swc",
       "nome": "Romantik Hotel Turm",
       "verticale": "Hotel di lusso",
@@ -4335,7 +4409,7 @@
       "area": "Alpe di Siusi e Sud Tirolo",
       "apertura": "Da verificare",
       "stato": "Non in target",
-      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio e 4★ e 4★ superior.",
+      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio va da 3★ a 4★ superior.",
       "canale": "Da definire",
       "km": 4,
       "lingua": "Italiano + Tedesco",
@@ -4409,7 +4483,7 @@
       "area": "Alpe di Siusi e Sud Tirolo",
       "apertura": "Da verificare",
       "stato": "Non in target",
-      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio e 4★ e 4★ superior.",
+      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio va da 3★ a 4★ superior.",
       "canale": "Da definire",
       "km": 11,
       "lingua": "Italiano + Tedesco",
@@ -4484,7 +4558,7 @@
       "area": "Alpe di Siusi e Sud Tirolo",
       "apertura": "Da verificare",
       "stato": "Non in target",
-      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio e 4★ e 4★ superior.",
+      "motivoEsclusione": "Fuori fascia: 5 stelle (censita a mano come 5 stelle). Il bersaglio va da 3★ a 4★ superior.",
       "canale": "Da definire",
       "km": 29,
       "lingua": "Italiano + Tedesco",

@@ -1,4 +1,4 @@
-# Le 50 strutture in gioco, piu' 11 fuori fascia
+# Le 50 strutture in gioco, piu' 12 fuori fascia
 
 **Fonte**: Google Places API (New), raccolto il 2026-10-16 · **social**: link letti dalle homepage.
 
@@ -9,7 +9,7 @@
 **Come sono ordinate**: in cima chi lavora bene su Google e non comunica — nessun sito, nessun social linkato, Instagram assente. È il bersaglio dell'hub: ha i soldi e ha il problema.
 
 **Attenzione**: «nessun social» vuol dire *nessun link trovato nella homepage*, non che il profilo non esista. Va guardato a mano prima di dirlo al titolare.
-**Fascia**: bersaglio 4★ e 4★ superior. Le 11 strutture da 5 stelle stanno in coda alla tabella, segnate `FUORI`, non buttate.
+**Fascia**: bersaglio da 3★ a 4★ superior. Le 12 strutture da 5 stelle stanno in coda alla tabella, segnate `FUORI`, non buttate.
 **Le stelle Google non le espone**: quelle che sappiamo stanno in `strumenti/stelle.json`, compilate a mano. Chi non c'è resta da verificare.
 **La distanza è in linea d'aria** e si misura dal centro della sua area: 30 km di Dolomiti sono spesso un'ora di guida.
 
@@ -73,6 +73,7 @@
 | `FUORI` Ciasa Salares | Badia | Alpe | 31 km | 4.8★ (305) | da verificare | 3 |
 | `FUORI` ADLER Dolomiti | Ortisei | Alpe | 10 km | 4.8★ (1779) | da verificare | 0 |
 | `FUORI` Cavallino Bianco Val Gardena - Dolomiti | Ortisei | Alpe | 10 km | 4.8★ (1294) | 3 (IN FA YO) | 0 |
+| `FUORI` ADLER Ritten | Renon | Alpe | 9 km | 4.8★ (512) | da verificare | 0 |
 | `FUORI` Romantik Hotel Turm | Fiè allo Sciliar | Alpe | 4 km | 4.7★ (509) | 3 (IN FA YO) | 0 |
 | `FUORI` Alpin Garden Luxury Maison & Spa - Adults Only | Ortisei | Alpe | 11 km | 4.6★ (339) | 3 (IN FA LI) | 0 |
 | `FUORI` Aman Rosa Alpina | Badia | Alpe | 29 km | 4.5★ (318) | da verificare | 0 |

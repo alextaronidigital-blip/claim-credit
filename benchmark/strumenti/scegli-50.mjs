@@ -129,7 +129,7 @@ fs.writeFileSync(path.join(DATI, "strutture-50.json"), JSON.stringify({
   fonte: "Google Places API (New) del " + grezzo.raccoltoIl + " + link social letti dalle homepage",
   selezionatoIl: oggi,
   aree: ZONE.aree.map(a => ({ id:a.id, nome:a.nome, quante: scelte.filter(r => areaDi(r) === a.id && !cinqueStelle(r)).length })),
-  criteri: "Entro " + MAXKM + " km dal centro della propria area, ≥" + MINRAT + "★, ≥" + MINREC + " recensioni, hotel (no garni/pensioni/residence), fascia 4\u2605 / 4\u2605 superior. Ordinate per: social assenti o non presidiati, reputazione, dimensione, vicinanza.",
+  criteri: "Entro " + MAXKM + " km dal centro della propria area, ≥" + MINRAT + "★, ≥" + MINREC + " recensioni, hotel (no garni/pensioni/residence), fascia da 3\u2605 a 4\u2605 superior. Ordinate per: social assenti o non presidiati, reputazione, dimensione, vicinanza.",
   nonSappiamo: "Stelle, stagionalità e follower: da compilare in hub. Un social non trovato dal bot è DA VERIFICARE, non assente.",
   bersaglio: STELLE._bersaglio,
   bacino: bacino.length, fuoriBacino: fuori.length,
@@ -151,7 +151,7 @@ fs.writeFileSync(path.join(DATI, "strutture-50.json"), JSON.stringify({
       apertura: "Da verificare",
       stato: cinque ? "Non in target" : "Da valutare",
       motivoEsclusione: cinque
-        ? "Fuori fascia: 5 stelle (" + cinque + "). Il bersaglio e 4\u2605 e 4\u2605 superior."
+        ? "Fuori fascia: 5 stelle (" + cinque + "). Il bersaglio va da 3\u2605 a 4\u2605 superior."
         : "",
       canale: "Da definire",
       km: r.km, lingua: "Italiano + Tedesco", catena: r.catena,
@@ -191,7 +191,7 @@ fs.writeFileSync(path.join(DATI, "strutture-50.md"),
   " recensioni, esclusi garni, pensioni e residence (" + fuori.length + " scartate, col motivo, in `strutture-escluse.json`).\n\n" +
   "**Come sono ordinate**: in cima chi lavora bene su Google e non comunica — nessun sito, nessun social linkato, Instagram assente. È il bersaglio dell'hub: ha i soldi e ha il problema.\n\n" +
   "**Attenzione**: «nessun social» vuol dire *nessun link trovato nella homepage*, non che il profilo non esista. Va guardato a mano prima di dirlo al titolare.\n" +
-  "**Fascia**: bersaglio 4\u2605 e 4\u2605 superior. Le " + fuoriFascia.length + " strutture da 5 stelle stanno in coda alla tabella, segnate `FUORI`, non buttate.\n" +
+  "**Fascia**: bersaglio da 3\u2605 a 4\u2605 superior. Le " + fuoriFascia.length + " strutture da 5 stelle stanno in coda alla tabella, segnate `FUORI`, non buttate.\n" +
   "**Le stelle Google non le espone**: quelle che sappiamo stanno in `strumenti/stelle.json`, compilate a mano. Chi non c'\u00e8 resta da verificare.\n" +
   "**La distanza è in linea d'aria** e si misura dal centro della sua area: 30 km di Dolomiti sono spesso un'ora di guida.\n\n" +
   "| Struttura | Comune | Area | Distanza | Google | Social in homepage | Presel. |\n|---|---|---|---|---|---|---|\n" +

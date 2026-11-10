@@ -476,16 +476,18 @@ function punteggio(a){
   if (debole && rat >= 4.5 && rec >= 100){ t += 20; parti.push([20, "Struttura forte su Google, mal comunicata"]); }
   else if (debole && rat >= 4.2 && rec >= 40){ t += 10; parti.push([10, "Buona reputazione Google"]); }
   else if (rat >= 4.5 && rec >= 100){ t += 5; parti.push([5, "Reputazione Google solida"]); }
-  // Bersaglio: 3/4 stelle lusso. Il titolare decide da solo e raramente ha già
-  // un'agenzia; un 5 stelle di solito ce l'ha, o è dentro una catena.
+  // Fascia bersaglio, decisa il 10/11: da 3★ a 4★ superior. Il titolare decide
+  // da solo e raramente ha già un'agenzia. Le 5 stelle sono fuori: ce l'hanno
+  // quasi sempre, o stanno dentro una catena.
   const cat = a.categoria || "";
   if (cat === "4★ Sup" || cat === "Boutique"){ t += 15; parti.push([15, "Fascia bersaglio"]); }
-  else if (cat === "4★"){ t += 13; parti.push([13, "Fascia bersaglio"]); }
-  else if (cat === "3★ Sup"){ t += 10; parti.push([10, "Tre stelle superior"]); }
-  else if (cat === "3★"){ t += 7; parti.push([7, "Tre stelle"]); }
-  else if (cat === "5★"){ t += 4; parti.push([4, "Cinque stelle, fuori fascia"]); }
-  else if (cat === "5★ Lusso"){ t += 2; parti.push([2, "Lusso, quasi sempre con agenzia"]); }
-  if (a.catena){ t -= 15; parti.push([-15, "Catena o gruppo: marketing centralizzato"]); }
+  else if (cat === "4★"){ t += 14; parti.push([14, "Fascia bersaglio"]); }
+  else if (cat === "3★ Sup"){ t += 13; parti.push([13, "Fascia bersaglio"]); }
+  else if (cat === "3★"){ t += 11; parti.push([11, "Fascia bersaglio"]); }
+  else if (cat === "5★" || cat === "5★ Lusso"){ parti.push([0, "Cinque stelle: fuori fascia"]); }
+  // Le catene restano in gioco (decisione del 10/11): il marketing centralizzato
+  // è un ostacolo, ma lo si scopre al primo contatto, non si dà per scontato.
+  if (a.catena){ t -= 5; parti.push([-5, "Catena o gruppo: marketing forse centralizzato"]); }
   const np = TEAM.filter(m => a.preferenze && a.preferenze[m.key]).length;
   if (np){ const p = Math.min(np * 5, 20); t += p; parti.push([p, "Segnalata da " + np + (np === 1 ? " persona" : " persone")]); }
   return { totale: Math.max(0, Math.min(100, Math.round(t))), parti: parti.sort((x,y) => y[0]-x[0]) };
