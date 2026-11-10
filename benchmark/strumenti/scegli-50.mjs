@@ -23,6 +23,30 @@ const soc = fs.existsSync(socialFile) ? JSON.parse(fs.readFileSync(socialFile, "
 const SOC = new Map(soc.strutture.map(s => [s.placeId, s]));
 const QUANTE = Number(process.argv[2]) || 50;
 
+/* --- le stelle, che Google non espone: compilate a mano in stelle.json --- */
+const STELLE = JSON.parse(fs.readFileSync(path.join(import.meta.dirname, "stelle.json"), "utf8"));
+const piatto = n => (n || "")
+  .toLowerCase()
+  .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+  .replace(/&/g, " e ")
+  .replace(/[^a-z0-9]+/g, " ")
+  .trim();
+const CINQUE = new Map(STELLE.cinqueStelle.map(x => [piatto(x.nome), x.comune ? piatto(x.comune) : null]));
+// Marcatori che una struttura si mette da sola in casa: li leggiamo, non li deduciamo.
+const CINQUE_NOME = /\b5\s*(stelle|sterne|star)\b|\*{5}|relais & ch|\bluxury (maison|lodge|retreat)\b/i;
+function cinqueStelle(r){
+  const n = piatto(r.nome);
+  // Corrispondenza esatta sul nome normalizzato, piu' il comune dove serve:
+  // "Hotel La Perla" di Corvara e' 5 stelle, l'omonimo di Canazei no;
+  // "Alpenroyal Hotel" di Selva e' 5 stelle, "Hotel Alpenroyal" di Castelrotto no.
+  if (CINQUE.has(n)) {
+    const c = CINQUE.get(n);
+    if (!c || c === piatto(r.comune)) return "censita a mano come 5 stelle";
+  }
+  if (CINQUE_NOME.test(r.nome || "")) return "il nome dichiara 5 stelle / lusso";
+  return null;
+}
+
 const MAXKM = 35, MINRAT = 4.3, MINREC = 80;
 const GRANDI = /\bresort\b|\bslh\b|relais & ch|luxury|\bspa resort\b/i;
 const FUORIFASCIA = /\bgarni\b|pension|pensione|residence|appartement|apartments|appartamenti|camping|rifugio|ostello|hostel|\brooms\b|zimmer|\bbaita\b|\bb&b\b|bed (and|&) breakfast/i;
@@ -51,6 +75,7 @@ function valuta(r, s){
 
   if (r.catena) add(-20, "Catena o gruppo: marketing centralizzato");
   if (GRANDI.test(r.nome)) add(-10, "Grande resort: già presidiato");
+  if (cinqueStelle(r)) add(-45, "5 stelle: fuori dalla fascia 4★ / 4★ superior");
 
   return { totale: Math.max(0, Math.min(100, t)), parti: parti.sort((a,b) => b[0]-a[0]) };
 }
@@ -82,26 +107,39 @@ const valutate = bacino
   .sort((a,b) => b.v.totale - a.v.totale || (b.recensioni||0) - (a.recensioni||0));
 
 const oggi = new Date().toISOString().slice(0,10);
-const scelte = valutate.slice(0, QUANTE);
+/* Le 5 stelle non entrano nella rosa, ma non si buttano: restano in coda
+   marcate "Non in target", cosi in hub si vedono barrate col motivo. */
+const inGioco = valutate.filter(r => !cinqueStelle(r));
+const fuoriFascia = valutate.filter(r => cinqueStelle(r));
+const scelte = inGioco.slice(0, QUANTE).concat(fuoriFascia);
 
 fs.writeFileSync(path.join(DATI, "strutture-50.json"), JSON.stringify({
   fonte: "Google Places API (New) del " + grezzo.raccoltoIl + " + link social letti dalle homepage",
   selezionatoIl: oggi,
-  criteri: "Entro " + MAXKM + " km da Siusi, ≥" + MINRAT + "★, ≥" + MINREC + " recensioni, hotel (no garni/pensioni/residence). Ordinate per: social assenti o non presidiati, reputazione, dimensione, vicinanza.",
+  criteri: "Entro " + MAXKM + " km da Siusi, ≥" + MINRAT + "★, ≥" + MINREC + " recensioni, hotel (no garni/pensioni/residence), fascia 4\u2605 / 4\u2605 superior. Ordinate per: social assenti o non presidiati, reputazione, dimensione, vicinanza.",
   nonSappiamo: "Stelle, stagionalità e follower: da compilare in hub. Un social non trovato dal bot è DA VERIFICARE, non assente.",
-  bacino: bacino.length, fuoriBacino: fuori.length, quante: scelte.length,
+  bersaglio: STELLE._bersaglio,
+  bacino: bacino.length, fuoriBacino: fuori.length,
+  quante: Math.min(QUANTE, inGioco.length), fuoriFascia: fuoriFascia.length,
   strutture: scelte.map(r => {
     const s = r.s || {};
     const social = {};
     ["instagram","facebook","tiktok","youtube","linkedin"].forEach(k => {
       social[k] = { presente: !!(s.social && s.social[k]), daProporre: !(s.social && s.social[k]), handle: (s.social && s.social[k]) || "", follower: null };
     });
+    const cinque = cinqueStelle(r);
     return {
       _placeId: r.placeId,
-      nome: r.nome, verticale: "Hotel di lusso", categoria: "Non classificato",
+      nome: r.nome, verticale: "Hotel di lusso",
+      categoria: cinque ? "5 stelle" : "Non classificato",
       tipoLocalita: localita(r.comune),
       comune: r.comune, provincia: r.provincia, regione: r.regione,
-      apertura: "Da verificare", stato: "Da valutare", canale: "Da definire",
+      apertura: "Da verificare",
+      stato: cinque ? "Non in target" : "Da valutare",
+      motivoEsclusione: cinque
+        ? "Fuori fascia: 5 stelle (" + cinque + "). Il bersaglio e 4\u2605 e 4\u2605 superior."
+        : "",
+      canale: "Da definire",
       km: r.km, lingua: "Italiano + Tedesco", catena: r.catena,
       sito: { url: r.sito, assente: !r.sito, voto: 0, nota: r.sito ? "" : "Nessun sito su Google: da confermare a mano" },
       seo: { voto: 0, nota: "" },
@@ -126,7 +164,7 @@ const segnale = r => {
   return k.length + " (" + k.map(x => x.slice(0,2).toUpperCase()).join(" ") + ")";
 };
 const riga = r => "| " + [
-  r.nome.replace(/\|/g,"/"), r.comune || "–", r.km + " km",
+  (cinqueStelle(r) ? "`FUORI` " : "") + r.nome.replace(/\|/g,"/"), r.comune || "–", r.km + " km",
   r.rating + "★ (" + r.recensioni + ")", segnale(r), r.v.totale
 ].join(" | ") + " |";
 
@@ -137,12 +175,13 @@ fs.writeFileSync(path.join(DATI, "strutture-50.md"),
   " recensioni, esclusi garni, pensioni e residence (" + fuori.length + " scartate, col motivo, in `strutture-escluse.json`).\n\n" +
   "**Come sono ordinate**: in cima chi lavora bene su Google e non comunica — nessun sito, nessun social linkato, Instagram assente. È il bersaglio dell'hub: ha i soldi e ha il problema.\n\n" +
   "**Attenzione**: «nessun social» vuol dire *nessun link trovato nella homepage*, non che il profilo non esista. Va guardato a mano prima di dirlo al titolare.\n" +
-  "**Le stelle non ci sono**: Google non le espone. Categoria e stagionalità si compilano in hub.\n" +
+  "**Fascia**: bersaglio 4\u2605 e 4\u2605 superior. Le " + fuoriFascia.length + " strutture da 5 stelle stanno in coda alla tabella, segnate `FUORI`, non buttate.\n" +
+  "**Le stelle Google non le espone**: quelle che sappiamo stanno in `strumenti/stelle.json`, compilate a mano. Chi non c'\u00e8 resta da verificare.\n" +
   "**La distanza è in linea d'aria**: 30 km di Dolomiti sono spesso un'ora di guida.\n\n" +
   "| Struttura | Comune | Distanza | Google | Social in homepage | Presel. |\n|---|---|---|---|---|---|\n" +
   scelte.map(riga).join("\n") + "\n");
 
-console.log("Bacino: " + bacino.length + " · scartate: " + fuori.length + " · scelte: " + scelte.length);
+console.log("Bacino: " + bacino.length + " · scartate: " + fuori.length + " · in gioco: " + Math.min(QUANTE, inGioco.length) + " · 5 stelle fuori fascia: " + fuoriFascia.length);
 console.log("Fra le scelte — senza sito: " + scelte.filter(r => !r.sito).length +
             " · nessun social in homepage: " + scelte.filter(r => r.sito && r.s && r.s.trovati === 0).length +
             " · senza Instagram: " + scelte.filter(r => r.s && r.s.trovati > 0 && !r.s.social.instagram).length);

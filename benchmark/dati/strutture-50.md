@@ -1,4 +1,4 @@
-# Le 50 strutture — primo giro
+# Le 61 strutture — primo giro
 
 **Fonte**: Google Places API (New), raccolto il 2026-10-16 · **social**: link letti dalle homepage.
 
@@ -7,7 +7,8 @@
 **Come sono ordinate**: in cima chi lavora bene su Google e non comunica — nessun sito, nessun social linkato, Instagram assente. È il bersaglio dell'hub: ha i soldi e ha il problema.
 
 **Attenzione**: «nessun social» vuol dire *nessun link trovato nella homepage*, non che il profilo non esista. Va guardato a mano prima di dirlo al titolare.
-**Le stelle non ci sono**: Google non le espone. Categoria e stagionalità si compilano in hub.
+**Fascia**: bersaglio 4★ e 4★ superior. Le 11 strutture da 5 stelle stanno in coda alla tabella, segnate `FUORI`, non buttate.
+**Le stelle Google non le espone**: quelle che sappiamo stanno in `strumenti/stelle.json`, compilate a mano. Chi non c'è resta da verificare.
 **La distanza è in linea d'aria**: 30 km di Dolomiti sono spesso un'ora di guida.
 
 | Struttura | Comune | Distanza | Google | Social in homepage | Presel. |
@@ -62,3 +63,14 @@
 | Boutique Hotel St. Georgen | Scena | 32 km | 4.8★ (124) | **nessun social** | 83 |
 | Apartment Hotel Christine **** in Hafling bei Meran, Meranerland, Südtirol, Italien | Avelengo | 29 km | 4.8★ (117) | **nessun social** | 83 |
 | Albergo Unteranger | Lana | 31 km | 4.7★ (111) | **nessun social** | 83 |
+| `FUORI` Sensoria Dolomites | Castelrotto | 1 km | 4.8★ (493) | 2 (IN FA) | 7 |
+| `FUORI` Alpenroyal Hotel | Selva di Val Gardena | 15 km | 4.7★ (375) | da verificare | 7 |
+| `FUORI` Gardena Grödnerhof Hotel & Spa | Castelrotto | 10 km | 4.9★ (352) | 2 (IN FA) | 7 |
+| `FUORI` ADLER Balance | Ortisei | 10 km | 4.8★ (244) | da verificare | 7 |
+| `FUORI` Hotel La Perla | Corvara in Badia | 25 km | 4.7★ (490) | 2 (IN FA) | 3 |
+| `FUORI` Ciasa Salares | Badia | 31 km | 4.8★ (305) | da verificare | 3 |
+| `FUORI` ADLER Dolomiti | Ortisei | 10 km | 4.8★ (1779) | da verificare | 0 |
+| `FUORI` Cavallino Bianco Val Gardena - Dolomiti | Ortisei | 10 km | 4.8★ (1294) | 3 (IN FA YO) | 0 |
+| `FUORI` Romantik Hotel Turm | Fiè allo Sciliar | 4 km | 4.7★ (509) | 3 (IN FA YO) | 0 |
+| `FUORI` Alpin Garden Luxury Maison & Spa - Adults Only | Ortisei | 11 km | 4.6★ (339) | 3 (IN FA LI) | 0 |
+| `FUORI` Aman Rosa Alpina | Badia | 29 km | 4.5★ (318) | da verificare | 0 |
