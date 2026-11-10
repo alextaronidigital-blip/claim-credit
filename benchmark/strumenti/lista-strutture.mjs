@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 /* YDG · Verticale ospitalità
-   Costruisce la lista delle strutture nel raggio di Siusi usando Google Places API (New).
+   Costruisce la lista delle strutture sulle quattro aree di comuni.json
+   (Alpe di Siusi, Campiglio, Cortina, Tarvisio) usando Google Places API (New).
 
    Uso:
      export GOOGLE_PLACES_KEY=...        (oppure mettila in .env.local)
      node benchmark/strumenti/lista-strutture.mjs            # raccolta completa
-     node benchmark/strumenti/lista-strutture.mjs --prova    # 3 sole zone, per testare la chiave
+     node benchmark/strumenti/lista-strutture.mjs --prova    # 2 zone per area, per testare la chiave
+     node benchmark/strumenti/lista-strutture.mjs --area cortina   # una sola area
      node benchmark/strumenti/lista-strutture.mjs --quante 50
 
    Scrive:
@@ -55,15 +57,17 @@ const CAMPI = [
   "nextPageToken"
 ].join(",");
 
-async function cerca(testo, pageToken){
+async function cerca(testo, pageToken, area){
+  // Il rettangolo e' stretto attorno al centro dell'area: senza, Places
+  // risponde con mezza Italia e si bruciano chiamate per niente.
   const corpo = {
     textQuery: testo,
     languageCode: "it",
     includedType: "lodging",
     maxResultCount: 20,
     locationRestriction: { rectangle: {
-      low:  { latitude: ZONE.centro.lat - 0.62, longitude: ZONE.centro.lon - 0.90 },
-      high: { latitude: ZONE.centro.lat + 0.62, longitude: ZONE.centro.lon + 0.90 }
+      low:  { latitude: area.centro.lat - 0.62, longitude: area.centro.lon - 0.90 },
+      high: { latitude: area.centro.lat + 0.62, longitude: area.centro.lon + 0.90 }
     }}
   };
   if (pageToken) corpo.pageToken = pageToken;
@@ -84,22 +88,30 @@ async function cerca(testo, pageToken){
 
 /* ---- raccolta ---- */
 const trovate = new Map();
-const zone = PROVA ? ZONE.zone.slice(0, 3) : ZONE.zone;
 let chiamate = 0;
 
-for (const zona of zone){
-  let token = null, pagina = 0;
-  do {
-    const res = await cerca("hotel " + zona, token);
-    chiamate++;
-    (res.places || []).forEach(p => { if (!trovate.has(p.id)) trovate.set(p.id, p); });
-    token = res.nextPageToken || null;
-    pagina++;
-    await attendi(120);
-  } while (token && pagina < 3);
-  process.stdout.write("\r  " + zona.padEnd(34) + " → " + String(trovate.size).padStart(4) + " strutture, " + chiamate + " chiamate   ");
+const soloArea = (argv.find(a => a.startsWith("--area=")) || "").split("=")[1]
+  || (argv.includes("--area") ? argv[argv.indexOf("--area")+1] : null);
+const aree = ZONE.aree.filter(a => !soloArea || a.id === soloArea);
+if (!aree.length){ console.error("✗ Area sconosciuta: " + soloArea + ". Sono: " + ZONE.aree.map(a=>a.id).join(", ")); process.exit(1); }
+
+for (const area of aree){
+  const zone = PROVA ? area.zone.slice(0, 2) : area.zone;
+  console.log("\n▸ " + area.nome + " — " + zone.length + " zone, centro " + area.centro.nome);
+  for (const zona of zone){
+    let token = null, pagina = 0;
+    do {
+      const res = await cerca("hotel " + zona, token, area);
+      chiamate++;
+      (res.places || []).forEach(p => { if (!trovate.has(p.id)) trovate.set(p.id, p); });
+      token = res.nextPageToken || null;
+      pagina++;
+      await attendi(120);
+    } while (token && pagina < 3);
+    process.stdout.write("\r  " + zona.slice(0,32).padEnd(34) + " → " + String(trovate.size).padStart(4) + " strutture, " + chiamate + " chiamate   ");
+  }
 }
-console.log("\n✓ Raccolta chiusa: " + trovate.size + " strutture distinte, " + chiamate + " chiamate a Places.");
+console.log("\n\n✓ Raccolta chiusa: " + trovate.size + " strutture distinte, " + chiamate + " chiamate a Places.");
 
 /* ---- normalizzazione ---- */
 const CATENE = ["falkensteiner","marriott","hilton","nh hotel","mercure","best western","sheraton","b&b hotel","ibis","radisson","accor","club med","tui blue","aminess","dolomiti wellness group"];
@@ -114,9 +126,23 @@ const localita = comune => {
   return "Montagna";
 };
 
+// Una struttura appartiene all'area il cui centro e' piu' vicino, non a quella
+// con cui l'abbiamo trovata: cercando "hotel Arabba" escono anche strutture
+// che stanno piu' vicino a Siusi che a Cortina.
+function areaPiuVicina(lat, lon){
+  if (lat == null || lon == null) return { area: null, d: null };
+  let best = null;
+  for (const a of ZONE.aree){
+    const d = km(a.centro.lat, a.centro.lon, lat, lon);
+    if (!best || d < best.d) best = { area: a, d };
+  }
+  return best;
+}
+
 const righe = [...trovate.values()].map(p => {
   const lat = p.location && p.location.latitude, lon = p.location && p.location.longitude;
-  const d = (lat != null && lon != null) ? km(ZONE.centro.lat, ZONE.centro.lon, lat, lon) : null;
+  const vicina = areaPiuVicina(lat, lon);
+  const d = vicina.d;
   const nome = (p.displayName && p.displayName.text) || "";
   const tipi = p.types || [];
   const rec = p.userRatingCount || 0;
@@ -134,6 +160,9 @@ const righe = [...trovate.values()].map(p => {
     regione: comp(p, "administrative_area_level_1") || "",
     indirizzo: p.formattedAddress || "",
     km: d == null ? null : Math.round(d),
+    area: vicina.area ? vicina.area.id : "",
+    areaNome: vicina.area ? vicina.area.nome : "",
+    daCentro: vicina.area ? vicina.area.centro.nome : "",
     rating: rat || null,
     recensioni: rec || null,
     sito,
@@ -152,7 +181,7 @@ const scartate = [];
 const buone = righe.filter(r => {
   const perche = [];
   if (r.stato && r.stato !== "OPERATIONAL") perche.push("non operativa (" + r.stato + ")");
-  if (r.km == null || r.km > ZONE.raggioKm) perche.push("fuori raggio (" + r.km + " km)");
+  if (r.km == null || r.km > ZONE.raggioKm) perche.push("fuori raggio: " + r.km + " km dal centro piu' vicino (" + r.daCentro + ")");
   if ((r.recensioni || 0) < 25) perche.push("meno di 25 recensioni");
   if (r.tipi.some(t => /campground|rv_park|camping/.test(t))) perche.push("campeggio");
   if (!r.tipi.some(t => /lodging|hotel|resort|bed_and_breakfast|guest_house|inn/.test(t))) perche.push("non è una struttura ricettiva");
@@ -164,7 +193,8 @@ fs.mkdirSync(USCITA, { recursive: true });
 fs.writeFileSync(path.join(USCITA, "strutture-grezze.json"), JSON.stringify({
   fonte: "Google Places API (New) · places:searchText",
   raccoltoIl: new Date().toISOString().slice(0,10),
-  centro: ZONE.centro, raggioKm: ZONE.raggioKm,
+  aree: ZONE.aree.map(a => ({ id:a.id, nome:a.nome, centro:a.centro, zone:a.zone.length })),
+  raggioKm: ZONE.raggioKm,
   chiamate, trovate: righe.length, inTarget: buone.length,
   strutture: righe, scartate
 }, null, 2));
@@ -195,7 +225,8 @@ fs.writeFileSync(path.join(USCITA, "strutture-50.json"), JSON.stringify({
   fonte: "Google Places API (New)", raccoltoIl: oggi, quante: scelte.length, strutture: scelte
 }, null, 2));
 
-console.log("✓ In target (entro " + ZONE.raggioKm + " km, ≥25 recensioni, operative): " + buone.length);
+console.log("✓ In target (entro " + ZONE.raggioKm + " km dal centro piu' vicino, ≥25 recensioni, operative): " + buone.length);
+ZONE.aree.forEach(a => console.log("   " + a.nome.slice(0,44).padEnd(46) + String(buone.filter(r => r.area === a.id).length).padStart(4)));
 console.log("✓ Scritti:");
 console.log("   benchmark/dati/strutture-grezze.json  (" + righe.length + " strutture + " + scartate.length + " scartate con il motivo)");
 console.log("   benchmark/dati/strutture-50.json      (" + scelte.length + " pronte per l'hub)");

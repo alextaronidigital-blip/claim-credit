@@ -23,6 +23,13 @@ const soc = fs.existsSync(socialFile) ? JSON.parse(fs.readFileSync(socialFile, "
 const SOC = new Map(soc.strutture.map(s => [s.placeId, s]));
 const QUANTE = Number(process.argv[2]) || 50;
 
+/* Il raccolto di ottobre e' precedente alle quattro aree: ha un centro solo,
+   Siusi, e nessun campo "area". Glielo attribuiamo qui, senza inventare: tutto
+   quel raccolto stava per definizione nel raggio di Siusi. */
+const VECCHIO = !!grezzo.centro && !grezzo.aree;
+const areaDi = r => r.area || (VECCHIO ? "siusi" : "");
+if (VECCHIO) console.log("(raccolto in formato vecchio, centro unico " + grezzo.centro.nome + ": attribuito tutto all'area Siusi)");
+
 /* --- le stelle, che Google non espone: compilate a mano in stelle.json --- */
 const STELLE = JSON.parse(fs.readFileSync(path.join(import.meta.dirname, "stelle.json"), "utf8"));
 const piatto = n => (n || "")
@@ -47,7 +54,8 @@ function cinqueStelle(r){
   return null;
 }
 
-const MAXKM = 35, MINRAT = 4.3, MINREC = 80;
+const ZONE = JSON.parse(fs.readFileSync(path.join(import.meta.dirname, "comuni.json"), "utf8"));
+const MAXKM = ZONE.raggioSceltaKm || 35, MINRAT = 4.3, MINREC = 80;
 const GRANDI = /\bresort\b|\bslh\b|relais & ch|luxury|\bspa resort\b/i;
 const FUORIFASCIA = /\bgarni\b|pension|pensione|residence|appartement|apartments|appartamenti|camping|rifugio|ostello|hostel|\brooms\b|zimmer|\bbaita\b|\bb&b\b|bed (and|&) breakfast/i;
 const TIPI_OK = /^(hotel|resort_hotel|lodging|inn|extended_stay_hotel)$/;
@@ -71,9 +79,13 @@ function valuta(r, s){
   else if (s && !s.social.instagram) add(15, "Instagram non linkato in homepage");
   else if (s && s.trovati <= 1) add(8, "Un solo social linkato");
 
-  if (r.km <= 20) add(12, "A " + r.km + " km da Siusi"); else add(8, "A " + r.km + " km da Siusi");
+  const dove = r.daCentro || "Siusi";
+  if (r.km <= 20) add(12, "A " + r.km + " km da " + dove); else add(8, "A " + r.km + " km da " + dove);
 
-  if (r.catena) add(-20, "Catena o gruppo: marketing centralizzato");
+  // Decisione del 10/11: le catene restano dentro, non si escludono a priori.
+  // Resta una penalita' lieve, perche' il marketing centralizzato e' comunque
+  // un ostacolo: lo si scopre al primo contatto.
+  if (r.catena) add(-5, "Catena o gruppo: marketing forse centralizzato, da scoprire al contatto");
   if (GRANDI.test(r.nome)) add(-10, "Grande resort: già presidiato");
   if (cinqueStelle(r)) add(-45, "5 stelle: fuori dalla fascia 4★ / 4★ superior");
 
@@ -90,7 +102,7 @@ const localita = c => {
 const fuori = [];
 const bacino = grezzo.strutture.filter(r => {
   const perche = [];
-  if (r.km == null || r.km > MAXKM) perche.push("oltre " + MAXKM + " km (" + r.km + ")");
+  if (r.km == null || r.km > MAXKM) perche.push("oltre " + MAXKM + " km dal centro della sua area (" + r.km + ")");
   if ((r.rating || 0) < MINRAT) perche.push("rating sotto " + MINRAT + " (" + (r.rating || "–") + "): non lavora bene");
   if ((r.recensioni || 0) < MINREC) perche.push("meno di " + MINREC + " recensioni");
   if (r.stato && r.stato !== "OPERATIONAL") perche.push("non operativa");
@@ -116,7 +128,8 @@ const scelte = inGioco.slice(0, QUANTE).concat(fuoriFascia);
 fs.writeFileSync(path.join(DATI, "strutture-50.json"), JSON.stringify({
   fonte: "Google Places API (New) del " + grezzo.raccoltoIl + " + link social letti dalle homepage",
   selezionatoIl: oggi,
-  criteri: "Entro " + MAXKM + " km da Siusi, ≥" + MINRAT + "★, ≥" + MINREC + " recensioni, hotel (no garni/pensioni/residence), fascia 4\u2605 / 4\u2605 superior. Ordinate per: social assenti o non presidiati, reputazione, dimensione, vicinanza.",
+  aree: ZONE.aree.map(a => ({ id:a.id, nome:a.nome, quante: scelte.filter(r => areaDi(r) === a.id && !cinqueStelle(r)).length })),
+  criteri: "Entro " + MAXKM + " km dal centro della propria area, ≥" + MINRAT + "★, ≥" + MINREC + " recensioni, hotel (no garni/pensioni/residence), fascia 4\u2605 / 4\u2605 superior. Ordinate per: social assenti o non presidiati, reputazione, dimensione, vicinanza.",
   nonSappiamo: "Stelle, stagionalità e follower: da compilare in hub. Un social non trovato dal bot è DA VERIFICARE, non assente.",
   bersaglio: STELLE._bersaglio,
   bacino: bacino.length, fuoriBacino: fuori.length,
@@ -134,6 +147,7 @@ fs.writeFileSync(path.join(DATI, "strutture-50.json"), JSON.stringify({
       categoria: cinque ? "5 stelle" : "Non classificato",
       tipoLocalita: localita(r.comune),
       comune: r.comune, provincia: r.provincia, regione: r.regione,
+      area: r.areaNome || (ZONE.aree.find(a => a.id === areaDi(r)) || {nome:""}).nome,
       apertura: "Da verificare",
       stato: cinque ? "Non in target" : "Da valutare",
       motivoEsclusione: cinque
@@ -164,27 +178,30 @@ const segnale = r => {
   return k.length + " (" + k.map(x => x.slice(0,2).toUpperCase()).join(" ") + ")";
 };
 const riga = r => "| " + [
-  (cinqueStelle(r) ? "`FUORI` " : "") + r.nome.replace(/\|/g,"/"), r.comune || "–", r.km + " km",
+  (cinqueStelle(r) ? "`FUORI` " : "") + r.nome.replace(/\|/g,"/"), r.comune || "–",
+  (ZONE.aree.find(a => a.id === areaDi(r)) || {nome:"–"}).nome.split(" ")[0], r.km + " km",
   r.rating + "★ (" + r.recensioni + ")", segnale(r), r.v.totale
 ].join(" | ") + " |";
 
 fs.writeFileSync(path.join(DATI, "strutture-50.md"),
-  "# Le " + scelte.length + " strutture — primo giro\n\n" +
+  "# Le " + Math.min(QUANTE, inGioco.length) + " strutture in gioco, piu' " + fuoriFascia.length + " fuori fascia\n\n" +
   "**Fonte**: Google Places API (New), raccolto il " + grezzo.raccoltoIl + " · **social**: link letti dalle homepage.\n\n" +
-  "**Bacino**: " + bacino.length + " hotel entro " + MAXKM + " km da " + grezzo.centro.nome + ", almeno " + MINRAT + "★ e " + MINREC +
+  "**Aree**: " + ZONE.aree.map(a => a.nome + " (" + scelte.filter(r => areaDi(r) === a.id && !cinqueStelle(r)).length + ")").join(" · ") + "\n\n" +
+  "**Bacino**: " + bacino.length + " hotel entro " + MAXKM + " km dal centro della propria area, almeno " + MINRAT + "★ e " + MINREC +
   " recensioni, esclusi garni, pensioni e residence (" + fuori.length + " scartate, col motivo, in `strutture-escluse.json`).\n\n" +
   "**Come sono ordinate**: in cima chi lavora bene su Google e non comunica — nessun sito, nessun social linkato, Instagram assente. È il bersaglio dell'hub: ha i soldi e ha il problema.\n\n" +
   "**Attenzione**: «nessun social» vuol dire *nessun link trovato nella homepage*, non che il profilo non esista. Va guardato a mano prima di dirlo al titolare.\n" +
   "**Fascia**: bersaglio 4\u2605 e 4\u2605 superior. Le " + fuoriFascia.length + " strutture da 5 stelle stanno in coda alla tabella, segnate `FUORI`, non buttate.\n" +
   "**Le stelle Google non le espone**: quelle che sappiamo stanno in `strumenti/stelle.json`, compilate a mano. Chi non c'\u00e8 resta da verificare.\n" +
-  "**La distanza è in linea d'aria**: 30 km di Dolomiti sono spesso un'ora di guida.\n\n" +
-  "| Struttura | Comune | Distanza | Google | Social in homepage | Presel. |\n|---|---|---|---|---|---|\n" +
+  "**La distanza è in linea d'aria** e si misura dal centro della sua area: 30 km di Dolomiti sono spesso un'ora di guida.\n\n" +
+  "| Struttura | Comune | Area | Distanza | Google | Social in homepage | Presel. |\n|---|---|---|---|---|---|---|\n" +
   scelte.map(riga).join("\n") + "\n");
 
 console.log("Bacino: " + bacino.length + " · scartate: " + fuori.length + " · in gioco: " + Math.min(QUANTE, inGioco.length) + " · 5 stelle fuori fascia: " + fuoriFascia.length);
 console.log("Fra le scelte — senza sito: " + scelte.filter(r => !r.sito).length +
             " · nessun social in homepage: " + scelte.filter(r => r.sito && r.s && r.s.trovati === 0).length +
             " · senza Instagram: " + scelte.filter(r => r.s && r.s.trovati > 0 && !r.s.social.instagram).length);
+ZONE.aree.forEach(a => console.log("  " + a.nome.slice(0,44).padEnd(46) + String(scelte.filter(r => areaDi(r) === a.id && !cinqueStelle(r)).length).padStart(3) + " in rosa"));
 console.log("Entro 20 km: " + scelte.filter(r => r.km <= 20).length + " · 21-35 km: " + scelte.filter(r => r.km > 20).length);
 console.log("\nPrime 15:");
 scelte.slice(0,15).forEach((r,i) => console.log("  " + String(i+1).padStart(2) + ". " + r.nome.slice(0,38).padEnd(40) + (r.comune||"–").slice(0,16).padEnd(18) + String(r.km).padStart(3) + " km  " + r.rating + "★ (" + r.recensioni + ")  " + segnale(r).replace(/\*\*/g,"") + "  [" + r.v.totale + "]"));

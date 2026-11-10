@@ -1,34 +1,99 @@
 {
   "_cosa": "Le stelle che Google Places NON espone. Censite a mano sui nomi esatti come li scrive Google, verificati sul raccolto. Chi non e' qui esce 'Da verificare': mai inventata.",
   "_aggiornato": "2026-11-10",
-  "_bersaglio": "4 stelle e 4 stelle superior. Le 5 stelle restano in lista ma segnate fuori target.",
+  "_bersaglio": "3 stelle, 3 stelle superior, 4 stelle e 4 stelle superior (decisione del 10/11). Le 5 stelle restano in lista ma segnate fuori target.",
   "_comeSiLegge": "Corrispondenza esatta sul nome normalizzato (minuscole, senza accenti ne punteggiatura). Dove c'e' 'comune' deve combaciare anche quello: serve per gli omonimi.",
   "cinqueStelle": [
-    { "nome": "ADLER Dolomiti", "comune": "Ortisei" },
-    { "nome": "ADLER Balance", "comune": "Ortisei" },
-    { "nome": "Cavallino Bianco Val Gardena - Dolomiti", "comune": "Ortisei" },
-    { "nome": "Gardena Grödnerhof Hotel & Spa" },
-    { "nome": "Alpin Garden Luxury Maison & Spa - Adults Only", "comune": "Ortisei" },
-    { "nome": "Alpenroyal Hotel", "comune": "Selva di Val Gardena" },
-    { "nome": "Hotel La Perla", "comune": "Corvara in Badia" },
-    { "nome": "Aman Rosa Alpina", "comune": "Badia" },
-    { "nome": "Ciasa Salares", "comune": "Badia" },
-    { "nome": "Sensoria Dolomites", "comune": "Castelrotto" },
-    { "nome": "Romantik Hotel Turm", "comune": "Fiè allo Sciliar" },
-    { "nome": "ADLER Lodge ALPE" },
-    { "nome": "Granvara Relais & Spa Hotel" },
-    { "nome": "Alpina Dolomites Lodge & Spa" },
-    { "nome": "Forestis Dolomites" },
-    { "nome": "Lagació Mountain Residence" },
-    { "nome": "Excelsior Dolomites Life Resort" },
-    { "nome": "Castel Fragsburg" },
-    { "nome": "Preidlhof Luxury DolceVita Resort" }
+    {
+      "nome": "ADLER Dolomiti",
+      "comune": "Ortisei"
+    },
+    {
+      "nome": "ADLER Balance",
+      "comune": "Ortisei"
+    },
+    {
+      "nome": "Cavallino Bianco Val Gardena - Dolomiti",
+      "comune": "Ortisei"
+    },
+    {
+      "nome": "Gardena Grödnerhof Hotel & Spa"
+    },
+    {
+      "nome": "Alpin Garden Luxury Maison & Spa - Adults Only",
+      "comune": "Ortisei"
+    },
+    {
+      "nome": "Alpenroyal Hotel",
+      "comune": "Selva di Val Gardena"
+    },
+    {
+      "nome": "Hotel La Perla",
+      "comune": "Corvara in Badia"
+    },
+    {
+      "nome": "Aman Rosa Alpina",
+      "comune": "Badia"
+    },
+    {
+      "nome": "Ciasa Salares",
+      "comune": "Badia"
+    },
+    {
+      "nome": "Sensoria Dolomites",
+      "comune": "Castelrotto"
+    },
+    {
+      "nome": "Romantik Hotel Turm",
+      "comune": "Fiè allo Sciliar"
+    },
+    {
+      "nome": "ADLER Lodge ALPE"
+    },
+    {
+      "nome": "Granvara Relais & Spa Hotel"
+    },
+    {
+      "nome": "Alpina Dolomites Lodge & Spa"
+    },
+    {
+      "nome": "Forestis Dolomites"
+    },
+    {
+      "nome": "Lagació Mountain Residence"
+    },
+    {
+      "nome": "Excelsior Dolomites Life Resort"
+    },
+    {
+      "nome": "Castel Fragsburg"
+    },
+    {
+      "nome": "Preidlhof Luxury DolceVita Resort"
+    }
   ],
   "daConfermare": [
-    { "nome": "ADLER Ritten", "comune": "Renon", "dubbio": "catena ADLER ma non so se 5 stelle o 4 superior" },
-    { "nome": "Alpin & Vital Hotel La Perla", "comune": "Castelrotto", "dubbio": "omonimo del 5 stelle di Corvara: credo 4 superior" },
-    { "nome": "Hotel Alpenroyal", "comune": "Castelrotto", "dubbio": "omonimo del 5 stelle di Selva: credo 4 stelle" },
-    { "nome": "Dolomiti Hotel ADLER Carezza", "comune": "Nova Levante", "dubbio": "catena ADLER ma struttura piu' piccola: credo 4 stelle" }
+    {
+      "nome": "ADLER Ritten",
+      "comune": "Renon",
+      "dubbio": "catena ADLER ma non so se 5 stelle o 4 superior"
+    },
+    {
+      "nome": "Alpin & Vital Hotel La Perla",
+      "comune": "Castelrotto",
+      "dubbio": "omonimo del 5 stelle di Corvara: credo 4 superior"
+    },
+    {
+      "nome": "Hotel Alpenroyal",
+      "comune": "Castelrotto",
+      "dubbio": "omonimo del 5 stelle di Selva: credo 4 stelle"
+    },
+    {
+      "nome": "Dolomiti Hotel ADLER Carezza",
+      "comune": "Nova Levante",
+      "dubbio": "catena ADLER ma struttura piu' piccola: credo 4 stelle"
+    }
   ],
-  "_nota": "'daConfermare' non e' usata dal codice: e' la lista da chiedere a chi conosce la zona. Finche' una struttura sta li', resta in gioco."
+  "_nota": "'daConfermare' non e' usata dal codice: e' la lista da chiedere a chi conosce la zona. Finche' una struttura sta li', resta in gioco.",
+  "_attenzione": "Alex il 10/11 in chat ha detto 'andiamo a 4+ stelle'. Il foglio di passaggio dello stesso giorno dice 3-4 stelle e il Caso A dei prezzi e' un 3 stelle. Da sciogliere. Nel frattempo non cambia nulla in pratica: Google non espone le stelle, quindi il filtro per fascia non e' ancora attivabile e l'unico taglio che gira e' quello delle 5 stelle."
 }
