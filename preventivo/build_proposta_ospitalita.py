@@ -94,7 +94,7 @@ body{{font-family:"Overused Grotesk",Inter,Arial,sans-serif;font-weight:400;-web
 .ftr b{{font-weight:600}}
 .box{{position:absolute;top:168px;left:128px;right:128px;bottom:124px;z-index:2}}
 .eye{{font-weight:600;font-size:18px;letter-spacing:.075em;text-transform:uppercase;color:var(--o)}}
-.light .eye{{color:#B35400}}
+.light .eye{{color:#B35400}} .orange .eye{{color:var(--k)}}
 h1{{font-weight:600;font-size:74px;line-height:1.04;letter-spacing:-.04em;margin:22px 0 0}}
 h1 .o{{color:var(--o)}}
 .lead{{font-size:25px;line-height:1.5;margin:22px 0 0;max-width:1150px;color:var(--g)}}
@@ -115,6 +115,8 @@ ul.l li::before{{content:"";position:absolute;left:0;top:12px;width:9px;height:9
 .sub{{font-size:18px;line-height:1.45}}
 .lab{{font-weight:600;font-size:16px;letter-spacing:.075em;text-transform:uppercase}}
 .grid{{display:grid;gap:24px}}
+.pieno{{width:100%;height:100%;align-items:stretch}}
+.pieno .card{{height:100%}}
 .num{{font-weight:600;font-size:72px;line-height:.9;color:var(--o);letter-spacing:-.045em}}
 .kpi{{font-weight:600;font-size:46px;line-height:1;color:var(--o);letter-spacing:-.04em}}
 .freccia{{width:64px;height:64px;border-radius:50%;background:var(--o);color:{BLACK};display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:600}}
@@ -128,6 +130,20 @@ def page(theme, body, n=None, bg="", extra="", meta=META):
             f'<div class="hdr">{svg("logo-germoglio-centro")}<div class="meta">{E(meta)}</div></div>'
             f'<div class="box">{body}</div>'
             f'<div class="ftr"><span>{num}</span><span>{E(WEB)}</span></div></section>')
+
+def impila(*blocchi):
+    """Distribuisce i blocchi sull'altezza del riquadro: la pagina non resta mozza in alto."""
+    return ('<div style="height:100%;display:flex;flex-direction:column;justify-content:space-between">'
+            + "".join(f"<div>{b}</div>" for b in blocchi) + "</div>")
+
+def cresci(testa, corpo, coda="", centra=False):
+    """Intestazione in alto e corpo sotto: o si allunga fino in fondo, o sta al centro
+    dello spazio che resta. Meglio centrare che lasciare card alte e mezze vuote."""
+    fine = f'<div style="margin-top:22px">{coda}</div>' if coda else ""
+    allinea = "center" if centra else "stretch"
+    return ('<div style="height:100%;display:flex;flex-direction:column">'
+            f'<div>{testa}</div>'
+            f'<div style="flex:1;display:flex;align-items:{allinea};margin-top:40px">{corpo}</div>{fine}</div>')
 
 def ul(xs, cls="l"):
     return f'<ul class="{cls}">' + "".join(f"<li>{E(x)}</li>" for x in xs) + "</ul>"
@@ -145,12 +161,13 @@ def p02():
     pb = [("Le commissioni", "Ogni prenotazione che passa dai portali lascia una percentuale per strada. Il sito che prende la prenotazione diretta sposta una parte di quel giro in casa: stesso ospite, stessa notte, senza commissione."),
           ("La voce che manca", "Chi vi trova su Google o sui portali va a cercarvi su Instagram. Se trova foto vecchie e nessuna risposta, sceglie la struttura accanto che gliela dà."),
           ("Il lavoro a mano", "Tariffe e disponibilità aggiornate a mano su più canali: prima o poi si vende due volte la stessa camera, o si resta con la camera vuota a prezzo pieno.")]
-    cards = "".join(f'<div class="card k" style="min-height:430px"><div class="num">{i+1:02d}</div>'
+    cards = "".join(f'<div class="card k"><div class="num">{i+1:02d}</div>'
                     f'<h3 style="margin-top:26px">{E(t)}</h3><div style="font-size:25px;line-height:1.42;color:var(--s)">{E(d)}</div></div>'
                     for i, (t, d) in enumerate(pb))
-    body = (f'<div class="eye">Il punto di partenza</div><h1>Tre cose che costano, <span class="o">ogni stagione.</span></h1>'
-            f'<p class="lead">Non parliamo di «essere sui social». Parliamo di dove una struttura perde ospiti e margine.</p>'
-            f'<div class="grid" style="grid-template-columns:repeat(3,1fr);gap:32px;margin-top:40px">{cards}</div>')
+    body = cresci(
+            f'<div class="eye">Il punto di partenza</div><h1>Tre cose che costano, <span class="o">ogni stagione.</span></h1>'
+            f'<p class="lead">Non parliamo di «essere sui social». Parliamo di dove una struttura perde ospiti e margine.</p>',
+            f'<div class="grid pieno" style="grid-template-columns:repeat(3,1fr);gap:32px">{cards}</div>')
     return page("light", body, 2)
 
 # ── 03 chi siamo
@@ -165,9 +182,10 @@ def p03():
              "Gestione manuale e strategica, mai automatismi",
              "La stessa squadra dall'inizio alla fine, risposte dirette alla direzione",
              "Report trasparenti: si vede cosa portiamo"]
-    body = (f'<div class="eye">Chi siamo</div><h1>Uno studio di comunicazione digitale,<br>con <span class="o">un verticale sull\'ospitalità.</span></h1>'
-            f'<p class="lead">YDG Studio lavora con PMI e attività locali dal 2022. Sull\'ospitalità abbiamo costruito da zero i profili di un hotel e del suo ristorante, e li seguiamo da due stagioni.</p>'
-            f'<div class="grid" style="grid-template-columns:1fr 1fr;margin-top:50px;gap:40px">'
+    body = impila(
+            f'<div class="eye">Chi siamo</div><h1>Uno studio di comunicazione digitale,<br>con <span class="o">un verticale sull\'ospitalità.</span></h1>'
+            f'<p class="lead">YDG Studio lavora con PMI e attività locali dal 2022. Sull\'ospitalità abbiamo costruito da zero i profili di un hotel e del suo ristorante, e li seguiamo da due stagioni.</p>',
+            f'<div class="grid" style="grid-template-columns:1fr 1fr;gap:40px">'
             f'<div><div class="sub" style="font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:26px;color:var(--c)">Cosa fa lo studio</div>'
             f'<div class="grid" style="grid-template-columns:1fr 1fr;gap:34px 14px">{tiles}</div></div>'
             f'<div class="card k" style="height:100%"><h3>Come lavoriamo</h3>{ul(forza)}</div></div>')
@@ -175,16 +193,21 @@ def p03():
 
 # ── 04 i cinque servizi
 def p04():
-    s = [("Gestione social", "Piano editoriale, contenuti, pubblicazione, community sui profili della struttura e del ristorante."),
-         ("Sito con prenotazione", "Sito o restyling con motore di prenotazione diretta collegato, pagine per le offerte."),
+    s = [("Gestione social", "Piano editoriale, contenuti, pubblicazione e community sui profili della struttura e del ristorante."),
+         ("Sito con prenotazione", "Sito o restyling con il motore di prenotazione diretta collegato, e le pagine per le offerte."),
          ("Booking e Airbnb", "Schede curate, tariffe e disponibilità allineate, channel manager collegato e monitorato."),
-         ("CRM ed email", "Archivio contatti e comunicazioni agli ospiti già passati. Opzionale, su richiesta."),
-         ("Advertising", "Campagne Meta e Google sui mercati che prenotano, con il budget che decidete voi.")]
-    cards = "".join(f'<div class="card c" style="border-top:8px solid {ORANGE};border-radius:6px 6px 18px 18px;min-height:360px">'
-                    f'<h3>{E(t)}</h3><div style="font-size:25px;line-height:1.4">{E(d)}</div></div>' for t, d in s)
-    body = (f'<div class="eye">I servizi</div><h1>Cinque leve, <span class="o">una sola regia.</span></h1>'
-            f'<p class="lead">Si attivano insieme o una alla volta. Quello che non serve oggi resta fuori dal preventivo.</p>'
-            f'<div class="grid" style="grid-template-columns:repeat(5,1fr);gap:24px;margin-top:50px">{cards}</div>')
+         ("CRM ed email", "Archivio dei contatti e comunicazioni agli ospiti già passati. Opzionale, su richiesta."),
+         ("Advertising", "Campagne Meta e Google sui mercati che prenotano, col budget che decidete voi.")]
+    cards = "".join(
+        f'<div class="card c" style="display:flex;flex-direction:column;padding:32px 30px">'
+        f'<div style="font-weight:600;font-size:40px;letter-spacing:-.04em;color:{ORANGE}">{i+1:02d}</div>'
+        f'<div style="font-weight:600;font-size:24px;line-height:1.15;letter-spacing:-.02em;margin:22px 0 14px">{E(t)}</div>'
+        f'<div style="font-size:19px;line-height:1.5;color:var(--g)">{E(d)}</div>'
+        f'<div style="height:4px;background:{ORANGE};border-radius:999px;width:44px;margin-top:24px"></div></div>' for i, (t, d) in enumerate(s))
+    body = cresci(
+            f'<div class="eye">I servizi</div><h1>Cinque leve, <span class="o">una sola regia.</span></h1>'
+            f'<p class="lead">Si attivano insieme o una alla volta. Quello che non serve oggi resta fuori dal preventivo.</p>',
+            f'<div class="grid" style="width:100%;grid-template-columns:repeat(5,1fr);gap:20px">{cards}</div>', centra=True)
     return page("dark", body, 4)
 
 # ── 05 il metodo, i sette passi
@@ -196,14 +219,24 @@ def p05():
              ("Strategia e piano", "Dati, piano editoriale e piano campagne, presentati e approvati."),
              ("Si parte", "Pubblicazioni, campagne, sito online."),
              ("Il ritmo", "Ottimizzazione continua e report.")]
-    cols = "".join(f'<div style="border-top:2px solid {CHARCOAL};padding-top:26px;position:relative">'
-                   f'<div style="position:absolute;top:-2px;left:0;width:{(i+1)*14}%;height:2px;background:{ORANGE}"></div>'
-                   f'<div class="num" style="font-size:72px">{i+1:02d}</div>'
-                   f'<div style="font-weight:600;font-size:25px;margin:22px 0 10px">{E(t)}</div>'
-                   f'<div style="font-size:20px;line-height:1.4;color:var(--s)">{E(d)}</div></div>' for i, (t, d) in enumerate(steps))
-    body = (f'<div class="eye">Il metodo</div><h1>Dal primo contatto <span class="o">alla stagione piena.</span></h1>'
-            f'<p class="lead">Il primo mese è di fondamenta e non si pubblica: strategia, intake, shooting. La pubblicazione parte dal secondo.</p>'
-            f'<div class="grid" style="grid-template-columns:repeat(7,1fr);gap:22px;margin-top:90px">{cols}</div>')
+    cols = "".join(f'<div style="position:relative;padding-top:52px">'
+                   f'<div style="position:absolute;top:-9px;left:0;width:18px;height:18px;border-radius:50%;background:{ORANGE}"></div>'
+                   f'<div style="font-weight:600;font-size:46px;letter-spacing:-.04em;color:{ORANGE}">{i+1:02d}</div>'
+                   f'<div style="font-weight:600;font-size:23px;line-height:1.18;letter-spacing:-.02em;margin:18px 0 10px">{E(t)}</div>'
+                   f'<div style="font-size:18px;line-height:1.45;color:var(--g)">{E(d)}</div></div>' for i, (t, d) in enumerate(steps))
+    mesi = ('<div style="display:flex;justify-content:space-between;margin-top:54px">'
+            + "".join(f'<div class="lab" style="color:#6f6f6c">{t}</div>'
+                      for t in ("Giorno 0", "Entro una settimana", "Primo mese", "Dal secondo mese"))
+            + '</div>')
+    body = impila(
+            f'<div class="eye">Il metodo</div>'
+            f'<h1>Dal primo contatto <span class="o">alla stagione piena.</span></h1>'
+            f'<p class="lead">Il primo mese è di fondamenta e non si pubblica: strategia, intake, shooting. '
+            f'La pubblicazione parte dal secondo.</p>',
+            f'<div style="position:relative">'
+            f'<div style="position:absolute;top:0;left:0;right:0;height:2px;background:rgba(255,255,255,.14)"></div>'
+            f'<div class="grid" style="grid-template-columns:repeat(7,1fr);gap:26px;position:relative">{cols}</div></div>'
+            f'{mesi}')
     return page("dark", body, 5)
 
 # ── 06 la stagione
@@ -242,8 +275,9 @@ def p07():
                        f'<div class="sub" style="margin-top:8px">{E(l)}</div></div>' for v, l in ms)
         cards += (f'<div class="card k"><div style="font-weight:600;font-size:28px">{E(nome)}</div>'
                   f'<div class="sub" style="margin:6px 0 20px">{E(sett)}</div>{rows}</div>')
-    body = (f'<div class="eye">Casi studio</div><h1>Numeri veri, <span class="o">non promesse.</span></h1>'
-            f'<div class="grid" style="grid-template-columns:repeat(3,1fr);gap:32px;margin-top:44px">{cards}</div>')
+    body = cresci(
+            f'<div class="eye">Casi studio</div><h1>Numeri veri, <span class="o">non promesse.</span></h1>',
+            f'<div class="grid pieno" style="grid-template-columns:repeat(3,1fr);gap:32px">{cards}</div>')
     return page("light", body, 7)
 
 # ── 08 da dove partiamo
@@ -255,11 +289,12 @@ def p08():
           "Presenza nella finestra di prenotazione, da dicembre a marzo",
           "TikTok con una linea editoriale dedicata per ciascun brand",
           "Advertising sui mercati esteri che prenotano con anticipo"]
-    body = (f'<div class="eye">Da dove partiamo</div><h1>Cosa funziona, <span class="o">e dove si cresce.</span></h1>'
-            f'<p class="lead">Una fotografia onesta. La strategia di dettaglio nasce dai dati, nelle prime settimane.</p>'
-            f'<div class="grid" style="grid-template-columns:1fr 1fr;gap:32px;margin-top:44px">'
-            f'<div class="card k" style="min-height:460px"><h3>Cosa funziona già</h3>{ul(ok)}</div>'
-            f'<div class="card or" style="min-height:460px"><h3>Dove possiamo crescere</h3>{ul(gr)}</div></div>')
+    body = cresci(
+            f'<div class="eye">Da dove partiamo</div><h1>Cosa funziona, <span class="o">e dove si cresce.</span></h1>'
+            f'<p class="lead">Una fotografia onesta. La strategia di dettaglio nasce dai dati, nelle prime settimane.</p>',
+            f'<div class="grid pieno" style="grid-template-columns:1fr 1fr;gap:32px">'
+            f'<div class="card k"><h3>Cosa funziona già</h3>{ul(ok)}</div>'
+            f'<div class="card or"><h3>Dove possiamo crescere</h3>{ul(gr)}</div></div>')
     return page("dark", body, 8)
 
 # ── 09 cosa ricevete ogni mese
@@ -268,10 +303,11 @@ def p09():
             ("Gestione e community", ["Instagram, Facebook, TikTok", "Google Business Profile", "Commenti, messaggi e recensioni"]),
             ("Advertising", ["Campagne Meta sulle prenotazioni", "Mercati esteri nella finestra giusta", "Budget media a parte"]),
             ("Strategia e report", ["Calendario editoriale condiviso", "Rapporto diretto con la direzione", "Report di stagione"])]
-    cards = "".join(f'<div class="card c" style="border-top:8px solid {ORANGE};border-radius:6px 6px 18px 18px;min-height:470px">'
+    cards = "".join(f'<div class="card c" style="border-top:8px solid {ORANGE};border-radius:6px 6px 24px 24px">'
                     f'<h3>{E(t)}</h3>{ul(xs, "l tight")}</div>' for t, xs in cols)
-    body = (f'<div class="eye">Il servizio</div><h1>Cosa ricevete, <span class="o">ogni mese.</span></h1>'
-            f'<div class="grid" style="grid-template-columns:repeat(4,1fr);gap:28px;margin-top:70px">{cards}</div>')
+    body = impila(
+            f'<div class="eye">Il servizio</div><h1>Cosa ricevete, <span class="o">ogni mese.</span></h1>',
+            f'<div class="grid" style="width:100%;grid-template-columns:repeat(4,1fr);gap:28px">{cards}</div>')
     return page("dark", body, 9)
 
 # ── 10 investimento
@@ -345,10 +381,11 @@ def p13():
                  f'<div><div style="font-weight:600;font-size:28px">{E(n)}</div><div class="sub" style="margin-top:6px">{E(r)}</div></div></div>' for i, n, r in soci)
     cc = "".join(f'<div style="border-top:1px solid {CHARCOAL};padding:20px 0"><div style="font-weight:600;font-size:25px">{E(n)}</div>'
                  f'<div class="sub" style="color:var(--s);margin-top:4px">{E(r)}</div></div>' for n, r in coll)
-    body = (f'<div class="eye">Il team</div><h1>Le persone <span class="o">dietro YDG Studio.</span></h1>'
-            f'<p class="lead">Una squadra affiatata: le stesse persone seguono il progetto dall\'inizio alla fine.</p>'
-            f'<div class="grid" style="grid-template-columns:repeat(3,1fr);gap:28px;margin-top:44px">{sc}</div>'
-            f'<div class="sub" style="font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin:46px 0 4px;color:var(--o)">I collaboratori</div>'
+    body = impila(
+            f'<div class="eye">Il team</div><h1>Le persone <span class="o">dietro YDG Studio.</span></h1>'
+            f'<p class="lead">Una squadra affiatata: le stesse persone seguono il progetto dall\'inizio alla fine.</p>',
+            f'<div class="grid" style="grid-template-columns:repeat(3,1fr);gap:28px">{sc}</div>',
+            f'<div class="lab" style="color:var(--o);margin-bottom:6px">I collaboratori</div>'
             f'<div class="grid" style="grid-template-columns:repeat(6,1fr);gap:0 30px">{cc}</div>')
     return page("dark", body, 13)
 
@@ -356,20 +393,23 @@ def p13():
 def p14():
     st = ["Conferma della proposta", "Definizione del budget pubblicitario", "Firma dell'accordo",
           "Primo shooting in struttura", "Avvio di gestione e campagne"]
-    cols = "".join(f'<div style="position:relative;padding-top:50px">'
-                   f'<div style="position:absolute;top:0;left:0;width:22px;height:22px;border-radius:50%;background:{BLACK}"></div>'
-                   f'<div style="font-weight:600;font-size:50px">{i+1:02d}</div>'
-                   f'<div style="font-size:25px;line-height:1.38;margin-top:12px">{E(t)}</div></div>' for i, t in enumerate(st))
-    body = (f'<div style="position:absolute;top:84px;left:0;right:0"><div class="eye">Come partiamo</div>'
-            f'<div class="big" style="margin-top:24px;font-size:84px">Grazie del tempo<br>che ci avete dato.</div>'
-            f'<div style="position:relative;margin-top:44px"><div style="position:absolute;top:10px;left:0;right:0;height:2px;background:{BLACK};opacity:.25"></div>'
-            f'<div class="grid" style="grid-template-columns:repeat(5,1fr);gap:30px;position:relative">{cols}</div></div>'
-            f'<div style="display:flex;gap:90px;margin-top:52px">'
-            f'<div><div class="sub" style="font-weight:600;letter-spacing:.12em;text-transform:uppercase">Email</div>'
-            f'<div style="font-size:28px;font-weight:600;margin-top:8px">alextaroni@whydg.com</div></div>'
-            f'<div><div class="sub" style="font-weight:600;letter-spacing:.12em;text-transform:uppercase">Telefono</div>'
-            f'<div style="font-size:28px;font-weight:600;margin-top:8px">+39 339 114 9663</div></div></div>'
-            f'<div class="note" style="margin-top:20px;color:var(--k)">Proposta valida 30 giorni · IVA esclusa</div></div>')
+    cols = "".join(f'<div style="position:relative;padding-top:46px">'
+                   f'<div style="position:absolute;top:-8px;left:0;width:16px;height:16px;border-radius:50%;background:{BLACK}"></div>'
+                   f'<div style="font-weight:600;font-size:40px;letter-spacing:-.04em">{i+1:02d}</div>'
+                   f'<div style="font-size:21px;line-height:1.35;margin-top:12px;max-width:260px">{E(t)}</div></div>'
+                   for i, t in enumerate(st))
+    body = (f'<div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between">'
+            f'<div><div class="eye">Come partiamo</div>'
+            f'<div class="big" style="margin-top:22px;font-size:84px">Grazie del tempo<br>che ci avete dato.</div></div>'
+            f'<div style="position:relative">'
+            f'<div style="position:absolute;top:0;left:0;right:0;height:2px;background:rgba(0,0,0,.22)"></div>'
+            f'<div class="grid" style="grid-template-columns:repeat(5,1fr);gap:28px;position:relative">{cols}</div></div>'
+            f'<div style="display:flex;align-items:flex-end;justify-content:space-between">'
+            f'<div style="display:flex;gap:96px">'
+            f'<div><div class="lab">Email</div><div style="font-size:28px;font-weight:600;margin-top:10px">alextaroni@whydg.com</div></div>'
+            f'<div><div class="lab">Telefono</div><div style="font-size:28px;font-weight:600;margin-top:10px">+39 339 114 9663</div></div></div>'
+            f'<div style="font-size:19px;line-height:1.4;text-align:right">Proposta valida 30 giorni<br>IVA esclusa</div>'
+            f'</div></div>')
     return page("orange", body, 14)
 
 PAGINE = [p01, p02, p03, p04, p05, p06, p07, p08, p09, p10, p11, p12, p13, p14]
