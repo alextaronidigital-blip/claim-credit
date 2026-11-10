@@ -4,11 +4,12 @@
 
 **Aree**: Alpe di Siusi e Sud Tirolo (50) · Madonna di Campiglio e le valli del Trentino (0) · Cortina e il bellunese dal Nevegal in su (0) · Tarvisio, Sella Nevea e la montagna friulana (0)
 
-**Bacino**: 553 hotel entro 35 km dal centro della propria area, almeno 4.3★ e 80 recensioni, esclusi garni, pensioni e residence (251 scartate, col motivo, in `strutture-escluse.json`).
+**Bacino**: 573 hotel entro 35 km dal centro della propria area, almeno 4.3★ e 80 recensioni, esclusi garni, pensioni e residence (231 scartate, col motivo, in `strutture-escluse.json`).
 
 **Come sono ordinate**: in cima chi lavora bene su Google e non comunica — nessun sito, nessun social linkato, Instagram assente. È il bersaglio dell'hub: ha i soldi e ha il problema.
 
 **Attenzione**: «nessun social» vuol dire *nessun link trovato nella homepage*, non che il profilo non esista. Va guardato a mano prima di dirlo al titolare.
+**Soglia**: almeno 80 recensioni, oppure 30 con almeno 4.5★ — la seconda porta serve ai 3 stelle, piccoli ma non per questo deboli. In tabella sono segnate `piccola`.
 **Fascia**: bersaglio da 3★ a 4★ superior. Le 12 strutture da 5 stelle stanno in coda alla tabella, segnate `FUORI`, non buttate.
 **Le stelle Google non le espone**: quelle che sappiamo stanno in `strumenti/stelle.json`, compilate a mano. Chi non c'è resta da verificare.
 **La distanza è in linea d'aria** e si misura dal centro della sua area: 30 km di Dolomiti sono spesso un'ora di guida.

@@ -1,5 +1,5 @@
 {
-  "quante": 251,
+  "quante": 231,
   "escluse": [
     {
       "nome": "Hotel Salegg",
@@ -61,7 +61,7 @@
       "nome": "Hotel Enzian",
       "comune": "Tires",
       "perche": [
-        "meno di 80 recensioni"
+        "troppo poche recensioni (20): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -132,7 +132,6 @@
       "nome": "Residence Hotel B&B Fever",
       "comune": "Ortisei",
       "perche": [
-        "meno di 80 recensioni",
         "garni / pensione / residence: fuori fascia di spesa"
       ]
     },
@@ -140,7 +139,6 @@
       "nome": "Pension Belaval",
       "comune": "Ortisei",
       "perche": [
-        "meno di 80 recensioni",
         "garni / pensione / residence: fuori fascia di spesa"
       ]
     },
@@ -155,7 +153,7 @@
       "nome": "Hotiday Room Collection - Ortisei",
       "comune": "Ortisei",
       "perche": [
-        "meno di 80 recensioni"
+        "troppo poche recensioni (4): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -248,13 +246,6 @@
       "comune": "Selva di Val Gardena",
       "perche": [
         "garni / pensione / residence: fuori fascia di spesa"
-      ]
-    },
-    {
-      "nome": "Chalet Elisabeth - dolomites alpin & charme",
-      "comune": "Selva di Val Gardena",
-      "perche": [
-        "meno di 80 recensioni"
       ]
     },
     {
@@ -374,13 +365,6 @@
       ]
     },
     {
-      "nome": "Bella Posta Hotel",
-      "comune": "Renon",
-      "perche": [
-        "meno di 80 recensioni"
-      ]
-    },
-    {
       "nome": "Pippos Mountain Lodge great Food, Suites & Farm",
       "comune": "Renon",
       "perche": [
@@ -391,7 +375,7 @@
       "nome": "Hotel Rinner",
       "comune": "Renon",
       "perche": [
-        "meno di 80 recensioni"
+        "troppo poche recensioni (2): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -416,17 +400,9 @@
       ]
     },
     {
-      "nome": "Hotel Dolomitenblick",
-      "comune": "Renon",
-      "perche": [
-        "meno di 80 recensioni"
-      ]
-    },
-    {
       "nome": "Albergo Pensione Erna",
       "comune": "Nova Levante",
       "perche": [
-        "meno di 80 recensioni",
         "garni / pensione / residence: fuori fascia di spesa",
         "scheda Google senza indirizzo vero: non è una struttura"
       ]
@@ -435,7 +411,7 @@
       "nome": "Albergo Nova Levante",
       "comune": "Nova Levante",
       "perche": [
-        "meno di 80 recensioni",
+        "troppo poche recensioni (1): ne servono 80, o 30 con almeno 4.5★",
         "scheda Google senza indirizzo vero: non è una struttura"
       ]
     },
@@ -465,7 +441,7 @@
       "comune": "Nova Ponente",
       "perche": [
         "rating sotto 4.3 (–): non lavora bene",
-        "meno di 80 recensioni"
+        "troppo poche recensioni (0): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -480,7 +456,7 @@
       "comune": "Nova Ponente",
       "perche": [
         "rating sotto 4.3 (2.5): non lavora bene",
-        "meno di 80 recensioni"
+        "troppo poche recensioni (4): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -501,7 +477,7 @@
       "nome": "Albergo Cavallino",
       "comune": "San Genesio Atesino",
       "perche": [
-        "meno di 80 recensioni"
+        "troppo poche recensioni (12): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -515,7 +491,7 @@
       "nome": "Hotel Gasthof Lamm",
       "comune": "Chiusa",
       "perche": [
-        "meno di 80 recensioni"
+        "troppo poche recensioni (19): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -592,7 +568,6 @@
       "nome": "Haus Karin",
       "comune": "Varna",
       "perche": [
-        "meno di 80 recensioni",
         "tipo bed_and_breakfast"
       ]
     },
@@ -672,7 +647,7 @@
       "comune": "Mühlbach",
       "perche": [
         "rating sotto 4.3 (2.9): non lavora bene",
-        "meno di 80 recensioni"
+        "troppo poche recensioni (53): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -680,7 +655,7 @@
       "comune": "Rio di Pusteria",
       "perche": [
         "rating sotto 4.3 (3): non lavora bene",
-        "meno di 80 recensioni"
+        "troppo poche recensioni (1): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -688,29 +663,20 @@
       "comune": "Mühlbach",
       "perche": [
         "rating sotto 4.3 (3.2): non lavora bene",
-        "meno di 80 recensioni"
+        "troppo poche recensioni (57): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
       "nome": "Pension Marianne",
       "comune": "Mühlbach",
       "perche": [
-        "meno di 80 recensioni",
         "garni / pensione / residence: fuori fascia di spesa"
-      ]
-    },
-    {
-      "nome": "Häuslerhof- Urlaub auf dem Bauernhof",
-      "comune": "Rio di Pusteria",
-      "perche": [
-        "meno di 80 recensioni"
       ]
     },
     {
       "nome": "Pension Mühlsteigerhof",
       "comune": "Mühlbach",
       "perche": [
-        "meno di 80 recensioni",
         "garni / pensione / residence: fuori fascia di spesa"
       ]
     },
@@ -718,21 +684,13 @@
       "nome": "Meransen",
       "comune": "Mühlbach",
       "perche": [
-        "meno di 80 recensioni"
-      ]
-    },
-    {
-      "nome": "Albergo Hoferhof",
-      "comune": "Mühlbach",
-      "perche": [
-        "meno di 80 recensioni"
+        "troppo poche recensioni (10): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
       "nome": "Residence Grunwald",
       "comune": "Rio di Pusteria",
       "perche": [
-        "meno di 80 recensioni",
         "garni / pensione / residence: fuori fascia di spesa"
       ]
     },
@@ -771,7 +729,7 @@
       "comune": "Corvara in Badia",
       "perche": [
         "rating sotto 4.3 (4.2): non lavora bene",
-        "meno di 80 recensioni"
+        "troppo poche recensioni (30): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -820,7 +778,7 @@
       "nome": "La villa",
       "comune": "Badia",
       "perche": [
-        "meno di 80 recensioni"
+        "troppo poche recensioni (3): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -834,7 +792,7 @@
       "nome": "Hotel Villa Al Sole",
       "comune": "Badia",
       "perche": [
-        "meno di 80 recensioni"
+        "troppo poche recensioni (51): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -867,31 +825,23 @@
       ]
     },
     {
-      "nome": "Ciasa Antersies",
-      "comune": "Badia",
-      "perche": [
-        "meno di 80 recensioni"
-      ]
-    },
-    {
       "nome": "Ciasa l'Anteriöl",
       "comune": "Badia",
       "perche": [
-        "meno di 80 recensioni"
+        "troppo poche recensioni (14): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
       "nome": "Albergo Edelraut",
       "comune": "Badia",
       "perche": [
-        "meno di 80 recensioni"
+        "troppo poche recensioni (8): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
       "nome": "Residence Ploner",
       "comune": "Badia",
       "perche": [
-        "meno di 80 recensioni",
         "garni / pensione / residence: fuori fascia di spesa"
       ]
     },
@@ -900,7 +850,7 @@
       "comune": "Badia",
       "perche": [
         "rating sotto 4.3 (4.1): non lavora bene",
-        "meno di 80 recensioni",
+        "troppo poche recensioni (59): ne servono 80, o 30 con almeno 4.5★",
         "garni / pensione / residence: fuori fascia di spesa"
       ]
     },
@@ -908,7 +858,6 @@
       "nome": "RESIDENCE *** CiasaVally Sauna&Relax",
       "comune": "Badia",
       "perche": [
-        "meno di 80 recensioni",
         "garni / pensione / residence: fuori fascia di spesa"
       ]
     },
@@ -924,22 +873,14 @@
       "comune": "Badia",
       "perche": [
         "rating sotto 4.3 (4.1): non lavora bene",
-        "meno di 80 recensioni",
+        "troppo poche recensioni (35): ne servono 80, o 30 con almeno 4.5★",
         "garni / pensione / residence: fuori fascia di spesa"
-      ]
-    },
-    {
-      "nome": "Ciasa Milandura",
-      "comune": "Badia",
-      "perche": [
-        "meno di 80 recensioni"
       ]
     },
     {
       "nome": "Residence Vajolet",
       "comune": "Badia",
       "perche": [
-        "meno di 80 recensioni",
         "garni / pensione / residence: fuori fascia di spesa"
       ]
     },
@@ -947,7 +888,7 @@
       "nome": "Aurturist Badia",
       "comune": "Badia",
       "perche": [
-        "meno di 80 recensioni"
+        "troppo poche recensioni (5): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -961,7 +902,6 @@
       "nome": "Ciasa Pradel - Urlaub am Bauernhof",
       "comune": "San Martino in Badia",
       "perche": [
-        "meno di 80 recensioni",
         "tipo private_guest_room"
       ]
     },
@@ -977,7 +917,6 @@
       "nome": "Pradel Dolomites",
       "comune": "San Martino in Badia",
       "perche": [
-        "meno di 80 recensioni",
         "tipo apartment_complex"
       ]
     },
@@ -985,7 +924,6 @@
       "nome": "Pensione Torr",
       "comune": "San Martino in Badia",
       "perche": [
-        "meno di 80 recensioni",
         "garni / pensione / residence: fuori fascia di spesa"
       ]
     },
@@ -1070,7 +1008,7 @@
       "nome": "Union Hotels Canazei",
       "comune": "Canazei",
       "perche": [
-        "meno di 80 recensioni"
+        "troppo poche recensioni (72): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -1092,7 +1030,7 @@
       "comune": "Predazzo",
       "perche": [
         "rating sotto 4.3 (3.9): non lavora bene",
-        "meno di 80 recensioni"
+        "troppo poche recensioni (49): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -1100,7 +1038,7 @@
       "comune": "Predazzo",
       "perche": [
         "rating sotto 4.3 (4): non lavora bene",
-        "meno di 80 recensioni",
+        "troppo poche recensioni (5): ne servono 80, o 30 con almeno 4.5★",
         "garni / pensione / residence: fuori fascia di spesa"
       ]
     },
@@ -1137,21 +1075,14 @@
       "comune": "Cavalese",
       "perche": [
         "rating sotto 4.3 (3.6): non lavora bene",
-        "meno di 80 recensioni"
+        "troppo poche recensioni (53): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
       "nome": "Goccia D' Oro",
       "comune": "Cavalese",
       "perche": [
-        "meno di 80 recensioni"
-      ]
-    },
-    {
-      "nome": "Albergo Stella ** Cavalese",
-      "comune": "Cavalese",
-      "perche": [
-        "meno di 80 recensioni"
+        "troppo poche recensioni (78): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -1179,7 +1110,7 @@
       "nome": "Appiano Sulla Strada Del vino",
       "comune": "Appiano sulla strada del vino",
       "perche": [
-        "meno di 80 recensioni",
+        "troppo poche recensioni (29): ne servono 80, o 30 con almeno 4.5★",
         "scheda Google senza indirizzo vero: non è una struttura"
       ]
     },
@@ -1259,7 +1190,7 @@
       "comune": "Egna",
       "perche": [
         "rating sotto 4.3 (–): non lavora bene",
-        "meno di 80 recensioni"
+        "troppo poche recensioni (0): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -1267,7 +1198,7 @@
       "comune": "Egna",
       "perche": [
         "rating sotto 4.3 (–): non lavora bene",
-        "meno di 80 recensioni"
+        "troppo poche recensioni (0): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -1337,25 +1268,11 @@
       ]
     },
     {
-      "nome": "Hotel Jardis",
-      "comune": "Lana",
-      "perche": [
-        "meno di 80 recensioni"
-      ]
-    },
-    {
       "nome": "Garni Hotel Katzenthalerhof",
       "comune": "Lana",
       "perche": [
         "tipo bed_and_breakfast",
         "garni / pensione / residence: fuori fascia di spesa"
-      ]
-    },
-    {
-      "nome": "Hotel Sonnenhof Sonnenhof",
-      "comune": "Lana",
-      "perche": [
-        "meno di 80 recensioni"
       ]
     },
     {
@@ -1369,22 +1286,7 @@
       "nome": "Hotel Garni Vigilhof",
       "comune": "Lana",
       "perche": [
-        "meno di 80 recensioni",
         "garni / pensione / residence: fuori fascia di spesa"
-      ]
-    },
-    {
-      "nome": "Hotel Eichhof",
-      "comune": "Lana",
-      "perche": [
-        "meno di 80 recensioni"
-      ]
-    },
-    {
-      "nome": "Villa Arnica",
-      "comune": "Lana",
-      "perche": [
-        "meno di 80 recensioni"
       ]
     },
     {
@@ -1400,27 +1302,6 @@
       "comune": "Lana",
       "perche": [
         "garni / pensione / residence: fuori fascia di spesa"
-      ]
-    },
-    {
-      "nome": "Graf Hartwig***S",
-      "comune": "Scena",
-      "perche": [
-        "meno di 80 recensioni"
-      ]
-    },
-    {
-      "nome": "Hotel Hilburger",
-      "comune": "Scena",
-      "perche": [
-        "meno di 80 recensioni"
-      ]
-    },
-    {
-      "nome": "Hotel Tenne",
-      "comune": "Scena",
-      "perche": [
-        "meno di 80 recensioni"
       ]
     },
     {
@@ -1441,7 +1322,6 @@
       "nome": "Pensione Zunnelerhof",
       "comune": "Scena",
       "perche": [
-        "meno di 80 recensioni",
         "tipo bed_and_breakfast",
         "garni / pensione / residence: fuori fascia di spesa"
       ]
@@ -1478,7 +1358,6 @@
       "nome": "Pensione Lebenstain",
       "comune": "Scena",
       "perche": [
-        "meno di 80 recensioni",
         "garni / pensione / residence: fuori fascia di spesa"
       ]
     },
@@ -1486,7 +1365,6 @@
       "nome": "Residence Walchhof",
       "comune": "Scena",
       "perche": [
-        "meno di 80 recensioni",
         "garni / pensione / residence: fuori fascia di spesa"
       ]
     },
@@ -1495,7 +1373,7 @@
       "comune": "Scena",
       "perche": [
         "rating sotto 4.3 (4): non lavora bene",
-        "meno di 80 recensioni"
+        "troppo poche recensioni (1): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -1516,7 +1394,6 @@
       "nome": "Residence Dornsberg",
       "comune": "Scena",
       "perche": [
-        "meno di 80 recensioni",
         "garni / pensione / residence: fuori fascia di spesa"
       ]
     },
@@ -1533,7 +1410,7 @@
       "comune": "Tirolo",
       "perche": [
         "rating sotto 4.3 (4.2): non lavora bene",
-        "meno di 80 recensioni"
+        "troppo poche recensioni (12): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -1544,39 +1421,11 @@
       ]
     },
     {
-      "nome": "Hotel Alpentirolis",
-      "comune": "Tirolo",
-      "perche": [
-        "meno di 80 recensioni"
-      ]
-    },
-    {
       "nome": "Hotel Haselried",
       "comune": "Tirolo",
       "perche": [
         "rating sotto 4.3 (4.2): non lavora bene",
         "tipo bed_and_breakfast"
-      ]
-    },
-    {
-      "nome": "Albergo Tritscherhof",
-      "comune": "Tirolo",
-      "perche": [
-        "meno di 80 recensioni"
-      ]
-    },
-    {
-      "nome": "Hotel Villa Maria",
-      "comune": "Tirolo",
-      "perche": [
-        "meno di 80 recensioni"
-      ]
-    },
-    {
-      "nome": "Hotel Turmwies",
-      "comune": "Tirolo",
-      "perche": [
-        "meno di 80 recensioni"
       ]
     },
     {
@@ -1605,7 +1454,7 @@
       "comune": "Naturno",
       "perche": [
         "oltre 35 km dal centro della sua area (44)",
-        "meno di 80 recensioni"
+        "troppo poche recensioni (9): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -1663,7 +1512,6 @@
       "comune": "Naturno",
       "perche": [
         "oltre 35 km dal centro della sua area (44)",
-        "meno di 80 recensioni",
         "garni / pensione / residence: fuori fascia di spesa"
       ]
     },
@@ -1709,7 +1557,7 @@
       "perche": [
         "oltre 35 km dal centro della sua area (44)",
         "rating sotto 4.3 (4.2): non lavora bene",
-        "meno di 80 recensioni"
+        "troppo poche recensioni (5): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -1732,7 +1580,7 @@
       "perche": [
         "oltre 35 km dal centro della sua area (44)",
         "rating sotto 4.3 (3.7): non lavora bene",
-        "meno di 80 recensioni",
+        "troppo poche recensioni (3): ne servono 80, o 30 con almeno 4.5★",
         "garni / pensione / residence: fuori fascia di spesa"
       ]
     },
@@ -1756,7 +1604,7 @@
       "comune": "Avelengo",
       "perche": [
         "rating sotto 4.3 (–): non lavora bene",
-        "meno di 80 recensioni",
+        "troppo poche recensioni (0): ne servono 80, o 30 con almeno 4.5★",
         "scheda Google senza indirizzo vero: non è una struttura"
       ]
     },
@@ -1764,14 +1612,13 @@
       "nome": "Albergo Haflingerhof",
       "comune": "Avelengo",
       "perche": [
-        "meno di 80 recensioni"
+        "troppo poche recensioni (1): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
       "nome": "Steinerhof - Hafling - Urlaub auf den Bauernhof",
       "comune": "Avelengo",
       "perche": [
-        "meno di 80 recensioni",
         "tipo farmstay"
       ]
     },
@@ -1793,7 +1640,6 @@
       "nome": "Residence Rossboden",
       "comune": "Verano",
       "perche": [
-        "meno di 80 recensioni",
         "garni / pensione / residence: fuori fascia di spesa"
       ]
     },
@@ -1808,14 +1654,7 @@
       "nome": "Albergo Al Cervo",
       "comune": "Sarentino",
       "perche": [
-        "meno di 80 recensioni"
-      ]
-    },
-    {
-      "nome": "Hotel Hohenegg",
-      "comune": "Sarentino",
-      "perche": [
-        "meno di 80 recensioni"
+        "troppo poche recensioni (22): ne servono 80, o 30 con almeno 4.5★"
       ]
     },
     {
@@ -1829,7 +1668,7 @@
       "nome": "Albergo Zur Pfleg",
       "comune": "Laives",
       "perche": [
-        "meno di 80 recensioni"
+        "troppo poche recensioni (26): ne servono 80, o 30 con almeno 4.5★"
       ]
     }
   ]

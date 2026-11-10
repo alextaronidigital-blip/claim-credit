@@ -182,7 +182,9 @@ const buone = righe.filter(r => {
   const perche = [];
   if (r.stato && r.stato !== "OPERATIONAL") perche.push("non operativa (" + r.stato + ")");
   if (r.km == null || r.km > ZONE.raggioKm) perche.push("fuori raggio: " + r.km + " km dal centro piu' vicino (" + r.daCentro + ")");
-  if ((r.recensioni || 0) < 25) perche.push("meno di 25 recensioni");
+  // Soglia bassa di proposito: qui si raccoglie, non si sceglie. Un 3 stelle
+  // con 18 recensioni lo valuta scegli-50.mjs, non lo si butta prima di vederlo.
+  if ((r.recensioni || 0) < 15) perche.push("meno di 15 recensioni");
   if (r.tipi.some(t => /campground|rv_park|camping/.test(t))) perche.push("campeggio");
   if (!r.tipi.some(t => /lodging|hotel|resort|bed_and_breakfast|guest_house|inn/.test(t))) perche.push("non è una struttura ricettiva");
   if (perche.length){ scartate.push({ nome:r.nome, comune:r.comune, perche }); return false; }

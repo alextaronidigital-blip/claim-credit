@@ -26,8 +26,8 @@
   "criteri": "Entro 35 km dal centro della propria area, ≥4.3★, ≥80 recensioni, hotel (no garni/pensioni/residence), fascia da 3★ a 4★ superior. Ordinate per: social assenti o non presidiati, reputazione, dimensione, vicinanza.",
   "nonSappiamo": "Stelle, stagionalità e follower: da compilare in hub. Un social non trovato dal bot è DA VERIFICARE, non assente.",
   "bersaglio": "3 stelle, 3 stelle superior, 4 stelle e 4 stelle superior. Le 5 stelle restano in lista ma segnate fuori target.",
-  "bacino": 553,
-  "fuoriBacino": 251,
+  "bacino": 573,
+  "fuoriBacino": 231,
   "quante": 50,
   "fuoriFascia": 12,
   "strutture": [

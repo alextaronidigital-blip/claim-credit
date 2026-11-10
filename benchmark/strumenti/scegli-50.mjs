@@ -56,6 +56,14 @@ function cinqueStelle(r){
 
 const ZONE = JSON.parse(fs.readFileSync(path.join(import.meta.dirname, "comuni.json"), "utf8"));
 const MAXKM = ZONE.raggioSceltaKm || 35, MINRAT = 4.3, MINREC = 80;
+
+/* Seconda porta, per la fascia 3 stelle. Un 3 stelle di valle ha meno
+   recensioni di un 4 superior pur lavorando bene: la soglia di 80 lo tagliava
+   fuori per dimensione, non per qualita'. Chi ha poche recensioni ma un voto
+   alto entra lo stesso, segnato, cosi' si vede da dove e' passato. */
+const MINREC_PICCOLE = 30, MINRAT_PICCOLE = 4.5;
+const piccolaMaBuona = r => (r.recensioni || 0) >= MINREC_PICCOLE
+  && (r.recensioni || 0) < MINREC && (r.rating || 0) >= MINRAT_PICCOLE;
 const GRANDI = /\bresort\b|\bslh\b|relais & ch|luxury|\bspa resort\b/i;
 const FUORIFASCIA = /\bgarni\b|pension|pensione|residence|appartement|apartments|appartamenti|camping|rifugio|ostello|hostel|\brooms\b|zimmer|\bbaita\b|\bb&b\b|bed (and|&) breakfast/i;
 const TIPI_OK = /^(hotel|resort_hotel|lodging|inn|extended_stay_hotel)$/;
@@ -69,6 +77,7 @@ function valuta(r, s){
   else add(15, "Buona reputazione (" + rat + "★)");
 
   if (rec >= 80 && rec <= 500) add(20, "Dimensione giusta (" + rec + " recensioni)");
+  else if (piccolaMaBuona(r)) add(15, "Piccola ma ben giudicata (" + rec + " recensioni, " + rat + "\u2605)");
   else if (rec <= 800) add(10, rec + " recensioni");
   else if (rec > 1200) add(-15, "Macchina già rodata (" + rec + " recensioni): quasi sempre con agenzia");
 
@@ -104,7 +113,8 @@ const bacino = grezzo.strutture.filter(r => {
   const perche = [];
   if (r.km == null || r.km > MAXKM) perche.push("oltre " + MAXKM + " km dal centro della sua area (" + r.km + ")");
   if ((r.rating || 0) < MINRAT) perche.push("rating sotto " + MINRAT + " (" + (r.rating || "–") + "): non lavora bene");
-  if ((r.recensioni || 0) < MINREC) perche.push("meno di " + MINREC + " recensioni");
+  if ((r.recensioni || 0) < MINREC && !piccolaMaBuona(r))
+    perche.push("troppo poche recensioni (" + (r.recensioni || 0) + "): ne servono " + MINREC + ", o " + MINREC_PICCOLE + " con almeno " + MINRAT_PICCOLE + "\u2605");
   if (r.stato && r.stato !== "OPERATIONAL") perche.push("non operativa");
   if (!TIPI_OK.test(r.tipoPrincipale || "")) perche.push("tipo " + (r.tipoPrincipale || "ignoto"));
   if (FUORIFASCIA.test(r.nome)) perche.push("garni / pensione / residence: fuori fascia di spesa");
@@ -178,7 +188,7 @@ const segnale = r => {
   return k.length + " (" + k.map(x => x.slice(0,2).toUpperCase()).join(" ") + ")";
 };
 const riga = r => "| " + [
-  (cinqueStelle(r) ? "`FUORI` " : "") + r.nome.replace(/\|/g,"/"), r.comune || "–",
+  (cinqueStelle(r) ? "`FUORI` " : "") + (piccolaMaBuona(r) ? "`piccola` " : "") + r.nome.replace(/\|/g,"/"), r.comune || "–",
   (ZONE.aree.find(a => a.id === areaDi(r)) || {nome:"–"}).nome.split(" ")[0], r.km + " km",
   r.rating + "★ (" + r.recensioni + ")", segnale(r), r.v.totale
 ].join(" | ") + " |";
@@ -191,6 +201,7 @@ fs.writeFileSync(path.join(DATI, "strutture-50.md"),
   " recensioni, esclusi garni, pensioni e residence (" + fuori.length + " scartate, col motivo, in `strutture-escluse.json`).\n\n" +
   "**Come sono ordinate**: in cima chi lavora bene su Google e non comunica — nessun sito, nessun social linkato, Instagram assente. È il bersaglio dell'hub: ha i soldi e ha il problema.\n\n" +
   "**Attenzione**: «nessun social» vuol dire *nessun link trovato nella homepage*, non che il profilo non esista. Va guardato a mano prima di dirlo al titolare.\n" +
+  "**Soglia**: almeno " + MINREC + " recensioni, oppure " + MINREC_PICCOLE + " con almeno " + MINRAT_PICCOLE + "\u2605 \u2014 la seconda porta serve ai 3 stelle, piccoli ma non per questo deboli. In tabella sono segnate `piccola`.\n" +
   "**Fascia**: bersaglio da 3\u2605 a 4\u2605 superior. Le " + fuoriFascia.length + " strutture da 5 stelle stanno in coda alla tabella, segnate `FUORI`, non buttate.\n" +
   "**Le stelle Google non le espone**: quelle che sappiamo stanno in `strumenti/stelle.json`, compilate a mano. Chi non c'\u00e8 resta da verificare.\n" +
   "**La distanza è in linea d'aria** e si misura dal centro della sua area: 30 km di Dolomiti sono spesso un'ora di guida.\n\n" +
@@ -198,6 +209,7 @@ fs.writeFileSync(path.join(DATI, "strutture-50.md"),
   scelte.map(riga).join("\n") + "\n");
 
 console.log("Bacino: " + bacino.length + " · scartate: " + fuori.length + " · in gioco: " + Math.min(QUANTE, inGioco.length) + " · 5 stelle fuori fascia: " + fuoriFascia.length);
+console.log("Entrate dalla porta piccola (" + MINREC_PICCOLE + "-" + (MINREC-1) + " recensioni, \u2265" + MINRAT_PICCOLE + "\u2605): " + scelte.filter(piccolaMaBuona).length);
 console.log("Fra le scelte — senza sito: " + scelte.filter(r => !r.sito).length +
             " · nessun social in homepage: " + scelte.filter(r => r.sito && r.s && r.s.trovati === 0).length +
             " · senza Instagram: " + scelte.filter(r => r.s && r.s.trovati > 0 && !r.s.social.instagram).length);
