@@ -53,22 +53,26 @@ ANALISI = {
 }
 
 # ─────────────────────────────────────────────── lo studio
-STUDIO_FA = [("social", "Social"), ("siti-web", "Siti web"), ("e-commerce", "E-commerce"),
-             ("foto", "Foto"), ("video", "Video"), ("adv", "Adv"),
-             ("branding", "Branding"), ("grafica", "Grafica"), ("stampa", "Stampa")]
+# Il documento e' verticale: si mostrano solo i servizi e i clienti dell'ospitalita'.
+# Il resto dello studio (e-commerce, stampa, parrucchieri, ottici...) resta nel
+# documento standard, non qui.
+STUDIO_FA = [("social", "Social"), ("foto", "Foto"), ("video", "Video"),
+             ("adv", "Advertising"), ("siti-web", "Siti web")]
 
-CLIENTI = [("romagna-free", "Romagna Free"), ("piadina-baracchina", "La Piadina della Baracchina"),
-           ("trattoria-ca-rossi", "Trattoria Ca' Rossi"), ("villa-campomaggio", "Hotel Villa Campomaggio"),
-           ("la-gabbia", "Ristorante La Gabbia"), ("lattuga-giulio", "Lattuga Giulio"),
-           ("somec", "Somec"), ("spiedo-imperiale", "Spiedo Imperiale"),
-           ("bocon-divino", "Bocon Divino"), ("ribo-professional", "Ribò Professional"),
-           ("ottica-bonora", "Ottica Bonora Molinella"), ("moto-2000", "Moto 2000"),
-           ("be-balance", "Be Balance Fitness Hub"), ("ofelia", "Ofelia Parrucchiere"),
-           ("crazy-beauty", "Crazy Beauty")]
+# Solo hotel, ristoranti e affini. Un logo che manca in brand/clienti/ esce come
+# monogramma provvisorio, e lo script lo dice a fine resa.
+CLIENTI = [("villa-campomaggio", "Hotel Villa Campomaggio"), ("la-gabbia", "Ristorante La Gabbia"),
+           ("spiedo-imperiale", "Spiedo Imperiale"), ("aloz", "L'Alóz"),
+           ("trattoria-ca-rossi", "Trattoria Ca' Rossi"), ("piadina-baracchina", "La Piadina della Baracchina"),
+           ("bocon-divino", "Bocon Divino")]
+OLTRE = ("Oltre 50", "attività seguite in tutti i settori, dalla Romagna alla Toscana")
 
-# Numeri reali: proposta di rinnovo Campomaggio (stagione 2026) e proposta Love Luck.
+# Campomaggio: proposta di rinnovo 2027 (stagione 2026). La Gabbia: proposta Love Luck.
+# L'Aloz: DOCUMENTO UNICO, caso 6. Numeri non ce ne sono, quindi le righe sono fatti
+# (cosa era, cosa abbiamo fatto), non risultati. Ed e' stato un avvio una tantum:
+# niente che faccia pensare a una gestione continuativa che oggi non c'e'.
 CASI = [
-    ("villa-campomaggio", "Hotel Villa Campomaggio", "Hotel nel Chianti · stagione 2026", [
+    ("villa-campomaggio", "Hotel Villa Campomaggio", "Hotel in Toscana · stagione 2026", [
         ("+1.324", "Nuovi follower Instagram"),
         ("392.000", "Impression Instagram"),
         ("2.741", "Visite al sito prima della riapertura"),
@@ -80,11 +84,11 @@ CASI = [
         ("+3.000", "Follower costruiti in una stagione"),
         ("50", "Contenuti professionali pubblicati"),
     ]),
-    ("romagna-free", "Romagna Free", "Forno e pasticceria senza glutine", [
-        ("+893.000", "Impression su IG e FB (4 mesi)"),
-        ("+128.000", "Singoli account raggiunti"),
-        ("+2.300", "Nuovi follower"),
-        ("0,06 €", "Costo per click delle campagne"),
+    ("aloz", "L'Alóz", "Bed & breakfast di 3 camere · Lugo (RA)", [
+        ("Da zero", "Struttura nuova, nessuna presenza social prima"),
+        ("Giugno 2026", "Lancio dei profili, primo mese"),
+        ("3 camere", "Anthurium, Begonia, Ciclamino: i pilastri del racconto"),
+        ("Avvio completo", "Calendario, copy, shooting, grafica e report di lancio"),
     ]),
 ]
 
@@ -252,41 +256,60 @@ def p01():
 </div></section>"""
 
 
+MANCANTI = []
+
+def logo(slug, nome, px):
+    """Il logo vero se c'e' in brand/clienti/, altrimenti un monogramma provvisorio."""
+    if os.path.exists(os.path.join(BRAND, "clienti", slug + ".png")):
+        return f'<img src="{U("clienti", slug + ".png")}" style="width:{px}px;height:{px}px;flex:0 0 auto">'
+    if nome not in MANCANTI:
+        MANCANTI.append(nome)
+    lettere = "".join(w[0] for w in nome.replace("'", " ").split() if w[0].isalpha())[:2].upper()
+    return (f'<div style="width:{px}px;height:{px}px;border-radius:50%;background:{CHIARO};color:{NERO};'
+            f'display:flex;align-items:center;justify-content:center;flex:0 0 auto;'
+            f'font-size:{round(px * .36)}px;font-weight:600;letter-spacing:-.02em">{E(lettere)}</div>')
+
+
 def p02():
     icone = "".join(
-        f'<div style="display:flex;align-items:center;gap:10px">'
-        f'<img src="{U("icone", f + ".png")}" style="width:34px;height:34px">'
-        f'<span style="font-size:15px;font-weight:600">{E(t)}</span></div>' for f, t in STUDIO_FA)
-    loghi = "".join(
-        f'<div class="card grigia" style="display:flex;align-items:center;gap:15px;padding:14px 18px">'
-        f'<img src="{U("clienti", f + ".png")}" style="width:62px;height:62px;flex:0 0 auto">'
-        f'<span style="font-size:16px;font-weight:600;line-height:1.2">{E(t)}</span></div>'
+        f'<div style="display:flex;align-items:center;gap:11px">'
+        f'<img src="{U("icone", f + ".png")}" style="width:38px;height:38px">'
+        f'<span style="font-size:17px;font-weight:600">{E(t)}</span></div>' for f, t in STUDIO_FA)
+    carte = "".join(
+        f'<div class="card grigia" style="display:flex;flex-direction:column;align-items:center;'
+        f'justify-content:center;gap:14px;padding:18px 16px;text-align:center">'
+        f'{logo(f, t, 78)}<span style="font-size:16px;font-weight:600;line-height:1.2">{E(t)}</span></div>'
         for f, t in CLIENTI)
+    carte += (f'<div class="card arancio" style="display:flex;flex-direction:column;justify-content:center;padding:22px 24px">'
+              f'<div style="font-size:40px;font-weight:600;letter-spacing:-.03em;line-height:1">{E(OLTRE[0])}</div>'
+              f'<div style="font-size:15px;line-height:1.35;margin-top:10px">{E(OLTRE[1])}</div></div>')
     corpo = f"""
 <div style="display:flex;justify-content:space-between;margin-top:26px">{icone}</div>
-<div class="label" style="color:{ARANCIO};margin-top:28px">Oltre 50 attività ci hanno affidato la loro presenza digitale</div>
-<div style="display:grid;grid-template-columns:repeat(5,1fr);grid-auto-rows:1fr;gap:13px;margin-top:16px;flex:1">{loghi}</div>"""
+<div class="label" style="color:{ARANCIO};margin-top:28px">Nell'ospitalità hanno già scelto YDG Studio</div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:1fr;gap:14px;margin-top:16px;flex:1">{carte}</div>"""
     return pagina(2, corpo, "scuro", "Chi siamo",
-                  "Un'unica squadra per tutta la vostra comunicazione digitale.",
-                  "Studio di comunicazione digitale con base in Romagna. Tutto in-house, shooting in loco, "
-                  "gestione manuale e strategica, report trasparenti.")
+                  "Comunicazione digitale per hotel e ristoranti.",
+                  "Studio con base in Romagna. Social, advertising e sito con un'unica regia, "
+                  "shooting in struttura e report trasparenti.")
 
 
 def p03():
     c = ""
-    for logo, nome, sotto, voci in CASI:
+    for slug, nome, sotto, voci in CASI:
         righe = "".join(
             f'<div style="padding:11px 0;border-top:1px solid #3A3A3A">'
             f'<div style="font-size:28px;font-weight:600;letter-spacing:-.02em;color:{ARANCIO};line-height:1.1">{E(v)}</div>'
             f'<div style="font-size:13px;color:#D9D9D9;margin-top:3px">{E(t)}</div></div>' for v, t in voci)
         c += (f'<div class="card" style="padding:22px 26px 12px;display:flex;flex-direction:column">'
               f'<div style="display:flex;align-items:center;gap:13px;margin-bottom:13px">'
-              f'<img src="{U("clienti", logo + ".png")}" style="width:42px;height:42px">'
+              f'{logo(slug, nome, 42)}'
               f'<div><div style="font-size:17px;font-weight:600">{E(nome)}</div>'
               f'<div style="font-size:12.5px;color:#BDBDBD;margin-top:2px">{E(sotto)}</div></div></div>'
               f'{righe}</div>')
     corpo = f'<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:26px;flex:1">{c}</div>'
-    return pagina(3, corpo, "chiaro", "Casi studio", "Risultati reali, su settori diversi")
+    return pagina(3, corpo, "chiaro", "Casi studio", "Hotel, ristoranti e B&B con cui abbiamo lavorato",
+                  "Strutture diverse per dimensione e per fase: una stagione consolidata, una nuova "
+                  "apertura, un lancio da zero.")
 
 
 def p04():
@@ -444,3 +467,6 @@ if __name__ == "__main__":
     print(f"✓ {len(PAGINE)} pagine → {OUT}")
     print(f"✓ anteprime → {ANTEPRIME}")
     print(f"✗ pagine che sforano: {len(sfori)}" if sfori else "✓ nessuna pagina sfora")
+    if MANCANTI:
+        print("! logo provvisorio (monogramma) per: " + ", ".join(MANCANTI)
+              + " — mettere il logo vero in brand/clienti/ e rigenerare")

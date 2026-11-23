@@ -39,8 +39,8 @@ Non serve più rigenerarlo sul Mac: font e marchio sono veri anche qui.
 | | Pagina | Cosa c'è |
 |---|---|---|
 | 1 | Copertina | «Facciamo crescere Hotel Heubad» sullo sfondo vero |
-| 2 | Chi siamo | cosa fa lo studio (9 icone) e chi ci ha scelto (15 loghi) |
-| 3 | Casi studio | Villa Campomaggio, La Gabbia, Romagna Free: quattro numeri ciascuno |
+| 2 | Chi siamo | i cinque servizi dell'ospitalità e i sette clienti del settore |
+| 3 | Casi studio | Villa Campomaggio, La Gabbia, L'Alóz |
 | 4 | Analisi iniziale | cosa funziona già · dove possiamo crescere · dove vogliamo andare |
 | 5 | Il servizio | i tre servizi, ognuno col suo referente e cinque voci |
 | 6 | La proposta | avvio e gestione di ciascun servizio |
@@ -53,11 +53,29 @@ dell'anno prima li abbiamo fatti noi. Qui la struttura non ci conosce e noi non 
 come lavora. In pagina 4 ci sono solo osservazioni da fuori, dichiarate come tali; i
 numeri veri sono quelli dei nostri clienti, in pagina 3.
 
+## È verticale: solo ospitalità
+
+Il documento standard dello studio mostra tutti i settori. Questo no: è il modo in cui ci
+presentiamo agli hotel, quindi in pagina 2 restano solo i clienti del settore (Villa
+Campomaggio, La Gabbia, Spiedo Imperiale, L'Alóz, Ca' Rossi, La Piadina della Baracchina,
+Bocon Divino) e i cinque servizi che vendiamo qui. Il numero complessivo, «oltre 50
+attività», resta in una card a parte: è vero e dà peso, ma non mescola i loghi.
+
+**L'Alóz** non ha numeri in nessuna fonte, e oggi non è in gestione: è stato un lancio una
+tantum (giugno 2026). La sua card racconta cosa era e cosa abbiamo fatto, non risultati, e
+nessuna parola fa pensare a un presidio continuativo. Il titolo della pagina dice «con
+cui abbiamo lavorato», non «che seguiamo». Prima di usarla serve il permesso di Enrica
+Maccolini a citarla per nome.
+
+**Il suo logo manca**: in pagina 2 e 3 esce un monogramma provvisorio, e lo script lo
+segnala a fine resa. Basta mettere il logo, tondo e con fondo trasparente, in
+`brand/clienti/aloz.png` e rigenerare.
+
 ## Da dove vengono i numeri
 
 | Dove | Fonte |
 |---|---|
-| P3 casi studio | proposta di rinnovo 2027 Campomaggio; proposta Love Luck per La Gabbia e Romagna Free |
+| P3 casi studio | proposta di rinnovo 2027 Campomaggio; proposta Love Luck per La Gabbia; DOCUMENTO UNICO caso 6 per L'Alóz |
 | P4 analisi | scheda dell'hub, Google Places del 16/10/2026 |
 | P6 sito, portali, tracciamento | listino Nadir, caso B (sito da rifare) |
 | P6 advertising | DOCUMENTO UNICO, minimo 500 €/mese se presa da sola |
