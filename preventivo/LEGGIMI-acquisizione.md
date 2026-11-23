@@ -1,84 +1,85 @@
 # Proposta di acquisizione · verticale ospitalità
 
-**Cos'è.** La proposta che portiamo a una struttura che non ci conosce. Tre servizi in un
-documento solo — gestione social, gestione advertising, sviluppo e gestione del sito web —
-ognuno con la sua pagina e il suo prezzo, più il quadro economico complessivo.
+**Cos'è.** La proposta che portiamo a una struttura che non ci conosce: gestione social,
+gestione advertising, sviluppo e gestione del sito web, con il prezzo di ciascuno e il
+quadro economico del primo anno.
 
 Compilata su **Hotel Heubad** (Fiè allo Sciliar), presa dalla lista dell'hub. Per un'altra
-struttura si cambiano `STRUTTURA`, `ANALISI` e `DIREZIONE` in testa allo script.
+struttura si cambiano `STRUTTURA` e `ANALISI` in testa allo script.
 
-- `Proposta ospitalita - Hotel Heubad.pdf` · 15 pagine, 16:9
+- `Proposta ospitalita - Hotel Heubad.pdf` · 9 pagine, 16:9
 - `_anteprime_acquisizione/` · una PNG per pagina
-- `build_proposta_acquisizione.py` + `rendi.mjs` · rigenerano tutto
+- `build_proposta_acquisizione.py` + `rendi.mjs` · rigenerano tutto in pochi secondi
+- `brand/` · marchio, font, icone, loghi e copertina (vedi `brand/LEGGIMI.md`)
 
-## È una fusione di due documenti che esistevano già
+## Il brand è quello del documento standard, non un'imitazione
 
-| Da | Cosa prende |
+L'impianto visivo è quello della proposta standard di Riccardo (Love Luck Tattoo,
+novembre 2026). Gli asset non sono ridisegnati: **sono estratti da quel PDF**.
+
+| Cosa | Da dove |
 |---|---|
-| **Love Luck Tattoo** (Riccardo, nov 2026) | l'impianto: testata e numerazione su ogni pagina, chi siamo, chi ci ha scelto, casi studio, analisi in superficie, servizi, prezzi, prossimi passi, chiusura arancio |
-| **Villa Campomaggio** (rinnovo 2027) | il rigore tipografico, la profondità sui servizi, l'economia divisa per voci |
+| Marchio YDG Studio, chiaro e scuro | immagini del PDF di Riccardo |
+| Sfondo della copertina con l'alone arancio | immagine 1920×1080 del PDF di Riccardo |
+| Le nove icone di «cosa fa lo studio» | immagini del PDF di Riccardo |
+| I quindici loghi dei clienti | immagini del PDF di Riccardo |
+| Font Overused Grotesk, Book e SemiBold | lo stesso incorporato nel PDF; open source, licenza OFL |
+| Palette | misurata sui pixel delle pagine: `#F2F2F2`, `#1A1A1A`, `#4D4D4D`, `#FF7900`, `#F3E3D4` |
 
-**Perché non parte dai numeri.** Campomaggio è un rinnovo: i numeri dell'anno precedente
-li abbiamo fatti noi, quindi aprire con quelli ha senso. Qui la struttura non ci conosce e
-noi non sappiamo come lavora davvero. Si analizza in superficie quello che si vede da
-fuori, se ne spiegano le potenzialità, e si passa subito ai servizi e al loro costo.
+Elementi ricorrenti presi uguali: testata con marchio e «Proposta di collaborazione ·
+nome» su ogni pagina, numerazione `02 / 09` in basso a sinistra, occhiello col quadratino
+arancio sulle pagine chiare e arancio senza quadratino su quelle scure, card scure con la
+barra arancio in cima, card grigie sulle pagine scure, tabella economica con la fascia
+`#F3E3D4` e la barra arancio a sinistra, chiusura arancio piena.
 
-## Le 15 pagine
+Non serve più rigenerarlo sul Mac: font e marchio sono veri anche qui.
 
-1 Copertina · 2 Chi siamo · 3 Hanno scelto YDG Studio · 4 Casi studio ·
-5 **Da dove partiamo** (cosa funziona già / dove possiamo crescere) · 6 Dove vogliamo
-andare · 7 I tre servizi · 8 Gestione social · 9 Gestione advertising ·
-10 Sviluppo e gestione del sito · 11 Quanto costa, servizio per servizio ·
-12 Il riepilogo economico · 13 Cosa potremmo fare di più · 14 Come partiamo · 15 Grazie
+## Le 9 pagine
+
+| | Pagina | Cosa c'è |
+|---|---|---|
+| 1 | Copertina | «Facciamo crescere Hotel Heubad» sullo sfondo vero |
+| 2 | Chi siamo | cosa fa lo studio (9 icone) e chi ci ha scelto (15 loghi) |
+| 3 | Casi studio | Villa Campomaggio, La Gabbia, Romagna Free: quattro numeri ciascuno |
+| 4 | Analisi iniziale | cosa funziona già · dove possiamo crescere · dove vogliamo andare |
+| 5 | Il servizio | i tre servizi, ognuno col suo referente e cinque voci |
+| 6 | La proposta | avvio e gestione di ciascun servizio |
+| 7 | Investimento | il riepilogo del primo anno, con il totale |
+| 8 | Prossimi passi | i cinque passi per partire e i servizi su richiesta |
+| 9 | Grazie | contatti e validità |
+
+**Perché non parte dai numeri della struttura.** Campomaggio è un rinnovo: i numeri
+dell'anno prima li abbiamo fatti noi. Qui la struttura non ci conosce e noi non sappiamo
+come lavora. In pagina 4 ci sono solo osservazioni da fuori, dichiarate come tali; i
+numeri veri sono quelli dei nostri clienti, in pagina 3.
 
 ## Da dove vengono i numeri
 
 | Dove | Fonte |
 |---|---|
-| P4 casi studio | Proposta di rinnovo 2027 Campomaggio, consuntivo 2026, proposta Love Luck |
-| P5 analisi | scheda dell'hub, Google Places del 16/10/2026 |
-| P10-P11 sito, portali, tracciamento | listino Nadir, caso B (sito da rifare) |
-| P9 budget pubblicitario | DOCUMENTO UNICO, 400-600 €/mese |
-| P11 advertising | DOCUMENTO UNICO, minimo 500 €/mese se presa da sola |
+| P3 casi studio | proposta di rinnovo 2027 Campomaggio; proposta Love Luck per La Gabbia e Romagna Free |
+| P4 analisi | scheda dell'hub, Google Places del 16/10/2026 |
+| P6 sito, portali, tracciamento | listino Nadir, caso B (sito da rifare) |
+| P6 advertising | DOCUMENTO UNICO, minimo 500 €/mese se presa da sola |
+| P7 budget inserzioni | DOCUMENTO UNICO, 400-600 €/mese |
 
-**L'unica cosa non ancora approvata: le due cifre del social organico** (1.400 €/mese in
-alta, 900 € in bassa) e lo shooting di avvio a 3.500 €. Nel DOCUMENTO UNICO le cifre di
-gestione sono 1.200/2.000, ma sono quelle di Campomaggio **per due brand** — e il
-documento stesso dice che per una struttura sola vanno riviste. Qui sono scalate su un
-brand solo, non dimezzate: i costi fissi non si dimezzano. **Vanno confermate da Alex,
-Riccardo e Alessandro prima che il PDF esca dallo studio.**
+**Da approvare prima che esca dallo studio: le cifre del social.** 1.400 €/mese in alta
+stagione, 900 € in bassa, 3.500 € di shooting di avvio. Nel DOCUMENTO UNICO la gestione
+è 1.200/2.000, ma per **due brand** (Campomaggio) — e il documento stesso dice che per una
+struttura sola va rivista. Qui è scalata su un brand solo, non dimezzata.
 
-In pagina 5 nessun dato è inventato: sono osservazioni dall'esterno, dichiarate come tali,
-e nessuna promessa di risultato.
+**Volutamente assente**: la riga «operazione in regime forfettario, IVA non applicata»
+del documento di Riccardo. È il suo regime personale; qui si fattura in tre, con partite
+IVA diverse.
 
 ## Stagionalità
 
-Campomaggio è Toscana: chiude a novembre, una stagione sola. L'Alto Adige ne lavora **due**,
-inverno ed estate (decisione del 10/11). Qui alta stagione sono 8 mesi, dicembre-marzo e
-giugno-settembre, e bassa sono i 4 di mezzo. È anche un argomento di vendita: i mesi di
-bassa sono quelli in cui si prenota.
-
-## Font, logo e brand
-
-Lo script usa il kit del brand se lo trova
-(`~/Desktop/Y/BRAND YDG STUDIO/Preventivo (mockup)/_sorgente/`) e in quel caso compone in
-**Overused Grotesk**, il font del sito. Se il kit non c'è — per esempio in una sessione
-cloud — ripiega su **Inter** e lo dichiara a schermo: serve per vedere l'impaginazione,
-non per mandare il PDF al cliente. **Il PDF definitivo si genera dove c'è il kit.**
-
-⚠️ **Il marchio in testata è un segnaposto**: "YDG ◂ STUDIO" composto a testo, con il segno
-disegnato in CSS. Quello vero è vettoriale e sta nel kit. Va sostituito quando si genera
-sul Mac, altrimenti il documento esce con un logo che somiglia ma non è il nostro.
-
-Colori dal Codice del brand v1.0: arancio `#FF7900`, fondo `#1A1A1A`, fondo profondo
-`#111111`, card `#1E1E1E`, grigio dei testi `#a9a9a6`. Elementi ricorrenti presi dal
-documento standard: occhiello con quadratino arancio, card scure con barra arancio in
-cima, una card arancio per contrasto, tabella economica con la fascia evidenziata, pagina
-finale arancio piena.
+L'Alto Adige lavora **due** stagioni, inverno ed estate (decisione del 10/11): alta
+stagione 8 mesi, dicembre-marzo e giugno-settembre; bassa i 4 di mezzo. Campomaggio, in
+Toscana, ne ha una sola.
 
 ## Controllo degli sforamenti
 
-`rendi.mjs` misura l'altezza reale del contenuto di ogni pagina nel browser e segnala
-quelle che superano i 720px. Esclude gli elementi `position:absolute` (l'alone arancio
-della copertina, che esce apposta dal riquadro) e quelli inline, che riportano la scatola
-del font invece della riga: senza quei due filtri segnalava sforamenti che non esistono.
+`rendi.mjs` misura l'altezza reale del contenuto di ogni pagina e segnala quelle che
+superano i 720px. Esclude gli elementi `position:absolute` e quelli inline, che
+segnalerebbero sforamenti inesistenti.
