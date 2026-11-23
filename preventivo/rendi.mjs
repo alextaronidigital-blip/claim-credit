@@ -20,8 +20,23 @@ await pg.waitForTimeout(800);
 
 // Gli sforamenti si controllano a macchina: una pagina che straborda si vede
 // solo stampata, e a quel punto è tardi.
+// Si misura solo il contenuto nel flusso: gli elementi decorativi in position
+// absolute (l'alone arancio della copertina) escono apposta dal riquadro e
+// vengono ritagliati, quindi conterebbero come sforamenti falsi.
 const sfori = await pg.evaluate(() => [...document.querySelectorAll(".p")]
-  .map((p, i) => ({ n: i + 1, h: p.scrollHeight }))
+  .map((p, i) => {
+    const alto = p.getBoundingClientRect().top;
+    const giu = [...p.querySelectorAll("*")]
+      .filter(el => {
+        const s = getComputedStyle(el);
+        // Gli elementi inline (<b>, <span>) riportano la scatola del font, piu'
+        // alta della riga: conterebbero sempre qualche pixel di troppo.
+        return s.position !== "absolute" && !s.display.startsWith("inline");
+      })
+      .map(el => el.getBoundingClientRect().bottom - alto);
+    const pad = parseFloat(getComputedStyle(p).paddingBottom) || 0;
+    return { n: i + 1, h: Math.round(Math.max(0, ...giu) + pad) };
+  })
   .filter(x => x.h > 721));
 
 const pagine = await pg.$$(".p");
