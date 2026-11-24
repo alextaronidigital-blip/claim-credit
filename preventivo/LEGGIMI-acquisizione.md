@@ -1,5 +1,42 @@
 # Proposta di acquisizione · verticale ospitalità
 
+> **Stato al 24/11: in pausa, non va mandata così.** La versione su Hotel Heubad è un
+> esercizio di impaginazione. La proposta vera si costruisce **quando un cliente si dimostra
+> interessato**, su misura, dopo la brochure. Prima di riprenderla, leggere il brief qui sotto.
+
+## Il brief per la proposta vera (feedback del 24/11)
+
+Si parla di cifre alte: la proposta deve essere **più articolata** di un preventivo a schema.
+
+1. **In linea con la brochure**, non con il preventivo standard.
+2. **Tante immagini del loro territorio e della struttura.** Si fa leva sui punti di forza e
+   di debolezza **della zona e della struttura**, non solo dei profili social.
+3. **Ci presentiamo come studio, non come organigramma.** Niente «Alessandro fa l'ADV,
+   Nadir il sito». Il messaggio è: *queste sono le cose che faremo, siamo un team.*
+4. **Prezzo unico da studio.** «La proposta ad hoc per voi è X mila euro per X, Y, Z.» Chi
+   fattura cosa si spiega **in fase di chiusura**, non nel documento.
+5. **Manca il perché sceglierci**, cioè quello che ha fatto la differenza a Villa Campomaggio:
+   - chat sempre attiva;
+   - un referente, ma sempre qualcun altro pronto a intervenire;
+   - un team dedicato al progetto;
+   - cura delle varie pagine perché siano coerenti fra loro;
+   - shooting stagionali;
+   - identità visiva sia nelle foto sia nei video;
+   - copywriting in più lingue, se serve.
+6. **Il sito non è nel pacchetto di base.** Si decide caso per caso:
+   - **subito**, se la loro situazione web è critica;
+   - **dopo**, come cross-sell, una volta fatta la proposta lato marketing.
+7. **L'advertising va spiegato molto di più.** È la parte che può fare la differenza e cambia
+   tutto a seconda dell'obiettivo:
+   - campagna di **notorietà o traffico al profilo**: una cosa;
+   - campagna con **obiettivo prenotazioni**: un'altra, che proponiamo noi.
+8. **Solo casi studio di ospitalità.**
+
+Il generatore qui sotto resta valido come motore (brand, font, loghi, controllo
+sforamenti): cambia la struttura delle pagine, non l'impianto.
+
+---
+
 **Cos'è.** La proposta che portiamo a una struttura che non ci conosce: gestione social,
 gestione advertising, sviluppo e gestione del sito web, con il prezzo di ciascuno e il
 quadro economico del primo anno.
